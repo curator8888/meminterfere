@@ -91,17 +91,21 @@ MODELS: dict[str, ModelConfig] = {
 
     "claude-3.5-haiku": ModelConfig(
         name="claude-3.5-haiku",
-        provider="anthropic",
-        model_id="claude-3-5-haiku-20241022",
+        provider="openrouter",
+        model_id="anthropic/claude-3.5-haiku",
         tier="strong",
         max_tokens=4096,
         temperature=0.0,
-        supports_json_mode=False,  # Anthropic doesn't have JSON mode in the same way
+        supports_json_mode=True,
         cost_per_million_input=0.25,
         cost_per_million_output=1.25,
-        rate_limit_rpm=50,
-        api_base="https://api.anthropic.com/v1",
-        env_key="ANTHROPIC_API_KEY",
+        rate_limit_rpm=40,
+        api_base="https://openrouter.ai/api/v1",
+        env_key="OPENROUTER_API_KEY",
+        extra_headers={
+            "HTTP-Referer": "https://meminterfere.research",
+            "X-Title": "MemInterfere Evaluation",
+        },
     ),
 }
 
