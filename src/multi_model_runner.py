@@ -269,10 +269,13 @@ def call_anthropic(
     }
 
     # Anthropic uses a separate system parameter
+    # Note: Anthropic requires temperature > 0; if 0.0 is passed, omit it (defaults to 1.0)
+    # For reproducibility with low randomness, use 0.01 instead of 0.0
+    effective_temp = max(0.01, temperature) if temperature <= 0.0 else temperature
     payload = {
         "model": config.model_id,
         "max_tokens": config.max_tokens,
-        "temperature": temperature,
+        "temperature": effective_temp,
         "system": system_prompt,
         "messages": messages,
     }
@@ -304,6 +307,12 @@ def call_anthropic(
             return response_text, input_tokens, output_tokens, total_tokens
 
         except httpx.HTTPStatusError as e:
+            # Log response body for debugging (Anthropic returns detailed errors)
+            try:
+                error_body = e.response.text[:500]
+                logger.warning(f"Anthropic error body for {config.name}: {error_body}")
+            except Exception:
+                pass
             logger.warning(f"HTTP error for {config.name} (attempt {attempt+1}/{max_retries}): {e}")
             if attempt < max_retries - 1:
                 wait_time = 2 ** (attempt + 1)

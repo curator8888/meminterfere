@@ -31,3 +31,39 @@ Dry run complete. Exiting without running experiments.
 2026-06-25 17:20:01,744 [INFO]   Total estimated cost: $0.00
 2026-06-25 17:20:01,744 [INFO] 
 Dry run complete. Exiting without running experiments.
+2026-06-25 18:55:21,390 [INFO] Using 80 tasks
+2026-06-25 18:55:21,393 [INFO] Skill library sizes: oracle: 40, no_memory: 0, clean_memory: 40, clean_interference: 90, clean_stale: 50, all_memory: 100, gold_retrieval: 100, rag_retrieval_k1: 100, rag_retrieval_k3: 100, rag_retrieval_k5: 100, rag_retrieval_k10: 100
+2026-06-25 18:55:21,394 [INFO] 
+============================================================
+2026-06-25 18:55:21,394 [INFO] Experiment Configuration
+2026-06-25 18:55:21,394 [INFO] ============================================================
+2026-06-25 18:55:21,394 [INFO] Models: llama-3.1-8b-instruct, grok-3-mini, gpt-4o-mini, claude-3.5-haiku
+2026-06-25 18:55:21,394 [INFO] Conditions: oracle, no_memory, clean_memory, clean_interference, clean_stale, all_memory, gold_retrieval, rag_retrieval_k1, rag_retrieval_k3, rag_retrieval_k5, rag_retrieval_k10
+2026-06-25 18:55:21,395 [INFO] Temperatures: [0.0]
+2026-06-25 18:55:21,395 [INFO] Tasks: 80
+2026-06-25 18:55:21,395 [INFO] Total runs: 3520
+2026-06-25 18:55:21,395 [INFO]   llama-3.1-8b-instruct: ~$0.00 (openrouter)
+2026-06-25 18:55:21,395 [INFO]   grok-3-mini: ~$0.17 (xai)
+2026-06-25 18:55:21,395 [INFO]   gpt-4o-mini: ~$0.13 (openrouter)
+2026-06-25 18:55:21,395 [INFO]   claude-3.5-haiku: ~$0.25 (anthropic)
+2026-06-25 18:55:21,396 [INFO]   Total estimated cost: $0.56
+2026-06-25 18:55:21,396 [INFO] 
+Dry run complete. Exiting without running experiments.
+2026-06-25 18:55:25,972 [INFO] Using 20 tasks
+2026-06-25 18:55:25,975 [INFO] Skill library sizes: oracle: 40, no_memory: 0, clean_memory: 40, clean_interference: 90, all_memory: 100
+2026-06-25 18:55:25,975 [INFO] 
+============================================================
+2026-06-25 18:55:25,975 [INFO] Experiment Configuration
+2026-06-25 18:55:25,975 [INFO] ============================================================
+2026-06-25 18:55:25,975 [INFO] Models: llama-3.1-8b-instruct, grok-3-mini, gpt-4o-mini, claude-3.5-haiku
+2026-06-25 18:55:25,975 [INFO] Conditions: oracle, no_memory, clean_memory, clean_interference, all_memory
+2026-06-25 18:55:25,976 [INFO] Temperatures: [0.0]
+2026-06-25 18:55:25,976 [INFO] Tasks: 20
+2026-06-25 18:55:25,976 [INFO] Total runs: 400
+2026-06-25 18:55:25,976 [INFO]   llama-3.1-8b-instruct: ~$0.00 (openrouter)
+2026-06-25 18:55:25,976 [INFO]   grok-3-mini: ~$0.02 (xai)
+2026-06-25 18:55:25,976 [INFO]   gpt-4o-mini: ~$0.01 (openrouter)
+2026-06-25 18:55:25,976 [INFO]   claude-3.5-haiku: ~$0.03 (anthropic)
+2026-06-25 18:55:25,976 [INFO]   Total estimated cost: $0.06
+2026-06-25 18:55:25,976 [INFO] 
+Dry run complete. Exiting without running experiments.

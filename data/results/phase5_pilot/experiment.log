@@ -1,0 +1,1230 @@
+2026-06-25 19:02:25,424 [INFO] Using 20 tasks
+2026-06-25 19:02:25,428 [INFO] Skill library sizes: oracle: 40, no_memory: 0, clean_memory: 40, clean_interference: 90, all_memory: 100
+2026-06-25 19:02:25,428 [INFO] 
+============================================================
+2026-06-25 19:02:25,428 [INFO] Experiment Configuration
+2026-06-25 19:02:25,428 [INFO] ============================================================
+2026-06-25 19:02:25,429 [INFO] Models: llama-3.1-8b-instruct, grok-3-mini, gpt-4o-mini, claude-3.5-haiku
+2026-06-25 19:02:25,429 [INFO] Conditions: oracle, no_memory, clean_memory, clean_interference, all_memory
+2026-06-25 19:02:25,429 [INFO] Temperatures: [0.0]
+2026-06-25 19:02:25,429 [INFO] Tasks: 20
+2026-06-25 19:02:25,429 [INFO] Total runs: 400
+2026-06-25 19:02:25,429 [INFO]   llama-3.1-8b-instruct: ~$0.00 (openrouter)
+2026-06-25 19:02:25,429 [INFO]   grok-3-mini: ~$0.02 (xai)
+2026-06-25 19:02:25,429 [INFO]   gpt-4o-mini: ~$0.01 (openrouter)
+2026-06-25 19:02:25,429 [INFO]   claude-3.5-haiku: ~$0.03 (anthropic)
+2026-06-25 19:02:25,429 [INFO]   Total estimated cost: $0.06
+2026-06-25 19:02:25,429 [INFO] 
+Running REAL experiment (API calls)
+2026-06-25 19:02:25,429 [INFO] Batch run: 1 models × 20 tasks × 5 conditions × 1 temps = 100 total runs
+2026-06-25 19:02:25,429 [INFO] Already completed: 0, remaining: 100
+2026-06-25 19:02:25,429 [INFO] 
+============================================================
+2026-06-25 19:02:25,429 [INFO] Running model: llama-3.1-8b-instruct (openrouter)
+2026-06-25 19:02:25,430 [INFO] ============================================================
+2026-06-25 19:02:27,079 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:28,427 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:30,735 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:31,601 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:32,911 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:36,677 [INFO] Saved 5 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:02:36,677 [INFO]   Progress: 5/100 runs
+2026-06-25 19:02:36,922 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:39,501 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:40,283 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:41,676 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:43,116 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:43,890 [INFO] Saved 10 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:02:43,890 [INFO]   Progress: 10/100 runs
+2026-06-25 19:02:44,162 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:46,531 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:49,099 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:50,466 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:54,270 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:56,188 [INFO] Saved 15 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:02:56,189 [INFO]   Progress: 15/100 runs
+2026-06-25 19:02:56,431 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:59,139 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:02:59,992 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:01,864 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:03,014 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:03,383 [INFO] Saved 20 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:03:03,386 [INFO]   Progress: 20/100 runs
+2026-06-25 19:03:03,386 [INFO] Rate limit for openrouter: sleeping 22.1s
+2026-06-25 19:03:25,802 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:26,817 [INFO] Rate limit for openrouter: sleeping 1.1s
+2026-06-25 19:03:28,683 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:29,086 [INFO] Rate limit for openrouter: sleeping 1.0s
+2026-06-25 19:03:30,357 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:31,026 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-25 19:03:31,692 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:33,066 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:34,694 [INFO] Saved 25 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:03:34,694 [INFO]   Progress: 25/100 runs
+2026-06-25 19:03:34,694 [INFO] Rate limit for openrouter: sleeping 2.1s
+2026-06-25 19:03:37,069 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:38,324 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:03:38,693 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:38,795 [INFO] Rate limit for openrouter: sleeping 1.3s
+2026-06-25 19:03:40,341 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:41,895 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:42,710 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:03:43,821 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:44,197 [INFO] Saved 30 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:03:44,197 [INFO]   Progress: 30/100 runs
+2026-06-25 19:03:45,140 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:45,850 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:46,895 [INFO] Rate limit for openrouter: sleeping 1.3s
+2026-06-25 19:03:48,547 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:49,477 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-25 19:03:50,669 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:51,722 [INFO] Rate limit for openrouter: sleeping 1.7s
+2026-06-25 19:03:53,686 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:53,845 [INFO] Saved 35 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:03:53,846 [INFO]   Progress: 35/100 runs
+2026-06-25 19:03:53,846 [INFO] Rate limit for openrouter: sleeping 2.4s
+2026-06-25 19:03:56,784 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:03:57,822 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-25 19:03:59,182 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:00,085 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:00,845 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:04:01,808 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:03,955 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:05,194 [INFO] Saved 40 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:04:05,195 [INFO]   Progress: 40/100 runs
+2026-06-25 19:04:05,195 [INFO] Rate limit for openrouter: sleeping 20.4s
+2026-06-25 19:04:25,933 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:26,818 [INFO] Rate limit for openrouter: sleeping 1.2s
+2026-06-25 19:04:28,886 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:29,398 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-25 19:04:30,448 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:31,380 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-25 19:04:31,763 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:34,487 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:34,681 [INFO] Saved 45 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:04:34,681 [INFO]   Progress: 45/100 runs
+2026-06-25 19:04:34,682 [INFO] Rate limit for openrouter: sleeping 2.2s
+2026-06-25 19:04:37,690 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:38,158 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-25 19:04:39,774 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:40,781 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:40,979 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-25 19:04:41,906 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:44,159 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:45,236 [INFO] Saved 50 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:04:45,236 [INFO]   Progress: 50/100 runs
+2026-06-25 19:04:46,005 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:47,650 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:48,149 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:04:49,132 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:49,694 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-25 19:04:51,248 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:51,658 [INFO] Rate limit for openrouter: sleeping 1.9s
+2026-06-25 19:04:54,616 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:54,829 [INFO] Saved 55 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:04:54,829 [INFO]   Progress: 55/100 runs
+2026-06-25 19:04:54,833 [INFO] Rate limit for openrouter: sleeping 1.6s
+2026-06-25 19:04:56,681 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:04:57,559 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-25 19:04:58,605 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:00,104 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:01,830 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:03,672 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-25 19:05:04,059 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:05,501 [INFO] Saved 60 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:05:05,501 [INFO]   Progress: 60/100 runs
+2026-06-25 19:05:05,502 [INFO] Rate limit for openrouter: sleeping 20.2s
+2026-06-25 19:05:26,278 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:27,305 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-25 19:05:28,391 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:30,042 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:05:30,995 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:31,804 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:32,804 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-25 19:05:34,671 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:35,391 [INFO] Saved 65 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:05:35,391 [INFO]   Progress: 65/100 runs
+2026-06-25 19:05:35,392 [INFO] Rate limit for openrouter: sleeping 1.6s
+2026-06-25 19:05:37,302 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:38,222 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-25 19:05:40,103 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:41,005 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:42,169 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:43,384 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-25 19:05:44,030 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:44,945 [INFO] Saved 70 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:05:44,946 [INFO]   Progress: 70/100 runs
+2026-06-25 19:05:44,948 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-25 19:05:46,266 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:47,086 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:49,128 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:52,003 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:54,155 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:55,555 [INFO] Saved 75 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:05:55,556 [INFO]   Progress: 75/100 runs
+2026-06-25 19:05:55,556 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-25 19:05:56,752 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:58,137 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-25 19:05:58,737 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:05:59,772 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:06:00,966 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:01,290 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-25 19:06:01,925 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:04,635 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:05,658 [INFO] Saved 80 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:06:05,658 [INFO]   Progress: 80/100 runs
+2026-06-25 19:06:05,659 [INFO] Rate limit for openrouter: sleeping 20.2s
+2026-06-25 19:06:26,119 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:27,482 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-25 19:06:28,491 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:32,192 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:33,805 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:34,683 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:35,148 [INFO] Saved 85 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:06:35,149 [INFO]   Progress: 85/100 runs
+2026-06-25 19:06:35,149 [INFO] Rate limit for openrouter: sleeping 1.9s
+2026-06-25 19:06:37,384 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:38,460 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-25 19:06:39,812 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:40,353 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-25 19:06:41,004 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:41,549 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-25 19:06:42,822 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:43,146 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-25 19:06:44,071 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:44,438 [INFO] Saved 90 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:06:44,438 [INFO]   Progress: 90/100 runs
+2026-06-25 19:06:44,438 [INFO] Rate limit for openrouter: sleeping 1.0s
+2026-06-25 19:06:45,711 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:49,021 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:50,582 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:51,279 [INFO] Rate limit for openrouter: sleeping 0.6s
+2026-06-25 19:06:55,030 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:55,580 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:56,685 [INFO] Saved 95 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:06:56,685 [INFO]   Progress: 95/100 runs
+2026-06-25 19:06:58,059 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:06:59,052 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:07:00,924 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:07:01,390 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-25 19:07:02,000 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:07:04,359 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-25 19:07:05,415 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:07:05,876 [INFO] Saved 100 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:07:05,876 [INFO]   Progress: 100/100 runs
+2026-06-25 19:07:05,881 [INFO] Saved 100 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:07:05,882 [INFO] 
+Batch complete! 100 results saved to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:07:05,882 [INFO] Batch run: 1 models × 20 tasks × 5 conditions × 1 temps = 100 total runs
+2026-06-25 19:07:05,882 [INFO] Already completed: 100, remaining: 0
+2026-06-25 19:07:05,882 [INFO] 
+============================================================
+2026-06-25 19:07:05,882 [INFO] Running model: grok-3-mini (xai)
+2026-06-25 19:07:05,882 [INFO] ============================================================
+2026-06-25 19:07:06,467 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 19:07:06,467 [WARNING] Rate limited (429) for grok-3-mini, waiting 61s
+2026-06-25 19:08:17,689 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:08:19,960 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:08:23,164 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:08:26,878 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:08:29,471 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:08:29,477 [INFO] Saved 105 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:08:29,477 [INFO]   Progress: 105/100 runs
+2026-06-25 19:08:32,261 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:08:34,681 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:08:37,441 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:08:40,703 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:08:43,675 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:08:43,681 [INFO] Saved 110 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:08:43,681 [INFO]   Progress: 110/100 runs
+2026-06-25 19:08:47,160 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:08:50,713 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:08:54,815 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:08:58,214 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:09:01,122 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:09:01,146 [INFO] Saved 115 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:09:01,146 [INFO]   Progress: 115/100 runs
+2026-06-25 19:09:05,041 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:09:08,502 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:09:14,087 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:09:16,744 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:09:19,978 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:09:19,985 [INFO] Saved 120 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:09:19,985 [INFO]   Progress: 120/100 runs
+2026-06-25 19:09:25,087 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:09:28,212 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:09:32,996 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:09:39,345 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:09:44,774 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:09:44,793 [INFO] Saved 125 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:09:44,793 [INFO]   Progress: 125/100 runs
+2026-06-25 19:09:50,837 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:09:56,955 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:10:00,441 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:10:03,719 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:10:09,097 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:10:09,109 [INFO] Saved 130 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:10:09,109 [INFO]   Progress: 130/100 runs
+2026-06-25 19:10:13,002 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:10:18,301 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:10:22,363 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:10:27,619 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:10:32,832 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:10:32,853 [INFO] Saved 135 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:10:32,853 [INFO]   Progress: 135/100 runs
+2026-06-25 19:10:36,832 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:10:41,426 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:10:47,080 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:10:50,914 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:10:56,089 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:10:56,099 [INFO] Saved 140 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:10:56,099 [INFO]   Progress: 140/100 runs
+2026-06-25 19:10:58,223 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:00,371 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:02,724 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:05,658 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:08,695 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:08,723 [INFO] Saved 145 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:11:08,723 [INFO]   Progress: 145/100 runs
+2026-06-25 19:11:11,169 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:13,304 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:16,093 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:18,673 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:21,908 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:21,915 [INFO] Saved 150 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:11:21,915 [INFO]   Progress: 150/100 runs
+2026-06-25 19:11:25,488 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:28,607 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:32,422 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:36,001 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:38,817 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:38,846 [INFO] Saved 155 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:11:38,846 [INFO]   Progress: 155/100 runs
+2026-06-25 19:11:44,219 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:47,544 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:51,391 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:54,826 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:57,832 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:11:57,848 [INFO] Saved 160 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:11:57,848 [INFO]   Progress: 160/100 runs
+2026-06-25 19:12:01,386 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:03,886 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:07,798 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:11,133 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:14,117 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:14,129 [INFO] Saved 165 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:12:14,129 [INFO]   Progress: 165/100 runs
+2026-06-25 19:12:16,921 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:20,391 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:22,895 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:25,234 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:29,485 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:29,498 [INFO] Saved 170 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:12:29,498 [INFO]   Progress: 170/100 runs
+2026-06-25 19:12:32,685 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:36,396 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:42,906 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:47,604 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:52,506 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:12:52,518 [INFO] Saved 175 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:12:52,518 [INFO]   Progress: 175/100 runs
+2026-06-25 19:12:56,979 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:01,278 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:05,069 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:07,901 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:11,634 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:11,650 [INFO] Saved 180 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:13:11,651 [INFO]   Progress: 180/100 runs
+2026-06-25 19:13:16,740 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:19,743 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:22,805 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:25,809 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:28,936 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:28,973 [INFO] Saved 185 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:13:28,973 [INFO]   Progress: 185/100 runs
+2026-06-25 19:13:32,337 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:35,099 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:37,932 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:40,333 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:43,369 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:43,384 [INFO] Saved 190 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:13:43,384 [INFO]   Progress: 190/100 runs
+2026-06-25 19:13:47,469 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:51,190 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:13:56,277 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:01,685 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:07,136 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:07,161 [INFO] Saved 195 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:14:07,161 [INFO]   Progress: 195/100 runs
+2026-06-25 19:14:12,542 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:16,653 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:20,209 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:23,230 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:26,734 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:26,776 [INFO] Saved 200 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:14:26,777 [INFO]   Progress: 200/100 runs
+2026-06-25 19:14:26,787 [INFO] Saved 200 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:14:26,787 [INFO] 
+Batch complete! 200 results saved to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:14:26,787 [INFO] Batch run: 1 models × 20 tasks × 5 conditions × 1 temps = 100 total runs
+2026-06-25 19:14:26,787 [INFO] Already completed: 200, remaining: -100
+2026-06-25 19:14:26,787 [INFO] 
+============================================================
+2026-06-25 19:14:26,788 [INFO] Running model: gpt-4o-mini (openrouter)
+2026-06-25 19:14:26,788 [INFO] ============================================================
+2026-06-25 19:14:28,014 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:29,324 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:30,796 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:32,900 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:34,280 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:35,299 [INFO] Saved 205 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:14:35,300 [INFO]   Progress: 205/100 runs
+2026-06-25 19:14:35,952 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:37,240 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:40,061 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:42,475 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:43,914 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:44,701 [INFO] Saved 210 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:14:44,702 [INFO]   Progress: 210/100 runs
+2026-06-25 19:14:45,162 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:46,979 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:48,814 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:50,430 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:51,847 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:52,891 [INFO] Saved 215 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:14:52,891 [INFO]   Progress: 215/100 runs
+2026-06-25 19:14:54,256 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:14:59,621 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:02,827 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:06,579 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:11,149 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:12,785 [INFO] Saved 220 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:15:12,785 [INFO]   Progress: 220/100 runs
+2026-06-25 19:15:12,785 [INFO] Rate limit for openrouter: sleeping 14.1s
+2026-06-25 19:15:27,647 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:28,425 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-25 19:15:29,755 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:31,529 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:33,240 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:34,772 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:35,749 [INFO] Saved 225 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:15:35,750 [INFO]   Progress: 225/100 runs
+2026-06-25 19:15:36,424 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:38,488 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:40,560 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:42,139 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:43,238 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:15:44,064 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:44,941 [INFO] Saved 230 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:15:44,941 [INFO]   Progress: 230/100 runs
+2026-06-25 19:15:46,167 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:47,836 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:49,350 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:50,813 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:52,561 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:53,359 [INFO] Saved 235 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:15:53,359 [INFO]   Progress: 235/100 runs
+2026-06-25 19:15:53,820 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:55,051 [INFO] Rate limit for openrouter: sleeping 2.2s
+2026-06-25 19:15:57,814 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:15:58,697 [INFO] Rate limit for openrouter: sleeping 3.6s
+2026-06-25 19:16:02,794 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:03,953 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-25 19:16:05,634 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:06,974 [INFO] Rate limit for openrouter: sleeping 2.3s
+2026-06-25 19:16:09,845 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:10,635 [INFO] Saved 240 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:16:10,636 [INFO]   Progress: 240/100 runs
+2026-06-25 19:16:10,636 [INFO] Rate limit for openrouter: sleeping 16.4s
+2026-06-25 19:16:27,715 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:28,478 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-25 19:16:29,546 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:30,420 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:16:31,258 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:32,058 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-25 19:16:33,418 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:34,152 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:16:35,125 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:35,852 [INFO] Saved 245 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:16:35,853 [INFO]   Progress: 245/100 runs
+2026-06-25 19:16:36,324 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:37,019 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-25 19:16:38,793 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:39,350 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:16:40,078 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:40,605 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-25 19:16:42,119 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:43,008 [INFO] Rate limit for openrouter: sleeping 0.6s
+2026-06-25 19:16:44,121 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:44,862 [INFO] Saved 250 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:16:44,863 [INFO]   Progress: 250/100 runs
+2026-06-25 19:16:44,863 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:16:45,552 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:46,368 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-25 19:16:47,762 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:48,480 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-25 19:16:49,365 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:50,268 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:16:51,793 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:53,482 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:54,652 [INFO] Saved 255 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:16:54,652 [INFO]   Progress: 255/100 runs
+2026-06-25 19:16:55,325 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:56,338 [INFO] Rate limit for openrouter: sleeping 1.0s
+2026-06-25 19:16:58,260 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:16:59,061 [INFO] Rate limit for openrouter: sleeping 3.3s
+2026-06-25 19:17:02,966 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:03,964 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-25 19:17:05,530 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:06,474 [INFO] Rate limit for openrouter: sleeping 2.9s
+2026-06-25 19:17:10,110 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:10,786 [INFO] Saved 260 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:17:10,786 [INFO]   Progress: 260/100 runs
+2026-06-25 19:17:10,787 [INFO] Rate limit for openrouter: sleeping 16.3s
+2026-06-25 19:17:27,732 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:28,513 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-25 19:17:29,617 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:30,562 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:17:31,403 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:32,106 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-25 19:17:33,601 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:35,464 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:36,242 [INFO] Saved 265 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:17:36,242 [INFO]   Progress: 265/100 runs
+2026-06-25 19:17:37,128 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:38,764 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:39,455 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:17:40,054 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:40,934 [INFO] Rate limit for openrouter: sleeping 0.6s
+2026-06-25 19:17:42,312 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:43,332 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-25 19:17:44,197 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:44,919 [INFO] Saved 270 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:17:44,920 [INFO]   Progress: 270/100 runs
+2026-06-25 19:17:44,921 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:17:45,803 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:46,608 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-25 19:17:47,871 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:48,615 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-25 19:17:49,776 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:51,268 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:52,117 [INFO] Rate limit for openrouter: sleeping 1.0s
+2026-06-25 19:17:53,612 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:54,620 [INFO] Saved 275 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:17:54,620 [INFO]   Progress: 275/100 runs
+2026-06-25 19:17:54,620 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-25 19:17:55,255 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:56,282 [INFO] Rate limit for openrouter: sleeping 1.2s
+2026-06-25 19:17:58,022 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:17:59,168 [INFO] Rate limit for openrouter: sleeping 3.3s
+2026-06-25 19:18:03,296 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:04,659 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-25 19:18:05,465 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:06,533 [INFO] Rate limit for openrouter: sleeping 2.9s
+2026-06-25 19:18:10,004 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:10,806 [INFO] Saved 280 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:18:10,806 [INFO]   Progress: 280/100 runs
+2026-06-25 19:18:10,807 [INFO] Rate limit for openrouter: sleeping 16.4s
+2026-06-25 19:18:27,762 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:28,453 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-25 19:18:29,695 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:30,757 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-25 19:18:31,822 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:32,291 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-25 19:18:33,639 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:34,440 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:18:35,240 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:36,218 [INFO] Saved 285 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:18:36,218 [INFO]   Progress: 285/100 runs
+2026-06-25 19:18:36,219 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-25 19:18:36,840 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:38,737 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:39,336 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-25 19:18:40,197 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:40,973 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-25 19:18:42,245 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:43,363 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-25 19:18:44,311 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:45,007 [INFO] Saved 290 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:18:45,007 [INFO]   Progress: 290/100 runs
+2026-06-25 19:18:45,007 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-25 19:18:45,701 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:46,608 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-25 19:18:47,931 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:48,962 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-25 19:18:49,627 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:50,699 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-25 19:18:51,841 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:52,746 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-25 19:18:53,694 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:54,859 [INFO] Saved 295 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:18:54,859 [INFO]   Progress: 295/100 runs
+2026-06-25 19:18:55,436 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:56,127 [INFO] Rate limit for openrouter: sleeping 1.5s
+2026-06-25 19:18:58,418 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:18:59,246 [INFO] Rate limit for openrouter: sleeping 3.3s
+2026-06-25 19:19:03,269 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:19:04,532 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-25 19:19:06,608 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:19:08,190 [INFO] Rate limit for openrouter: sleeping 1.4s
+2026-06-25 19:19:10,079 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 19:19:10,756 [INFO] Saved 300 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:19:10,757 [INFO]   Progress: 300/100 runs
+2026-06-25 19:19:10,768 [INFO] Saved 300 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:19:10,768 [INFO] 
+Batch complete! 300 results saved to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:19:10,768 [INFO] Batch run: 1 models × 20 tasks × 5 conditions × 1 temps = 100 total runs
+2026-06-25 19:19:10,768 [INFO] Already completed: 300, remaining: -200
+2026-06-25 19:19:10,768 [INFO] 
+============================================================
+2026-06-25 19:19:10,768 [INFO] Running model: claude-3.5-haiku (anthropic)
+2026-06-25 19:19:10,769 [INFO] ============================================================
+2026-06-25 19:19:11,038 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:11,039 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:13,327 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:13,328 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:17,563 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:17,566 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:17,566 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:17,794 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:17,797 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:20,021 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:20,022 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:24,281 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:24,283 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:24,283 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:24,586 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:24,587 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:26,820 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:26,820 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:31,053 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:31,053 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:31,054 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:31,271 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:31,271 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:33,486 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:33,487 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:37,731 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:37,731 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:37,731 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:38,033 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:38,034 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:40,395 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:40,395 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:44,622 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:44,622 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:44,623 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:44,645 [INFO] Saved 305 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:19:44,646 [INFO]   Progress: 305/100 runs
+2026-06-25 19:19:44,869 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:44,870 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:47,114 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:47,114 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:51,608 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:51,609 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:51,609 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:51,872 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:51,902 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:54,270 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:54,271 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:58,608 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:58,610 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:58,610 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:19:58,968 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:19:58,971 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:01,286 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:01,286 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:05,546 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:05,548 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:05,548 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:05,757 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:05,758 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:08,019 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:08,020 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:12,268 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:12,269 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:12,270 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:12,591 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:12,591 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:14,813 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:14,814 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:19,041 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:19,044 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:19,044 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:19,069 [INFO] Saved 310 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:20:19,069 [INFO]   Progress: 310/100 runs
+2026-06-25 19:20:19,298 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:19,298 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:21,563 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:21,564 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:25,822 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:25,823 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:25,823 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:26,145 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:26,145 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:28,367 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:28,368 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:32,746 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:32,747 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:32,747 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:33,020 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:33,021 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:35,324 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:35,325 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:39,545 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:39,547 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:39,547 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:39,783 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:39,784 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:42,166 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:42,167 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:46,434 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:46,434 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:46,434 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:46,738 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:46,739 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:48,958 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:48,959 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:53,225 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:53,226 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:53,226 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:53,248 [INFO] Saved 315 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:20:53,249 [INFO]   Progress: 315/100 runs
+2026-06-25 19:20:53,509 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:53,509 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:20:55,731 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:20:55,732 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:00,058 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:00,059 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:00,059 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:00,394 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:00,395 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:02,647 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:02,648 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:06,890 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:06,891 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:06,891 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:07,144 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:07,145 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:09,371 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:09,372 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:13,677 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:13,678 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:13,678 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:13,940 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:13,940 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:16,154 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:16,154 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:20,376 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:20,380 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:20,380 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:20,588 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:20,588 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:22,887 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:22,887 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:27,097 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:27,098 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:27,098 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:27,115 [INFO] Saved 320 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:21:27,115 [INFO]   Progress: 320/100 runs
+2026-06-25 19:21:27,346 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:27,347 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:29,553 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:29,554 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:33,812 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:33,812 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:33,812 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:34,106 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:34,139 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:36,490 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:36,491 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:40,708 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:40,713 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:40,713 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:40,969 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:40,969 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:43,210 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:43,211 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:47,438 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:47,438 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:47,438 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:47,698 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:47,699 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:49,921 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:49,923 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:54,219 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:54,220 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:54,220 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:54,931 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:54,933 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:21:57,144 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:21:57,145 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:01,375 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:01,376 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:01,376 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:01,394 [INFO] Saved 325 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:22:01,394 [INFO]   Progress: 325/100 runs
+2026-06-25 19:22:01,617 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:01,618 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:03,843 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:03,843 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:08,051 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:08,052 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:08,052 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:08,259 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:08,264 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:10,568 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:10,568 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:14,794 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:14,794 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:14,795 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:15,011 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:15,012 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:17,250 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:17,251 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:21,624 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:21,624 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:21,625 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:21,867 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:21,867 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:24,207 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:24,208 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:28,448 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:28,449 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:28,449 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:28,931 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:28,932 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:31,198 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:31,199 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:35,463 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:35,464 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:35,464 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:35,495 [INFO] Saved 330 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:22:35,496 [INFO]   Progress: 330/100 runs
+2026-06-25 19:22:35,729 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:35,730 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:38,018 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:38,019 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:42,283 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:42,284 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:42,284 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:42,522 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:42,523 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:44,780 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:44,781 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:49,022 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:49,023 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:49,023 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:49,240 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:49,240 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:51,486 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:51,486 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:55,744 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:55,746 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:55,746 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:55,972 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:55,975 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:22:58,262 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:22:58,263 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:02,485 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:02,496 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:02,497 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:02,743 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:02,743 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:04,994 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:04,995 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:09,272 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:09,272 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:09,273 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:09,295 [INFO] Saved 335 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:23:09,296 [INFO]   Progress: 335/100 runs
+2026-06-25 19:23:09,869 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:09,870 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:12,088 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:12,089 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:16,395 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:16,395 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:16,395 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:16,628 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:16,628 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:18,839 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:18,840 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:23,083 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:23,084 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:23,084 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:23,330 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:23,330 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:25,565 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:25,566 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:29,833 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:29,834 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:29,834 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:30,072 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:30,073 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:32,295 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:32,296 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:36,530 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:36,531 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:36,531 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:36,775 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:36,776 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:39,010 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:39,011 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:43,287 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:43,288 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:43,288 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:43,317 [INFO] Saved 340 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:23:43,317 [INFO]   Progress: 340/100 runs
+2026-06-25 19:23:43,671 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:43,673 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:45,938 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:45,939 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:50,172 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:50,173 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:50,173 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:50,405 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:50,405 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:52,640 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:52,641 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:56,862 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:56,865 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:56,865 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:57,092 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:57,094 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:23:59,341 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:23:59,342 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:03,617 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:03,618 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:03,618 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:03,847 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:03,848 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:06,071 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:06,072 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:10,324 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:10,325 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:10,325 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:10,541 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:10,541 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:12,762 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:12,763 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:17,006 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:17,007 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:17,007 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:17,044 [INFO] Saved 345 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:24:17,044 [INFO]   Progress: 345/100 runs
+2026-06-25 19:24:17,262 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:17,262 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:19,507 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:19,508 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:23,800 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:23,801 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:23,801 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:24,139 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:24,139 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:26,358 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:26,359 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:30,826 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:30,827 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:30,827 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:31,052 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:31,053 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:33,275 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:33,275 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:37,507 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:37,508 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:37,508 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:37,754 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:37,757 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:39,968 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:39,969 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:44,195 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:44,195 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:44,195 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:44,457 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:44,458 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:46,686 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:46,687 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:50,934 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:50,935 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:50,935 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:50,975 [INFO] Saved 350 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:24:50,976 [INFO]   Progress: 350/100 runs
+2026-06-25 19:24:51,272 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:51,273 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:53,506 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:53,506 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:57,733 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:57,734 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:57,734 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:24:57,973 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:24:57,973 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:00,208 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:00,208 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:04,465 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:04,467 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:04,469 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:04,689 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:04,690 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:06,932 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:06,934 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:11,188 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:11,189 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:11,189 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:11,471 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:11,472 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:13,716 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:13,717 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:18,138 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:18,139 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:18,139 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:18,378 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:18,380 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:20,695 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:20,698 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:24,906 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:24,906 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:24,906 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:24,922 [INFO] Saved 355 results to data/results/phase5_pilot/multi_model_results_latest.json
+2026-06-25 19:25:24,922 [INFO]   Progress: 355/100 runs
+2026-06-25 19:25:25,175 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:25,176 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:28,190 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:28,190 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:32,593 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:32,593 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:32,594 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:32,830 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:32,832 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:35,054 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:35,055 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:39,320 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:25:39,320 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:25:39,320 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
