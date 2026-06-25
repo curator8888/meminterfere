@@ -30,7 +30,7 @@ def _load_skills():
     if _SKILL_LIBRARY is not None:
         return _SKILL_LIBRARY
     
-    json_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'skills', 'skill_library.json')
+    json_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'skills', 'expanded_library_100.json')
     with open(json_path) as f:
         data = json.load(f)
     _SKILL_LIBRARY = [Skill(**{k: v for k, v in s.items() if k in Skill.__dataclass_fields__}) for s in data['skills']]
@@ -118,6 +118,11 @@ def get_library_for_condition(condition: Condition, session: int = 0) -> list[Sk
             all_additions.extend(schedule[i])
         
         return base + all_additions
+    elif cv in ("gold_retrieval", "rag_retrieval_k1", "rag_retrieval_k3",
+                "rag_retrieval_k5", "rag_retrieval_k10"):
+        # Phase 5.3 retrieval tracks: return all skills
+        # The retrieval simulator will filter per-task
+        return clean + interference + stale + trap
     else:
         raise ValueError(f"Unknown condition: {condition}")
 

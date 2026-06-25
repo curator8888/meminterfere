@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "timestamp": "20260625_171923",
+    "mode": "mock",
+    "models": [
+      "grok-3-mini"
+    ],
+    "conditions": [
+      "clean_interference"
+    ],
+    "temperatures": [
+      0.0
+    ],
+    "num_tasks": 5,
+    "seed": 42
+  },
+  "results": [
+    {
+      "run_id": "mock_grok-3-mini_web_easy_001_clean_interference_T0.0",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_001",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1626,
+      "timestamp": "2026-06-25T17:19:23.789909",
+      "prompt_tokens": 325,
+      "completion_tokens": 107,
+      "total_tokens": 392,
+      "prompt_text": "[MOCK]",
+      "raw_response": "{\"tool\": \"get_data_from_page\", \"confidence\": 0.51, \"approach\": \"Use get_data_from_page to accomplish the task\"}",
+      "parsed_tool": "get_data_from_page",
+      "parsed_confidence": 0.51,
+      "parsed_approach": "Use get_data_from_page to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "get_data_from_page"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_002_clean_interference_T0.0",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_002",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 2733,
+      "timestamp": "2026-06-25T17:19:23.790438",
+      "prompt_tokens": 244,
+      "completion_tokens": 158,
+      "total_tokens": 282,
+      "prompt_text": "[MOCK]",
+      "raw_response": "{\"tool\": \"compose_email\", \"confidence\": 0.84, \"approach\": \"Use compose_email to accomplish the task\"}",
+      "parsed_tool": "compose_email",
+      "parsed_confidence": 0.84,
+      "parsed_approach": "Use compose_email to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "compose_email"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_003_clean_interference_T0.0",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_003",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 2569,
+      "timestamp": "2026-06-25T17:19:23.790761",
+      "prompt_tokens": 508,
+      "completion_tokens": 56,
+      "total_tokens": 453,
+      "prompt_text": "[MOCK]",
+      "raw_response": "{\"tool\": \"navigate_url\", \"confidence\": 0.61, \"approach\": \"Use navigate_url to accomplish the task\"}",
+      "parsed_tool": "navigate_url",
+      "parsed_confidence": 0.61,
+      "parsed_approach": "Use navigate_url to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "navigate_url"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_004_clean_interference_T0.0",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_004",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1402,
+      "timestamp": "2026-06-25T17:19:23.792260",
+      "prompt_tokens": 429,
+      "completion_tokens": 200,
+      "total_tokens": 534,
+      "prompt_text": "[MOCK]",
+      "raw_response": "I'm not sure what to do here. Let me think about it more carefully.",
+      "parsed_tool": "PARSE_ERROR",
+      "parsed_confidence": 0.0,
+      "parsed_approach": "",
+      "parse_method": "parse_error",
+      "all_matched_skills": [],
+      "expected_skills": [
+        "extract_links"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_005_clean_interference_T0.0",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_005",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1153,
+      "timestamp": "2026-06-25T17:19:23.792584",
+      "prompt_tokens": 557,
+      "completion_tokens": 158,
+      "total_tokens": 598,
+      "prompt_text": "[MOCK]",
+      "raw_response": "{\"tool\": \"navigate_url\", \"confidence\": 0.88, \"approach\": \"Use navigate_url to accomplish the task\"}",
+      "parsed_tool": "navigate_url",
+      "parsed_confidence": 0.88,
+      "parsed_approach": "Use navigate_url to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "navigate_url"
+      ],
+      "expected_skills": [
+        "extract_metadata"
+      ],
+      "skill_correct": false,
+      "error": ""
+    }
+  ]
+}

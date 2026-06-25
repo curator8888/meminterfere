@@ -1,0 +1,660 @@
+{
+  "metadata": {
+    "timestamp": "20260625_172014",
+    "mode": "mock",
+    "models": [
+      "grok-3-mini",
+      "gpt-4o-mini"
+    ],
+    "conditions": [
+      "clean_memory",
+      "clean_interference"
+    ],
+    "temperatures": [
+      0.0,
+      0.3
+    ],
+    "num_tasks": 3,
+    "seed": 42
+  },
+  "results": [
+    {
+      "run_id": "mock_grok-3-mini_web_easy_001_clean_memory_T0.0",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_001",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 1626,
+      "timestamp": "2026-06-25T17:20:14.765076",
+      "prompt_tokens": 325,
+      "completion_tokens": 107,
+      "total_tokens": 392,
+      "prompt_text": "[MOCK]",
+      "raw_response": "{\"tool\": \"write_file\", \"confidence\": 0.51, \"approach\": \"Use write_file to accomplish the task\"}",
+      "parsed_tool": "write_file",
+      "parsed_confidence": 0.51,
+      "parsed_approach": "Use write_file to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "write_file"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_002_clean_memory_T0.0",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_002",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 2733,
+      "timestamp": "2026-06-25T17:20:14.765408",
+      "prompt_tokens": 244,
+      "completion_tokens": 158,
+      "total_tokens": 282,
+      "prompt_text": "[MOCK]",
+      "raw_response": "{\"tool\": \"get_stock_price\", \"confidence\": 0.84, \"approach\": \"Use get_stock_price to accomplish the task\"}",
+      "parsed_tool": "get_stock_price",
+      "parsed_confidence": 0.84,
+      "parsed_approach": "Use get_stock_price to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "get_stock_price"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_003_clean_memory_T0.0",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_003",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 2569,
+      "timestamp": "2026-06-25T17:20:14.765695",
+      "prompt_tokens": 508,
+      "completion_tokens": 56,
+      "total_tokens": 453,
+      "prompt_text": "[MOCK]",
+      "raw_response": "{\"tool\": \"search_web\", \"confidence\": 0.61, \"approach\": \"Use search_web to accomplish the task\"}",
+      "parsed_tool": "search_web",
+      "parsed_confidence": 0.61,
+      "parsed_approach": "Use search_web to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "search_web"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_001_clean_interference_T0.0",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_001",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1402,
+      "timestamp": "2026-06-25T17:20:14.768401",
+      "prompt_tokens": 429,
+      "completion_tokens": 200,
+      "total_tokens": 534,
+      "prompt_text": "[MOCK]",
+      "raw_response": "I'm not sure what to do here. Let me think about it more carefully.",
+      "parsed_tool": "PARSE_ERROR",
+      "parsed_confidence": 0.0,
+      "parsed_approach": "",
+      "parse_method": "parse_error",
+      "all_matched_skills": [],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_002_clean_interference_T0.0",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_002",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1153,
+      "timestamp": "2026-06-25T17:20:14.768725",
+      "prompt_tokens": 557,
+      "completion_tokens": 158,
+      "total_tokens": 598,
+      "prompt_text": "[MOCK]",
+      "raw_response": "{\"tool\": \"navigate_url\", \"confidence\": 0.88, \"approach\": \"Use navigate_url to accomplish the task\"}",
+      "parsed_tool": "navigate_url",
+      "parsed_confidence": 0.88,
+      "parsed_approach": "Use navigate_url to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "navigate_url"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_003_clean_interference_T0.0",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_003",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1878,
+      "timestamp": "2026-06-25T17:20:14.769001",
+      "prompt_tokens": 252,
+      "completion_tokens": 73,
+      "total_tokens": 639,
+      "prompt_text": "[MOCK]",
+      "raw_response": "TOOL: send_email\nCONFIDENCE: 0.61\nAPPROACH: I will use send_email for this task",
+      "parsed_tool": "send_email",
+      "parsed_confidence": 0.61,
+      "parsed_approach": "I will use send_email for this task",
+      "parse_method": "regex",
+      "all_matched_skills": [
+        "send_email"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_001_clean_memory_T0.3",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_001",
+      "condition": "clean_memory",
+      "temperature": 0.3,
+      "latency_ms": 1908,
+      "timestamp": "2026-06-25T17:20:14.769463",
+      "prompt_tokens": 509,
+      "completion_tokens": 117,
+      "total_tokens": 294,
+      "prompt_text": "[MOCK]",
+      "raw_response": "I think we should use the extract_links skill here to get the information needed.",
+      "parsed_tool": "extract_links",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "extract_links"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_002_clean_memory_T0.3",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_002",
+      "condition": "clean_memory",
+      "temperature": 0.3,
+      "latency_ms": 2696,
+      "timestamp": "2026-06-25T17:20:14.770026",
+      "prompt_tokens": 263,
+      "completion_tokens": 146,
+      "total_tokens": 330,
+      "prompt_text": "[MOCK]",
+      "raw_response": "I'm not sure what to do here. Let me think about it more carefully.",
+      "parsed_tool": "PARSE_ERROR",
+      "parsed_confidence": 0.0,
+      "parsed_approach": "",
+      "parse_method": "parse_error",
+      "all_matched_skills": [],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_003_clean_memory_T0.3",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_003",
+      "condition": "clean_memory",
+      "temperature": 0.3,
+      "latency_ms": 1981,
+      "timestamp": "2026-06-25T17:20:14.770407",
+      "prompt_tokens": 495,
+      "completion_tokens": 99,
+      "total_tokens": 321,
+      "prompt_text": "[MOCK]",
+      "raw_response": "I think we should use the send_email skill here to get the information needed.",
+      "parsed_tool": "send_email",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "send_email"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_001_clean_interference_T0.3",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_001",
+      "condition": "clean_interference",
+      "temperature": 0.3,
+      "latency_ms": 826,
+      "timestamp": "2026-06-25T17:20:14.770725",
+      "prompt_tokens": 319,
+      "completion_tokens": 75,
+      "total_tokens": 639,
+      "prompt_text": "[MOCK]",
+      "raw_response": "TOOL: scrape_page\nCONFIDENCE: 0.89\nAPPROACH: I will use scrape_page for this task",
+      "parsed_tool": "scrape_page",
+      "parsed_confidence": 0.89,
+      "parsed_approach": "I will use scrape_page for this task",
+      "parse_method": "regex",
+      "all_matched_skills": [
+        "scrape_page"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_002_clean_interference_T0.3",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_002",
+      "condition": "clean_interference",
+      "temperature": 0.3,
+      "latency_ms": 1994,
+      "timestamp": "2026-06-25T17:20:14.771138",
+      "prompt_tokens": 283,
+      "completion_tokens": 144,
+      "total_tokens": 613,
+      "prompt_text": "[MOCK]",
+      "raw_response": "I'm not sure what to do here. Let me think about it more carefully.",
+      "parsed_tool": "PARSE_ERROR",
+      "parsed_confidence": 0.0,
+      "parsed_approach": "",
+      "parse_method": "parse_error",
+      "all_matched_skills": [],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_grok-3-mini_web_easy_003_clean_interference_T0.3",
+      "model": "grok-3-mini",
+      "model_id": "mock-grok-3-mini",
+      "task_id": "web_easy_003",
+      "condition": "clean_interference",
+      "temperature": 0.3,
+      "latency_ms": 792,
+      "timestamp": "2026-06-25T17:20:14.771396",
+      "prompt_tokens": 511,
+      "completion_tokens": 93,
+      "total_tokens": 796,
+      "prompt_text": "[MOCK]",
+      "raw_response": "I think we should use the read_rss skill here to get the information needed.",
+      "parsed_tool": "read_rss",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "read_rss"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_gpt-4o-mini_web_easy_001_clean_memory_T0.0",
+      "model": "gpt-4o-mini",
+      "model_id": "mock-openai/gpt-4o-mini",
+      "task_id": "web_easy_001",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 2054,
+      "timestamp": "2026-06-25T17:20:14.771880",
+      "prompt_tokens": 338,
+      "completion_tokens": 192,
+      "total_tokens": 474,
+      "prompt_text": "[MOCK]",
+      "raw_response": "TOOL: get_stock_price\nCONFIDENCE: 0.58\nAPPROACH: I will use get_stock_price for this task",
+      "parsed_tool": "get_stock_price",
+      "parsed_confidence": 0.58,
+      "parsed_approach": "I will use get_stock_price for this task",
+      "parse_method": "regex",
+      "all_matched_skills": [
+        "get_stock_price"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_gpt-4o-mini_web_easy_002_clean_memory_T0.0",
+      "model": "gpt-4o-mini",
+      "model_id": "mock-openai/gpt-4o-mini",
+      "task_id": "web_easy_002",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 729,
+      "timestamp": "2026-06-25T17:20:14.772125",
+      "prompt_tokens": 317,
+      "completion_tokens": 58,
+      "total_tokens": 573,
+      "prompt_text": "[MOCK]",
+      "raw_response": "I think we should use the query_database skill here to get the information needed.",
+      "parsed_tool": "query_database",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "query_database"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_gpt-4o-mini_web_easy_003_clean_memory_T0.0",
+      "model": "gpt-4o-mini",
+      "model_id": "mock-openai/gpt-4o-mini",
+      "task_id": "web_easy_003",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 771,
+      "timestamp": "2026-06-25T17:20:14.772362",
+      "prompt_tokens": 308,
+      "completion_tokens": 195,
+      "total_tokens": 572,
+      "prompt_text": "[MOCK]",
+      "raw_response": "I think we should use the check_website_status skill here to get the information needed.",
+      "parsed_tool": "check_website_status",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "check_website_status"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "mock_gpt-4o-mini_web_easy_001_clean_interference_T0.0",
+      "model": "gpt-4o-mini",
+      "model_id": "mock-openai/gpt-4o-mini",
+      "task_id": "web_easy_001",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 2120,
+      "timestamp": "2026-06-25T17:20:14.772747",
+      "prompt_tokens": 529,
+      "completion_tokens": 167,
+      "total_tokens": 396,
+      "prompt_text": "[MOCK]",
+      "raw_response": "I'm not sure what to do here. Let me think about it more carefully.",
+      "parsed_tool": "PARSE_ERROR",
+      "parsed_confidence": 0.0,
+      "parsed_approach": "",
+      "parse_method": "parse_error",
+      "all_matched_skills": [],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_gpt-4o-mini_web_easy_002_clean_interference_T0.0",
+      "model": "gpt-4o-mini",
+      "model_id": "mock-openai/gpt-4o-mini",
+      "task_id": "web_easy_002",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 2799,
+      "timestamp": "2026-06-25T17:20:14.773034",
+      "prompt_tokens": 475,
+      "completion_tokens": 117,
+      "total_tokens": 688,
+      "prompt_text": "[MOCK]",
+      "raw_response": "TOOL: list_events\nCONFIDENCE: 0.62\nAPPROACH: I will use list_events for this task",
+      "parsed_tool": "list_events",
+      "parsed_confidence": 0.62,
+      "parsed_approach": "I will use list_events for this task",
+      "parse_method": "regex",
+      "all_matched_skills": [
+        "list_events"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_gpt-4o-mini_web_easy_003_clean_interference_T0.0",
+      "model": "gpt-4o-mini",
+      "model_id": "mock-openai/gpt-4o-mini",
+      "task_id": "web_easy_003",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1982,
+      "timestamp": "2026-06-25T17:20:14.773625",
+      "prompt_tokens": 312,
+      "completion_tokens": 85,
+      "total_tokens": 771,
+      "prompt_text": "[MOCK]",
+      "raw_response": "I'm not sure what to do here. Let me think about it more carefully.",
+      "parsed_tool": "PARSE_ERROR",
+      "parsed_confidence": 0.0,
+      "parsed_approach": "",
+      "parse_method": "parse_error",
+      "all_matched_skills": [],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_gpt-4o-mini_web_easy_001_clean_memory_T0.3",
+      "model": "gpt-4o-mini",
+      "model_id": "mock-openai/gpt-4o-mini",
+      "task_id": "web_easy_001",
+      "condition": "clean_memory",
+      "temperature": 0.3,
+      "latency_ms": 949,
+      "timestamp": "2026-06-25T17:20:14.774102",
+      "prompt_tokens": 278,
+      "completion_tokens": 90,
+      "total_tokens": 682,
+      "prompt_text": "[MOCK]",
+      "raw_response": "{\"tool\": \"create_event\", \"confidence\": 0.88, \"approach\": \"Use create_event to accomplish the task\"}",
+      "parsed_tool": "create_event",
+      "parsed_confidence": 0.88,
+      "parsed_approach": "Use create_event to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "create_event"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_gpt-4o-mini_web_easy_002_clean_memory_T0.3",
+      "model": "gpt-4o-mini",
+      "model_id": "mock-openai/gpt-4o-mini",
+      "task_id": "web_easy_002",
+      "condition": "clean_memory",
+      "temperature": 0.3,
+      "latency_ms": 2940,
+      "timestamp": "2026-06-25T17:20:14.774520",
+      "prompt_tokens": 439,
+      "completion_tokens": 185,
+      "total_tokens": 507,
+      "prompt_text": "[MOCK]",
+      "raw_response": "{\"tool\": \"read_file\", \"confidence\": 0.69, \"approach\": \"Use read_file to accomplish the task\"}",
+      "parsed_tool": "read_file",
+      "parsed_confidence": 0.69,
+      "parsed_approach": "Use read_file to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "read_file"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_gpt-4o-mini_web_easy_003_clean_memory_T0.3",
+      "model": "gpt-4o-mini",
+      "model_id": "mock-openai/gpt-4o-mini",
+      "task_id": "web_easy_003",
+      "condition": "clean_memory",
+      "temperature": 0.3,
+      "latency_ms": 969,
+      "timestamp": "2026-06-25T17:20:14.775076",
+      "prompt_tokens": 549,
+      "completion_tokens": 187,
+      "total_tokens": 523,
+      "prompt_text": "[MOCK]",
+      "raw_response": "{\"tool\": \"send_email\", \"confidence\": 0.84, \"approach\": \"Use send_email to accomplish the task\"}",
+      "parsed_tool": "send_email",
+      "parsed_confidence": 0.84,
+      "parsed_approach": "Use send_email to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "send_email"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_gpt-4o-mini_web_easy_001_clean_interference_T0.3",
+      "model": "gpt-4o-mini",
+      "model_id": "mock-openai/gpt-4o-mini",
+      "task_id": "web_easy_001",
+      "condition": "clean_interference",
+      "temperature": 0.3,
+      "latency_ms": 956,
+      "timestamp": "2026-06-25T17:20:14.775436",
+      "prompt_tokens": 350,
+      "completion_tokens": 161,
+      "total_tokens": 411,
+      "prompt_text": "[MOCK]",
+      "raw_response": "I think we should use the query_database skill here to get the information needed.",
+      "parsed_tool": "query_database",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "query_database"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_gpt-4o-mini_web_easy_002_clean_interference_T0.3",
+      "model": "gpt-4o-mini",
+      "model_id": "mock-openai/gpt-4o-mini",
+      "task_id": "web_easy_002",
+      "condition": "clean_interference",
+      "temperature": 0.3,
+      "latency_ms": 1578,
+      "timestamp": "2026-06-25T17:20:14.775741",
+      "prompt_tokens": 456,
+      "completion_tokens": 95,
+      "total_tokens": 769,
+      "prompt_text": "[MOCK]",
+      "raw_response": "{\"tool\": \"calculate\", \"confidence\": 0.98, \"approach\": \"Use calculate to accomplish the task\"}",
+      "parsed_tool": "calculate",
+      "parsed_confidence": 0.98,
+      "parsed_approach": "Use calculate to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "calculate"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_gpt-4o-mini_web_easy_003_clean_interference_T0.3",
+      "model": "gpt-4o-mini",
+      "model_id": "mock-openai/gpt-4o-mini",
+      "task_id": "web_easy_003",
+      "condition": "clean_interference",
+      "temperature": 0.3,
+      "latency_ms": 2579,
+      "timestamp": "2026-06-25T17:20:14.776011",
+      "prompt_tokens": 511,
+      "completion_tokens": 100,
+      "total_tokens": 406,
+      "prompt_text": "[MOCK]",
+      "raw_response": "I think we should use the download_file skill here to get the information needed.",
+      "parsed_tool": "download_file",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "download_file"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": false,
+      "error": ""
+    }
+  ]
+}

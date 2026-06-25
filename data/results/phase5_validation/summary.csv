@@ -1,0 +1,9 @@
+model,condition,temperature,total_runs,parsed,parse_rate,correct,accuracy,errors,avg_latency_ms,avg_confidence,total_tokens
+grok-3-mini,clean_memory,0.0,3,3,1.0,0,0.0,0,2309.3,0.6533,1127
+grok-3-mini,clean_interference,0.0,3,2,0.6667,1,0.3333,0,1477.7,0.4967,1771
+grok-3-mini,clean_memory,0.3,3,2,0.6667,0,0.0,0,2195.0,0.3333,945
+grok-3-mini,clean_interference,0.3,3,2,0.6667,0,0.0,0,1204.0,0.4633,2048
+gpt-4o-mini,clean_memory,0.0,3,3,1.0,1,0.3333,0,1184.7,0.5267,1619
+gpt-4o-mini,clean_interference,0.0,3,1,0.3333,0,0.0,0,2300.3,0.2067,1855
+gpt-4o-mini,clean_memory,0.3,3,3,1.0,0,0.0,0,1619.3,0.8033,1712
+gpt-4o-mini,clean_interference,0.3,3,3,1.0,0,0.0,0,1704.3,0.66,1586

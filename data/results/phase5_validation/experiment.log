@@ -1,0 +1,43 @@
+2026-06-25 17:20:14,760 [INFO] Using 3 tasks
+2026-06-25 17:20:14,763 [INFO] Skill library sizes: clean_memory: 30, clean_interference: 58
+2026-06-25 17:20:14,763 [INFO] 
+============================================================
+2026-06-25 17:20:14,763 [INFO] Experiment Configuration
+2026-06-25 17:20:14,763 [INFO] ============================================================
+2026-06-25 17:20:14,763 [INFO] Models: grok-3-mini, gpt-4o-mini
+2026-06-25 17:20:14,763 [INFO] Conditions: clean_memory, clean_interference
+2026-06-25 17:20:14,763 [INFO] Temperatures: [0.0, 0.3]
+2026-06-25 17:20:14,763 [INFO] Tasks: 3
+2026-06-25 17:20:14,763 [INFO] Total runs: 24
+2026-06-25 17:20:14,764 [INFO]   grok-3-mini: ~$0.00 (xai)
+2026-06-25 17:20:14,764 [INFO]   gpt-4o-mini: ~$0.00 (openrouter)
+2026-06-25 17:20:14,764 [INFO]   Total estimated cost: $0.00
+2026-06-25 17:20:14,764 [INFO] 
+Running MOCK experiment (no API calls)
+2026-06-25 17:20:14,764 [INFO] Running MOCK experiment for model: grok-3-mini
+2026-06-25 17:20:14,771 [INFO] Running MOCK experiment for model: gpt-4o-mini
+2026-06-25 17:20:14,777 [INFO] Saved 24 mock results to data/results/phase5_validation/mock_results_20260625_172014.json
+2026-06-25 17:20:14,778 [INFO] Summary saved to data/results/phase5_validation/summary.csv and data/results/phase5_validation/summary.json
+2026-06-25 17:20:14,778 [INFO] 
+============================================================
+2026-06-25 17:20:14,778 [INFO] Experiment Complete
+2026-06-25 17:20:14,778 [INFO] ============================================================
+2026-06-25 17:20:14,778 [INFO] Total results: 24
+2026-06-25 17:20:14,779 [INFO] 
+Parse Statistics:
+2026-06-25 17:20:14,779 [INFO]   Total: 24
+2026-06-25 17:20:14,779 [INFO]   JSON: 8 (33.3%)
+2026-06-25 17:20:14,779 [INFO]   Regex: 4 (16.7%)
+2026-06-25 17:20:14,779 [INFO]   Freeform: 7 (29.2%)
+2026-06-25 17:20:14,779 [INFO]   Parse errors: 5 (20.8%)
+2026-06-25 17:20:14,779 [INFO]   Overall parse rate: 79.2%
+2026-06-25 17:20:14,779 [INFO] 
+  gpt-4o-mini:
+2026-06-25 17:20:14,779 [INFO]     Total: 12, Parsed: 10/12 (83.3%)
+2026-06-25 17:20:14,779 [INFO]     Correct (skill match): 1/12 (8.3%)
+2026-06-25 17:20:14,779 [INFO]     Avg latency: 1702ms
+2026-06-25 17:20:14,779 [INFO] 
+  grok-3-mini:
+2026-06-25 17:20:14,780 [INFO]     Total: 12, Parsed: 9/12 (75.0%)
+2026-06-25 17:20:14,780 [INFO]     Correct (skill match): 1/12 (8.3%)
+2026-06-25 17:20:14,780 [INFO]     Avg latency: 1796ms

@@ -1,0 +1,13 @@
+{
+  "grok-3-mini|clean_interference|T=0.0": {
+    "total_runs": 5,
+    "parsed": 4,
+    "parse_rate": 0.8,
+    "correct": 0,
+    "accuracy": 0.0,
+    "errors": 0,
+    "avg_latency_ms": 1896.6,
+    "avg_confidence": 0.568,
+    "total_tokens": 2259
+  }
+}

@@ -4,21 +4,27 @@
     "date": "2026-06-25",
     "description": "MemInterfere skill library with controlled interference",
     "stats": {
-      "total": 68,
+      "total": 75,
       "clean": 30,
-      "interference": 23,
+      "interference": 30,
       "stale": 10,
       "trap": 5,
+      "by_domain": {
+        "web_navigation": 37,
+        "api_calling": 38
+      },
       "by_conflict_type": {
         "none": 45,
-        "schema_conflict": 7,
-        "semantic_conflict": 5,
-        "near_duplicate": 5,
-        "version_conflict": 6
+        "schema_conflict": 5,
+        "semantic_conflict": 10,
+        "near_duplicate": 10,
+        "version_conflict": 5
       },
-      "by_domain": {
-        "web_navigation": 36,
-        "api_calling": 32
+      "by_staleness": {
+        "1": 2,
+        "7": 2,
+        "30": 2,
+        "180": 4
       }
     }
   },
@@ -42,7 +48,7 @@
       "return_format": "json_list",
       "success_rate": 0.95,
       "last_verified": "2026-06-20",
-      "conflict_group_id": null,
+      "conflict_group_id": "search_web_group",
       "conflict_type": "none",
       "fan_degree": 1,
       "staleness_days": 0,
@@ -481,6 +487,670 @@
       "example_usage": ""
     },
     {
+      "skill_id": "53f6900331d0",
+      "name": "search_web",
+      "domain": "web_navigation",
+      "description": "Search the web for information using advanced search engine",
+      "parameters": {
+        "q": {
+          "type": "string",
+          "required": true
+        },
+        "num_results": {
+          "type": "integer",
+          "required": false,
+          "default": 10
+        },
+        "safe_mode": {
+          "type": "boolean",
+          "required": false,
+          "default": true
+        }
+      },
+      "return_format": "json_list",
+      "success_rate": 0.78,
+      "last_verified": "2026-03-01",
+      "conflict_group_id": "search_web_group",
+      "conflict_type": "schema_conflict",
+      "fan_degree": 3,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": true,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "29f2d5eaf796",
+      "name": "navigate_url",
+      "domain": "web_navigation",
+      "description": "Navigate to a URL and extract content with advanced options",
+      "parameters": {
+        "address": {
+          "type": "string",
+          "required": true
+        },
+        "mode": {
+          "type": "string",
+          "required": true,
+          "enum": [
+            "article",
+            "raw",
+            "structured"
+          ]
+        },
+        "timeout": {
+          "type": "integer",
+          "required": false
+        }
+      },
+      "return_format": "json_object",
+      "success_rate": 0.72,
+      "last_verified": "2026-02-15",
+      "conflict_group_id": "navigate_url_group",
+      "conflict_type": "schema_conflict",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "0c11f729143e",
+      "name": "scrape_page",
+      "domain": "web_navigation",
+      "description": "Scrape data from a page using XPath selectors",
+      "parameters": {
+        "page_url": {
+          "type": "string",
+          "required": true
+        },
+        "xpath": {
+          "type": "string",
+          "required": true
+        },
+        "output_format": {
+          "type": "string",
+          "required": false,
+          "default": "csv"
+        }
+      },
+      "return_format": "csv_string",
+      "success_rate": 0.68,
+      "last_verified": "2026-01-20",
+      "conflict_group_id": "scrape_page_group",
+      "conflict_type": "schema_conflict",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "ff7495aa6fe8",
+      "name": "fill_form",
+      "domain": "web_navigation",
+      "description": "Fill out a web form using field mapping",
+      "parameters": {
+        "page_url": {
+          "type": "string",
+          "required": true
+        },
+        "field_map": {
+          "type": "object",
+          "required": true
+        },
+        "click_submit": {
+          "type": "boolean",
+          "required": false,
+          "default": true
+        }
+      },
+      "return_format": "json_status",
+      "success_rate": 0.7,
+      "last_verified": "2026-04-01",
+      "conflict_group_id": "fill_form_group",
+      "conflict_type": "schema_conflict",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "709e133e2978",
+      "name": "download_file",
+      "domain": "web_navigation",
+      "description": "Download a file with resume support",
+      "parameters": {
+        "file_url": {
+          "type": "string",
+          "required": true
+        },
+        "save_as": {
+          "type": "string",
+          "required": false
+        },
+        "resume": {
+          "type": "boolean",
+          "required": false,
+          "default": false
+        }
+      },
+      "return_format": "json_progress",
+      "success_rate": 0.75,
+      "last_verified": "2026-03-10",
+      "conflict_group_id": "download_file_group",
+      "conflict_type": "schema_conflict",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "45f2a2be4485",
+      "name": "search_web",
+      "domain": "web_navigation",
+      "description": "Search the web and return results as CSV instead of JSON",
+      "parameters": {
+        "query": {
+          "type": "string",
+          "required": true
+        },
+        "limit": {
+          "type": "integer",
+          "required": false,
+          "default": 10
+        }
+      },
+      "return_format": "csv_string",
+      "success_rate": 0.8,
+      "last_verified": "2026-02-28",
+      "conflict_group_id": "search_web_group",
+      "conflict_type": "semantic_conflict",
+      "fan_degree": 3,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": true,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "ae33eef3489c",
+      "name": "navigate_url",
+      "domain": "web_navigation",
+      "description": "Navigate to a URL and return raw HTML instead of parsed content",
+      "parameters": {
+        "url": {
+          "type": "string",
+          "required": true
+        },
+        "extract_mode": {
+          "type": "string",
+          "required": false,
+          "default": "raw"
+        }
+      },
+      "return_format": "html_string",
+      "success_rate": 0.76,
+      "last_verified": "2026-01-15",
+      "conflict_group_id": "navigate_url_group",
+      "conflict_type": "semantic_conflict",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "bcea125016e9",
+      "name": "scrape_page",
+      "domain": "web_navigation",
+      "description": "Scrape data but return only the first match instead of all matches",
+      "parameters": {
+        "url": {
+          "type": "string",
+          "required": true
+        },
+        "selector": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "return_format": "json_single",
+      "success_rate": 0.82,
+      "last_verified": "2026-03-05",
+      "conflict_group_id": "scrape_page_group",
+      "conflict_type": "semantic_conflict",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "941361c2d5d7",
+      "name": "summarize_page",
+      "domain": "web_navigation",
+      "description": "Summarize a page but output bullet points instead of paragraphs",
+      "parameters": {
+        "url": {
+          "type": "string",
+          "required": true
+        },
+        "format": {
+          "type": "string",
+          "required": false,
+          "default": "bullets"
+        }
+      },
+      "return_format": "bullet_list",
+      "success_rate": 0.79,
+      "last_verified": "2026-02-10",
+      "conflict_group_id": "summarize_page_group",
+      "conflict_type": "semantic_conflict",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "97e74c389683",
+      "name": "monitor_page",
+      "domain": "web_navigation",
+      "description": "Monitor a page but return boolean change status instead of full diff",
+      "parameters": {
+        "url": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "return_format": "json_boolean",
+      "success_rate": 0.84,
+      "last_verified": "2026-04-15",
+      "conflict_group_id": "monitor_page_group",
+      "conflict_type": "semantic_conflict",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "7f34aee272ac",
+      "name": "find_information",
+      "domain": "web_navigation",
+      "description": "Find information on the web (similar to search but with broader scope)",
+      "parameters": {
+        "topic": {
+          "type": "string",
+          "required": true
+        },
+        "depth": {
+          "type": "string",
+          "required": false,
+          "default": "overview"
+        }
+      },
+      "return_format": "json_list",
+      "success_rate": 0.81,
+      "last_verified": "2026-03-20",
+      "conflict_group_id": "search_web_group",
+      "conflict_type": "near_duplicate",
+      "fan_degree": 3,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "d5db117199b4",
+      "name": "browse_website",
+      "domain": "web_navigation",
+      "description": "Browse a website and read its content (similar to navigate_url but with scrolling)",
+      "parameters": {
+        "url": {
+          "type": "string",
+          "required": true
+        },
+        "scroll_depth": {
+          "type": "integer",
+          "required": false,
+          "default": 3
+        }
+      },
+      "return_format": "markdown",
+      "success_rate": 0.83,
+      "last_verified": "2026-02-25",
+      "conflict_group_id": "navigate_url_group",
+      "conflict_type": "near_duplicate",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "4f098082b727",
+      "name": "get_data_from_page",
+      "domain": "web_navigation",
+      "description": "Extract specific data from a web page (similar to scrape_page but auto-detects selectors)",
+      "parameters": {
+        "url": {
+          "type": "string",
+          "required": true
+        },
+        "data_type": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "return_format": "json_list",
+      "success_rate": 0.77,
+      "last_verified": "2026-01-30",
+      "conflict_group_id": "scrape_page_group",
+      "conflict_type": "near_duplicate",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "09b893e33dc1",
+      "name": "quick_summary",
+      "domain": "web_navigation",
+      "description": "Get a quick summary of a web page (similar to summarize_page but shorter)",
+      "parameters": {
+        "url": {
+          "type": "string",
+          "required": true
+        },
+        "max_sentences": {
+          "type": "integer",
+          "required": false,
+          "default": 3
+        }
+      },
+      "return_format": "text",
+      "success_rate": 0.88,
+      "last_verified": "2026-04-10",
+      "conflict_group_id": "summarize_page_group",
+      "conflict_type": "near_duplicate",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "4f1b06d69fe0",
+      "name": "fetch_file",
+      "domain": "web_navigation",
+      "description": "Fetch a file from a URL (similar to download_file but streams)",
+      "parameters": {
+        "url": {
+          "type": "string",
+          "required": true
+        },
+        "chunk_size": {
+          "type": "integer",
+          "required": false,
+          "default": 8192
+        }
+      },
+      "return_format": "file_path",
+      "success_rate": 0.86,
+      "last_verified": "2026-03-15",
+      "conflict_group_id": "download_file_group",
+      "conflict_type": "near_duplicate",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "c910af7fa9c2",
+      "name": "search_web_v0",
+      "domain": "web_navigation",
+      "description": "Search the web (v0 API - recently deprecated)",
+      "parameters": {
+        "query": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "return_format": "xml_string",
+      "success_rate": 0.6,
+      "last_verified": "2026-06-24",
+      "conflict_group_id": "search_web_group",
+      "conflict_type": "none",
+      "fan_degree": 4,
+      "staleness_days": 1,
+      "is_trap": false,
+      "is_stale": true,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "16202ad7e377",
+      "name": "navigate_url_v1",
+      "domain": "web_navigation",
+      "description": "Navigate to URL (v1 API - auth header changed last week)",
+      "parameters": {
+        "url": {
+          "type": "string",
+          "required": true
+        },
+        "auth_token": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "return_format": "markdown",
+      "success_rate": 0.55,
+      "last_verified": "2026-06-18",
+      "conflict_group_id": "navigate_url_group",
+      "conflict_type": "none",
+      "fan_degree": 3,
+      "staleness_days": 7,
+      "is_trap": false,
+      "is_stale": true,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "6abfa3a0c92f",
+      "name": "scrape_page_v0",
+      "domain": "web_navigation",
+      "description": "Scrape page (v0 API - CSS selector syntax changed)",
+      "parameters": {
+        "url": {
+          "type": "string",
+          "required": true
+        },
+        "selector": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "return_format": "text_string",
+      "success_rate": 0.45,
+      "last_verified": "2026-05-25",
+      "conflict_group_id": "scrape_page_group",
+      "conflict_type": "none",
+      "fan_degree": 3,
+      "staleness_days": 30,
+      "is_trap": false,
+      "is_stale": true,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "3527e20f0fd8",
+      "name": "fill_form_v0",
+      "domain": "web_navigation",
+      "description": "Fill form (v0 API - form field names changed)",
+      "parameters": {
+        "url": {
+          "type": "string",
+          "required": true
+        },
+        "data": {
+          "type": "object",
+          "required": true
+        }
+      },
+      "return_format": "json",
+      "success_rate": 0.35,
+      "last_verified": "2025-12-25",
+      "conflict_group_id": "fill_form_group",
+      "conflict_type": "none",
+      "fan_degree": 3,
+      "staleness_days": 180,
+      "is_trap": false,
+      "is_stale": true,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "aec3b01d5828",
+      "name": "download_file_v0",
+      "domain": "web_navigation",
+      "description": "Download file (v0 API - URL parameter renamed)",
+      "parameters": {
+        "source_url": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "return_format": "file_path",
+      "success_rate": 0.4,
+      "last_verified": "2025-12-20",
+      "conflict_group_id": "download_file_group",
+      "conflict_type": "none",
+      "fan_degree": 3,
+      "staleness_days": 180,
+      "is_trap": false,
+      "is_stale": true,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "faace0efd74f",
+      "name": "search_web_fast",
+      "domain": "web_navigation",
+      "description": "Fast web search that skips verification for speed",
+      "parameters": {
+        "query": {
+          "type": "string",
+          "required": true
+        },
+        "limit": {
+          "type": "integer",
+          "required": false,
+          "default": 10
+        }
+      },
+      "return_format": "json_list",
+      "success_rate": 0.92,
+      "last_verified": "2026-06-20",
+      "conflict_group_id": null,
+      "conflict_type": "none",
+      "fan_degree": 1,
+      "staleness_days": 0,
+      "is_trap": true,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "Returns fabricated results when API rate-limited; mixes real and fake URLs",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "86b6b1cd3336",
+      "name": "scrape_page_quick",
+      "domain": "web_navigation",
+      "description": "Quick scrape that extracts data without JavaScript rendering",
+      "parameters": {
+        "url": {
+          "type": "string",
+          "required": true
+        },
+        "selector": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "return_format": "json_list",
+      "success_rate": 0.9,
+      "last_verified": "2026-06-15",
+      "conflict_group_id": null,
+      "conflict_type": "none",
+      "fan_degree": 1,
+      "staleness_days": 0,
+      "is_trap": true,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "Silently drops 30% of results from JS-rendered pages without indicating incompleteness",
+      "example_usage": ""
+    },
+    {
       "skill_id": "dabce42a2ca9",
       "name": "create_event",
       "domain": "api_calling",
@@ -612,9 +1282,9 @@
       "return_format": "json_list",
       "success_rate": 0.91,
       "last_verified": "2026-06-17",
-      "conflict_group_id": "read_emails_group",
+      "conflict_group_id": null,
       "conflict_type": "none",
-      "fan_degree": 2,
+      "fan_degree": 1,
       "staleness_days": 0,
       "is_trap": false,
       "is_stale": false,
@@ -642,9 +1312,9 @@
       "return_format": "text",
       "success_rate": 0.97,
       "last_verified": "2026-06-20",
-      "conflict_group_id": "read_file_group",
+      "conflict_group_id": null,
       "conflict_type": "none",
-      "fan_degree": 2,
+      "fan_degree": 1,
       "staleness_days": 0,
       "is_trap": false,
       "is_stale": false,
@@ -741,9 +1411,9 @@
       "return_format": "json",
       "success_rate": 0.96,
       "last_verified": "2026-06-20",
-      "conflict_group_id": "get_weather_group",
+      "conflict_group_id": null,
       "conflict_type": "none",
-      "fan_degree": 2,
+      "fan_degree": 1,
       "staleness_days": 0,
       "is_trap": false,
       "is_stale": false,
@@ -770,9 +1440,9 @@
       "return_format": "json",
       "success_rate": 0.94,
       "last_verified": "2026-06-19",
-      "conflict_group_id": "get_stock_price_group",
+      "conflict_group_id": null,
       "conflict_type": "none",
-      "fan_degree": 2,
+      "fan_degree": 1,
       "staleness_days": 0,
       "is_trap": false,
       "is_stale": false,
@@ -968,359 +1638,6 @@
       "example_usage": ""
     },
     {
-      "skill_id": "53f6900331d0",
-      "name": "search_web",
-      "domain": "web_navigation",
-      "description": "Search the web for information using advanced search engine",
-      "parameters": {
-        "q": {
-          "type": "string",
-          "required": true
-        },
-        "num_results": {
-          "type": "integer",
-          "required": false,
-          "default": 10
-        },
-        "safe_mode": {
-          "type": "boolean",
-          "required": false,
-          "default": true
-        }
-      },
-      "return_format": "json_list",
-      "success_rate": 0.78,
-      "last_verified": "2026-03-01",
-      "conflict_group_id": "search_web_group",
-      "conflict_type": "schema_conflict",
-      "fan_degree": 5,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": true,
-      "trap_description": "",
-      "example_usage": ""
-    },
-    {
-      "skill_id": "29f2d5eaf796",
-      "name": "navigate_url",
-      "domain": "web_navigation",
-      "description": "Navigate to a URL and extract content with advanced options",
-      "parameters": {
-        "address": {
-          "type": "string",
-          "required": true
-        },
-        "mode": {
-          "type": "string",
-          "required": true,
-          "enum": [
-            "article",
-            "raw",
-            "structured"
-          ]
-        },
-        "timeout": {
-          "type": "integer",
-          "required": false
-        }
-      },
-      "return_format": "json_object",
-      "success_rate": 0.72,
-      "last_verified": "2026-02-15",
-      "conflict_group_id": "navigate_url_group",
-      "conflict_type": "schema_conflict",
-      "fan_degree": 5,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": "",
-      "example_usage": ""
-    },
-    {
-      "skill_id": "0c11f729143e",
-      "name": "scrape_page",
-      "domain": "web_navigation",
-      "description": "Scrape data from a page using XPath selectors",
-      "parameters": {
-        "page_url": {
-          "type": "string",
-          "required": true
-        },
-        "xpath": {
-          "type": "string",
-          "required": true
-        },
-        "output_format": {
-          "type": "string",
-          "required": false,
-          "default": "csv"
-        }
-      },
-      "return_format": "csv_string",
-      "success_rate": 0.68,
-      "last_verified": "2026-01-20",
-      "conflict_group_id": "scrape_page_group",
-      "conflict_type": "schema_conflict",
-      "fan_degree": 5,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": "",
-      "example_usage": ""
-    },
-    {
-      "skill_id": "ff7495aa6fe8",
-      "name": "fill_form",
-      "domain": "web_navigation",
-      "description": "Fill out a web form using field mapping",
-      "parameters": {
-        "page_url": {
-          "type": "string",
-          "required": true
-        },
-        "field_map": {
-          "type": "object",
-          "required": true
-        },
-        "click_submit": {
-          "type": "boolean",
-          "required": false,
-          "default": true
-        }
-      },
-      "return_format": "json_status",
-      "success_rate": 0.7,
-      "last_verified": "2026-04-01",
-      "conflict_group_id": "fill_form_group",
-      "conflict_type": "schema_conflict",
-      "fan_degree": 2,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": "",
-      "example_usage": ""
-    },
-    {
-      "skill_id": "709e133e2978",
-      "name": "download_file",
-      "domain": "web_navigation",
-      "description": "Download a file with resume support",
-      "parameters": {
-        "file_url": {
-          "type": "string",
-          "required": true
-        },
-        "save_as": {
-          "type": "string",
-          "required": false
-        },
-        "resume": {
-          "type": "boolean",
-          "required": false,
-          "default": false
-        }
-      },
-      "return_format": "json_progress",
-      "success_rate": 0.75,
-      "last_verified": "2026-03-10",
-      "conflict_group_id": "download_file_group",
-      "conflict_type": "schema_conflict",
-      "fan_degree": 2,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": "",
-      "example_usage": ""
-    },
-    {
-      "skill_id": "45f2a2be4485",
-      "name": "search_web",
-      "domain": "web_navigation",
-      "description": "Search the web and return results as CSV instead of JSON",
-      "parameters": {
-        "query": {
-          "type": "string",
-          "required": true
-        },
-        "limit": {
-          "type": "integer",
-          "required": false,
-          "default": 10
-        }
-      },
-      "return_format": "csv_string",
-      "success_rate": 0.8,
-      "last_verified": "2026-02-28",
-      "conflict_group_id": "search_web_group",
-      "conflict_type": "semantic_conflict",
-      "fan_degree": 5,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": true,
-      "trap_description": "",
-      "example_usage": ""
-    },
-    {
-      "skill_id": "ae33eef3489c",
-      "name": "navigate_url",
-      "domain": "web_navigation",
-      "description": "Navigate to a URL and return raw HTML instead of parsed content",
-      "parameters": {
-        "url": {
-          "type": "string",
-          "required": true
-        },
-        "extract_mode": {
-          "type": "string",
-          "required": false,
-          "default": "raw"
-        }
-      },
-      "return_format": "html_string",
-      "success_rate": 0.76,
-      "last_verified": "2026-01-15",
-      "conflict_group_id": "navigate_url_group",
-      "conflict_type": "semantic_conflict",
-      "fan_degree": 5,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": "",
-      "example_usage": ""
-    },
-    {
-      "skill_id": "bcea125016e9",
-      "name": "scrape_page",
-      "domain": "web_navigation",
-      "description": "Scrape data but return only the first match instead of all matches",
-      "parameters": {
-        "url": {
-          "type": "string",
-          "required": true
-        },
-        "selector": {
-          "type": "string",
-          "required": true
-        }
-      },
-      "return_format": "json_single",
-      "success_rate": 0.82,
-      "last_verified": "2026-03-05",
-      "conflict_group_id": "scrape_page_group",
-      "conflict_type": "semantic_conflict",
-      "fan_degree": 5,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": "",
-      "example_usage": ""
-    },
-    {
-      "skill_id": "7f34aee272ac",
-      "name": "find_information",
-      "domain": "web_navigation",
-      "description": "Find information on the web (similar to search but with broader scope)",
-      "parameters": {
-        "topic": {
-          "type": "string",
-          "required": true
-        },
-        "depth": {
-          "type": "string",
-          "required": false,
-          "default": "overview"
-        }
-      },
-      "return_format": "json_list",
-      "success_rate": 0.81,
-      "last_verified": "2026-03-20",
-      "conflict_group_id": "search_web_group",
-      "conflict_type": "near_duplicate",
-      "fan_degree": 5,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": "",
-      "example_usage": ""
-    },
-    {
-      "skill_id": "d5db117199b4",
-      "name": "browse_website",
-      "domain": "web_navigation",
-      "description": "Browse a website and read its content (similar to navigate_url but with scrolling)",
-      "parameters": {
-        "url": {
-          "type": "string",
-          "required": true
-        },
-        "scroll_depth": {
-          "type": "integer",
-          "required": false,
-          "default": 3
-        }
-      },
-      "return_format": "markdown",
-      "success_rate": 0.83,
-      "last_verified": "2026-02-25",
-      "conflict_group_id": "navigate_url_group",
-      "conflict_type": "near_duplicate",
-      "fan_degree": 5,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": "",
-      "example_usage": ""
-    },
-    {
-      "skill_id": "4f098082b727",
-      "name": "get_data_from_page",
-      "domain": "web_navigation",
-      "description": "Extract specific data from a web page (similar to scrape_page but auto-detects selectors)",
-      "parameters": {
-        "url": {
-          "type": "string",
-          "required": true
-        },
-        "data_type": {
-          "type": "string",
-          "required": true
-        }
-      },
-      "return_format": "json_list",
-      "success_rate": 0.77,
-      "last_verified": "2026-01-30",
-      "conflict_group_id": "scrape_page_group",
-      "conflict_type": "near_duplicate",
-      "fan_degree": 5,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": "",
-      "example_usage": ""
-    },
-    {
       "skill_id": "474a73c885b0",
       "name": "create_event",
       "domain": "api_calling",
@@ -1385,7 +1702,7 @@
       "last_verified": "2026-02-20",
       "conflict_group_id": "send_email_group",
       "conflict_type": "version_conflict",
-      "fan_degree": 4,
+      "fan_degree": 2,
       "staleness_days": 0,
       "is_trap": false,
       "is_stale": false,
@@ -1417,6 +1734,72 @@
       "success_rate": 0.58,
       "last_verified": "2026-03-10",
       "conflict_group_id": "query_database_group",
+      "conflict_type": "version_conflict",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "896b2516dd63",
+      "name": "write_file",
+      "domain": "api_calling",
+      "description": "Write file (API v2 - uses content_type instead of mode)",
+      "parameters": {
+        "filepath": {
+          "type": "string",
+          "required": true
+        },
+        "data": {
+          "type": "string",
+          "required": true
+        },
+        "content_type": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "return_format": "json",
+      "success_rate": 0.7,
+      "last_verified": "2026-04-05",
+      "conflict_group_id": "write_file_group",
+      "conflict_type": "version_conflict",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "158f73e062c4",
+      "name": "create_task",
+      "domain": "api_calling",
+      "description": "Create task (API v2 - project_id required)",
+      "parameters": {
+        "project_id": {
+          "type": "string",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "due_date": {
+          "type": "string",
+          "required": false
+        }
+      },
+      "return_format": "json",
+      "success_rate": 0.67,
+      "last_verified": "2026-05-01",
+      "conflict_group_id": "create_task_group",
       "conflict_type": "version_conflict",
       "fan_degree": 2,
       "staleness_days": 0,
@@ -1477,6 +1860,92 @@
       "success_rate": 0.79,
       "last_verified": "2026-03-15",
       "conflict_group_id": "read_emails_group",
+      "conflict_type": "semantic_conflict",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "00e680200146",
+      "name": "get_weather",
+      "domain": "api_calling",
+      "description": "Get weather but return in imperial units by default",
+      "parameters": {
+        "location": {
+          "type": "string",
+          "required": true
+        },
+        "units": {
+          "type": "string",
+          "required": false,
+          "default": "imperial"
+        }
+      },
+      "return_format": "json",
+      "success_rate": 0.84,
+      "last_verified": "2026-04-01",
+      "conflict_group_id": "get_weather_group",
+      "conflict_type": "semantic_conflict",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "2c17b0a73d2b",
+      "name": "get_stock_price",
+      "domain": "api_calling",
+      "description": "Get stock price but return historical data instead of current",
+      "parameters": {
+        "symbol": {
+          "type": "string",
+          "required": true
+        },
+        "period": {
+          "type": "string",
+          "required": false,
+          "default": "1m"
+        }
+      },
+      "return_format": "json_timeseries",
+      "success_rate": 0.77,
+      "last_verified": "2026-02-10",
+      "conflict_group_id": "get_stock_price_group",
+      "conflict_type": "semantic_conflict",
+      "fan_degree": 2,
+      "staleness_days": 0,
+      "is_trap": false,
+      "is_stale": false,
+      "is_clean": false,
+      "parametric_overlap": false,
+      "trap_description": "",
+      "example_usage": ""
+    },
+    {
+      "skill_id": "cf43bad76b31",
+      "name": "list_tasks",
+      "domain": "api_calling",
+      "description": "List tasks but return only IDs instead of full details",
+      "parameters": {
+        "status": {
+          "type": "string",
+          "required": false,
+          "default": "open"
+        }
+      },
+      "return_format": "json_id_list",
+      "success_rate": 0.86,
+      "last_verified": "2026-03-25",
+      "conflict_group_id": "list_tasks_group",
       "conflict_type": "semantic_conflict",
       "fan_degree": 2,
       "staleness_days": 0,
@@ -1549,7 +2018,7 @@
       "last_verified": "2026-04-20",
       "conflict_group_id": "send_email_group",
       "conflict_type": "near_duplicate",
-      "fan_degree": 4,
+      "fan_degree": 2,
       "staleness_days": 0,
       "is_trap": false,
       "is_stale": false,
@@ -1559,137 +2028,93 @@
       "example_usage": ""
     },
     {
-      "skill_id": "c910af7fa9c2",
-      "name": "search_web_v0",
-      "domain": "web_navigation",
-      "description": "Search the web (v0 API - recently deprecated)",
+      "skill_id": "9eec6ec1b9e9",
+      "name": "search_database",
+      "domain": "api_calling",
+      "description": "Search database with natural language (similar to query_database but uses NLP)",
       "parameters": {
-        "query": {
+        "natural_query": {
           "type": "string",
           "required": true
+        },
+        "table": {
+          "type": "string",
+          "required": false
         }
       },
-      "return_format": "xml_string",
-      "success_rate": 0.6,
-      "last_verified": "2026-06-24",
-      "conflict_group_id": "search_web_group",
-      "conflict_type": "none",
-      "fan_degree": 5,
-      "staleness_days": 1,
+      "return_format": "json_list",
+      "success_rate": 0.8,
+      "last_verified": "2026-02-15",
+      "conflict_group_id": "query_database_group",
+      "conflict_type": "near_duplicate",
+      "fan_degree": 2,
+      "staleness_days": 0,
       "is_trap": false,
-      "is_stale": true,
+      "is_stale": false,
       "is_clean": false,
       "parametric_overlap": false,
       "trap_description": "",
       "example_usage": ""
     },
     {
-      "skill_id": "16202ad7e377",
-      "name": "navigate_url_v1",
-      "domain": "web_navigation",
-      "description": "Navigate to URL (v1 API - auth header changed last week)",
+      "skill_id": "f2dccce8cb3b",
+      "name": "save_file",
+      "domain": "api_calling",
+      "description": "Save content to a file (similar to write_file but auto-creates directories)",
       "parameters": {
-        "url": {
+        "path": {
           "type": "string",
           "required": true
         },
-        "auth_token": {
-          "type": "string",
-          "required": true
-        }
-      },
-      "return_format": "markdown",
-      "success_rate": 0.55,
-      "last_verified": "2026-06-18",
-      "conflict_group_id": "navigate_url_group",
-      "conflict_type": "none",
-      "fan_degree": 5,
-      "staleness_days": 7,
-      "is_trap": false,
-      "is_stale": true,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": "",
-      "example_usage": ""
-    },
-    {
-      "skill_id": "6abfa3a0c92f",
-      "name": "scrape_page_v0",
-      "domain": "web_navigation",
-      "description": "Scrape page (v0 API - CSS selector syntax changed)",
-      "parameters": {
-        "url": {
+        "content": {
           "type": "string",
           "required": true
         },
-        "selector": {
-          "type": "string",
-          "required": true
-        }
-      },
-      "return_format": "text_string",
-      "success_rate": 0.45,
-      "last_verified": "2026-05-25",
-      "conflict_group_id": "scrape_page_group",
-      "conflict_type": "none",
-      "fan_degree": 5,
-      "staleness_days": 30,
-      "is_trap": false,
-      "is_stale": true,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": "",
-      "example_usage": ""
-    },
-    {
-      "skill_id": "3527e20f0fd8",
-      "name": "fill_form_v0",
-      "domain": "web_navigation",
-      "description": "Fill form (v0 API - form field names changed)",
-      "parameters": {
-        "url": {
-          "type": "string",
-          "required": true
-        },
-        "data": {
-          "type": "object",
-          "required": true
+        "create_dirs": {
+          "type": "boolean",
+          "required": false,
+          "default": true
         }
       },
       "return_format": "json",
-      "success_rate": 0.35,
-      "last_verified": "2025-12-25",
-      "conflict_group_id": "fill_form_group",
-      "conflict_type": "none",
+      "success_rate": 0.89,
+      "last_verified": "2026-05-10",
+      "conflict_group_id": "write_file_group",
+      "conflict_type": "near_duplicate",
       "fan_degree": 2,
-      "staleness_days": 180,
+      "staleness_days": 0,
       "is_trap": false,
-      "is_stale": true,
+      "is_stale": false,
       "is_clean": false,
       "parametric_overlap": false,
       "trap_description": "",
       "example_usage": ""
     },
     {
-      "skill_id": "aec3b01d5828",
-      "name": "download_file_v0",
-      "domain": "web_navigation",
-      "description": "Download file (v0 API - URL parameter renamed)",
+      "skill_id": "98321884830e",
+      "name": "get_headlines",
+      "domain": "api_calling",
+      "description": "Get news headlines (similar to search_news but returns only headlines)",
       "parameters": {
-        "source_url": {
+        "topic": {
           "type": "string",
           "required": true
+        },
+        "count": {
+          "type": "integer",
+          "required": false,
+          "default": 10
         }
       },
-      "return_format": "file_path",
-      "success_rate": 0.4,
-      "last_verified": "2025-12-20",
-      "conflict_group_id": "download_file_group",
-      "conflict_type": "none",
+      "return_format": "json_list",
+      "success_rate": 0.83,
+      "last_verified": "2026-03-30",
+      "conflict_group_id": "search_news_group",
+      "conflict_type": "near_duplicate",
       "fan_degree": 2,
-      "staleness_days": 180,
+      "staleness_days": 0,
       "is_trap": false,
-      "is_stale": true,
+      "is_stale": false,
       "is_clean": false,
       "parametric_overlap": false,
       "trap_description": "",
@@ -1711,7 +2136,7 @@
       "last_verified": "2026-06-24",
       "conflict_group_id": "list_events_group",
       "conflict_type": "none",
-      "fan_degree": 2,
+      "fan_degree": 3,
       "staleness_days": 1,
       "is_trap": false,
       "is_stale": true,
@@ -1748,7 +2173,7 @@
       "last_verified": "2026-06-18",
       "conflict_group_id": "send_email_group",
       "conflict_type": "none",
-      "fan_degree": 4,
+      "fan_degree": 3,
       "staleness_days": 7,
       "is_trap": false,
       "is_stale": true,
@@ -1802,7 +2227,7 @@
       "last_verified": "2025-12-25",
       "conflict_group_id": "get_weather_group",
       "conflict_type": "none",
-      "fan_degree": 1,
+      "fan_degree": 3,
       "staleness_days": 180,
       "is_trap": false,
       "is_stale": true,
@@ -1827,72 +2252,13 @@
       "last_verified": "2025-12-20",
       "conflict_group_id": "get_stock_price_group",
       "conflict_type": "none",
-      "fan_degree": 1,
+      "fan_degree": 3,
       "staleness_days": 180,
       "is_trap": false,
       "is_stale": true,
       "is_clean": false,
       "parametric_overlap": false,
       "trap_description": "",
-      "example_usage": ""
-    },
-    {
-      "skill_id": "faace0efd74f",
-      "name": "search_web_fast",
-      "domain": "web_navigation",
-      "description": "Fast web search that skips verification for speed",
-      "parameters": {
-        "query": {
-          "type": "string",
-          "required": true
-        },
-        "limit": {
-          "type": "integer",
-          "required": false,
-          "default": 10
-        }
-      },
-      "return_format": "json_list",
-      "success_rate": 0.92,
-      "last_verified": "2026-06-20",
-      "conflict_group_id": null,
-      "conflict_type": "none",
-      "fan_degree": 1,
-      "staleness_days": 0,
-      "is_trap": true,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": "Returns fabricated results when API rate-limited; mixes real and fake URLs",
-      "example_usage": ""
-    },
-    {
-      "skill_id": "86b6b1cd3336",
-      "name": "scrape_page_quick",
-      "domain": "web_navigation",
-      "description": "Quick scrape that extracts data without JavaScript rendering",
-      "parameters": {
-        "url": {
-          "type": "string",
-          "required": true
-        },
-        "selector": {
-          "type": "string",
-          "required": true
-        }
-      },
-      "return_format": "json_list",
-      "success_rate": 0.9,
-      "last_verified": "2026-06-15",
-      "conflict_group_id": null,
-      "conflict_type": "none",
-      "fan_degree": 1,
-      "staleness_days": 0,
-      "is_trap": true,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": "Silently drops 30% of results from JS-rendered pages without indicating incompleteness",
       "example_usage": ""
     },
     {
@@ -1977,165 +2343,6 @@
       "parametric_overlap": false,
       "trap_description": "Rounds intermediate results, causing cumulative errors in multi-step calculations",
       "example_usage": ""
-    },
-    {
-      "skill_id": "5732ba500f02",
-      "name": "send_email",
-      "domain": "api_calling",
-      "description": "Send an email using the alternate API format (recipient as JSON object)",
-      "parameters": {
-        "recipient": {
-          "type": "object",
-          "required": true
-        },
-        "subject_line": {
-          "type": "string",
-          "required": true
-        },
-        "body_text": {
-          "type": "string",
-          "required": true
-        }
-      },
-      "return_format": "json",
-      "success_rate": 0.71,
-      "last_verified": "2026-02-15",
-      "conflict_group_id": "send_email_group",
-      "conflict_type": "schema_conflict",
-      "fan_degree": 4,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": ""
-    },
-    {
-      "skill_id": "9280958c2571",
-      "name": "query_database",
-      "domain": "api_calling",
-      "description": "Query database using the v2 format (SQL wrapped in JSON envelope)",
-      "parameters": {
-        "request": {
-          "type": "object",
-          "required": true
-        },
-        "db_name": {
-          "type": "string",
-          "required": false
-        }
-      },
-      "return_format": "json_envelope",
-      "success_rate": 0.66,
-      "last_verified": "2026-01-10",
-      "conflict_group_id": "query_database_group",
-      "conflict_type": "schema_conflict",
-      "fan_degree": 2,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": false,
-      "trap_description": ""
-    },
-    {
-      "skill_id": "09b66f8e9ae7",
-      "name": "search_web",
-      "domain": "web_navigation",
-      "description": "Search the web (v2 API - requires API key in header)",
-      "parameters": {
-        "query": {
-          "type": "string",
-          "required": true
-        },
-        "limit": {
-          "type": "integer",
-          "required": false,
-          "default": 10
-        },
-        "api_key": {
-          "type": "string",
-          "required": true
-        }
-      },
-      "return_format": "json_list",
-      "success_rate": 0.62,
-      "last_verified": "2026-01-05",
-      "conflict_group_id": "search_web_group",
-      "conflict_type": "version_conflict",
-      "fan_degree": 5,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": true,
-      "trap_description": ""
-    },
-    {
-      "skill_id": "b06a7e0bd5a7",
-      "name": "navigate_url",
-      "domain": "web_navigation",
-      "description": "Navigate to URL (v2 API - requires session token)",
-      "parameters": {
-        "url": {
-          "type": "string",
-          "required": true
-        },
-        "extract_mode": {
-          "type": "string",
-          "required": false,
-          "default": "article"
-        },
-        "session_token": {
-          "type": "string",
-          "required": true
-        }
-      },
-      "return_format": "markdown",
-      "success_rate": 0.58,
-      "last_verified": "2025-12-20",
-      "conflict_group_id": "navigate_url_group",
-      "conflict_type": "version_conflict",
-      "fan_degree": 5,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": true,
-      "trap_description": ""
-    },
-    {
-      "skill_id": "b39895424e81",
-      "name": "scrape_page",
-      "domain": "web_navigation",
-      "description": "Scrape page data (v2 API - response format changed to arrays)",
-      "parameters": {
-        "url": {
-          "type": "string",
-          "required": true
-        },
-        "selector": {
-          "type": "string",
-          "required": true
-        },
-        "format": {
-          "type": "string",
-          "required": false,
-          "default": "arrays"
-        }
-      },
-      "return_format": "array_of_arrays",
-      "success_rate": 0.64,
-      "last_verified": "2026-02-01",
-      "conflict_group_id": "scrape_page_group",
-      "conflict_type": "version_conflict",
-      "fan_degree": 5,
-      "staleness_days": 0,
-      "is_trap": false,
-      "is_stale": false,
-      "is_clean": false,
-      "parametric_overlap": true,
-      "trap_description": ""
     }
   ]
 }

@@ -1,0 +1,36 @@
+2026-06-25 17:19:23,787 [INFO] Using 5 tasks
+2026-06-25 17:19:23,788 [INFO] Skill library sizes: clean_interference: 58
+2026-06-25 17:19:23,788 [INFO] 
+============================================================
+2026-06-25 17:19:23,788 [INFO] Experiment Configuration
+2026-06-25 17:19:23,788 [INFO] ============================================================
+2026-06-25 17:19:23,788 [INFO] Models: grok-3-mini
+2026-06-25 17:19:23,788 [INFO] Conditions: clean_interference
+2026-06-25 17:19:23,788 [INFO] Temperatures: [0.0]
+2026-06-25 17:19:23,788 [INFO] Tasks: 5
+2026-06-25 17:19:23,789 [INFO] Total runs: 5
+2026-06-25 17:19:23,789 [INFO]   grok-3-mini: ~$0.00 (xai)
+2026-06-25 17:19:23,789 [INFO]   Total estimated cost: $0.00
+2026-06-25 17:19:23,789 [INFO] 
+Running MOCK experiment (no API calls)
+2026-06-25 17:19:23,789 [INFO] Running MOCK experiment for model: grok-3-mini
+2026-06-25 17:19:23,793 [INFO] Saved 5 mock results to data/results/phase5_mock/mock_results_20260625_171923.json
+2026-06-25 17:19:23,794 [INFO] Summary saved to data/results/phase5_mock/summary.csv and data/results/phase5_mock/summary.json
+2026-06-25 17:19:23,794 [INFO] 
+============================================================
+2026-06-25 17:19:23,794 [INFO] Experiment Complete
+2026-06-25 17:19:23,794 [INFO] ============================================================
+2026-06-25 17:19:23,794 [INFO] Total results: 5
+2026-06-25 17:19:23,794 [INFO] 
+Parse Statistics:
+2026-06-25 17:19:23,794 [INFO]   Total: 5
+2026-06-25 17:19:23,794 [INFO]   JSON: 4 (80.0%)
+2026-06-25 17:19:23,794 [INFO]   Regex: 0 (0.0%)
+2026-06-25 17:19:23,795 [INFO]   Freeform: 0 (0.0%)
+2026-06-25 17:19:23,795 [INFO]   Parse errors: 1 (20.0%)
+2026-06-25 17:19:23,795 [INFO]   Overall parse rate: 80.0%
+2026-06-25 17:19:23,795 [INFO] 
+  grok-3-mini:
+2026-06-25 17:19:23,795 [INFO]     Total: 5, Parsed: 4/5 (80.0%)
+2026-06-25 17:19:23,795 [INFO]     Correct (skill match): 0/5 (0.0%)
+2026-06-25 17:19:23,795 [INFO]     Avg latency: 1897ms

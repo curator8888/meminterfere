@@ -1,0 +1,2 @@
+model,condition,temperature,total_runs,parsed,parse_rate,correct,accuracy,errors,avg_latency_ms,avg_confidence,total_tokens
+grok-3-mini,clean_interference,0.0,5,4,0.8,0,0.0,0,1896.6,0.568,2259

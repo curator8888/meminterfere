@@ -34,6 +34,12 @@ class Condition(Enum):
     CLEAN_STALE = "clean_stale"            # Correct + outdated skills
     ALL_MEMORY = "all_memory"              # Correct + interference + stale
     GROWING = "growing"                    # Library grows over sessions
+    # Phase 5.3: Retrieval vs. Planning separation tracks
+    GOLD_RETRIEVAL = "gold_retrieval"       # Track A: gold skills injected directly
+    RAG_RETRIEVAL_K1 = "rag_retrieval_k1"   # Track B: RAG top-1 retrieval
+    RAG_RETRIEVAL_K3 = "rag_retrieval_k3"   # Track B: RAG top-3 retrieval
+    RAG_RETRIEVAL_K5 = "rag_retrieval_k5"   # Track B: RAG top-5 retrieval
+    RAG_RETRIEVAL_K10 = "rag_retrieval_k10" # Track B: RAG top-10 retrieval
 
 
 class TaskDifficulty(Enum):

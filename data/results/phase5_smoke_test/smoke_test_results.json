@@ -1,0 +1,842 @@
+{
+  "metadata": {
+    "timestamp": "2026-06-25T00:00:00",
+    "mode": "smoke_test",
+    "models": [
+      "mock-test"
+    ],
+    "conditions": [
+      "clean_memory",
+      "clean_interference"
+    ],
+    "temperatures": [
+      0.0
+    ],
+    "num_tasks": 5,
+    "parse_stats": {
+      "total": 30,
+      "json": 10,
+      "regex": 10,
+      "freeform": 10,
+      "error": 0,
+      "parse_rate": 1.0,
+      "json_rate": 0.3333,
+      "regex_rate": 0.3333,
+      "freeform_rate": 0.3333
+    }
+  },
+  "results": [
+    {
+      "run_id": "mock_web_easy_001_clean_memory_fmt0",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_001",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 1063,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "{\"tool\": \"translate_page\", \"confidence\": 0.61, \"approach\": \"Use translate_page to accomplish the task\"}",
+      "parsed_tool": "translate_page",
+      "parsed_confidence": 0.61,
+      "parsed_approach": "Use translate_page to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "translate_page"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_001_clean_memory_fmt1",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_001",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 709,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "TOOL: create_event\nCONFIDENCE: 0.61\nAPPROACH: I will use create_event for this task",
+      "parsed_tool": "create_event",
+      "parsed_confidence": 0.61,
+      "parsed_approach": "I will use create_event for this task",
+      "parse_method": "regex",
+      "all_matched_skills": [
+        "create_event"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_001_clean_memory_fmt2",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_001",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 678,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "I think we should use the extract_images skill to handle this.",
+      "parsed_tool": "extract_images",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "extract_images"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_001_clean_interference_fmt0",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_001",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 561,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "{\"tool\": \"view_content\", \"confidence\": 0.77, \"approach\": \"Use view_content to accomplish the task\"}",
+      "parsed_tool": "view_content",
+      "parsed_confidence": 0.77,
+      "parsed_approach": "Use view_content to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "view_content"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_001_clean_interference_fmt1",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_001",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1534,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "TOOL: extract_table\nCONFIDENCE: 0.61\nAPPROACH: I will use extract_table for this task",
+      "parsed_tool": "extract_table",
+      "parsed_confidence": 0.61,
+      "parsed_approach": "I will use extract_table for this task",
+      "parse_method": "regex",
+      "all_matched_skills": [
+        "extract_table"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_001_clean_interference_fmt2",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_001",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 554,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "I think we should use the report_climate skill to handle this.",
+      "parsed_tool": "report_climate",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "report_climate"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_002_clean_memory_fmt0",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_002",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 1830,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "{\"tool\": \"create_contact\", \"confidence\": 0.68, \"approach\": \"Use create_contact to accomplish the task\"}",
+      "parsed_tool": "create_contact",
+      "parsed_confidence": 0.68,
+      "parsed_approach": "Use create_contact to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "create_contact"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_002_clean_memory_fmt1",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_002",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 1419,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "TOOL: extract_images\nCONFIDENCE: 0.71\nAPPROACH: I will use extract_images for this task",
+      "parsed_tool": "extract_images",
+      "parsed_confidence": 0.71,
+      "parsed_approach": "I will use extract_images for this task",
+      "parse_method": "regex",
+      "all_matched_skills": [
+        "extract_images"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_002_clean_memory_fmt2",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_002",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 1069,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "I think we should use the delete_event skill to handle this.",
+      "parsed_tool": "delete_event",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "delete_event"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_002_clean_interference_fmt0",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_002",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 826,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "{\"tool\": \"search_web\", \"confidence\": 0.9, \"approach\": \"Use search_web to accomplish the task\"}",
+      "parsed_tool": "search_web",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "Use search_web to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "search_web"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_002_clean_interference_fmt1",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_002",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1069,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "TOOL: calculate_fast\nCONFIDENCE: 0.71\nAPPROACH: I will use calculate_fast for this task",
+      "parsed_tool": "calculate_fast",
+      "parsed_confidence": 0.71,
+      "parsed_approach": "I will use calculate_fast for this task",
+      "parse_method": "regex",
+      "all_matched_skills": [
+        "calculate_fast",
+        "calculate"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_002_clean_interference_fmt2",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_002",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 940,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "I think we should use the read_file skill to handle this.",
+      "parsed_tool": "read_file",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "read_file"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_003_clean_memory_fmt0",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_003",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 1278,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "{\"tool\": \"query_database\", \"confidence\": 0.64, \"approach\": \"Use query_database to accomplish the task\"}",
+      "parsed_tool": "query_database",
+      "parsed_confidence": 0.64,
+      "parsed_approach": "Use query_database to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "query_database"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_003_clean_memory_fmt1",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_003",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 1204,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "TOOL: download_file\nCONFIDENCE: 0.68\nAPPROACH: I will use download_file for this task",
+      "parsed_tool": "download_file",
+      "parsed_confidence": 0.68,
+      "parsed_approach": "I will use download_file for this task",
+      "parse_method": "regex",
+      "all_matched_skills": [
+        "download_file"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_003_clean_memory_fmt2",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_003",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 1041,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "I think we should use the get_forecast skill to handle this.",
+      "parsed_tool": "get_forecast",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "get_forecast"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_003_clean_interference_fmt0",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_003",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1598,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "{\"tool\": \"fill_form\", \"confidence\": 0.89, \"approach\": \"Use fill_form to accomplish the task\"}",
+      "parsed_tool": "fill_form",
+      "parsed_confidence": 0.89,
+      "parsed_approach": "Use fill_form to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "fill_form"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_003_clean_interference_fmt1",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_003",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1275,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "TOOL: create_event\nCONFIDENCE: 0.99\nAPPROACH: I will use create_event for this task",
+      "parsed_tool": "create_event",
+      "parsed_confidence": 0.99,
+      "parsed_approach": "I will use create_event for this task",
+      "parse_method": "regex",
+      "all_matched_skills": [
+        "create_event"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_003_clean_interference_fmt2",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_003",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1630,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "I think we should use the crawl_site skill to handle this.",
+      "parsed_tool": "crawl_site",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "crawl_site"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_004_clean_memory_fmt0",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_004",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 1766,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "{\"tool\": \"read_emails\", \"confidence\": 0.93, \"approach\": \"Use read_emails to accomplish the task\"}",
+      "parsed_tool": "read_emails",
+      "parsed_confidence": 0.93,
+      "parsed_approach": "Use read_emails to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "read_emails"
+      ],
+      "expected_skills": [
+        "extract_links"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_004_clean_memory_fmt1",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_004",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 1942,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "TOOL: get_stock_price\nCONFIDENCE: 0.79\nAPPROACH: I will use get_stock_price for this task",
+      "parsed_tool": "get_stock_price",
+      "parsed_confidence": 0.79,
+      "parsed_approach": "I will use get_stock_price for this task",
+      "parse_method": "regex",
+      "all_matched_skills": [
+        "get_stock_price"
+      ],
+      "expected_skills": [
+        "extract_links"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_004_clean_memory_fmt2",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_004",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 593,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "I think we should use the take_screenshot skill to handle this.",
+      "parsed_tool": "take_screenshot",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "take_screenshot"
+      ],
+      "expected_skills": [
+        "extract_links"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_004_clean_interference_fmt0",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_004",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1092,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "{\"tool\": \"forecast_conditions\", \"confidence\": 0.69, \"approach\": \"Use forecast_conditions to accomplish the task\"}",
+      "parsed_tool": "forecast_conditions",
+      "parsed_confidence": 0.69,
+      "parsed_approach": "Use forecast_conditions to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "forecast_conditions"
+      ],
+      "expected_skills": [
+        "extract_links"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_004_clean_interference_fmt1",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_004",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 706,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "TOOL: crawl_site\nCONFIDENCE: 0.93\nAPPROACH: I will use crawl_site for this task",
+      "parsed_tool": "crawl_site",
+      "parsed_confidence": 0.93,
+      "parsed_approach": "I will use crawl_site for this task",
+      "parse_method": "regex",
+      "all_matched_skills": [
+        "crawl_site"
+      ],
+      "expected_skills": [
+        "extract_links"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_004_clean_interference_fmt2",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_004",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1069,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "I think we should use the find_information skill to handle this.",
+      "parsed_tool": "find_information",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "find_information"
+      ],
+      "expected_skills": [
+        "extract_links"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_005_clean_memory_fmt0",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_005",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 1247,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "{\"tool\": \"calculate\", \"confidence\": 0.85, \"approach\": \"Use calculate to accomplish the task\"}",
+      "parsed_tool": "calculate",
+      "parsed_confidence": 0.85,
+      "parsed_approach": "Use calculate to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "calculate"
+      ],
+      "expected_skills": [
+        "extract_metadata"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_005_clean_memory_fmt1",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_005",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 929,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "TOOL: crawl_site\nCONFIDENCE: 0.69\nAPPROACH: I will use crawl_site for this task",
+      "parsed_tool": "crawl_site",
+      "parsed_confidence": 0.69,
+      "parsed_approach": "I will use crawl_site for this task",
+      "parse_method": "regex",
+      "all_matched_skills": [
+        "crawl_site"
+      ],
+      "expected_skills": [
+        "extract_metadata"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_005_clean_memory_fmt2",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_005",
+      "condition": "clean_memory",
+      "temperature": 0.0,
+      "latency_ms": 1937,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "I think we should use the send_email skill to handle this.",
+      "parsed_tool": "send_email",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "send_email"
+      ],
+      "expected_skills": [
+        "extract_metadata"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_005_clean_interference_fmt0",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_005",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1747,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "{\"tool\": \"send_email_fast\", \"confidence\": 0.86, \"approach\": \"Use send_email_fast to accomplish the task\"}",
+      "parsed_tool": "send_email_fast",
+      "parsed_confidence": 0.86,
+      "parsed_approach": "Use send_email_fast to accomplish the task",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "send_email",
+        "send_email_fast"
+      ],
+      "expected_skills": [
+        "extract_metadata"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_005_clean_interference_fmt1",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_005",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 1993,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "TOOL: store_content\nCONFIDENCE: 0.59\nAPPROACH: I will use store_content for this task",
+      "parsed_tool": "store_content",
+      "parsed_confidence": 0.59,
+      "parsed_approach": "I will use store_content for this task",
+      "parse_method": "regex",
+      "all_matched_skills": [
+        "store_content"
+      ],
+      "expected_skills": [
+        "extract_metadata"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "mock_web_easy_005_clean_interference_fmt2",
+      "model": "mock-test",
+      "model_id": "mock",
+      "task_id": "web_easy_005",
+      "condition": "clean_interference",
+      "temperature": 0.0,
+      "latency_ms": 834,
+      "timestamp": "2026-06-25T00:00:00",
+      "prompt_tokens": 300,
+      "completion_tokens": 100,
+      "total_tokens": 400,
+      "prompt_text": "[mock]",
+      "raw_response": "I think we should use the parse_html skill to handle this.",
+      "parsed_tool": "parse_html",
+      "parsed_confidence": 0.5,
+      "parsed_approach": "",
+      "parse_method": "freeform",
+      "all_matched_skills": [
+        "parse_html"
+      ],
+      "expected_skills": [
+        "extract_metadata"
+      ],
+      "skill_correct": false,
+      "error": ""
+    }
+  ]
+}

@@ -56,6 +56,8 @@ class Skill:
     parametric_overlap: bool = False
     trap_description: str = ""  # what makes this trap wrong
     example_usage: str = ""
+    similarity_to_gold: float = 0.0  # Phase 5.1: similarity score to gold skill (1.0 for gold, 0.0 for clean)
+    gradient_pairs: Optional[dict] = None  # Phase 5.1: gradient test pair metadata
 
 
 def make_skill_id(name: str, variant: str = "") -> str:

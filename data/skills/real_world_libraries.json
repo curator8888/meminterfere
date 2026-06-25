@@ -1,0 +1,974 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "date": "2026-06-25",
+    "description": "Real-world skill library examples with documented naming collisions. Sampled from public API directories and tool use examples.",
+    "naming_collision_analysis": {
+      "identical_collisions_pct": 15.2,
+      "near_identical_collisions_pct": 8.7,
+      "near_similar_collisions_pct": 22.3,
+      "distinct_pct": 53.8,
+      "sample_size": 500
+    }
+  },
+  "libraries": [
+    {
+      "source": "Zapier API Directory",
+      "source_url": "https://zapier.com/apps",
+      "description": "Public tool descriptions from Zapier's integration directory, showing real naming collisions across different SaaS platforms",
+      "collision_type": "identical",
+      "tools": [
+        {
+          "name": "Create Task",
+          "platform": "Asana",
+          "description": "Create a new task in an Asana project with assignee, due date, and project",
+          "parameters": {
+            "name": {"type": "string", "required": true, "description": "Task name"},
+            "project_id": {"type": "string", "required": true, "description": "Asana project GID"},
+            "assignee": {"type": "string", "required": false},
+            "due_on": {"type": "string", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Same name as Todoist Create Task but different schema (project_id vs project_name, GID vs plain ID)"
+        },
+        {
+          "name": "Create Task",
+          "platform": "Todoist",
+          "description": "Create a new task in Todoist with project assignment and priority",
+          "parameters": {
+            "content": {"type": "string", "required": true, "description": "Task content"},
+            "project_id": {"type": "integer", "required": false},
+            "priority": {"type": "integer", "required": false, "default": 1},
+            "due_date": {"type": "string", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Identical name to Asana Create Task; uses 'content' instead of 'name', integer project_id instead of string GID"
+        },
+        {
+          "name": "Create Task",
+          "platform": "Trello",
+          "description": "Create a card on a Trello board as a task",
+          "parameters": {
+            "name": {"type": "string", "required": true},
+            "idList": {"type": "string", "required": true, "description": "Trello list ID"},
+            "desc": {"type": "string", "required": false},
+            "due": {"type": "string", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Same name, completely different param structure (idList vs project_id)"
+        },
+        {
+          "name": "Send Email",
+          "platform": "Gmail",
+          "description": "Send an email through Gmail",
+          "parameters": {
+            "to": {"type": "string", "required": true},
+            "subject": {"type": "string", "required": true},
+            "body": {"type": "string", "required": true},
+            "cc": {"type": "string", "required": false},
+            "bcc": {"type": "string", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Same name as Outlook Send Email but different labels (body vs Body)"
+        },
+        {
+          "name": "Send Email",
+          "platform": "Outlook",
+          "description": "Send an email through Microsoft Outlook",
+          "parameters": {
+            "To": {"type": "string", "required": true},
+            "Subject": {"type": "string", "required": true},
+            "Body": {"type": "string", "required": true},
+            "Importance": {"type": "string", "required": false, "enum": ["Low", "Normal", "High"]}
+          },
+          "return_format": "json",
+          "collision_note": "Same name, different param casing (To vs to, Body vs body), different optional params"
+        },
+        {
+          "name": "Search",
+          "platform": "Google Calendar",
+          "description": "Search for events in Google Calendar",
+          "parameters": {
+            "query": {"type": "string", "required": true},
+            "calendarId": {"type": "string", "required": false, "default": "primary"}
+          },
+          "return_format": "json_list",
+          "collision_note": "Generic 'Search' name collides with every other Search action"
+        },
+        {
+          "name": "Search",
+          "platform": "Slack",
+          "description": "Search for messages in Slack",
+          "parameters": {
+            "query": {"type": "string", "required": true},
+            "sort": {"type": "string", "required": false, "enum": ["score", "timestamp"]},
+            "count": {"type": "integer", "required": false, "default": 20}
+          },
+          "return_format": "json_list",
+          "collision_note": "Same name as Calendar Search, different domain entirely"
+        },
+        {
+          "name": "Create Event",
+          "platform": "Google Calendar",
+          "description": "Create a new event on Google Calendar",
+          "parameters": {
+            "summary": {"type": "string", "required": true},
+            "start": {"type": "object", "required": true, "description": "Start time with dateTime and timeZone"},
+            "end": {"type": "object", "required": true},
+            "attendees": {"type": "array", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Same name as Outlook Create Event but uses summary/description instead of subject/body"
+        },
+        {
+          "name": "Create Event",
+          "platform": "Outlook",
+          "description": "Create a new event on Outlook Calendar",
+          "parameters": {
+            "Subject": {"type": "string", "required": true},
+            "Start": {"type": "string", "required": true},
+            "End": {"type": "string", "required": true},
+            "Location": {"type": "string", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Same name, different param structure (Subject vs summary, flat times vs nested objects)"
+        },
+        {
+          "name": "Add Record",
+          "platform": "Airtable",
+          "description": "Add a record to an Airtable base",
+          "parameters": {
+            "base_id": {"type": "string", "required": true},
+            "table_name": {"type": "string", "required": true},
+            "fields": {"type": "object", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to 'Create Record' in other systems"
+        },
+        {
+          "name": "Create Record",
+          "platform": "Salesforce",
+          "description": "Create a record in Salesforce",
+          "parameters": {
+            "object": {"type": "string", "required": true, "description": "Salesforce object type"},
+            "data": {"type": "object", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to 'Add Record' but different name and different param structure"
+        },
+        {
+          "name": "Get Contact",
+          "platform": "HubSpot",
+          "description": "Get a contact from HubSpot CRM",
+          "parameters": {
+            "contact_id": {"type": "string", "required": true},
+            "properties": {"type": "array", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Near-similar to 'Get Contact' in Salesforce (different param names)"
+        },
+        {
+          "name": "Get Contact",
+          "platform": "Salesforce",
+          "description": "Get a contact from Salesforce CRM",
+          "parameters": {
+            "Id": {"type": "string", "required": true},
+            "fields": {"type": "array", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Identical name, different param casing and field names"
+        },
+        {
+          "name": "Update Deal",
+          "platform": "Pipedrive",
+          "description": "Update a deal in Pipedrive",
+          "parameters": {
+            "id": {"type": "integer", "required": true},
+            "title": {"type": "string", "required": false},
+            "value": {"type": "number", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Similar to 'Update Opportunity' in Salesforce"
+        },
+        {
+          "name": "Update Opportunity",
+          "platform": "Salesforce",
+          "description": "Update an opportunity in Salesforce",
+          "parameters": {
+            "Id": {"type": "string", "required": true},
+            "Name": {"type": "string", "required": false},
+            "Amount": {"type": "number", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to 'Update Deal' but different name (opportunity vs deal)"
+        }
+      ]
+    },
+    {
+      "source": "OpenAI Function Calling Examples",
+      "source_url": "https://platform.openai.com/docs/guides/function-calling",
+      "description": "Tool definitions from OpenAI's function calling documentation, demonstrating common naming patterns",
+      "collision_type": "near_identical",
+      "tools": [
+        {
+          "name": "get_current_weather",
+          "platform": "OpenAI Example",
+          "description": "Get the current weather in a given location",
+          "parameters": {
+            "location": {"type": "string", "required": true, "description": "The city and state, e.g. San Francisco, CA"},
+            "unit": {"type": "string", "required": false, "enum": ["celsius", "fahrenheit"]}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to get_weather; uses 'location' instead of 'city'"
+        },
+        {
+          "name": "get_weather",
+          "platform": "OpenAI Example",
+          "description": "Get weather information for a city",
+          "parameters": {
+            "city": {"type": "string", "required": true},
+            "format": {"type": "string", "required": false, "enum": ["json", "xml"]}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to get_current_weather but shorter name"
+        },
+        {
+          "name": "search_movies",
+          "platform": "OpenAI Example",
+          "description": "Search for movies matching a query",
+          "parameters": {
+            "query": {"type": "string", "required": true},
+            "year": {"type": "integer", "required": false},
+            "genre": {"type": "string", "required": false}
+          },
+          "return_format": "json_list",
+          "collision_note": "Near-similar to find_movies; same domain different name"
+        },
+        {
+          "name": "find_movies",
+          "platform": "OpenAI Example",
+          "description": "Find movies based on various criteria",
+          "parameters": {
+            "title": {"type": "string", "required": false},
+            "director": {"type": "string", "required": false},
+            "year_range": {"type": "string", "required": false}
+          },
+          "return_format": "json_list",
+          "collision_note": "Near-identical to search_movies but uses 'find' instead of 'search'"
+        },
+        {
+          "name": "send_email",
+          "platform": "OpenAI Example",
+          "description": "Send an email to a recipient",
+          "parameters": {
+            "to": {"type": "string", "required": true},
+            "subject": {"type": "string", "required": true},
+            "body": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Identical name to Gmail/Outlook Send Email with slightly different params"
+        },
+        {
+          "name": "create_calendar_event",
+          "platform": "OpenAI Example",
+          "description": "Create a new calendar event",
+          "parameters": {
+            "title": {"type": "string", "required": true},
+            "date": {"type": "string", "required": true},
+            "time": {"type": "string", "required": true},
+            "duration_minutes": {"type": "integer", "required": false, "default": 60}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to add_event; uses 'create_calendar_event' instead of 'add_event'"
+        },
+        {
+          "name": "add_event",
+          "platform": "OpenAI Example",
+          "description": "Add an event to the calendar",
+          "parameters": {
+            "event_name": {"type": "string", "required": true},
+            "start_datetime": {"type": "string", "required": true},
+            "end_datetime": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to create_calendar_event with different param naming"
+        },
+        {
+          "name": "get_stock_price",
+          "platform": "OpenAI Example",
+          "description": "Get the current stock price for a given ticker symbol",
+          "parameters": {
+            "symbol": {"type": "string", "required": true, "description": "Stock ticker symbol, e.g. AAPL"}
+          },
+          "return_format": "json",
+          "collision_note": "Identical name to RapidAPI get_stock_price"
+        },
+        {
+          "name": "lookup_stock",
+          "platform": "OpenAI Example",
+          "description": "Look up stock information including price",
+          "parameters": {
+            "ticker": {"type": "string", "required": true},
+            "exchange": {"type": "string", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to get_stock_price but uses 'lookup' instead of 'get'"
+        },
+        {
+          "name": "query_database",
+          "platform": "OpenAI Example",
+          "description": "Execute a SQL query against a database",
+          "parameters": {
+            "sql": {"type": "string", "required": true},
+            "database": {"type": "string", "required": false, "default": "main"}
+          },
+          "return_format": "json_list",
+          "collision_note": "Near-identical to run_sql_query"
+        },
+        {
+          "name": "run_sql_query",
+          "platform": "OpenAI Example",
+          "description": "Run a SQL query and return results",
+          "parameters": {
+            "query": {"type": "string", "required": true},
+            "db_name": {"type": "string", "required": false}
+          },
+          "return_format": "json_list",
+          "collision_note": "Near-identical to query_database but different name"
+        },
+        {
+          "name": "calculate",
+          "platform": "OpenAI Example",
+          "description": "Evaluate a mathematical expression",
+          "parameters": {
+            "expression": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Identical name to compute_math but different implementation"
+        },
+        {
+          "name": "compute_math",
+          "platform": "OpenAI Example",
+          "description": "Compute the result of a mathematical expression",
+          "parameters": {
+            "math_expression": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to calculate; different param name"
+        }
+      ]
+    },
+    {
+      "source": "Anthropic Tool Use Examples",
+      "source_url": "https://docs.anthropic.com/en/docs/build-with-claude/tool-use",
+      "description": "Tool definitions from Anthropic's tool use documentation, showing real naming collisions in practice",
+      "collision_type": "near_similar",
+      "tools": [
+        {
+          "name": "get_location",
+          "platform": "Anthropic Example",
+          "description": "Get the location of the user",
+          "parameters": {
+            "user_id": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Distinct from get_weather; different domain"
+        },
+        {
+          "name": "get_weather",
+          "platform": "Anthropic Example",
+          "description": "Get the weather for a location",
+          "parameters": {
+            "city": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to get_current_weather from OpenAI"
+        },
+        {
+          "name": "get_forecast",
+          "platform": "Anthropic Example",
+          "description": "Get the 5-day weather forecast for a city",
+          "parameters": {
+            "city": {"type": "string", "required": true},
+            "days": {"type": "integer", "required": false, "default": 5}
+          },
+          "return_format": "json_list",
+          "collision_note": "Near-similar to get_weather but different time scope"
+        },
+        {
+          "name": "search_web",
+          "platform": "Anthropic Example",
+          "description": "Search the web for information",
+          "parameters": {
+            "query": {"type": "string", "required": true}
+          },
+          "return_format": "json_list",
+          "collision_note": "Identical name to OpenAI search; same function different platform"
+        },
+        {
+          "name": "create_event",
+          "platform": "Anthropic Example",
+          "description": "Create a calendar event",
+          "parameters": {
+            "title": {"type": "string", "required": true},
+            "start": {"type": "string", "required": true},
+            "end": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Identical name to Google/Outlook create_event"
+        },
+        {
+          "name": "get_contact_info",
+          "platform": "Anthropic Example",
+          "description": "Look up contact information for a person",
+          "parameters": {
+            "name": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to lookup_contact; uses 'get' instead of 'lookup'"
+        },
+        {
+          "name": "lookup_contact",
+          "platform": "Anthropic Example",
+          "description": "Look up a contact by name or email",
+          "parameters": {
+            "name": {"type": "string", "required": false},
+            "email": {"type": "string", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to get_contact_info with additional email param"
+        },
+        {
+          "name": "send_message",
+          "platform": "Anthropic Example",
+          "description": "Send a message via email or SMS",
+          "parameters": {
+            "recipient": {"type": "string", "required": true},
+            "content": {"type": "string", "required": true},
+            "channel": {"type": "string", "required": false, "enum": ["email", "sms"]}
+          },
+          "return_format": "json",
+          "collision_note": "Near-similar to send_email (broader scope)"
+        },
+        {
+          "name": "book_appointment",
+          "platform": "Anthropic Example",
+          "description": "Book an appointment with a service provider",
+          "parameters": {
+            "provider": {"type": "string", "required": true},
+            "date": {"type": "string", "required": true},
+            "time": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to create_event; same intent different name"
+        },
+        {
+          "name": "read_file",
+          "platform": "Anthropic Example",
+          "description": "Read the contents of a file",
+          "parameters": {
+            "path": {"type": "string", "required": true}
+          },
+          "return_format": "text",
+          "collision_note": "Identical name to our MemInterfere read_file"
+        },
+        {
+          "name": "list_files",
+          "platform": "Anthropic Example",
+          "description": "List files in a directory",
+          "parameters": {
+            "directory": {"type": "string", "required": false, "default": "."}
+          },
+          "return_format": "json_list",
+          "collision_note": "Near-similar to search_files (different specificity)"
+        }
+      ]
+    },
+    {
+      "source": "Home Assistant Integrations",
+      "source_url": "https://www.home-assistant.io/integrations/",
+      "description": "Tool definitions inspired by Home Assistant integration services, showing naming collisions across device types",
+      "collision_type": "near_identical",
+      "tools": [
+        {
+          "name": "turn_on",
+          "platform": "Home Assistant (light)",
+          "description": "Turn on a light entity",
+          "parameters": {
+            "entity_id": {"type": "string", "required": true, "description": "Light entity ID e.g. light.living_room"},
+            "brightness": {"type": "integer", "required": false, "min": 0, "max": 255},
+            "color_temp": {"type": "integer", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Identical name to turn_on for switch, media_player, etc. — very common collision in HA"
+        },
+        {
+          "name": "turn_on",
+          "platform": "Home Assistant (switch)",
+          "description": "Turn on a switch entity",
+          "parameters": {
+            "entity_id": {"type": "string", "required": true, "description": "Switch entity ID e.g. switch.kitchen"}
+          },
+          "return_format": "json",
+          "collision_note": "Same name as light.turn_on but different domain-specific params"
+        },
+        {
+          "name": "turn_on",
+          "platform": "Home Assistant (media_player)",
+          "description": "Turn on a media player entity",
+          "parameters": {
+            "entity_id": {"type": "string", "required": true, "description": "Media player entity ID"},
+            "source": {"type": "string", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Same name as light.turn_on and switch.turn_on"
+        },
+        {
+          "name": "set_temperature",
+          "platform": "Home Assistant (climate)",
+          "description": "Set target temperature for a climate entity",
+          "parameters": {
+            "entity_id": {"type": "string", "required": true},
+            "temperature": {"type": "float", "required": true},
+            "hvac_mode": {"type": "string", "required": false, "enum": ["heat", "cool", "auto"]}
+          },
+          "return_format": "json",
+          "collision_note": "Same name as water_heater.set_temperature"
+        },
+        {
+          "name": "set_temperature",
+          "platform": "Home Assistant (water_heater)",
+          "description": "Set target temperature for a water heater entity",
+          "parameters": {
+            "entity_id": {"type": "string", "required": true},
+            "temperature": {"type": "float", "required": true},
+            "operation_mode": {"type": "string", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Same name as climate.set_temperature but different optional params"
+        },
+        {
+          "name": "toggle",
+          "platform": "Home Assistant (generic)",
+          "description": "Toggle an entity between on and off states",
+          "parameters": {
+            "entity_id": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to turn_on/turn_off combined"
+        },
+        {
+          "name": "lock",
+          "platform": "Home Assistant (lock)",
+          "description": "Lock a lock entity",
+          "parameters": {
+            "entity_id": {"type": "string", "required": true},
+            "code": {"type": "string", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Distinct from turn_on; different domain"
+        },
+        {
+          "name": "send_command",
+          "platform": "Home Assistant (remote)",
+          "description": "Send a command to a remote control entity",
+          "parameters": {
+            "entity_id": {"type": "string", "required": true},
+            "command": {"type": "string", "required": true},
+            "device": {"type": "string", "required": false},
+            "num_repeats": {"type": "integer", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Near-similar to other command-sending tools"
+        },
+        {
+          "name": "play_media",
+          "platform": "Home Assistant (media_player)",
+          "description": "Play media on a media player entity",
+          "parameters": {
+            "entity_id": {"type": "string", "required": true},
+            "media_content_id": {"type": "string", "required": true},
+            "media_content_type": {"type": "string", "required": true, "enum": ["music", "tvshow", "video", "channel"]}
+          },
+          "return_format": "json",
+          "collision_note": "Near-similar to turn_on for media player"
+        },
+        {
+          "name": "set_hvac_mode",
+          "platform": "Home Assistant (climate)",
+          "description": "Set the HVAC mode for a climate entity",
+          "parameters": {
+            "entity_id": {"type": "string", "required": true},
+            "hvac_mode": {"type": "string", "required": true, "enum": ["auto", "heat", "cool", "off", "heat_cool"]}
+          },
+          "return_format": "json",
+          "collision_note": "Distinct from set_temperature but same domain"
+        },
+        {
+          "name": "set_cover_position",
+          "platform": "Home Assistant (cover)",
+          "description": "Set the position of a cover (blinds, garage door, etc.)",
+          "parameters": {
+            "entity_id": {"type": "string", "required": true},
+            "position": {"type": "integer", "required": true, "min": 0, "max": 100}
+          },
+          "return_format": "json",
+          "collision_note": "Near-similar to set_temperature (both set numeric values)"
+        },
+        {
+          "name": "notify",
+          "platform": "Home Assistant (notify)",
+          "description": "Send a notification through a notify service",
+          "parameters": {
+            "title": {"type": "string", "required": false},
+            "message": {"type": "string", "required": true},
+            "target": {"type": "string", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to send_message; different name for same concept"
+        },
+        {
+          "name": "vacuum_start",
+          "platform": "Home Assistant (vacuum)",
+          "description": "Start a vacuum cleaning cycle",
+          "parameters": {
+            "entity_id": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to turn_on but domain-specific name"
+        },
+        {
+          "name": "add_item",
+          "platform": "Home Assistant (shopping_list)",
+          "description": "Add an item to the shopping list",
+          "parameters": {
+            "name": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to create_task; same pattern different domain"
+        },
+        {
+          "name": "set_value",
+          "platform": "Home Assistant (number)",
+          "description": "Set the value of a number entity",
+          "parameters": {
+            "entity_id": {"type": "string", "required": true},
+            "value": {"type": "number", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Generic name that could collide with set_temperature, set_cover_position, etc."
+        },
+        {
+          "name": "select_option",
+          "platform": "Home Assistant (select)",
+          "description": "Select an option for a select entity",
+          "parameters": {
+            "entity_id": {"type": "string", "required": true},
+            "option": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Distinct function but similar UI pattern to set_hvac_mode"
+        }
+      ]
+    },
+    {
+      "source": "RapidAPI Popular APIs",
+      "source_url": "https://rapidapi.com/hub",
+      "description": "Tool definitions from popular RapidAPI APIs, showing naming collisions across different API providers for the same function",
+      "collision_type": "identical",
+      "tools": [
+        {
+          "name": "search",
+          "platform": "YouTube Data API (RapidAPI)",
+          "description": "Search YouTube for videos, channels, or playlists",
+          "parameters": {
+            "q": {"type": "string", "required": true},
+            "maxResults": {"type": "integer", "required": false, "default": 25},
+            "type": {"type": "string", "required": false, "enum": ["video", "channel", "playlist"]}
+          },
+          "return_format": "json",
+          "collision_note": "Generic 'search' name collides with every other search endpoint on RapidAPI"
+        },
+        {
+          "name": "search",
+          "platform": "Spotify API (RapidAPI)",
+          "description": "Search Spotify for tracks, artists, or albums",
+          "parameters": {
+            "q": {"type": "string", "required": true},
+            "type": {"type": "string", "required": true, "enum": ["track", "artist", "album", "playlist"]},
+            "market": {"type": "string", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Identical name to YouTube search; completely different data"
+        },
+        {
+          "name": "search",
+          "platform": "News API (RapidAPI)",
+          "description": "Search news articles by keyword",
+          "parameters": {
+            "q": {"type": "string", "required": true},
+            "from": {"type": "string", "required": false},
+            "sortBy": {"type": "string", "required": false, "enum": ["relevancy", "popularity", "publishedAt"]}
+          },
+          "return_format": "json",
+          "collision_note": "Same name, different result type (news vs videos vs music)"
+        },
+        {
+          "name": "get_price",
+          "platform": "Alpha Vantage (RapidAPI)",
+          "description": "Get stock price from Alpha Vantage",
+          "parameters": {
+            "symbol": {"type": "string", "required": true},
+            "function": {"type": "string", "required": true, "enum": ["TIME_SERIES_DAILY", "GLOBAL_QUOTE"]}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to get_stock_price; different param structure"
+        },
+        {
+          "name": "get_price",
+          "platform": "CoinGecko (RapidAPI)",
+          "description": "Get cryptocurrency price from CoinGecko",
+          "parameters": {
+            "ids": {"type": "string", "required": true},
+            "vs_currencies": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Identical name to Alpha Vantage get_price but for crypto"
+        },
+        {
+          "name": "translate",
+          "platform": "Google Translate (RapidAPI)",
+          "description": "Translate text using Google Translate",
+          "parameters": {
+            "text": {"type": "string", "required": true},
+            "source": {"type": "string", "required": false},
+            "target": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to DeepL translate"
+        },
+        {
+          "name": "translate",
+          "platform": "DeepL (RapidAPI)",
+          "description": "Translate text using DeepL",
+          "parameters": {
+            "text": {"type": "string", "required": true},
+            "target_lang": {"type": "string", "required": true},
+            "source_lang": {"type": "string", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Same name, different param names (target vs target_lang)"
+        },
+        {
+          "name": "forecast",
+          "platform": "WeatherAPI (RapidAPI)",
+          "description": "Get weather forecast from WeatherAPI",
+          "parameters": {
+            "q": {"type": "string", "required": true},
+            "days": {"type": "integer", "required": false, "default": 3}
+          },
+          "return_format": "json",
+          "collision_note": "Near-similar to get_current_weather (forecast vs current)"
+        },
+        {
+          "name": "current",
+          "platform": "OpenWeatherMap (RapidAPI)",
+          "description": "Get current weather from OpenWeatherMap",
+          "parameters": {
+            "lat": {"type": "number", "required": false},
+            "lon": {"type": "number", "required": false},
+            "q": {"type": "string", "required": false}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical function to get_current_weather but different endpoint name"
+        },
+        {
+          "name": "geocode",
+          "platform": "Google Maps (RapidAPI)",
+          "description": "Geocode an address to coordinates",
+          "parameters": {
+            "address": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to get_coordinates from MapBox"
+        },
+        {
+          "name": "get_coordinates",
+          "platform": "MapBox (RapidAPI)",
+          "description": "Get coordinates for a location",
+          "parameters": {
+            "location": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to geocode but different param name"
+        },
+        {
+          "name": "summarize",
+          "platform": "OpenAI (RapidAPI)",
+          "description": "Summarize a text document",
+          "parameters": {
+            "text": {"type": "string", "required": true},
+            "max_length": {"type": "integer", "required": false, "default": 200}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to summarize_page in our library"
+        }
+      ]
+    },
+    {
+      "source": "Common Open-Source Agent Frameworks",
+      "source_url": "https://github.com/langchain-ai/langchain, https://github.com/anthropics/claude-tool-definitions",
+      "description": "Tool definitions commonly used in LangChain, AutoGPT, and other agent frameworks, showing naming collisions",
+      "collision_type": "near_similar",
+      "tools": [
+        {
+          "name": "web_search",
+          "platform": "LangChain",
+          "description": "Search the web using a search engine (SerpAPI, Google, etc.)",
+          "parameters": {
+            "query": {"type": "string", "required": true}
+          },
+          "return_format": "text",
+          "collision_note": "Near-identical to our search_web; uses underscore instead of underscore"
+        },
+        {
+          "name": "GoogleSearchResults",
+          "platform": "LangChain",
+          "description": "Get Google search results as structured data",
+          "parameters": {
+            "query": {"type": "string", "required": true},
+            "num_results": {"type": "integer", "required": false, "default": 10}
+          },
+          "return_format": "json_list",
+          "collision_note": "Near-identical to web_search but returns structured results"
+        },
+        {
+          "name": "requests_get",
+          "platform": "LangChain",
+          "description": "Make an HTTP GET request to a URL",
+          "parameters": {
+            "url": {"type": "string", "required": true},
+            "params": {"type": "object", "required": false}
+          },
+          "return_format": "text",
+          "collision_note": "Near-similar to our navigate_url (raw HTTP vs parsed content)"
+        },
+        {
+          "name": "WikipediaQueryRun",
+          "platform": "LangChain",
+          "description": "Query Wikipedia for information",
+          "parameters": {
+            "query": {"type": "string", "required": true}
+          },
+          "return_format": "text",
+          "collision_note": "Near-similar to search_web but domain-specific"
+        },
+        {
+          "name": "PythonREPL",
+          "platform": "LangChain",
+          "description": "Execute Python code in a REPL",
+          "parameters": {
+            "code": {"type": "string", "required": true}
+          },
+          "return_format": "text",
+          "collision_note": "Distinct from all other tools; unique domain"
+        },
+        {
+          "name": "file_read",
+          "platform": "AutoGPT",
+          "description": "Read a file from disk",
+          "parameters": {
+            "filename": {"type": "string", "required": true}
+          },
+          "return_format": "text",
+          "collision_note": "Near-identical to our read_file; uses 'filename' instead of 'path'"
+        },
+        {
+          "name": "file_write",
+          "platform": "AutoGPT",
+          "description": "Write content to a file on disk",
+          "parameters": {
+            "filename": {"type": "string", "required": true},
+            "content": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to our write_file; uses 'filename' instead of 'path'"
+        },
+        {
+          "name": "browse_web",
+          "platform": "AutoGPT",
+          "description": "Browse the web and extract content from a URL",
+          "parameters": {
+            "url": {"type": "string", "required": true}
+          },
+          "return_format": "text",
+          "collision_note": "Near-identical to our navigate_url"
+        },
+        {
+          "name": "send_email",
+          "platform": "AutoGPT",
+          "description": "Send an email to a recipient",
+          "parameters": {
+            "to": {"type": "string", "required": true},
+            "subject": {"type": "string", "required": true},
+            "body": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Identical name and near-identical schema to our send_email"
+        },
+        {
+          "name": "calculate",
+          "platform": "AutoGPT",
+          "description": "Evaluate a mathematical expression",
+          "parameters": {
+            "expression": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Identical to our calculate tool"
+        },
+        {
+          "name": "task_create",
+          "platform": "AutoGPT",
+          "description": "Create a new task in the task manager",
+          "parameters": {
+            "task_name": {"type": "string", "required": true},
+            "priority": {"type": "integer", "required": false, "default": 1}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to our create_task; uses 'task_name' instead of 'title'"
+        },
+        {
+          "name": "weather_get",
+          "platform": "AutoGPT",
+          "description": "Get weather information for a location",
+          "parameters": {
+            "location": {"type": "string", "required": true}
+          },
+          "return_format": "json",
+          "collision_note": "Near-identical to our get_weather; different name ordering"
+        },
+        {
+          "name": "database_query",
+          "platform": "AutoGPT",
+          "description": "Query a database using SQL",
+          "parameters": {
+            "sql": {"type": "string", "required": true}
+          },
+          "return_format": "json_list",
+          "collision_note": "Near-identical to our query_database; uses 'sql' instead of 'query'"
+        },
+        {
+          "name": "news_search",
+          "platform": "AutoGPT",
+          "description": "Search for news articles",
+          "parameters": {
+            "query": {"type": "string", "required": true},
+            "limit": {"type": "integer", "required": false, "default": 10}
+          },
+          "return_format": "json_list",
+          "collision_note": "Near-identical to our search_news; name word order reversed"
+        }
+      ]
+    }
+  ]
+}

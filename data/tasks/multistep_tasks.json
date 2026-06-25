@@ -1,0 +1,1899 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "date": "2026-06-25",
+    "description": "MemInterfere Phase 5.4: Multi-step agentic workflow tasks for cascade error analysis",
+    "stats": {
+      "total": 30,
+      "by_difficulty": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10
+      },
+      "by_domain": {
+        "web_navigation": 10,
+        "api_calling": 10,
+        "mixed": 10
+      },
+      "total_steps": 88,
+      "avg_steps": 2.93
+    }
+  },
+  "tasks": [
+    {
+      "task_id": "multi_001",
+      "description": "Search for the weather in London, then send an email with the forecast to the team",
+      "domain": "mixed",
+      "difficulty": "easy",
+      "expected_skill_sequence": [
+        "search_web",
+        "send_email"
+      ],
+      "expected_outcomes": [
+        "List of weather search results",
+        "Email confirmation with forecast sent to team"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "medium",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Search the web for current weather in London",
+          "expected_skill": "search_web",
+          "expected_outcome": "Weather forecast data for London",
+          "interference_skills": [
+            "find_information",
+            "lookup_answer",
+            "search_web_fast"
+          ],
+          "interference_potential": "medium",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Send an email to team@company.com with the London weather forecast",
+          "expected_skill": "send_email",
+          "expected_outcome": "Email sent with forecast data",
+          "interference_skills": [
+            "dispatch_email",
+            "compose_email",
+            "compose_message",
+            "send_email_fast",
+            "notify_contact"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_002",
+      "description": "Look up contact info for Sarah, then create a calendar event for a meeting with her",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_sequence": [
+        "lookup_contact",
+        "create_event"
+      ],
+      "expected_outcomes": [
+        "Contact info for Sarah retrieved",
+        "Calendar event created for meeting with Sarah"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "medium",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Look up the contact information for Sarah",
+          "expected_skill": "lookup_contact",
+          "expected_outcome": "Sarah's contact info including email",
+          "interference_skills": [
+            "create_contact"
+          ],
+          "interference_potential": "medium",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Create a calendar event for a meeting with Sarah next Tuesday at 2pm",
+          "expected_skill": "create_event",
+          "expected_outcome": "Calendar event created for Sarah meeting",
+          "interference_skills": [
+            "add_calendar_event",
+            "add_event",
+            "schedule_meeting",
+            "book_appointment"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_003",
+      "description": "Scrape pricing data from a competitor website, then save it to a file",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_sequence": [
+        "scrape_page",
+        "write_file"
+      ],
+      "expected_outcomes": [
+        "Pricing data scraped from competitor page",
+        "Data saved to file"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "medium",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Scrape the pricing table from https://competitor.example.com/pricing using selector '.price-table'",
+          "expected_skill": "scrape_page",
+          "expected_outcome": "JSON list of pricing data",
+          "interference_skills": [
+            "get_data_from_page",
+            "harvest_content",
+            "scrape_page_quick"
+          ],
+          "interference_potential": "high",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Save the scraped pricing data to /tmp/competitor_prices.json",
+          "expected_skill": "write_file",
+          "expected_outcome": "File saved confirmation",
+          "interference_skills": [
+            "persist_data",
+            "store_content",
+            "write_file"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_004",
+      "description": "Navigate to a documentation page and summarize it",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_sequence": [
+        "navigate_url",
+        "summarize_page"
+      ],
+      "expected_outcomes": [
+        "Documentation page content extracted",
+        "Summary of the documentation generated"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "medium",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Navigate to https://docs.example.com/api/v2 and extract the content",
+          "expected_skill": "navigate_url",
+          "expected_outcome": "Page content in markdown format",
+          "interference_skills": [
+            "browse_website",
+            "open_webpage",
+            "view_content"
+          ],
+          "interference_potential": "high",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Summarize the documentation content",
+          "expected_skill": "summarize_page",
+          "expected_outcome": "Concise summary of the documentation",
+          "interference_skills": [
+            "brief_summary",
+            "translate_page"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_005",
+      "description": "Read the latest emails and create a task based on the content",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_sequence": [
+        "read_emails",
+        "create_task"
+      ],
+      "expected_outcomes": [
+        "Emails read and content extracted",
+        "Task created from email content"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "medium",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Read the last 10 emails from the inbox",
+          "expected_skill": "read_emails",
+          "expected_outcome": "JSON list of 10 emails with content",
+          "interference_skills": [
+            "compose_email"
+          ],
+          "interference_potential": "medium",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Create a task titled 'Follow up on email thread' with medium priority",
+          "expected_skill": "create_task",
+          "expected_outcome": "Task ID confirmation",
+          "interference_skills": [
+            "create_task",
+            "update_task",
+            "register_action"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_006",
+      "description": "Get the weather forecast for New York and set a reminder about it",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_sequence": [
+        "get_weather",
+        "set_reminder"
+      ],
+      "expected_outcomes": [
+        "Weather data for New York",
+        "Reminder set about the weather"
+      ],
+      "interference_potential": "medium",
+      "requires_memory": true,
+      "cascade_risk": "low",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Get the current weather for New York",
+          "expected_skill": "get_weather",
+          "expected_outcome": "JSON with temperature and conditions for New York",
+          "interference_skills": [
+            "check_weather",
+            "forecast_conditions",
+            "report_climate"
+          ],
+          "interference_potential": "medium",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Set a reminder for tomorrow morning to bring an umbrella if it will rain",
+          "expected_skill": "set_reminder",
+          "expected_outcome": "Reminder confirmation",
+          "interference_skills": [
+            "add_event"
+          ],
+          "interference_potential": "low",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_007",
+      "description": "Search for a specific web page and download a file from it",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_sequence": [
+        "search_web",
+        "download_file"
+      ],
+      "expected_outcomes": [
+        "Search results showing the target page",
+        "File downloaded from the page"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "medium",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Search for 'Q4 financial report PDF download' on the web",
+          "expected_skill": "search_web",
+          "expected_outcome": "Search results with URLs to the report",
+          "interference_skills": [
+            "find_information",
+            "lookup_answer",
+            "search_web_fast"
+          ],
+          "interference_potential": "high",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Download the financial report PDF from the top search result URL",
+          "expected_skill": "download_file",
+          "expected_outcome": "PDF file downloaded successfully",
+          "interference_skills": [
+            "write_file"
+          ],
+          "interference_potential": "low",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_008",
+      "description": "Check the website status and take a screenshot if it's down",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_sequence": [
+        "check_website_status",
+        "take_screenshot"
+      ],
+      "expected_outcomes": [
+        "Website status checked",
+        "Screenshot taken of the error page"
+      ],
+      "interference_potential": "low",
+      "requires_memory": true,
+      "cascade_risk": "low",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Check if https://api.example.com is up and responding",
+          "expected_skill": "check_website_status",
+          "expected_outcome": "JSON with status code response",
+          "interference_skills": [
+            "proxy_request",
+            "check_ssl"
+          ],
+          "interference_potential": "low",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Take a screenshot of https://api.example.com to document the error",
+          "expected_skill": "take_screenshot",
+          "expected_outcome": "PNG image path of the screenshot",
+          "interference_skills": [],
+          "interference_potential": "low",
+          "depends_on": 1,
+          "cascade_risk": "low"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_009",
+      "description": "Query the database for monthly sales and calculate the total",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_sequence": [
+        "query_database",
+        "calculate"
+      ],
+      "expected_outcomes": [
+        "Sales data from the database",
+        "Total sales calculated"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "medium",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Query the database for all sales records from last month",
+          "expected_skill": "query_database",
+          "expected_outcome": "JSON list of sales records",
+          "interference_skills": [
+            "run_db_query",
+            "fetch_records",
+            "quick_query"
+          ],
+          "interference_potential": "high",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the total of the sales amounts from the query results",
+          "expected_skill": "calculate",
+          "expected_outcome": "JSON with calculated total",
+          "interference_skills": [
+            "calculate_fast"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_010",
+      "description": "Look up stock price for AAPL and send the result to a colleague",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_sequence": [
+        "get_stock_price",
+        "send_email"
+      ],
+      "expected_outcomes": [
+        "Stock price data for AAPL retrieved",
+        "Email with stock info sent"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "medium",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Get the current stock price for AAPL",
+          "expected_skill": "get_stock_price",
+          "expected_outcome": "JSON with current AAPL price",
+          "interference_skills": [
+            "get_stock_price_v0"
+          ],
+          "interference_potential": "medium",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Send an email to colleague@company.com with the AAPL stock price",
+          "expected_skill": "send_email",
+          "expected_outcome": "Email sent with stock price information",
+          "interference_skills": [
+            "dispatch_email",
+            "compose_email",
+            "compose_message",
+            "send_email_fast",
+            "notify_contact"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_011",
+      "description": "Search for product reviews, scrape the top result, and summarize the findings",
+      "domain": "web_navigation",
+      "difficulty": "medium",
+      "expected_skill_sequence": [
+        "search_web",
+        "scrape_page",
+        "summarize_page"
+      ],
+      "expected_outcomes": [
+        "Search results for product reviews",
+        "Review data scraped from top result",
+        "Summary of product reviews"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Search the web for 'best wireless headphones reviews 2026'",
+          "expected_skill": "search_web",
+          "expected_outcome": "List of search results with review URLs",
+          "interference_skills": [
+            "find_information",
+            "lookup_answer",
+            "search_web_fast"
+          ],
+          "interference_potential": "high",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Scrape the review data from the top search result using selector '.review-content'",
+          "expected_skill": "scrape_page",
+          "expected_outcome": "JSON list of review data",
+          "interference_skills": [
+            "get_data_from_page",
+            "harvest_content",
+            "scrape_page_quick"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 3,
+          "description": "Summarize the scraped review content into key findings",
+          "expected_skill": "summarize_page",
+          "expected_outcome": "Concise summary of the reviews",
+          "interference_skills": [
+            "brief_summary",
+            "translate_page"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_012",
+      "description": "Read emails about meeting invites, create calendar events, and set reminders",
+      "domain": "api_calling",
+      "difficulty": "medium",
+      "expected_skill_sequence": [
+        "read_emails",
+        "create_event",
+        "set_reminder"
+      ],
+      "expected_outcomes": [
+        "Meeting invites extracted from emails",
+        "Calendar event created for each meeting",
+        "Reminders set 15 minutes before each meeting"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Read all unread emails from today and identify meeting invites",
+          "expected_skill": "read_emails",
+          "expected_outcome": "JSON list of emails with meeting details",
+          "interference_skills": [
+            "compose_email"
+          ],
+          "interference_potential": "medium",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Create a calendar event for each meeting invite found",
+          "expected_skill": "create_event",
+          "expected_outcome": "Calendar event confirmation with ID",
+          "interference_skills": [
+            "add_calendar_event",
+            "add_event",
+            "schedule_meeting",
+            "book_appointment"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 3,
+          "description": "Set a reminder 15 minutes before each meeting",
+          "expected_skill": "set_reminder",
+          "expected_outcome": "Reminder confirmation",
+          "interference_skills": [
+            "add_event"
+          ],
+          "interference_potential": "low",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_013",
+      "description": "Monitor a page for changes, extract the changed data, and save it to a file",
+      "domain": "web_navigation",
+      "difficulty": "medium",
+      "expected_skill_sequence": [
+        "monitor_page",
+        "extract_table",
+        "write_file"
+      ],
+      "expected_outcomes": [
+        "Changes detected on the monitored page",
+        "Table data extracted from changes",
+        "Data saved to file"
+      ],
+      "interference_potential": "medium",
+      "requires_memory": true,
+      "cascade_risk": "medium",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Monitor https://status.example.com for changes since yesterday",
+          "expected_skill": "monitor_page",
+          "expected_outcome": "JSON diff of page changes",
+          "interference_skills": [
+            "monitor_changes"
+          ],
+          "interference_potential": "medium",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Extract the table data from the changed sections",
+          "expected_skill": "extract_table",
+          "expected_outcome": "JSON list of table rows",
+          "interference_skills": [
+            "scrape_page",
+            "get_data_from_page",
+            "harvest_content"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        },
+        {
+          "step_number": 3,
+          "description": "Save the extracted table data to /tmp/status_changes.json",
+          "expected_skill": "write_file",
+          "expected_outcome": "File saved confirmation",
+          "interference_skills": [
+            "persist_data",
+            "store_content",
+            "write_file"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 2,
+          "cascade_risk": "medium"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_014",
+      "description": "Look up a contact, get weather for their city, and send them a weather update email",
+      "domain": "mixed",
+      "difficulty": "medium",
+      "expected_skill_sequence": [
+        "lookup_contact",
+        "get_weather",
+        "send_email"
+      ],
+      "expected_outcomes": [
+        "Contact info retrieved for the person",
+        "Weather data for their city",
+        "Email with weather update sent"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Look up contact information for Alice Johnson",
+          "expected_skill": "lookup_contact",
+          "expected_outcome": "Alice's contact info including city and email",
+          "interference_skills": [
+            "create_contact"
+          ],
+          "interference_potential": "medium",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Get the current weather for Alice's city",
+          "expected_skill": "get_weather",
+          "expected_outcome": "Weather data for Alice's city",
+          "interference_skills": [
+            "check_weather",
+            "forecast_conditions",
+            "report_climate"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        },
+        {
+          "step_number": 3,
+          "description": "Send Alice an email with the weather update for her city",
+          "expected_skill": "send_email",
+          "expected_outcome": "Email sent to Alice with weather info",
+          "interference_skills": [
+            "dispatch_email",
+            "compose_email",
+            "compose_message",
+            "send_email_fast",
+            "notify_contact"
+          ],
+          "interference_potential": "high",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_015",
+      "description": "Navigate to a product page, extract the price table, and download the product datasheet",
+      "domain": "web_navigation",
+      "difficulty": "medium",
+      "expected_skill_sequence": [
+        "navigate_url",
+        "extract_table",
+        "download_file"
+      ],
+      "expected_outcomes": [
+        "Product page content extracted",
+        "Price table extracted as structured data",
+        "Datasheet PDF downloaded"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "medium",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Navigate to https://shop.example.com/products/widget-pro",
+          "expected_skill": "navigate_url",
+          "expected_outcome": "Product page content in markdown",
+          "interference_skills": [
+            "browse_website",
+            "open_webpage",
+            "view_content"
+          ],
+          "interference_potential": "high",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Extract the pricing table from the product page",
+          "expected_skill": "extract_table",
+          "expected_outcome": "JSON list of pricing rows",
+          "interference_skills": [
+            "scrape_page",
+            "get_data_from_page"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        },
+        {
+          "step_number": 3,
+          "description": "Download the product datasheet PDF from the product page",
+          "expected_skill": "download_file",
+          "expected_outcome": "PDF file downloaded to local storage",
+          "interference_skills": [
+            "write_file"
+          ],
+          "interference_potential": "low",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_016",
+      "description": "Query the database for quarterly revenue, write results to a file, and email the report",
+      "domain": "api_calling",
+      "difficulty": "medium",
+      "expected_skill_sequence": [
+        "query_database",
+        "write_file",
+        "send_email"
+      ],
+      "expected_outcomes": [
+        "Revenue data from the database",
+        "Results saved to a CSV file",
+        "Report emailed to finance team"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Query the database for all revenue records from Q1 2026",
+          "expected_skill": "query_database",
+          "expected_outcome": "JSON list of revenue records",
+          "interference_skills": [
+            "run_db_query",
+            "fetch_records",
+            "quick_query"
+          ],
+          "interference_potential": "high",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Write the query results to /tmp/q1_revenue.csv",
+          "expected_skill": "write_file",
+          "expected_outcome": "File saved confirmation",
+          "interference_skills": [
+            "persist_data",
+            "store_content",
+            "write_file"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 3,
+          "description": "Email the revenue report file to finance@company.com",
+          "expected_skill": "send_email",
+          "expected_outcome": "Email sent with revenue report attached",
+          "interference_skills": [
+            "dispatch_email",
+            "compose_email",
+            "compose_message",
+            "send_email_fast",
+            "notify_contact"
+          ],
+          "interference_potential": "high",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_017",
+      "description": "Search for news about AI regulation, summarize the top article, and create a task to follow up",
+      "domain": "mixed",
+      "difficulty": "medium",
+      "expected_skill_sequence": [
+        "search_news",
+        "summarize_page",
+        "create_task"
+      ],
+      "expected_outcomes": [
+        "News articles about AI regulation found",
+        "Top article summarized",
+        "Task created to follow up on regulation"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Search for recent news about 'AI regulation policy 2026'",
+          "expected_skill": "search_news",
+          "expected_outcome": "JSON list of news articles",
+          "interference_skills": [
+            "get_news_briefing",
+            "find_information"
+          ],
+          "interference_potential": "medium",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Navigate to the top article and summarize it",
+          "expected_skill": "summarize_page",
+          "expected_outcome": "Concise summary of the AI regulation article",
+          "interference_skills": [
+            "brief_summary",
+            "navigate_url",
+            "browse_website"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 3,
+          "description": "Create a task to follow up on the regulation changes",
+          "expected_skill": "create_task",
+          "expected_outcome": "Task created with regulation follow-up details",
+          "interference_skills": [
+            "create_task",
+            "update_task",
+            "register_action"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 2,
+          "cascade_risk": "medium"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_018",
+      "description": "Get weather for 3 cities, calculate average temperature, and write a report",
+      "domain": "mixed",
+      "difficulty": "medium",
+      "expected_skill_sequence": [
+        "get_weather",
+        "calculate",
+        "write_file"
+      ],
+      "expected_outcomes": [
+        "Weather data for 3 cities",
+        "Average temperature calculated",
+        "Report saved to file"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "medium",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Get the current weather for New York, London, and Tokyo",
+          "expected_skill": "get_weather",
+          "expected_outcome": "Weather data including temperatures for 3 cities",
+          "interference_skills": [
+            "check_weather",
+            "forecast_conditions",
+            "report_climate"
+          ],
+          "interference_potential": "high",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the average temperature across the three cities",
+          "expected_skill": "calculate",
+          "expected_outcome": "JSON with average temperature result",
+          "interference_skills": [
+            "calculate_fast"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        },
+        {
+          "step_number": 3,
+          "description": "Write the weather report with average temperature to /tmp/weather_report.txt",
+          "expected_skill": "write_file",
+          "expected_outcome": "Report file saved",
+          "interference_skills": [
+            "persist_data",
+            "store_content",
+            "write_file"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 2,
+          "cascade_risk": "medium"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_019",
+      "description": "Search for a specific product, scrape the specifications, and fill out a comparison form",
+      "domain": "web_navigation",
+      "difficulty": "medium",
+      "expected_skill_sequence": [
+        "search_web",
+        "scrape_page",
+        "fill_form"
+      ],
+      "expected_outcomes": [
+        "Search results for the product",
+        "Specifications scraped from product page",
+        "Comparison form filled with specs"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Search for 'Samsung Galaxy S26 specs'",
+          "expected_skill": "search_web",
+          "expected_outcome": "Search results with product page URLs",
+          "interference_skills": [
+            "find_information",
+            "lookup_answer",
+            "search_web_fast"
+          ],
+          "interference_potential": "high",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Scrape the specification data from the top product result",
+          "expected_skill": "scrape_page",
+          "expected_outcome": "JSON list of specification values",
+          "interference_skills": [
+            "get_data_from_page",
+            "harvest_content",
+            "scrape_page_quick"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 3,
+          "description": "Fill out the comparison form at https://compare.example.com with the scraped specs",
+          "expected_skill": "fill_form",
+          "expected_outcome": "Form submitted with product specifications",
+          "interference_skills": [
+            "submit_form"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_020",
+      "description": "Read a data file, query the database to enrich it, and email the merged results",
+      "domain": "api_calling",
+      "difficulty": "medium",
+      "expected_skill_sequence": [
+        "read_file",
+        "query_database",
+        "send_email"
+      ],
+      "expected_outcomes": [
+        "Data file read successfully",
+        "Database queried for enrichment data",
+        "Merged results emailed"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Read the customer list from /tmp/customers.csv",
+          "expected_skill": "read_file",
+          "expected_outcome": "Contents of the customer file",
+          "interference_skills": [
+            "load_document",
+            "read_file_v0"
+          ],
+          "interference_potential": "medium",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Query the database for purchase history matching the customer IDs",
+          "expected_skill": "query_database",
+          "expected_outcome": "JSON list of customer purchase records",
+          "interference_skills": [
+            "run_db_query",
+            "fetch_records",
+            "quick_query"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 3,
+          "description": "Email the merged customer report to sales@company.com",
+          "expected_skill": "send_email",
+          "expected_outcome": "Email sent with enriched customer data",
+          "interference_skills": [
+            "dispatch_email",
+            "compose_email",
+            "compose_message",
+            "send_email_fast",
+            "notify_contact"
+          ],
+          "interference_potential": "high",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_021",
+      "description": "Search for competitor pricing, scrape 3 product pages, extract tables, and create a comparison report",
+      "domain": "web_navigation",
+      "difficulty": "hard",
+      "expected_skill_sequence": [
+        "search_web",
+        "navigate_url",
+        "scrape_page",
+        "extract_table",
+        "write_file"
+      ],
+      "expected_outcomes": [
+        "Search results for competitor pricing",
+        "Product pages navigated to",
+        "Pricing data scraped from each page",
+        "Tables extracted and compared",
+        "Comparison report saved to file"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Search for 'widget pricing comparison 2026'",
+          "expected_skill": "search_web",
+          "expected_outcome": "Search results with competitor URLs",
+          "interference_skills": [
+            "find_information",
+            "lookup_answer",
+            "search_web_fast"
+          ],
+          "interference_potential": "high",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Navigate to the top competitor pricing page",
+          "expected_skill": "navigate_url",
+          "expected_outcome": "Page content in markdown",
+          "interference_skills": [
+            "browse_website",
+            "open_webpage",
+            "view_content"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 3,
+          "description": "Scrape the pricing data using selector '.price-list'",
+          "expected_skill": "scrape_page",
+          "expected_outcome": "JSON list of pricing entries",
+          "interference_skills": [
+            "get_data_from_page",
+            "harvest_content",
+            "scrape_page_quick"
+          ],
+          "interference_potential": "high",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 4,
+          "description": "Extract the comparison table from the scraped data",
+          "expected_skill": "extract_table",
+          "expected_outcome": "Structured comparison data",
+          "interference_skills": [
+            "scrape_page",
+            "get_data_from_page"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 3,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 5,
+          "description": "Save the comparison report to /tmp/pricing_comparison.json",
+          "expected_skill": "write_file",
+          "expected_outcome": "Report file saved",
+          "interference_skills": [
+            "persist_data",
+            "store_content",
+            "write_file"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 4,
+          "cascade_risk": "medium"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_022",
+      "description": "Read emails, identify meeting invites, create events, set reminders, and send confirmation",
+      "domain": "api_calling",
+      "difficulty": "hard",
+      "expected_skill_sequence": [
+        "read_emails",
+        "create_event",
+        "set_reminder",
+        "send_email"
+      ],
+      "expected_outcomes": [
+        "Emails read and meetings identified",
+        "Calendar events created",
+        "Reminders set before each meeting",
+        "Confirmation emails sent"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Read all unread emails and identify meeting invites",
+          "expected_skill": "read_emails",
+          "expected_outcome": "JSON list of meeting invite emails",
+          "interference_skills": [
+            "compose_email"
+          ],
+          "interference_potential": "medium",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Create calendar events for each identified meeting invite",
+          "expected_skill": "create_event",
+          "expected_outcome": "Calendar event confirmations with IDs",
+          "interference_skills": [
+            "add_calendar_event",
+            "add_event",
+            "schedule_meeting",
+            "book_appointment"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 3,
+          "description": "Set reminders 30 minutes before each meeting",
+          "expected_skill": "set_reminder",
+          "expected_outcome": "Reminder confirmations",
+          "interference_skills": [
+            "add_event"
+          ],
+          "interference_potential": "low",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 4,
+          "description": "Send confirmation emails to meeting organizers",
+          "expected_skill": "send_email",
+          "expected_outcome": "Confirmation emails sent",
+          "interference_skills": [
+            "dispatch_email",
+            "compose_email",
+            "compose_message",
+            "send_email_fast",
+            "notify_contact"
+          ],
+          "interference_potential": "high",
+          "depends_on": 3,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_023",
+      "description": "Get weather for outdoor event location, look up attendee contacts, create the event, and send invitations",
+      "domain": "mixed",
+      "difficulty": "hard",
+      "expected_skill_sequence": [
+        "get_weather",
+        "lookup_contact",
+        "create_event",
+        "send_email"
+      ],
+      "expected_outcomes": [
+        "Weather forecast for event location",
+        "Contact info for all attendees",
+        "Calendar event created with weather note",
+        "Invitation emails sent with weather info"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Get the weather forecast for the outdoor event location (Central Park, New York)",
+          "expected_skill": "get_weather",
+          "expected_outcome": "Weather forecast data for Central Park area",
+          "interference_skills": [
+            "check_weather",
+            "forecast_conditions",
+            "report_climate"
+          ],
+          "interference_potential": "high",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Look up contact information for all team members attending the event",
+          "expected_skill": "lookup_contact",
+          "expected_outcome": "Contact details for all attendees",
+          "interference_skills": [
+            "create_contact"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        },
+        {
+          "step_number": 3,
+          "description": "Create an outdoor team event in the calendar for the best weather day, with a weather note",
+          "expected_skill": "create_event",
+          "expected_outcome": "Calendar event created with weather-aware details",
+          "interference_skills": [
+            "add_calendar_event",
+            "add_event",
+            "schedule_meeting",
+            "book_appointment"
+          ],
+          "interference_potential": "high",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 4,
+          "description": "Send invitation emails to all attendees with the weather forecast included",
+          "expected_skill": "send_email",
+          "expected_outcome": "Invitation emails sent to all attendees",
+          "interference_skills": [
+            "dispatch_email",
+            "compose_email",
+            "compose_message",
+            "send_email_fast",
+            "notify_contact"
+          ],
+          "interference_potential": "high",
+          "depends_on": 3,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_024",
+      "description": "Search for product pages, navigate to them, extract images, and download the product catalog",
+      "domain": "web_navigation",
+      "difficulty": "hard",
+      "expected_skill_sequence": [
+        "search_web",
+        "navigate_url",
+        "extract_images",
+        "download_file"
+      ],
+      "expected_outcomes": [
+        "Search results for product pages",
+        "Product page content loaded",
+        "Product images extracted",
+        "Product catalog PDF downloaded"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Search for 'acme widget pro official page'",
+          "expected_skill": "search_web",
+          "expected_outcome": "Search results with product page URLs",
+          "interference_skills": [
+            "find_information",
+            "lookup_answer",
+            "search_web_fast"
+          ],
+          "interference_potential": "high",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Navigate to the official product page from search results",
+          "expected_skill": "navigate_url",
+          "expected_outcome": "Product page content in markdown",
+          "interference_skills": [
+            "browse_website",
+            "open_webpage",
+            "view_content"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 3,
+          "description": "Extract all product images from the page",
+          "expected_skill": "extract_images",
+          "expected_outcome": "JSON list of image URLs and alt text",
+          "interference_skills": [
+            "scrape_page",
+            "get_data_from_page"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 4,
+          "description": "Download the product catalog PDF from the page",
+          "expected_skill": "download_file",
+          "expected_outcome": "PDF catalog downloaded",
+          "interference_skills": [
+            "write_file"
+          ],
+          "interference_potential": "low",
+          "depends_on": 2,
+          "cascade_risk": "medium"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_025",
+      "description": "Query the database for revenue data, calculate totals, write a report, and create a task for review",
+      "domain": "api_calling",
+      "difficulty": "hard",
+      "expected_skill_sequence": [
+        "query_database",
+        "calculate",
+        "write_file",
+        "create_task"
+      ],
+      "expected_outcomes": [
+        "Revenue data queried from database",
+        "Totals calculated",
+        "Report written to file",
+        "Task created for analyst review"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Query the database for this quarter's revenue by region",
+          "expected_skill": "query_database",
+          "expected_outcome": "JSON list of revenue records by region",
+          "interference_skills": [
+            "run_db_query",
+            "fetch_records",
+            "quick_query"
+          ],
+          "interference_potential": "high",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Calculate the total revenue and percentage change from last quarter",
+          "expected_skill": "calculate",
+          "expected_outcome": "JSON with calculated totals and percentages",
+          "interference_skills": [
+            "calculate_fast"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 3,
+          "description": "Write the revenue report to /tmp/q_revenue_report.txt",
+          "expected_skill": "write_file",
+          "expected_outcome": "Report file saved",
+          "interference_skills": [
+            "persist_data",
+            "store_content",
+            "write_file"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 4,
+          "description": "Create a task for the finance analyst to review the report",
+          "expected_skill": "create_task",
+          "expected_outcome": "Task created with review assignment",
+          "interference_skills": [
+            "create_task",
+            "update_task",
+            "register_action"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 3,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_026",
+      "description": "Crawl a documentation site, extract metadata, download the API reference, and summarize it",
+      "domain": "web_navigation",
+      "difficulty": "hard",
+      "expected_skill_sequence": [
+        "crawl_site",
+        "extract_metadata",
+        "download_file",
+        "summarize_page"
+      ],
+      "expected_outcomes": [
+        "Documentation site crawled",
+        "Metadata extracted from pages",
+        "API reference PDF downloaded",
+        "Summary of API reference generated"
+      ],
+      "interference_potential": "medium",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Crawl https://docs.example.com for all pages about authentication",
+          "expected_skill": "crawl_site",
+          "expected_outcome": "JSON list of authentication-related pages",
+          "interference_skills": [],
+          "interference_potential": "low",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Extract metadata from the crawled authentication pages",
+          "expected_skill": "extract_metadata",
+          "expected_outcome": "JSON with page titles, descriptions, and tags",
+          "interference_skills": [
+            "scrape_page",
+            "get_data_from_page"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        },
+        {
+          "step_number": 3,
+          "description": "Download the main API reference PDF from the documentation site",
+          "expected_skill": "download_file",
+          "expected_outcome": "PDF file downloaded",
+          "interference_skills": [
+            "write_file"
+          ],
+          "interference_potential": "low",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        },
+        {
+          "step_number": 4,
+          "description": "Summarize the key authentication concepts from the downloaded reference",
+          "expected_skill": "summarize_page",
+          "expected_outcome": "Concise summary of authentication documentation",
+          "interference_skills": [
+            "brief_summary",
+            "translate_page"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_027",
+      "description": "Search for news, read the RSS feed, summarize articles, and email a digest to the team",
+      "domain": "mixed",
+      "difficulty": "hard",
+      "expected_skill_sequence": [
+        "search_news",
+        "read_rss",
+        "summarize_page",
+        "send_email"
+      ],
+      "expected_outcomes": [
+        "News search results found",
+        "RSS feed entries read",
+        "Top articles summarized",
+        "News digest emailed to team"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Search for recent news about 'data privacy regulation'",
+          "expected_skill": "search_news",
+          "expected_outcome": "JSON list of news articles",
+          "interference_skills": [
+            "get_news_briefing",
+            "find_information"
+          ],
+          "interference_potential": "medium",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Read the RSS feed from https://news.example.com/tech/feed.xml for related articles",
+          "expected_skill": "read_rss",
+          "expected_outcome": "JSON list of RSS entries with article URLs",
+          "interference_skills": [
+            "search_web",
+            "find_information"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        },
+        {
+          "step_number": 3,
+          "description": "Summarize the top 3 articles from the RSS feed",
+          "expected_skill": "summarize_page",
+          "expected_outcome": "Concise summaries of the top 3 articles",
+          "interference_skills": [
+            "brief_summary",
+            "navigate_url",
+            "browse_website"
+          ],
+          "interference_potential": "high",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 4,
+          "description": "Send a news digest email to team@company.com with the summaries",
+          "expected_skill": "send_email",
+          "expected_outcome": "News digest email sent",
+          "interference_skills": [
+            "dispatch_email",
+            "compose_email",
+            "compose_message",
+            "send_email_fast",
+            "notify_contact"
+          ],
+          "interference_potential": "high",
+          "depends_on": 3,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_028",
+      "description": "Monitor competitor pages for price changes, extract the new prices, calculate differences, and alert the team",
+      "domain": "mixed",
+      "difficulty": "hard",
+      "expected_skill_sequence": [
+        "monitor_page",
+        "extract_table",
+        "calculate",
+        "send_email"
+      ],
+      "expected_outcomes": [
+        "Price changes detected on competitor pages",
+        "New pricing table extracted",
+        "Price differences calculated",
+        "Alert email sent to team"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Monitor https://competitor.example.com/pricing for changes since last week",
+          "expected_skill": "monitor_page",
+          "expected_outcome": "JSON diff showing price changes",
+          "interference_skills": [
+            "monitor_changes"
+          ],
+          "interference_potential": "medium",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Extract the pricing table from the competitor page",
+          "expected_skill": "extract_table",
+          "expected_outcome": "Structured pricing data as JSON list",
+          "interference_skills": [
+            "scrape_page",
+            "get_data_from_page",
+            "harvest_content"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        },
+        {
+          "step_number": 3,
+          "description": "Calculate the percentage price change for each product",
+          "expected_skill": "calculate",
+          "expected_outcome": "JSON with calculated percentage changes",
+          "interference_skills": [
+            "calculate_fast"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 4,
+          "description": "Send a price change alert email to pricing@company.com",
+          "expected_skill": "send_email",
+          "expected_outcome": "Price alert email sent with calculations",
+          "interference_skills": [
+            "dispatch_email",
+            "compose_email",
+            "compose_message",
+            "send_email_fast",
+            "notify_contact"
+          ],
+          "interference_potential": "high",
+          "depends_on": 3,
+          "cascade_risk": "high"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_029",
+      "description": "Read emails about project updates, query the database for related data, write a summary report, and set a reminder",
+      "domain": "api_calling",
+      "difficulty": "hard",
+      "expected_skill_sequence": [
+        "read_emails",
+        "query_database",
+        "write_file",
+        "set_reminder"
+      ],
+      "expected_outcomes": [
+        "Project update emails read",
+        "Related project data queried from database",
+        "Summary report written to file",
+        "Reminder set for follow-up"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Read emails from this week about project updates",
+          "expected_skill": "read_emails",
+          "expected_outcome": "JSON list of project update emails",
+          "interference_skills": [
+            "compose_email"
+          ],
+          "interference_potential": "medium",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Query the database for project milestones mentioned in the emails",
+          "expected_skill": "query_database",
+          "expected_outcome": "JSON list of project milestone data",
+          "interference_skills": [
+            "run_db_query",
+            "fetch_records",
+            "quick_query"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 3,
+          "description": "Write a summary report combining email updates and database data to /tmp/project_summary.txt",
+          "expected_skill": "write_file",
+          "expected_outcome": "Report file saved",
+          "interference_skills": [
+            "persist_data",
+            "store_content",
+            "write_file"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 2,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 4,
+          "description": "Set a reminder to follow up on the project next Monday at 9am",
+          "expected_skill": "set_reminder",
+          "expected_outcome": "Reminder confirmation for next Monday",
+          "interference_skills": [
+            "add_event"
+          ],
+          "interference_potential": "low",
+          "depends_on": 3,
+          "cascade_risk": "medium"
+        }
+      ]
+    },
+    {
+      "task_id": "multi_030",
+      "description": "Search for a location, get the weather, check website status, navigate to the page, and fill out an event form",
+      "domain": "mixed",
+      "difficulty": "hard",
+      "expected_skill_sequence": [
+        "search_web",
+        "get_weather",
+        "check_website_status",
+        "navigate_url",
+        "fill_form"
+      ],
+      "expected_outcomes": [
+        "Search results for the venue",
+        "Weather forecast for the venue location",
+        "Website status confirmed",
+        "Venue page content extracted",
+        "Event registration form filled"
+      ],
+      "interference_potential": "high",
+      "requires_memory": true,
+      "cascade_risk": "high",
+      "steps": [
+        {
+          "step_number": 1,
+          "description": "Search for 'Central Park outdoor concert venue NYC'",
+          "expected_skill": "search_web",
+          "expected_outcome": "Search results with venue information",
+          "interference_skills": [
+            "find_information",
+            "lookup_answer",
+            "search_web_fast"
+          ],
+          "interference_potential": "high",
+          "depends_on": null,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 2,
+          "description": "Get the weather forecast for the venue location",
+          "expected_skill": "get_weather",
+          "expected_outcome": "Weather data for the venue area",
+          "interference_skills": [
+            "check_weather",
+            "forecast_conditions",
+            "report_climate"
+          ],
+          "interference_potential": "high",
+          "depends_on": 1,
+          "cascade_risk": "medium"
+        },
+        {
+          "step_number": 3,
+          "description": "Check if the venue website is up and accessible",
+          "expected_skill": "check_website_status",
+          "expected_outcome": "JSON with status code 200",
+          "interference_skills": [
+            "proxy_request",
+            "check_ssl"
+          ],
+          "interference_potential": "low",
+          "depends_on": 1,
+          "cascade_risk": "low"
+        },
+        {
+          "step_number": 4,
+          "description": "Navigate to the event registration page",
+          "expected_skill": "navigate_url",
+          "expected_outcome": "Registration page content in markdown",
+          "interference_skills": [
+            "browse_website",
+            "open_webpage",
+            "view_content"
+          ],
+          "interference_potential": "high",
+          "depends_on": 3,
+          "cascade_risk": "high"
+        },
+        {
+          "step_number": 5,
+          "description": "Fill out the event registration form with name, email, and preferred date",
+          "expected_skill": "fill_form",
+          "expected_outcome": "Form submitted with registration details",
+          "interference_skills": [
+            "submit_form"
+          ],
+          "interference_potential": "medium",
+          "depends_on": 4,
+          "cascade_risk": "high"
+        }
+      ]
+    }
+  ]
+}

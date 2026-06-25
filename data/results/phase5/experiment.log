@@ -1,0 +1,33 @@
+2026-06-25 17:19:20,680 [INFO] Using 80 tasks
+2026-06-25 17:19:20,682 [INFO] Skill library sizes: oracle: 30, no_memory: 0, clean_memory: 30, clean_interference: 58, clean_stale: 40, all_memory: 68
+2026-06-25 17:19:20,682 [INFO] 
+============================================================
+2026-06-25 17:19:20,682 [INFO] Experiment Configuration
+2026-06-25 17:19:20,682 [INFO] ============================================================
+2026-06-25 17:19:20,682 [INFO] Models: llama-3.1-8b-instruct, grok-3-mini, gpt-4o-mini, claude-3.5-haiku
+2026-06-25 17:19:20,682 [INFO] Conditions: oracle, no_memory, clean_memory, clean_interference, clean_stale, all_memory
+2026-06-25 17:19:20,682 [INFO] Temperatures: [0.0, 0.3, 0.7]
+2026-06-25 17:19:20,682 [INFO] Tasks: 80
+2026-06-25 17:19:20,682 [INFO] Total runs: 5760
+2026-06-25 17:19:20,682 [INFO]   llama-3.1-8b-instruct: ~$0.00 (openrouter)
+2026-06-25 17:19:20,682 [INFO]   grok-3-mini: ~$0.28 (xai)
+2026-06-25 17:19:20,682 [INFO]   gpt-4o-mini: ~$0.22 (openrouter)
+2026-06-25 17:19:20,682 [INFO]   claude-3.5-haiku: ~$0.41 (anthropic)
+2026-06-25 17:19:20,682 [INFO]   Total estimated cost: $0.91
+2026-06-25 17:19:20,682 [INFO] 
+Dry run complete. Exiting without running experiments.
+2026-06-25 17:20:01,742 [INFO] Using 3 tasks
+2026-06-25 17:20:01,743 [INFO] Skill library sizes: clean_interference: 58
+2026-06-25 17:20:01,743 [INFO] 
+============================================================
+2026-06-25 17:20:01,743 [INFO] Experiment Configuration
+2026-06-25 17:20:01,743 [INFO] ============================================================
+2026-06-25 17:20:01,743 [INFO] Models: grok-3-mini
+2026-06-25 17:20:01,743 [INFO] Conditions: clean_interference
+2026-06-25 17:20:01,743 [INFO] Temperatures: [0.0]
+2026-06-25 17:20:01,743 [INFO] Tasks: 3
+2026-06-25 17:20:01,743 [INFO] Total runs: 3
+2026-06-25 17:20:01,744 [INFO]   grok-3-mini: ~$0.00 (xai)
+2026-06-25 17:20:01,744 [INFO]   Total estimated cost: $0.00
+2026-06-25 17:20:01,744 [INFO] 
+Dry run complete. Exiting without running experiments.
