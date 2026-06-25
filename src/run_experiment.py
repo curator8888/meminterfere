@@ -23,9 +23,21 @@ import logging
 import time
 from datetime import datetime
 from dataclasses import asdict
+from dotenv import load_dotenv
 
 # Set up path for imports
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+# Load environment variables from .env files
+# Check project directory first, then home directory
+_project_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+_home_dir = os.path.expanduser("~")
+for _env_path in [
+    os.path.join(_project_dir, ".env"),
+    os.path.join(_home_dir, ".hermes", ".env"),
+]:
+    if os.path.exists(_env_path):
+        load_dotenv(_env_path, override=False)
 
 from model_config import MODELS, get_model, get_all_models, estimate_cost
 from multi_model_runner import MultiModelRunner, RunResult, produce_summary

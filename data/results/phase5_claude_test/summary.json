@@ -1,0 +1,13 @@
+{
+  "claude-3.5-haiku|oracle|T=0.0": {
+    "total_runs": 3,
+    "parsed": 0,
+    "parse_rate": 0.0,
+    "correct": 0,
+    "accuracy": 0.0,
+    "errors": 3,
+    "avg_latency_ms": 6750.3,
+    "avg_confidence": 0.0,
+    "total_tokens": 0
+  }
+}

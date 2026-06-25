@@ -1,0 +1,287 @@
+2026-06-25 19:31:28,019 [INFO] Using 3 tasks
+2026-06-25 19:31:28,023 [INFO] Skill library sizes: oracle: 40
+2026-06-25 19:31:28,023 [INFO] 
+============================================================
+2026-06-25 19:31:28,023 [INFO] Experiment Configuration
+2026-06-25 19:31:28,024 [INFO] ============================================================
+2026-06-25 19:31:28,024 [INFO] Models: claude-3.5-haiku
+2026-06-25 19:31:28,024 [INFO] Conditions: oracle
+2026-06-25 19:31:28,024 [INFO] Temperatures: [0.0]
+2026-06-25 19:31:28,027 [INFO] Tasks: 3
+2026-06-25 19:31:28,027 [INFO] Total runs: 3
+2026-06-25 19:31:28,027 [INFO]   claude-3.5-haiku: ~$0.00 (anthropic)
+2026-06-25 19:31:28,027 [INFO]   Total estimated cost: $0.00
+2026-06-25 19:31:28,027 [INFO] 
+Running REAL experiment (API calls)
+2026-06-25 19:31:28,028 [WARNING] Skipping claude-3.5-haiku: missing ANTHROPIC_API_KEY environment variable
+2026-06-25 19:31:28,028 [INFO] 
+============================================================
+2026-06-25 19:31:28,028 [INFO] Experiment Complete
+2026-06-25 19:31:28,028 [INFO] ============================================================
+2026-06-25 19:31:28,028 [INFO] Total results: 0
+2026-06-25 19:31:28,028 [INFO] 
+Parse Statistics:
+2026-06-25 19:31:28,028 [INFO]   Total: 0
+2026-06-25 19:31:28,028 [INFO]   JSON: 0 (0.0%)
+2026-06-25 19:31:28,028 [INFO]   Regex: 0 (0.0%)
+2026-06-25 19:31:28,028 [INFO]   Freeform: 0 (0.0%)
+2026-06-25 19:31:28,028 [INFO]   Parse errors: 0 (100.0%)
+2026-06-25 19:31:28,028 [INFO]   Overall parse rate: 0.0%
+2026-06-25 19:31:36,989 [INFO] Using 3 tasks
+2026-06-25 19:31:36,994 [INFO] Skill library sizes: oracle: 40
+2026-06-25 19:31:36,994 [INFO] 
+============================================================
+2026-06-25 19:31:36,994 [INFO] Experiment Configuration
+2026-06-25 19:31:36,994 [INFO] ============================================================
+2026-06-25 19:31:36,994 [INFO] Models: claude-3.5-haiku
+2026-06-25 19:31:36,994 [INFO] Conditions: oracle
+2026-06-25 19:31:36,995 [INFO] Temperatures: [0.0]
+2026-06-25 19:31:36,995 [INFO] Tasks: 3
+2026-06-25 19:31:36,995 [INFO] Total runs: 3
+2026-06-25 19:31:36,995 [INFO]   claude-3.5-haiku: ~$0.00 (anthropic)
+2026-06-25 19:31:36,995 [INFO]   Total estimated cost: $0.00
+2026-06-25 19:31:36,995 [INFO] 
+Running REAL experiment (API calls)
+2026-06-25 19:31:36,995 [WARNING] Skipping claude-3.5-haiku: missing ANTHROPIC_API_KEY environment variable
+2026-06-25 19:31:36,995 [INFO] 
+============================================================
+2026-06-25 19:31:36,995 [INFO] Experiment Complete
+2026-06-25 19:31:36,995 [INFO] ============================================================
+2026-06-25 19:31:36,995 [INFO] Total results: 0
+2026-06-25 19:31:36,995 [INFO] 
+Parse Statistics:
+2026-06-25 19:31:36,995 [INFO]   Total: 0
+2026-06-25 19:31:36,995 [INFO]   JSON: 0 (0.0%)
+2026-06-25 19:31:36,995 [INFO]   Regex: 0 (0.0%)
+2026-06-25 19:31:36,995 [INFO]   Freeform: 0 (0.0%)
+2026-06-25 19:31:36,995 [INFO]   Parse errors: 0 (100.0%)
+2026-06-25 19:31:36,995 [INFO]   Overall parse rate: 0.0%
+2026-06-25 19:35:43,615 [INFO] Using 3 tasks
+2026-06-25 19:35:43,621 [INFO] Skill library sizes: oracle: 40
+2026-06-25 19:35:43,621 [INFO] 
+============================================================
+2026-06-25 19:35:43,621 [INFO] Experiment Configuration
+2026-06-25 19:35:43,621 [INFO] ============================================================
+2026-06-25 19:35:43,621 [INFO] Models: claude-3.5-haiku
+2026-06-25 19:35:43,621 [INFO] Conditions: oracle
+2026-06-25 19:35:43,621 [INFO] Temperatures: [0.0]
+2026-06-25 19:35:43,621 [INFO] Tasks: 3
+2026-06-25 19:35:43,621 [INFO] Total runs: 3
+2026-06-25 19:35:43,621 [INFO]   claude-3.5-haiku: ~$0.00 (anthropic)
+2026-06-25 19:35:43,621 [INFO]   Total estimated cost: $0.00
+2026-06-25 19:35:43,621 [INFO] 
+Running REAL experiment (API calls)
+2026-06-25 19:35:43,622 [INFO] Batch run: 1 models × 3 tasks × 1 conditions × 1 temps = 3 total runs
+2026-06-25 19:35:43,622 [INFO] Already completed: 0, remaining: 3
+2026-06-25 19:35:43,622 [INFO] 
+============================================================
+2026-06-25 19:35:43,622 [INFO] Running model: claude-3.5-haiku (anthropic)
+2026-06-25 19:35:43,622 [INFO] ============================================================
+2026-06-25 19:35:43,716 [DEBUG] connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=120.0 socket_options=None
+2026-06-25 19:35:43,729 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b06386106b0>
+2026-06-25 19:35:43,729 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x7b063860cb50> server_hostname='api.anthropic.com' timeout=120.0
+2026-06-25 19:35:43,745 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b0648bb35f0>
+2026-06-25 19:35:43,745 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:43,747 [DEBUG] send_request_headers.complete
+2026-06-25 19:35:43,747 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-06-25 19:35:43,748 [DEBUG] send_request_body.complete
+2026-06-25 19:35:43,748 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:43,967 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Thu, 25 Jun 2026 19:35:43 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-should-retry', b'false'), (b'request-id', b'req_011CcQYGUgiQx25P2bn3cq9t'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'anthropic-organization-id', b'807fa0dd-aa22-4100-ae10-af43e89bd4ee'), (b'traceresponse', b'00-6e446be9a99212fc5fde74eda87f8462-0415ca35a661f751-01'), (b'Server', b'cloudflare'), (b'Content-Encoding', b'gzip'), (b'vary', b'Accept-Encoding'), (b'set-cookie', b'_cfuvid=khc7Y_7n4zi2_3OFuG.A3VpExqtbeFfeLmeqidYgqr8-1782416143.7507403-1.0.1.1-APpPcIy449xy3r9BcY_01aUuqJ.UtFZWY96TOjYiFtk; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.anthropic.com'), (b'X-Robots-Tag', b'none'), (b'cf-cache-status', b'DYNAMIC'), (b'Content-Security-Policy', b"default-src 'none'; frame-ancestors 'none'"), (b'CF-RAY', b'a1166ac27d4c1b03-LHR')])
+2026-06-25 19:35:43,967 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:35:43,967 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-06-25 19:35:43,968 [DEBUG] receive_response_body.complete
+2026-06-25 19:35:43,968 [DEBUG] response_closed.started
+2026-06-25 19:35:43,968 [DEBUG] response_closed.complete
+2026-06-25 19:35:43,968 [DEBUG] close.started
+2026-06-25 19:35:43,969 [DEBUG] close.complete
+2026-06-25 19:35:43,969 [WARNING] Anthropic error body for claude-3.5-haiku: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CcQYGUgiQx25P2bn3cq9t"}
+2026-06-25 19:35:43,970 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:35:45,997 [DEBUG] connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=120.0 socket_options=None
+2026-06-25 19:35:46,004 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b0638643ce0>
+2026-06-25 19:35:46,004 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x7b063860ecd0> server_hostname='api.anthropic.com' timeout=120.0
+2026-06-25 19:35:46,022 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b0638643bf0>
+2026-06-25 19:35:46,022 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:46,022 [DEBUG] send_request_headers.complete
+2026-06-25 19:35:46,022 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-06-25 19:35:46,025 [DEBUG] send_request_body.complete
+2026-06-25 19:35:46,025 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:46,225 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Thu, 25 Jun 2026 19:35:46 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-should-retry', b'false'), (b'request-id', b'req_011CcQYGeTqN99EZMxNRK6ju'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'anthropic-organization-id', b'807fa0dd-aa22-4100-ae10-af43e89bd4ee'), (b'traceresponse', b'00-31bb61be50ad4ed714e5446181c254a7-e91f65692f720177-01'), (b'Server', b'cloudflare'), (b'Content-Encoding', b'gzip'), (b'vary', b'Accept-Encoding'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'_cfuvid=RIlHKQ.r_VgNRqyzVY.AcTHcTV85Wq8Jl7CCtqWHVws-1782416146.0267494-1.0.1.1-G50LuOSKkBkgEJFcFrXAqhu99bwKS3D_EdP4DR3VU2k; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.anthropic.com'), (b'Content-Security-Policy', b"default-src 'none'; frame-ancestors 'none'"), (b'X-Robots-Tag', b'none'), (b'CF-RAY', b'a1166ad0a83a0c36-LHR')])
+2026-06-25 19:35:46,228 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:35:46,229 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-06-25 19:35:46,229 [DEBUG] receive_response_body.complete
+2026-06-25 19:35:46,229 [DEBUG] response_closed.started
+2026-06-25 19:35:46,229 [DEBUG] response_closed.complete
+2026-06-25 19:35:46,229 [DEBUG] close.started
+2026-06-25 19:35:46,229 [DEBUG] close.complete
+2026-06-25 19:35:46,229 [WARNING] Anthropic error body for claude-3.5-haiku: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CcQYGeTqN99EZMxNRK6ju"}
+2026-06-25 19:35:46,230 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:35:50,258 [DEBUG] connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=120.0 socket_options=None
+2026-06-25 19:35:50,264 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b063866cda0>
+2026-06-25 19:35:50,264 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x7b063860f750> server_hostname='api.anthropic.com' timeout=120.0
+2026-06-25 19:35:50,274 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b063866ccb0>
+2026-06-25 19:35:50,275 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:50,275 [DEBUG] send_request_headers.complete
+2026-06-25 19:35:50,275 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-06-25 19:35:50,275 [DEBUG] send_request_body.complete
+2026-06-25 19:35:50,275 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:50,467 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Thu, 25 Jun 2026 19:35:50 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-should-retry', b'false'), (b'request-id', b'req_011CcQYGxbzQeWG2zpHytkWE'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'anthropic-organization-id', b'807fa0dd-aa22-4100-ae10-af43e89bd4ee'), (b'traceresponse', b'00-d036f0fb2f3eaeb5bb805be68983e432-eccbfd157faaf06f-01'), (b'Server', b'cloudflare'), (b'Content-Encoding', b'gzip'), (b'vary', b'Accept-Encoding'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'_cfuvid=525HXxrGHa7pmXI7F0jrsh2N8y44MBw8hNhG9YkP0uU-1782416150.28012-1.0.1.1-CvgOCIybX3ZSl9tv_p0lb261m1mavxldfVJ.rjtzkac; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.anthropic.com'), (b'Content-Security-Policy', b"default-src 'none'; frame-ancestors 'none'"), (b'X-Robots-Tag', b'none'), (b'CF-RAY', b'a1166aeb3b99887a-LHR')])
+2026-06-25 19:35:50,467 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:35:50,468 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-06-25 19:35:50,468 [DEBUG] receive_response_body.complete
+2026-06-25 19:35:50,468 [DEBUG] response_closed.started
+2026-06-25 19:35:50,468 [DEBUG] response_closed.complete
+2026-06-25 19:35:50,468 [DEBUG] close.started
+2026-06-25 19:35:50,468 [DEBUG] close.complete
+2026-06-25 19:35:50,468 [WARNING] Anthropic error body for claude-3.5-haiku: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CcQYGxbzQeWG2zpHytkWE"}
+2026-06-25 19:35:50,468 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:35:50,468 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:35:50,529 [DEBUG] connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=120.0 socket_options=None
+2026-06-25 19:35:50,537 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b063866de20>
+2026-06-25 19:35:50,537 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x7b06445e2cd0> server_hostname='api.anthropic.com' timeout=120.0
+2026-06-25 19:35:50,547 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b063866dd30>
+2026-06-25 19:35:50,548 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:50,552 [DEBUG] send_request_headers.complete
+2026-06-25 19:35:50,553 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-06-25 19:35:50,553 [DEBUG] send_request_body.complete
+2026-06-25 19:35:50,553 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:50,766 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Thu, 25 Jun 2026 19:35:50 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-should-retry', b'false'), (b'request-id', b'req_011CcQYGyvcdddiaRFeQDsT4'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'anthropic-organization-id', b'807fa0dd-aa22-4100-ae10-af43e89bd4ee'), (b'traceresponse', b'00-f45be5e3ed5bb56f94aeb17d689458fa-5c8ffad53c520ca6-01'), (b'Server', b'cloudflare'), (b'Content-Encoding', b'gzip'), (b'vary', b'Accept-Encoding'), (b'set-cookie', b'_cfuvid=_496ts3g6zbFXfhiw9ieS6.cDXs8GfvFiDEgOlMhJyI-1782416150.5573254-1.0.1.1-6TCiawTjbnKy9HotvtY7osPxFVmVD9yxF_h10fd9psc; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.anthropic.com'), (b'X-Robots-Tag', b'none'), (b'cf-cache-status', b'DYNAMIC'), (b'Content-Security-Policy', b"default-src 'none'; frame-ancestors 'none'"), (b'CF-RAY', b'a1166aecfe3362c0-LHR')])
+2026-06-25 19:35:50,767 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:35:50,767 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-06-25 19:35:50,767 [DEBUG] receive_response_body.complete
+2026-06-25 19:35:50,768 [DEBUG] response_closed.started
+2026-06-25 19:35:50,768 [DEBUG] response_closed.complete
+2026-06-25 19:35:50,768 [DEBUG] close.started
+2026-06-25 19:35:50,768 [DEBUG] close.complete
+2026-06-25 19:35:50,768 [WARNING] Anthropic error body for claude-3.5-haiku: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CcQYGyvcdddiaRFeQDsT4"}
+2026-06-25 19:35:50,768 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:35:52,806 [DEBUG] connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=120.0 socket_options=None
+2026-06-25 19:35:52,812 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b0638643440>
+2026-06-25 19:35:52,812 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x7b063860ebd0> server_hostname='api.anthropic.com' timeout=120.0
+2026-06-25 19:35:52,829 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b0638642ff0>
+2026-06-25 19:35:52,831 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:52,832 [DEBUG] send_request_headers.complete
+2026-06-25 19:35:52,832 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-06-25 19:35:52,832 [DEBUG] send_request_body.complete
+2026-06-25 19:35:52,832 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:53,000 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Thu, 25 Jun 2026 19:35:52 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-should-retry', b'false'), (b'request-id', b'req_011CcQYH9XouKuK9nqNrKkmh'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'anthropic-organization-id', b'807fa0dd-aa22-4100-ae10-af43e89bd4ee'), (b'traceresponse', b'00-2eca31f2ee36e04512af51575383c33f-d7979274569ed55e-01'), (b'Server', b'cloudflare'), (b'Content-Encoding', b'gzip'), (b'vary', b'Accept-Encoding'), (b'set-cookie', b'_cfuvid=aiVA0kPopdmbPXvXvRwQ98gL1pWR_hQvZKatx_lT.rg-1782416152.8376224-1.0.1.1-HdhsOYiOkJ1BbjurtRaiofFFKKsHeUsazRO8YGJbKUk; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.anthropic.com'), (b'X-Robots-Tag', b'none'), (b'cf-cache-status', b'DYNAMIC'), (b'Content-Security-Policy', b"default-src 'none'; frame-ancestors 'none'"), (b'CF-RAY', b'a1166afb3d349400-LHR')])
+2026-06-25 19:35:53,001 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:35:53,001 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-06-25 19:35:53,001 [DEBUG] receive_response_body.complete
+2026-06-25 19:35:53,001 [DEBUG] response_closed.started
+2026-06-25 19:35:53,001 [DEBUG] response_closed.complete
+2026-06-25 19:35:53,001 [DEBUG] close.started
+2026-06-25 19:35:53,001 [DEBUG] close.complete
+2026-06-25 19:35:53,002 [WARNING] Anthropic error body for claude-3.5-haiku: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CcQYH9XouKuK9nqNrKkmh"}
+2026-06-25 19:35:53,002 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:35:57,027 [DEBUG] connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=120.0 socket_options=None
+2026-06-25 19:35:57,033 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b063866d4f0>
+2026-06-25 19:35:57,033 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x7b063860ded0> server_hostname='api.anthropic.com' timeout=120.0
+2026-06-25 19:35:57,044 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b063866d490>
+2026-06-25 19:35:57,044 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:57,044 [DEBUG] send_request_headers.complete
+2026-06-25 19:35:57,044 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-06-25 19:35:57,044 [DEBUG] send_request_body.complete
+2026-06-25 19:35:57,044 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:57,220 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Thu, 25 Jun 2026 19:35:57 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-should-retry', b'false'), (b'request-id', b'req_011CcQYHTamQBofgbiSdqW9F'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'anthropic-organization-id', b'807fa0dd-aa22-4100-ae10-af43e89bd4ee'), (b'traceresponse', b'00-aee5e8b0b3c1466000abbd37a489cf52-6c2861f0f112c30a-01'), (b'Server', b'cloudflare'), (b'Content-Encoding', b'gzip'), (b'vary', b'Accept-Encoding'), (b'set-cookie', b'_cfuvid=k80Wnyy0d5mB._Cyz.u3ADoGtRJhj3ZxH_4.dquHXrA-1782416157.0542073-1.0.1.1-Vadh9JJ7zcr58gFKOXWXB3scLrglqC.9jLd6_Jn5HiQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.anthropic.com'), (b'X-Robots-Tag', b'none'), (b'cf-cache-status', b'DYNAMIC'), (b'Content-Security-Policy', b"default-src 'none'; frame-ancestors 'none'"), (b'CF-RAY', b'a1166b159ae50015-LHR')])
+2026-06-25 19:35:57,221 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:35:57,221 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-06-25 19:35:57,221 [DEBUG] receive_response_body.complete
+2026-06-25 19:35:57,221 [DEBUG] response_closed.started
+2026-06-25 19:35:57,222 [DEBUG] response_closed.complete
+2026-06-25 19:35:57,222 [DEBUG] close.started
+2026-06-25 19:35:57,222 [DEBUG] close.complete
+2026-06-25 19:35:57,222 [WARNING] Anthropic error body for claude-3.5-haiku: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CcQYHTamQBofgbiSdqW9F"}
+2026-06-25 19:35:57,222 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:35:57,222 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:35:57,252 [DEBUG] connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=120.0 socket_options=None
+2026-06-25 19:35:57,258 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b063866c320>
+2026-06-25 19:35:57,259 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x7b063860fed0> server_hostname='api.anthropic.com' timeout=120.0
+2026-06-25 19:35:57,268 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b063866c290>
+2026-06-25 19:35:57,268 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:57,269 [DEBUG] send_request_headers.complete
+2026-06-25 19:35:57,269 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-06-25 19:35:57,269 [DEBUG] send_request_body.complete
+2026-06-25 19:35:57,269 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:57,438 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Thu, 25 Jun 2026 19:35:57 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-should-retry', b'false'), (b'request-id', b'req_011CcQYHUWpoYWfQZ7VNT5Lx'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'anthropic-organization-id', b'807fa0dd-aa22-4100-ae10-af43e89bd4ee'), (b'traceresponse', b'00-70f261307639d54dce25c49c8627dfa8-25aecb2bb5f44ba9-01'), (b'Server', b'cloudflare'), (b'Content-Encoding', b'gzip'), (b'vary', b'Accept-Encoding'), (b'set-cookie', b'_cfuvid=aSQZf3XWnY_SnnZVT1a4_B6FOGknA3LdAIVdsY1o02I-1782416157.274391-1.0.1.1-P8P4X3LTyFXbnY678KV9BpAiJMdGdKftSbYNEQIMk48; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.anthropic.com'), (b'X-Robots-Tag', b'none'), (b'cf-cache-status', b'DYNAMIC'), (b'Content-Security-Policy', b"default-src 'none'; frame-ancestors 'none'"), (b'CF-RAY', b'a1166b16fc72b257-LHR')])
+2026-06-25 19:35:57,439 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:35:57,439 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-06-25 19:35:57,439 [DEBUG] receive_response_body.complete
+2026-06-25 19:35:57,439 [DEBUG] response_closed.started
+2026-06-25 19:35:57,439 [DEBUG] response_closed.complete
+2026-06-25 19:35:57,439 [DEBUG] close.started
+2026-06-25 19:35:57,439 [DEBUG] close.complete
+2026-06-25 19:35:57,439 [WARNING] Anthropic error body for claude-3.5-haiku: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CcQYHUWpoYWfQZ7VNT5Lx"}
+2026-06-25 19:35:57,439 [WARNING] HTTP error for claude-3.5-haiku (attempt 1/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:35:59,463 [DEBUG] connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=120.0 socket_options=None
+2026-06-25 19:35:59,469 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b063866f140>
+2026-06-25 19:35:59,469 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x7b063860ff50> server_hostname='api.anthropic.com' timeout=120.0
+2026-06-25 19:35:59,478 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b063866f050>
+2026-06-25 19:35:59,478 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:59,479 [DEBUG] send_request_headers.complete
+2026-06-25 19:35:59,479 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-06-25 19:35:59,479 [DEBUG] send_request_body.complete
+2026-06-25 19:35:59,479 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-06-25 19:35:59,642 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Thu, 25 Jun 2026 19:35:59 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-should-retry', b'false'), (b'request-id', b'req_011CcQYHdw79zZvewZsb8oX3'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'anthropic-organization-id', b'807fa0dd-aa22-4100-ae10-af43e89bd4ee'), (b'traceresponse', b'00-360cb1944dffd6ed184c1ed438e574ca-e82b6b756ed31058-01'), (b'Server', b'cloudflare'), (b'Content-Encoding', b'gzip'), (b'vary', b'Accept-Encoding'), (b'set-cookie', b'_cfuvid=j9fR1cL_qmxOMckvSyvyU5NtLpNNv.A3piKhZSQKcfQ-1782416159.483938-1.0.1.1-xsNsQr5_IGCsl9IEB46DydjPrOLYFBTVoJor7uinSMo; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.anthropic.com'), (b'X-Robots-Tag', b'none'), (b'cf-cache-status', b'DYNAMIC'), (b'Content-Security-Policy', b"default-src 'none'; frame-ancestors 'none'"), (b'CF-RAY', b'a1166b24cb85cc1d-LHR')])
+2026-06-25 19:35:59,643 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:35:59,643 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-06-25 19:35:59,643 [DEBUG] receive_response_body.complete
+2026-06-25 19:35:59,643 [DEBUG] response_closed.started
+2026-06-25 19:35:59,643 [DEBUG] response_closed.complete
+2026-06-25 19:35:59,643 [DEBUG] close.started
+2026-06-25 19:35:59,643 [DEBUG] close.complete
+2026-06-25 19:35:59,643 [WARNING] Anthropic error body for claude-3.5-haiku: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CcQYHdw79zZvewZsb8oX3"}
+2026-06-25 19:35:59,644 [WARNING] HTTP error for claude-3.5-haiku (attempt 2/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:36:03,671 [DEBUG] connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=120.0 socket_options=None
+2026-06-25 19:36:03,679 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b063867c290>
+2026-06-25 19:36:03,679 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x7b06386743d0> server_hostname='api.anthropic.com' timeout=120.0
+2026-06-25 19:36:03,690 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b063867c170>
+2026-06-25 19:36:03,690 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-06-25 19:36:03,690 [DEBUG] send_request_headers.complete
+2026-06-25 19:36:03,690 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-06-25 19:36:03,691 [DEBUG] send_request_body.complete
+2026-06-25 19:36:03,691 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-06-25 19:36:03,872 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 400, b'Bad Request', [(b'Date', b'Thu, 25 Jun 2026 19:36:03 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-should-retry', b'false'), (b'request-id', b'req_011CcQYHwxKuRqGMvnt1BzF8'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'anthropic-organization-id', b'807fa0dd-aa22-4100-ae10-af43e89bd4ee'), (b'traceresponse', b'00-450f6fb0db8400852d0172a01c683d62-56efa790031a00f5-01'), (b'Server', b'cloudflare'), (b'Content-Encoding', b'gzip'), (b'vary', b'Accept-Encoding'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'_cfuvid=gFi8DLugIntE9HVNq_1XlyVjHqY499VG.iOpejN8u4U-1782416163.6962538-1.0.1.1-M56qcQLAoCjYOlJnUXQ4Z8u1q3lEJPx37kWKOXGa5Wc; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.anthropic.com'), (b'Content-Security-Policy', b"default-src 'none'; frame-ancestors 'none'"), (b'X-Robots-Tag', b'none'), (b'CF-RAY', b'a1166b3f1ea8be9a-LHR')])
+2026-06-25 19:36:03,873 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-06-25 19:36:03,873 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-06-25 19:36:03,874 [DEBUG] receive_response_body.complete
+2026-06-25 19:36:03,874 [DEBUG] response_closed.started
+2026-06-25 19:36:03,874 [DEBUG] response_closed.complete
+2026-06-25 19:36:03,874 [DEBUG] close.started
+2026-06-25 19:36:03,875 [DEBUG] close.complete
+2026-06-25 19:36:03,875 [WARNING] Anthropic error body for claude-3.5-haiku: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CcQYHwxKuRqGMvnt1BzF8"}
+2026-06-25 19:36:03,875 [WARNING] HTTP error for claude-3.5-haiku (attempt 3/3): Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:36:03,875 [ERROR] Error calling claude-3.5-haiku: Client error '400 Bad Request' for url 'https://api.anthropic.com/v1/messages'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2026-06-25 19:36:03,876 [INFO] Saved 3 results to data/results/phase5_claude_test/multi_model_results_latest.json
+2026-06-25 19:36:03,876 [INFO] 
+Batch complete! 3 results saved to data/results/phase5_claude_test/multi_model_results_latest.json
+2026-06-25 19:36:03,877 [INFO] Summary saved to data/results/phase5_claude_test/summary.csv and data/results/phase5_claude_test/summary.json
+2026-06-25 19:36:03,877 [INFO] 
+============================================================
+2026-06-25 19:36:03,877 [INFO] Experiment Complete
+2026-06-25 19:36:03,878 [INFO] ============================================================
+2026-06-25 19:36:03,878 [INFO] Total results: 3
+2026-06-25 19:36:03,878 [INFO] 
+Parse Statistics:
+2026-06-25 19:36:03,878 [INFO]   Total: 3
+2026-06-25 19:36:03,878 [INFO]   JSON: 0 (0.0%)
+2026-06-25 19:36:03,878 [INFO]   Regex: 0 (0.0%)
+2026-06-25 19:36:03,878 [INFO]   Freeform: 0 (0.0%)
+2026-06-25 19:36:03,878 [INFO]   Parse errors: 3 (100.0%)
+2026-06-25 19:36:03,878 [INFO]   Overall parse rate: 0.0%
+2026-06-25 19:36:03,878 [INFO] 
+  claude-3.5-haiku:
+2026-06-25 19:36:03,878 [INFO]     Total: 3, Parsed: 0/3 (0.0%)
+2026-06-25 19:36:03,878 [INFO]     Correct (skill match): 0/3 (0.0%)
+2026-06-25 19:36:03,878 [INFO]     Avg latency: 6750ms
