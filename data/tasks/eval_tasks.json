@@ -1,0 +1,717 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "date": "2026-06-25",
+    "description": "MemInterfere evaluation tasks with controlled interference",
+    "stats": {
+      "total": 47,
+      "by_difficulty": {
+        "easy": 25,
+        "medium": 16,
+        "hard": 6
+      },
+      "by_domain": {
+        "web_navigation": 22,
+        "api_calling": 25
+      },
+      "by_interference": {
+        "low": 7,
+        "none": 3,
+        "medium": 11,
+        "high": 26
+      },
+      "by_requires_memory": {
+        "yes": 24,
+        "no": 23
+      },
+      "by_natural_interference": {
+        "yes": 0,
+        "no": 47
+      }
+    }
+  },
+  "tasks": [
+    {
+      "task_id": "web_easy_001",
+      "description": "Search for 'machine learning tutorials' and return top 5 results",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "search_web"
+      ],
+      "expected_outcome": "List of 5 search results",
+      "interference_potential": "low",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_easy_002",
+      "description": "Navigate to https://example.com and extract the main article",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "navigate_url"
+      ],
+      "expected_outcome": "Markdown content of the article",
+      "interference_potential": "low",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_easy_003",
+      "description": "Check if https://google.com is up",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "check_website_status"
+      ],
+      "expected_outcome": "JSON with status code 200",
+      "interference_potential": "none",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_easy_004",
+      "description": "Extract all links from https://news.ycombinator.com",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "extract_links"
+      ],
+      "expected_outcome": "JSON list of URLs",
+      "interference_potential": "low",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_easy_005",
+      "description": "Get the metadata (title, description) from https://github.com",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "extract_metadata"
+      ],
+      "expected_outcome": "JSON with title and description",
+      "interference_potential": "none",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_easy_006",
+      "description": "Read the RSS feed from https://example.com/feed.xml",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "read_rss"
+      ],
+      "expected_outcome": "JSON list of 20 feed entries",
+      "interference_potential": "low",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_easy_007",
+      "description": "Summarize the content at https://en.wikipedia.org/wiki/Python",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "summarize_page"
+      ],
+      "expected_outcome": "Text summary of the page",
+      "interference_potential": "medium",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_easy_008",
+      "description": "Download the file at https://example.com/data.csv",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "download_file"
+      ],
+      "expected_outcome": "File path to downloaded CSV",
+      "interference_potential": "low",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_easy_009",
+      "description": "Scrape headlines from https://news.site.com using selector '.headline'",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "scrape_page"
+      ],
+      "expected_outcome": "JSON list of headlines",
+      "interference_potential": "medium",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_easy_010",
+      "description": "Take a screenshot of https://example.com",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "take_screenshot"
+      ],
+      "expected_outcome": "PNG image path",
+      "interference_potential": "none",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_med_001",
+      "description": "Search for 'Python async await' and scrape the top 3 results for code examples",
+      "domain": "web_navigation",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "search_web",
+        "scrape_page"
+      ],
+      "expected_outcome": "Code examples from 3 pages",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_med_002",
+      "description": "Monitor https://example.com for changes since yesterday and summarize any differences",
+      "domain": "web_navigation",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "monitor_page",
+        "summarize_page"
+      ],
+      "expected_outcome": "JSON diff + summary of changes",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_med_003",
+      "description": "Find all restaurant reviews on https://food.example.com and extract them as structured data",
+      "domain": "web_navigation",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "search_web",
+        "scrape_page"
+      ],
+      "expected_outcome": "JSON list of restaurant reviews",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_med_004",
+      "description": "Crawl https://docs.python.org for pages about decorators and extract their content",
+      "domain": "web_navigation",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "crawl_site",
+        "extract_metadata"
+      ],
+      "expected_outcome": "Structured content about Python decorators",
+      "interference_potential": "medium",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_med_005",
+      "description": "Fill out the contact form at https://example.com/contact with name 'Test' and email 'test@test.com'",
+      "domain": "web_navigation",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "fill_form"
+      ],
+      "expected_outcome": "JSON confirmation of form submission",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_hard_001",
+      "description": "Search for competitor pricing, scrape 5 product pages, and create a comparison table",
+      "domain": "web_navigation",
+      "difficulty": "hard",
+      "expected_skill_ids": [
+        "search_web",
+        "scrape_page",
+        "extract_table"
+      ],
+      "expected_outcome": "Comparison table with prices from 5 competitors",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_hard_002",
+      "description": "Crawl a documentation site, extract all API endpoint descriptions, and summarize changes from the last version",
+      "domain": "web_navigation",
+      "difficulty": "hard",
+      "expected_skill_ids": [
+        "crawl_site",
+        "scrape_page",
+        "monitor_page",
+        "summarize_page"
+      ],
+      "expected_outcome": "Summary of API changes",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "web_hard_003",
+      "description": "Monitor 3 URLs for price changes, extract the prices into a table, and download the data as CSV",
+      "domain": "web_navigation",
+      "difficulty": "hard",
+      "expected_skill_ids": [
+        "monitor_page",
+        "extract_table",
+        "download_file"
+      ],
+      "expected_outcome": "CSV file with price data from 3 sources",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_easy_001",
+      "description": "Create a calendar event titled 'Team Meeting' from 2pm to 3pm tomorrow",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "create_event"
+      ],
+      "expected_outcome": "JSON with event ID and confirmation",
+      "interference_potential": "medium",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_easy_002",
+      "description": "List all calendar events for this week",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "list_events"
+      ],
+      "expected_outcome": "JSON list of events",
+      "interference_potential": "medium",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_easy_003",
+      "description": "Send an email to john@example.com with subject 'Hello' and body 'Testing'",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "send_email"
+      ],
+      "expected_outcome": "JSON with message ID",
+      "interference_potential": "high",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_easy_004",
+      "description": "Read the latest 10 emails from inbox",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "read_emails"
+      ],
+      "expected_outcome": "JSON list of 10 emails",
+      "interference_potential": "medium",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_easy_005",
+      "description": "Read the file at /tmp/data.txt",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "read_file"
+      ],
+      "expected_outcome": "File contents as text",
+      "interference_potential": "low",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_easy_006",
+      "description": "Get the current weather in London",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "get_weather"
+      ],
+      "expected_outcome": "JSON with temperature and conditions",
+      "interference_potential": "medium",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_easy_007",
+      "description": "Get the stock price for AAPL",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "get_stock_price"
+      ],
+      "expected_outcome": "JSON with current price",
+      "interference_potential": "medium",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_easy_008",
+      "description": "Calculate 2^10 + 5*3",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "calculate"
+      ],
+      "expected_outcome": "JSON with result 1033",
+      "interference_potential": "low",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_easy_009",
+      "description": "Create a task titled 'Review PR' with medium priority",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "create_task"
+      ],
+      "expected_outcome": "JSON with task ID",
+      "interference_potential": "medium",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_easy_010",
+      "description": "List all open tasks",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "list_tasks"
+      ],
+      "expected_outcome": "JSON list of tasks",
+      "interference_potential": "medium",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_med_001",
+      "description": "Create a calendar event and send an email invite about it",
+      "domain": "api_calling",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "create_event",
+        "send_email"
+      ],
+      "expected_outcome": "Event created + email sent",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_med_002",
+      "description": "Query the database for all users created this month and save results to a file",
+      "domain": "api_calling",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "query_database",
+        "write_file"
+      ],
+      "expected_outcome": "File with query results",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_med_003",
+      "description": "Look up contact 'Alice' and send them a weather update for their city",
+      "domain": "api_calling",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "lookup_contact",
+        "get_weather",
+        "send_email"
+      ],
+      "expected_outcome": "Email with weather sent to Alice",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_med_004",
+      "description": "Search for news about 'AI regulation' and create tasks for each important article",
+      "domain": "api_calling",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "search_news",
+        "create_task"
+      ],
+      "expected_outcome": "Multiple tasks created from news",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_med_005",
+      "description": "Get stock prices for AAPL, GOOGL, and MSFT, then calculate the average",
+      "domain": "api_calling",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "get_stock_price",
+        "calculate"
+      ],
+      "expected_outcome": "Average stock price",
+      "interference_potential": "medium",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_hard_001",
+      "description": "Read all emails from today, identify meeting invites, create calendar events for each, and set reminders 30 minutes before each",
+      "domain": "api_calling",
+      "difficulty": "hard",
+      "expected_skill_ids": [
+        "read_emails",
+        "create_event",
+        "set_reminder"
+      ],
+      "expected_outcome": "Calendar events + reminders for all meeting invites",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_hard_002",
+      "description": "Query the database for monthly revenue, write results to a file, then email the file to the finance team",
+      "domain": "api_calling",
+      "difficulty": "hard",
+      "expected_skill_ids": [
+        "query_database",
+        "write_file",
+        "send_email"
+      ],
+      "expected_outcome": "Revenue report emailed to finance",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "api_hard_003",
+      "description": "Check weather for outdoor event location, look up attendees' contacts, create the event, and send invitations with weather note",
+      "domain": "api_calling",
+      "difficulty": "hard",
+      "expected_skill_ids": [
+        "get_weather",
+        "lookup_contact",
+        "create_event",
+        "send_email"
+      ],
+      "expected_outcome": "Event created with weather-aware invitations sent",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "interfere_schema_001",
+      "description": "Search the web for 'Python async' with a limit of 5 results and return as JSON",
+      "domain": "web_navigation",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "search_web"
+      ],
+      "expected_outcome": "JSON list of 5 search results",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "interfere_schema_002",
+      "description": "Navigate to https://example.com/docs and extract the article content",
+      "domain": "web_navigation",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "navigate_url"
+      ],
+      "expected_outcome": "Markdown article content",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "interfere_semantic_001",
+      "description": "List all calendar events for this week and return as structured data",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "list_events"
+      ],
+      "expected_outcome": "JSON list of events",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "interfere_semantic_002",
+      "description": "Read recent emails and show the full content",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "read_emails"
+      ],
+      "expected_outcome": "Full email content",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "interfere_version_001",
+      "description": "Create a calendar event called 'Sprint Review' next Friday at 3pm",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "create_event"
+      ],
+      "expected_outcome": "JSON with event confirmation",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "interfere_version_002",
+      "description": "Send an email to team@company.com about the project update",
+      "domain": "api_calling",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "send_email"
+      ],
+      "expected_outcome": "JSON with message ID",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "interfere_neardup_001",
+      "description": "Find information about renewable energy policies in the EU",
+      "domain": "web_navigation",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "search_web"
+      ],
+      "expected_outcome": "List of relevant results",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "interfere_neardup_002",
+      "description": "Compose an email to hr@company.com requesting vacation days",
+      "domain": "api_calling",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "send_email"
+      ],
+      "expected_outcome": "JSON confirmation",
+      "interference_potential": "high",
+      "requires_memory": true,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "interfere_trap_001",
+      "description": "Quickly search for 'climate change report' without waiting for full results",
+      "domain": "web_navigation",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "search_web"
+      ],
+      "expected_outcome": "Accurate search results",
+      "interference_potential": "high",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "interfere_trap_002",
+      "description": "Send an urgent email to the team about the server outage",
+      "domain": "api_calling",
+      "difficulty": "easy",
+      "expected_skill_ids": [
+        "send_email"
+      ],
+      "expected_outcome": "JSON with message ID",
+      "interference_potential": "high",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    },
+    {
+      "task_id": "interfere_trap_003",
+      "description": "Calculate the compound interest on $10000 at 5% for 10 years",
+      "domain": "api_calling",
+      "difficulty": "medium",
+      "expected_skill_ids": [
+        "calculate"
+      ],
+      "expected_outcome": "Accurate calculation result",
+      "interference_potential": "high",
+      "requires_memory": false,
+      "natural_interference": false,
+      "subtasks": []
+    }
+  ]
+}
