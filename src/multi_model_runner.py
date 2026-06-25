@@ -603,11 +603,10 @@ class MultiModelRunner:
             logger.info(f"{'='*60}")
 
             for temperature in temperatures:
-                # Adjust temperature in config
-                temp_config = ModelConfig(
-                    **{k: v for k, v in asdict(model_config).items() if k != 'temperature'}
-                )
-                temp_config.temperature = temperature
+                # Create config copy with updated temperature
+                config_dict = asdict(model_config)
+                config_dict['temperature'] = temperature
+                temp_config = ModelConfig(**config_dict)
 
                 for condition_name in conditions:
                     skill_lib = skill_libraries.get(condition_name, [])
