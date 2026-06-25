@@ -552,10 +552,10 @@ if __name__ == "__main__":
     tasks = ALL_TASKS
     print(f"\nRunning retrieval evaluation on {len(tasks)} tasks...")
 
-    # Evaluate with 68-skill library
-    results_68 = evaluate_retrieval(tasks, skill_library)
-    print("\n--- 68-Skill Library Retrieval Results ---")
-    for track_name, track_data in results_68.items():
+    # Evaluate with skill library (now 100-skill by default)
+    results = evaluate_retrieval(tasks, skill_library)
+    print(f"\n--- Skill Library Retrieval Results ({len(skill_library)} skills) ---")
+    for track_name, track_data in results.items():
         k_info = f" (K={track_data.get('k', 'N/A')})" if 'k' in track_data else ""
         print(f"\n  Track {track_name}{k_info}:")
         print(f"    Avg Precision: {track_data['avg_retrieval_precision']:.4f}")
@@ -564,11 +564,11 @@ if __name__ == "__main__":
         if 'any_gold_in_top_k_rate' in track_data:
             print(f"    Any-gold-in-top-K rate: {track_data['any_gold_in_top_k_rate']:.4f}")
 
-    # Evaluate with 100-skill library if available
+    # Evaluate with 100-skill library explicitly (for comparison with different library sizes)
     if skill_library_100:
         results_100 = evaluate_retrieval(tasks, skill_library_100,
                                           library_path=lib_100_path)
-        print("\n--- 100-Skill Library Retrieval Results ---")
+        print(f"\n--- 100-Skill Library Retrieval Results ---")
         for track_name, track_data in results_100.items():
             k_info = f" (K={track_data.get('k', 'N/A')})" if 'k' in track_data else ""
             print(f"\n  Track {track_name}{k_info}:")
@@ -586,7 +586,7 @@ if __name__ == "__main__":
     output_path = os.path.join(output_dir, f"retrieval_eval_{timestamp}.json")
 
     serializable = {}
-    for track_name, track_data in results_68.items():
+    for track_name, track_data in results.items():
         serializable[track_name] = {
             "avg_retrieval_precision": track_data["avg_retrieval_precision"],
             "avg_retrieval_recall": track_data["avg_retrieval_recall"],
