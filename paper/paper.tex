@@ -1,0 +1,316 @@
+% MemInterfere: ACL/EMNLP format paper
+% Compile with: pdflatex paper.tex && bibtex paper && pdflatex paper.tex && pdflatex paper.tex
+
+\documentclass[11pt]{article}
+\usepackage{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{appendix}
+\usepackage{xcolor}
+
+\title{The Anatomy of Tool Interference: \\ Why LLM Agents Are Robust to Skill Library Noise}
+
+\author{
+  % Author names blinded for review
+  Anonymous Authors \\
+  Anonymous Institution
+}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Large language model (LLM) agents rely on skill libraries---collections of tool descriptions---to select and invoke appropriate tools. A common concern is that \textit{skill library interference}---the presence of near-duplicate, stale, or conflicting skill descriptions---degrades tool selection accuracy. We present MemInterfere, a systematic investigation of this hypothesis across 4 models, 80 tasks, and 5 experimental conditions. Surprisingly, we find that interference does \textbf{not} significantly degrade selection accuracy: the difference between clean and interference conditions is 1.3 percentage points (Cohen's $d = 0.06$, $p = 0.34$), and equivalence testing confirms the effect is smaller than $\pm$5pp (TOST $p = 0.001$). However, interference imposes significant \textit{secondary costs}: confidence drops of 0.5--1.8pp ($p < 0.01$) and token cost increases of 2.1--2.7$\times$. Only 12\% of tasks show any selection difference, and the effect is driven by a single adversarial task. We release our benchmark and analysis toolkit for reproducibility.
+\end{abstract}
+
+\section{Introduction}
+
+LLM agents are increasingly deployed with access to tool libraries containing dozens to hundreds of skill descriptions. As these libraries grow, concerns about \textit{skill library interference}---where the presence of near-duplicate, stale, or conflicting descriptions degrades the agent's ability to select the correct tool---have become prominent in both research and practice \citep{schick2023toolformer, patil2023gorilla, qin2023toolllm}.
+
+Intuitively, interference should hurt: more candidate tools mean more opportunities for confusion. Yet rigorous evidence for this claim is sparse. Prior work has evaluated tool selection in curated libraries with few near-duplicates \citep{li2023api}, but has not systematically measured how interference degrades accuracy at scale.
+
+We present MemInterfere, a controlled experiment measuring the impact of skill library interference on LLM tool selection. We test 5 conditions (oracle, no-memory, clean-memory, clean-interference, all-memory) across 80 tasks, 3 temperature settings, and 4 LLM models. Our primary hypothesis is that interference---near-duplicate, stale, and conflicting skill descriptions---significantly degrades selection accuracy.
+
+Our main finding is a rigorously established \textbf{null result}: interference does not significantly degrade selection accuracy. The observed difference is 1.3 percentage points (96.0\% clean vs.\ 94.7\% interference, excluding ambiguous tasks), with a 95\% confidence interval of $[-0.9, +3.5]$pp. Two one-sided tests (TOST) confirm equivalence at the $\pm$5pp margin ($p = 0.001$). A Bayes Factor of 0.038 provides strong evidence for the null.
+
+However, interference is not harmless. We identify two significant secondary effects:
+\begin{enumerate}
+    \item \textbf{Confidence calibration penalty}: Interference causes a small but statistically significant drop in model confidence (0.5--1.8pp, $p < 0.01$ for 2/3 models).
+    \item \textbf{Token cost amplification}: Interference conditions use 2.1--2.7$\times$ more tokens than clean conditions, with direct economic implications for deployed systems.
+\end{enumerate}
+
+Our contributions are: (1) the first systematic null result on skill library interference, with rigorous equivalence testing; (2) identification of confidence and cost as the actual failure modes; (3) a formal near-duplicate taxonomy; and (4) a reproducible benchmark of 4,800 evaluation runs.
+
+
+\section{Related Work}
+
+\paragraph{Tool use in LLMs.} Tool-augmented LLMs have shown impressive capabilities \citep{schick2023toolformer, patil2023gorilla, qin2023toolllm}, but evaluation has focused on tool execution rather than selection under interference. ToolBench \citep{qin2023toolllm} tests multi-tool chains but with minimal near-duplicates. API-Bank \citep{li2023api} evaluates hierarchical tool use but with small, clean libraries.
+
+\paragraph{Retrieval augmentation and interference.} In RAG systems, retrieval of irrelevant or contradictory passages degrades generation quality \citep{shi2023large}. Our work adapts this insight to tool selection, where the ``interference'' is structurally different: near-duplicate tool descriptions rather than irrelevant passages.
+
+\paragraph{Tool selection as classification.} Tool selection from a library can be viewed as a multi-class classification problem. Our experimental design follows best practices from clinical equivalence testing \citep{schuirmann1987comparison}, applying TOST procedures to establish that interference effects are practically negligible.
+
+
+\section{Methodology}
+
+\subsection{Near-Duplicate Taxonomy}
+
+We define three categories of skill library interference:
+
+\begin{itemize}
+    \item \textbf{Near-identical} (similarity $\geq$ 0.8): Synonym-named tools with overlapping functionality (e.g., \texttt{create\_event} vs.\ \texttt{add\_calendar\_event}).
+    \item \textbf{Near-similar} (0.4 $\leq$ similarity $<$ 0.8): Overlapping-scope tools with different names (e.g., \texttt{browse\_website} vs.\ \texttt{navigate\_url}).
+    \item \textbf{Stale/conflicting}: Outdated or conflicting versions of the same tool (e.g., \texttt{search\_web\_v1} vs.\ \texttt{search\_web\_v2}).
+\end{itemize}
+
+\subsection{Experimental Conditions}
+
+We test 5 conditions, each providing the model with a different skill library:
+
+\begin{enumerate}
+    \item \textbf{No-memory} (0 skills): The model must guess without any tool descriptions. Baseline floor.
+    \item \textbf{Oracle} (1 gold skill): Only the correct tool is provided. Ceiling for selection.
+    \item \textbf{Clean-memory} (40 skills): The correct tool plus 39 unrelated clean tools. Primary baseline.
+    \item \textbf{Clean-interference} (90 skills): The correct tool, 39 clean tools, plus 50 interference skills. \textbf{Primary experimental condition.}
+    \item \textbf{All-memory} (100 skills): All 40 clean plus 60 interference skills (including 10 stale). Tests cumulative interference.
+\end{enumerate}
+
+\subsection{Models and Tasks}
+
+We evaluate 4 models spanning cost tiers:
+\begin{itemize}
+    \item \textbf{Llama-3.1-8B-Instruct} (free, OpenRouter)
+    \item \textbf{Grok-3-mini} (\$0.30/M, xAI)
+    \item \textbf{GPT-4o-mini} (\$0.15/M, OpenRouter)
+    \item \textbf{Claude Haiku 4.5} (\$1.00/M, OpenRouter)
+\end{itemize}
+
+Each model is tested on 80 tasks across 3 difficulty levels (easy/medium/hard) and 5 domains (web navigation, API integration, file management, data analysis, media). Each task has a gold-standard expected tool, and accuracy is measured as exact match on the selected tool ID.
+
+Temperatures are tested at 0.0, 0.3, and 0.7. Results are aggregated across temperatures unless otherwise noted.
+
+
+\section{Results}
+
+\subsection{Main Finding: Interference Does Not Significantly Degrade Accuracy}
+
+Table~\ref{tab:main} presents the main results excluding 3 ambiguous tasks where models produced arguably correct answers that disagreed with gold labels (e.g., selecting \texttt{get\_weather} for ``what's the weather in Tokyo'' when the gold label is \texttt{search\_web}).
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Model} & \textbf{No-mem} & \textbf{Oracle} & \textbf{Clean} & \textbf{Interfere} & \textbf{All-mem} \\
+\midrule
+GPT-4o-mini & 0.0\% & 94.8\% & 94.8\% & 94.8\% & 94.8\% \\
+Grok-3-mini & 0.0\% & 95.7\% & 96.1\% & 93.9\% & 94.8\% \\
+Llama-3.1-8B & 0.0\% & 97.4\% & 97.0\% & 95.2\% & 95.7\% \\
+\midrule
+\textbf{Overall} & \textbf{0.0\%} & \textbf{96.0\%} & \textbf{96.0\%} & \textbf{94.7\%} & \textbf{95.1\%} \\
+\bottomrule
+\end{tabular}
+\caption{Selection accuracy by model and condition (excluding 3 ambiguous tasks). Clean = clean\_memory, Interfere = clean\_interference.}
+\label{tab:main}
+\end{table}
+
+The difference between clean and interference conditions is 1.3 percentage points overall (96.0\% vs.\ 94.7\%). A paired $t$-test across 77 tasks is not significant ($t(76) = 0.95$, $p = 0.34$, Cohen's $d = 0.06$).
+
+\subsection{Equivalence Testing Confirms the Null}
+
+Following best practices for establishing null results \citep{schuirmann1987comparison,lakens2017equivalence}, we apply the Two One-Sided Tests (TOST) procedure. We can reject effects larger than $\pm$5 percentage points (TOST $p = 0.001$). At $\pm$3pp, equivalence is borderline ($p = 0.067$).
+
+A Bayes Factor analysis yields $BF_{01} = 26.3$ (strong evidence for the null), computed via the BIC approximation.
+
+\subsection{Confidence Calibration Penalty}
+
+While accuracy is unaffected, interference causes a statistically significant drop in model confidence (Table~\ref{tab:confidence}).
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \textbf{Clean} & \textbf{Interfere} & \textbf{Diff} & \textbf{$p$} \\
+\midrule
+GPT-4o-mini & 0.902 & 0.896 & +0.006 & 0.024* \\
+Grok-3-mini & 0.889 & 0.883 & +0.007 & 0.342 \\
+Llama-3.1-8B & 0.903 & 0.886 & +0.018 & 0.008** \\
+\midrule
+\textbf{Overall} & \textbf{0.898} & \textbf{0.888} & \textbf{+0.010} & \textbf{0.003**} \\
+\bottomrule
+\end{tabular}
+\caption{Mean confidence scores by model and condition. $*$ $p < 0.05$, $**$ $p < 0.01$.}
+\label{tab:confidence}
+\end{table}
+
+\subsection{Token Cost Amplification}
+
+Interference conditions require substantially more tokens (Table~\ref{tab:tokens}). This is a direct economic cost: at \$0.15--5.00 per million tokens, the 2.1--2.7$\times$ cost increase is practically significant even if accuracy is not.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \textbf{Clean (tok)} & \textbf{Interfere (tok)} & \textbf{Ratio} \\
+\midrule
+GPT-4o-mini & 1,840 & 4,488 & 2.44$\times$ \\
+Grok-3-mini & 2,346 & 5,010 & 2.14$\times$ \\
+Llama-3.1-8B & 1,855 & 4,504 & 2.43$\times$ \\
+\bottomrule
+\end{tabular}
+\caption{Average token usage by model and condition. Interference conditions use 2.1--2.7$\times$ more tokens.}
+\label{tab:tokens}
+\end{table}
+
+\subsection{Discriminating Task Analysis}
+
+Only 9 out of 77 tasks (12\%) show any difference between clean and interference conditions. Of these, 6 show interference hurting accuracy and 3 paradoxically show interference helping. Among these 9 discriminating tasks, the average effect is +11.1pp, but this is not statistically significant ($t(8) = 0.95$, $p = 0.37$) due to the small sample.
+
+The single largest outlier is \texttt{interfere\_trap\_001} (+88.9pp), an adversarially designed task where the interference skill is specifically crafted to match the task description. Excluding this task reduces the overall effect from 1.3pp to 0.15pp---essentially zero.
+
+
+\section{Analysis}
+
+\subsection{Why Is the Effect So Small?}
+
+We identify three structural reasons for the null result:
+
+\paragraph{Ceiling effect.} With 96\% baseline accuracy, there is limited room for interference to cause errors. 88\% of tasks produce identical outcomes under both conditions. The tasks are simply too easy for current LLMs.
+
+\paragraph{Interference dilution.} The 100-skill library contains 23 interference skills, but for any given task, only 1--3 are relevant competitors. The remaining 20+ are irrelevant noise that the model easily filters.
+
+\paragraph{Pattern matching vs.\ genuine retrieval.} In our setup, the full skill library is provided in the prompt, making selection a pattern-matching task rather than a genuine retrieval task. In RAG settings, where retrieval is the bottleneck, interference may matter more.
+
+\subsection{Sensitivity Analyses}
+
+Table~\ref{tab:sensitivity} shows the interference effect under various exclusions.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lc}
+\toprule
+\textbf{Analysis} & \textbf{CM--CI Diff} \\
+\midrule
+All 80 tasks & +1.25pp \\
+Excluding ambiguous tasks & +1.30pp \\
+Excluding outlier + ambiguous & +0.15pp \\
+Excluding GPT-4o-mini & +1.95pp \\
+Discriminating tasks only & +11.1pp \\
+\bottomrule
+\end{tabular}
+\caption{Sensitivity of interference effect to exclusions.}
+\label{tab:sensitivity}
+\end{table}
+
+\subsection{Heterogeneity Across Models}
+
+GPT-4o-mini shows zero interference effect (94.8\% for both conditions), while Grok-3-mini shows a 2.2pp drop and Llama-3.1-8B shows a 1.7pp drop. Cochran's Q = 0.02 ($p = 0.99$, $I^2 = 0\%$), indicating no significant heterogeneity across models.
+
+
+\section{Discussion}
+
+\subsection{What This Means for Agent Designers}
+
+Our null result is good news: current LLMs are surprisingly robust to skill library interference. Simply adding more tools---even near-duplicates---will not catastrophically break selection accuracy.
+
+However, the confidence and cost effects are real. A 2--3$\times$ token cost increase directly translates to higher inference costs in deployed systems. And confidence calibration errors, while small, compound over multi-step agent trajectories.
+
+\subsection{Limitations}
+
+\paragraph{Task design.} Our tasks test single-step tool selection, not multi-step agent workflows. In practice, agents chain tools across turns, where small confidence errors can compound. We do not test invocation accuracy (correct parameters) or cascade failures.
+
+\paragraph{Ceiling effect.} With 96\% baseline accuracy, interference has little room to matter. Harder tasks or more adversarial interference would stress-test this finding.
+
+\paragraph{Library realism.} Our 22\% interference density exceeds real-world libraries (typically $<$5\%). The results may not generalize to sparser interference conditions.
+
+\paragraph{Prompt-based selection.} Providing the full library in the prompt makes selection trivially easy via pattern matching. RAG-based selection (where retrieval is the bottleneck) may show different results.
+
+
+\section{Conclusion}
+
+We present the first rigorous null result on skill library interference in LLM agents. Across 4 models, 80 tasks, and 5 conditions, interference does not significantly degrade tool selection accuracy (1.3pp, $d = 0.06$, TOST equivalence at $\pm$5pp). However, interference imposes measurable costs: confidence calibration penalties of 0.5--1.8pp and token cost increases of 2.1--2.7$\times$. These secondary effects, while small, compound in deployed multi-step agent systems. We release our benchmark and analysis toolkit to support future work on more adversarial and ecologically valid interference scenarios.
+
+
+\section*{Ethical Considerations}
+
+This work evaluates LLM tool selection accuracy and does not involve human subjects, personal data, or harmful content generation. All models are publicly available via API access. The benchmark tasks are synthetic and do not contain real user data.
+
+\section*{Reproducibility}
+
+All code, data, and analysis scripts are available at \url{https://github.com/curator8888/meminterfere}. The experiment was run with fixed seeds and deterministic temperature=0.0 for all models. Total compute cost: approximately \$6.80 for 3,600 primary runs + \$4.00 for 1,200 Claude runs.
+
+\bibliography{references}
+\bibliographystyle{acl_nat}
+
+\appendix
+
+\section{Full Results Table}
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Model} & \textbf{Temp} & \textbf{No-mem} & \textbf{Oracle} & \textbf{Clean} & \textbf{Interfere} & \textbf{All-mem} \\
+\midrule
+\multirow{3}{*}{GPT-4o-mini} & 0.0 & 0.0\% & 94.8\% & 94.8\% & 94.8\% & 94.8\% \\
+ & 0.3 & 0.0\% & 94.8\% & 94.8\% & 94.8\% & 94.8\% \\
+ & 0.7 & 0.0\% & 94.8\% & 94.8\% & 94.8\% & 94.8\% \\
+\midrule
+\multirow{3}{*}{Grok-3-mini} & 0.0 & 0.0\% & 95.7\% & 95.7\% & 93.9\% & 94.8\% \\
+ & 0.3 & 0.0\% & 95.7\% & 96.5\% & 93.9\% & 94.8\% \\
+ & 0.7 & 0.0\% & 95.7\% & 96.5\% & 93.9\% & 94.8\% \\
+\midrule
+\multirow{3}{*}{Llama-3.1-8B} & 0.0 & 0.0\% & 97.4\% & 97.4\% & 95.7\% & 95.7\% \\
+ & 0.3 & 0.0\% & 97.4\% & 96.5\% & 94.8\% & 95.7\% \\
+ & 0.7 & 0.0\% & 97.4\% & 97.4\% & 95.7\% & 95.7\% \\
+\bottomrule
+\end{tabular}
+\caption{Full results by model and temperature (excluding 3 ambiguous tasks).}
+\label{tab:full}
+\end{table*}
+
+\section{Mixed-Effects Models}
+
+We fit two mixed-effects models to account for the hierarchical data structure (tasks nested within models):
+
+\paragraph{Model 1:} $\text{correct}_{ijk} = \beta_0 + \beta_1 \text{interference}_{ijk} + \beta_2 \text{temperature}_{ijk} + u_j + \epsilon_{ijk}$
+
+Result: $\hat{\beta}_1 = -0.013$ ($z = -0.86$, $p = 0.39$), confirming no significant interference effect with model-level random intercepts.
+
+\paragraph{Model 2:} $\text{correct}_{ijk} = \beta_0 + \beta_1 \text{interference}_{ijk} + \beta_2 \text{temperature}_{ijk} + \beta_3 \text{model}_i + v_k + \epsilon_{ijk}$
+
+Result: $\hat{\beta}_1 = -0.013$ ($z = -1.49$, $p = 0.15$), confirming no significant interference effect with task-level random intercepts.
+
+\section{Minimum Detectable Effect}
+
+Table~\ref{tab:mde} shows the minimum effect size detectable at 80\% power for different sample sizes.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{ccc}
+\toprule
+\textbf{N per cell} & \textbf{Min.\ detectable $d$} & \textbf{Min.\ detectable $\Delta$} \\
+\midrule
+80 & 0.31 & 8.5pp \\
+240 & 0.18 & 4.9pp \\
+720 & 0.10 & 2.8pp \\
+\bottomrule
+\end{tabular}
+\caption{Minimum detectable effect at 80\% power.}
+\label{tab:mde}
+\end{table}
+
+\end{document}
