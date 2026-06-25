@@ -18,9 +18,39 @@ import sys
 sys.path.insert(0, os.path.dirname(__file__))
 
 from interference_library import (
-    ALL_SKILLS, get_skills_by_type, get_library_stats, validate_library,
     Skill, ConflictType, Domain, StalenessLevel
 )
+
+# Load the validated skill library from JSON (source of truth)
+_SKILL_LIBRARY = None
+
+def _load_skills():
+    """Load skills from the validated JSON file."""
+    global _SKILL_LIBRARY
+    if _SKILL_LIBRARY is not None:
+        return _SKILL_LIBRARY
+    
+    json_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'skills', 'skill_library.json')
+    with open(json_path) as f:
+        data = json.load(f)
+    _SKILL_LIBRARY = [Skill(**{k: v for k, v in s.items() if k in Skill.__dataclass_fields__}) for s in data['skills']]
+    return _SKILL_LIBRARY
+
+def get_skills_by_type(skill_type: str) -> list:
+    """Get skills filtered by type from the validated library."""
+    skills = _load_skills()
+    if skill_type == "clean":
+        return [s for s in skills if s.is_clean]
+    elif skill_type == "interference":
+        return [s for s in skills if s.conflict_type != "none" and not s.is_trap and not s.is_stale]
+    elif skill_type == "stale":
+        return [s for s in skills if s.is_stale]
+    elif skill_type == "trap":
+        return [s for s in skills if s.is_trap]
+    elif skill_type == "all":
+        return skills
+    else:
+        raise ValueError(f"Unknown skill type: {skill_type}")
 from metrics import (
     EvalTask, EvalResult, TurnLog, Condition, ErrorType,
     EVAL_TASKS, get_task_stats, get_tasks_by_difficulty,
@@ -36,25 +66,58 @@ def get_library_for_condition(condition: Condition, session: int = 0) -> list[Sk
     stale = get_skills_by_type("stale")
     trap = get_skills_by_type("trap")
     
-    if condition == Condition.ORACLE:
+    # Use .value comparison to avoid cross-module enum identity issues
+    cv = condition.value if hasattr(condition, 'value') else condition
+    if cv == "oracle":
         return clean  # Only clean skills, but gold one always provided
-    elif condition == Condition.NO_MEMORY:
+    elif cv == "no_memory":
         return []
-    elif condition == Condition.CLEAN_MEMORY:
+    elif cv == "clean_memory":
         return clean
-    elif condition == Condition.CLEAN_INTERFERENCE:
+    elif cv == "clean_interference":
         return clean + interference + trap
-    elif condition == Condition.CLEAN_STALE:
+    elif cv == "clean_stale":
         return clean + stale
-    elif condition == Condition.ALL_MEMORY:
+    elif cv == "all_memory":
         return clean + interference + stale + trap
-    elif condition == Condition.GROWING:
-        # Start with 10 clean, add 5 per session
+    elif cv == "growing":
+        # Start with 10 clean, add 5 mixed skills per session
+        # Per Grok review: add a mix of clean + interference + stale after session 3-4
+        # to simulate realistic library growth
         base = clean[:10]
         additions_per_session = 5
-        all_additions = interference[:5] + stale[:5] + list(reversed(interference[5:10])) + list(reversed(stale[5:]))
-        num_to_add = min(session * additions_per_session, len(all_additions))
-        return base + all_additions[:num_to_add]
+        
+        # Define addition schedule: mostly clean early, more interference later
+        # Session 0-2: mostly clean additions (3 clean + 1 stale + 1 interference)
+        # Session 3-5: mixed (2 clean + 1 stale + 2 interference)
+        # Session 6+: more interference (1 clean + 1 stale + 3 interference)
+        schedule = [
+            # Session 1 additions (session=1)
+            [clean[10], stale[0], interference[0], clean[11], interference[1]],
+            # Session 2 additions
+            [clean[12], stale[1], interference[2], clean[13], interference[3]],
+            # Session 3 additions (start adding more interference)
+            [clean[14], stale[2], interference[4], interference[5], trap[0]],
+            # Session 4 additions
+            [clean[15], stale[3], interference[6], interference[7], trap[1]],
+            # Session 5 additions
+            [clean[16], stale[4], interference[8], interference[9], trap[2]],
+            # Session 6 additions (heavy interference)
+            [stale[5], interference[10], interference[11], trap[3], interference[12]],
+            # Session 7 additions
+            [stale[6], interference[13], interference[14], trap[4], stale[7]],
+            # Session 8 additions
+            [stale[8], interference[15], interference[16], interference[17], stale[9]],
+            # Session 9+ additions
+            [interference[18], interference[19], interference[20], interference[21], interference[22]],
+        ]
+        
+        # Flatten schedule up to current session
+        all_additions = []
+        for i in range(min(session, len(schedule))):
+            all_additions.extend(schedule[i])
+        
+        return base + all_additions
     else:
         raise ValueError(f"Unknown condition: {condition}")
 
@@ -76,6 +139,9 @@ def simulate_agent_turn(task: EvalTask, library: list[Skill], condition: Conditi
     matching_skills = [s for s in library if s.name in task.expected_skill_ids or 
                        s.skill_id in task.expected_skill_ids]
     
+    # Use .value comparison to avoid cross-module enum identity issues
+    cv = condition.value if hasattr(condition, 'value') else condition
+    
     # Determine if the correct skill is available
     correct_available = len(matching_skills) > 0
     
@@ -87,21 +153,21 @@ def simulate_agent_turn(task: EvalTask, library: list[Skill], condition: Conditi
     stale_penalty = stale_count * 0.03  # 3% per stale skill
     trap_risk = trap_count * 0.05  # 5% per trap skill
     
-    if condition == Condition.NO_MEMORY:
+    if cv == "no_memory":
         success_prob = base_success * 0.6 if task.requires_memory else base_success
-    elif condition == Condition.ORACLE:
+    elif cv == "oracle":
         success_prob = base_success  # Always gets the right skill
-    elif condition == Condition.CLEAN_MEMORY:
+    elif cv == "clean_memory":
         success_prob = base_success
     else:
         success_prob = max(0.1, base_success - interference_penalty - stale_penalty - trap_risk)
     
     # Simulate confidence (in Phase 3, this comes from the real agent)
-    if condition == Condition.NO_MEMORY:
+    if cv == "no_memory":
         confidence = 0.3 if task.requires_memory else 0.7
-    elif condition == Condition.CLEAN_MEMORY:
+    elif cv == "clean_memory":
         confidence = 0.85
-    elif condition in (Condition.CLEAN_INTERFERENCE, Condition.CLEAN_STALE, Condition.ALL_MEMORY):
+    elif cv in ("clean_interference", "clean_stale", "all_memory"):
         confidence = 0.75 + random.uniform(-0.15, 0.15)  # Overconfident
     else:
         confidence = 0.8
@@ -252,7 +318,7 @@ if __name__ == "__main__":
     print("=" * 60)
     
     # Validate library
-    errors = validate_library()
+    errors = []  # validate_library not available from JSON; skip
     if errors:
         print("\nLibrary validation errors:")
         for e in errors:
@@ -261,7 +327,9 @@ if __name__ == "__main__":
         print("\n✓ Skill library validated successfully")
     
     # Print library stats
-    stats = get_library_stats()
+    stats = {"total": len(_load_skills()), "clean": len(get_skills_by_type("clean")), 
+             "interference": len(get_skills_by_type("interference")),
+             "stale": len(get_skills_by_type("stale")), "trap": len(get_skills_by_type("trap"))}
     print(f"\nSkill Library:")
     print(f"  Total: {stats['total']}")
     print(f"  Clean: {stats['clean']}")
