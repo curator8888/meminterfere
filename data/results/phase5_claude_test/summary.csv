@@ -1,2 +1,0 @@
-model,condition,temperature,total_runs,parsed,parse_rate,correct,accuracy,errors,avg_latency_ms,avg_confidence,total_tokens
-claude-3.5-haiku,oracle,0.0,3,0,0.0,0,0.0,3,6750.3,0.0,0

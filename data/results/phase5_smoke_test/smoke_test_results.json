@@ -315,8 +315,8 @@
       "parsed_approach": "I will use calculate_fast for this task",
       "parse_method": "regex",
       "all_matched_skills": [
-        "calculate_fast",
-        "calculate"
+        "calculate",
+        "calculate_fast"
       ],
       "expected_skills": [
         "navigate_url"
@@ -775,8 +775,8 @@
       "parsed_approach": "Use send_email_fast to accomplish the task",
       "parse_method": "json",
       "all_matched_skills": [
-        "send_email_fast",
-        "send_email"
+        "send_email",
+        "send_email_fast"
       ],
       "expected_skills": [
         "extract_metadata"

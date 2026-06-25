@@ -89,16 +89,16 @@ MODELS: dict[str, ModelConfig] = {
         },
     ),
 
-    "claude-3.5-haiku": ModelConfig(
-        name="claude-3.5-haiku",
+    "claude-haiku-4.5": ModelConfig(
+        name="claude-haiku-4.5",
         provider="openrouter",
-        model_id="anthropic/claude-3.5-haiku",
+        model_id="anthropic/claude-haiku-4.5",
         tier="strong",
         max_tokens=4096,
         temperature=0.0,
         supports_json_mode=True,
-        cost_per_million_input=0.25,
-        cost_per_million_output=1.25,
+        cost_per_million_input=1.0,
+        cost_per_million_output=5.0,
         rate_limit_rpm=40,
         api_base="https://openrouter.ai/api/v1",
         env_key="OPENROUTER_API_KEY",
