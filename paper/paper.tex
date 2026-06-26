@@ -325,7 +325,9 @@ However, the confidence and cost effects are real. A 2--3$\times$ token cost inc
 
 \section{Conclusion}
 
-We present the first rigorous null result on skill library interference in LLM agents. Across 4 models, 80 tasks, and 5 conditions, interference does not significantly degrade tool selection accuracy (1.2pp, $d = 0.06$, TOST equivalence at $\pm$3pp with $p = 0.035$). However, interference imposes measurable costs: confidence calibration penalties of 0.6--1.8pp and token cost increases of 2.1--2.4$\times$. These secondary effects, while small, compound in deployed multi-step agent systems. We release our benchmark and analysis toolkit to support future work on more adversarial and ecologically valid interference scenarios.
+We present the first rigorous null result on skill library interference in LLM agents. Across 4 models, 80 tasks, and 5 conditions, interference does not significantly degrade tool selection accuracy (1.2pp, $d = 0.06$, TOST equivalence at $\pm$3pp with $p = 0.035$). Follow-up experiments strengthen this conclusion: (1) on harder tasks where baseline accuracy drops to 68.7\%, interference \emph{significantly improves} accuracy by 4.9pp ($p = 0.023$); (2) RAG-based retrieval closely matches gold retrieval (92.2\% vs.\ 92.5\%), confirming that retrieval is not the bottleneck; and (3) a gradient of interference types shows no monotonic relationship between skill similarity and accuracy degradation.
+
+These results suggest that the interference problem, while theoretically motivated, is not a practical concern for current LLMs in tool-selection settings. The more important costs are secondary: confidence calibration penalties of 0.6--1.8pp and token cost increases of 2.1--2.4$\times$. These compound in deployed multi-step agent systems. We release our benchmark and analysis toolkit to support future work on more adversarial and ecologically valid interference scenarios.
 
 
 \section*{Ethical Considerations}
@@ -334,7 +336,7 @@ This work evaluates LLM tool selection accuracy and does not involve human subje
 
 \section*{Reproducibility}
 
-All code, data, and analysis scripts are available at \url{https://github.com/curator8888/meminterfere}. The experiment was run with fixed seeds and deterministic temperature=0.0 for all models. Total compute cost: approximately \$6.80 for 3,600 primary runs + \$5.20 for 1,200 Claude runs = \$12.00 total.
+All code, data, and analysis scripts are available at \url{https://github.com/curator8888/meminterfere}. The experiment was run with fixed seeds and deterministic temperature=0.0 for all models. Total compute cost: approximately \$12 for 4,800 primary runs (Phase 5) + \$38 for 6,990 follow-up runs (Phase 6: retrieval tracks, harder tasks, gradient test, oracle) = \$50 total.
 
 \bibliography{references}
 \bibliographystyle{acl_nat}
