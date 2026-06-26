@@ -361,23 +361,14 @@ def main():
     track_mode = args.track  # None, "gold", "rag_k1", "rag_k3", "rag_k5", "rag_k10", "full"
     track_embeddings = None  # Will be computed lazily for RAG tracks
     track_skill_ids = None
+    task_embeddings = None
 
     if track_mode:
         # Override conditions to the track-specific condition
         track_condition = TRACK_NAMES[track_mode]
         condition_names = [track_condition]
         logger.info(f"Track mode: {track_mode} → condition: {track_condition}")
-
-        # For RAG tracks, precompute embeddings
-        if track_mode.startswith("rag_k"):
-            all_skills = _load_skills()
-            skill_embeddings, skill_ids = compute_skill_embeddings(
-                all_skills, model_name=args.embed_model,
-                force_recompute=False
-            )
-            task_embeddings = compute_task_embeddings(tasks, model_name=args.embed_model)
-            track_embeddings = skill_embeddings
-            track_skill_ids = skill_ids
+        # Note: RAG embedding computation is deferred until after tasks are loaded
 
     # Validate conditions
     for name in condition_names:
@@ -426,6 +417,17 @@ def main():
         tasks = ALL_TASKS if not args.tasks else ALL_TASKS[:args.tasks]
     logger.info(f"Using {len(tasks)} tasks")
 
+    # Precompute embeddings for RAG tracks (deferred until tasks are loaded)
+    if track_mode and track_mode.startswith("rag_k"):
+        all_skills = _load_skills()
+        skill_embeddings, skill_ids = compute_skill_embeddings(
+            all_skills, model_name=args.embed_model,
+            force_recompute=False
+        )
+        task_embeddings = compute_task_embeddings(tasks, model_name=args.embed_model)
+        track_embeddings = skill_embeddings
+        track_skill_ids = skill_ids
+
     # Load skill libraries
     if track_mode:
         all_skills = _load_skills()
@@ -435,7 +437,7 @@ def main():
                 tasks, condition_name, track_mode, all_skills,
                 skill_embeddings=track_embeddings,
                 skill_ids=track_skill_ids,
-                task_embeddings=task_embeddings if track_mode.startswith("rag_k") else None,
+                task_embeddings=task_embeddings,
             )
         else:
             skill_libraries = build_skill_libraries_for_track(

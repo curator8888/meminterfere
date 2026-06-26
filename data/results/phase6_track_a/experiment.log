@@ -1,0 +1,19 @@
+2026-06-26 08:11:18,899 [INFO] Track mode: gold → condition: gold_retrieval
+2026-06-26 08:11:18,902 [INFO] Using 80 tasks
+2026-06-26 08:11:18,910 [INFO] Skill library sizes: gold_retrieval: 100
+2026-06-26 08:11:18,910 [INFO] 
+============================================================
+2026-06-26 08:11:18,910 [INFO] Experiment Configuration
+2026-06-26 08:11:18,910 [INFO] ============================================================
+2026-06-26 08:11:18,910 [INFO] Models: llama-3.1-8b-instruct, grok-3-mini, gpt-4o-mini, claude-haiku-4.5
+2026-06-26 08:11:18,911 [INFO] Conditions: gold_retrieval
+2026-06-26 08:11:18,911 [INFO] Temperatures: [0.0]
+2026-06-26 08:11:18,916 [INFO] Tasks: 80
+2026-06-26 08:11:18,921 [INFO] Total runs: 320
+2026-06-26 08:11:18,922 [INFO]   llama-3.1-8b-instruct: ~$0.00 (openrouter)
+2026-06-26 08:11:18,925 [INFO]   grok-3-mini: ~$0.02 (xai)
+2026-06-26 08:11:18,925 [INFO]   gpt-4o-mini: ~$0.01 (openrouter)
+2026-06-26 08:11:18,925 [INFO]   claude-haiku-4.5: ~$0.09 (openrouter)
+2026-06-26 08:11:18,925 [INFO]   Total estimated cost: $0.12
+2026-06-26 08:11:18,925 [INFO] 
+Dry run complete. Exiting without running experiments.
