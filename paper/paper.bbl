@@ -1,0 +1,52 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Lakens(2017)}]{lakens2017equivalence}
+Dani{\"e}l Lakens. 2017.
+\newblock Equivalence testing: The poor cousin of significance testing?
+\newblock \emph{Advances in Methods and Practices in Psychological Science},
+  1(2):215--227.
+
+\bibitem[{Li et~al.(2023)Li, Yang, Chen, Hu, Zhang et~al.}]{li2023api}
+Minghao Li, Yujia Yang, Wenmeng Chen, Zhijie Hu, Pengcheng Zhang, and 1 others.
+  2023.
+\newblock Api-bank: A comprehensive baseline and benchmark for tool-augmented
+  llms.
+\newblock In \emph{EMNLP}.
+
+\bibitem[{Patil et~al.(2023)Patil, Zhang, Wang, and
+  Gonzalez}]{patil2023gorilla}
+Shishir~G Patil, Tianjun Zhang, Xin Wang, and Joseph~E Gonzalez. 2023.
+\newblock Gorilla: Large language model connected with massive apis.
+\newblock In \emph{arXiv preprint arXiv:2305.15334}.
+
+\bibitem[{Qin et~al.(2024)Qin, Liang, Ye, Zhu, Yan, Lu, Lin, Cong, Wang, Liu
+  et~al.}]{qin2023toolllm}
+Yujia Qin, Shihao Liang, Yining Ye, Kunlun Zhu, Li~Yan, Yujia Lu, Yankai Lin,
+  Xin Cong, Xiaojing Wang, Qi~Liu, and 1 others. 2024.
+\newblock Toolllm: Facilitating large language models to master 16000+
+  real-world apis.
+\newblock In \emph{ICLR}.
+
+\bibitem[{Schick et~al.(2023)Schick, Dwivedi-Yu, Dessi, Raileanu, Lomeli,
+  Hambro, Zettlemoyer, Cancedda, and Scialom}]{schick2023toolformer}
+Timo Schick, Jane Dwivedi-Yu, Roberto Dessi, Roberta Raileanu, Maria Lomeli,
+  Eric Hambro, Luke Zettlemoyer, Nicola Cancedda, and Thomas Scialom. 2023.
+\newblock Toolformer: Language models can teach themselves to use tools.
+\newblock In \emph{NeurIPS}.
+
+\bibitem[{Schuirmann(1987)}]{schuirmann1987comparison}
+Donald~J Schuirmann. 1987.
+\newblock A comparison of the two one-sided tests procedure and the power
+  approach for assessing the equivalence of average bioavailability.
+\newblock \emph{Journal of Pharmacokinetics and Biopharmaceutics},
+  15(6):657--680.
+
+\bibitem[{Shi et~al.(2023)Shi, Chen, Misra, Scales, Dohan, Chi, Sch{\"a}rli,
+  and Zhou}]{shi2023large}
+Freda Shi, Xinyun Chen, Kundan Misra, Nathan Scales, Ed~Dohan, Nathanael Chi,
+  Nathanael Sch{\"a}rli, and Denny Zhou. 2023.
+\newblock Large language models can be easily distracted by irrelevant context.
+\newblock \emph{ICML}.
+
+\end{thebibliography}
