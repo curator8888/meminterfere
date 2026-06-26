@@ -369,7 +369,7 @@ The 8pp gap between the original oracle (91.8\%, 40 skills) and revised oracle (
 
 \section{Discussion}
 
-\subsection{What This Means for Agent Designers}
+\subsection{What This Means for Researchers}
 
 \paragraph{Prioritize skill naming.}
 Every interference-induced error selected a \emph{similar-seeming} competitor skill---never an unrelated one. The most effective intervention is eliminating near-identical skill names (e.g., \texttt{search\_web} vs.\ \texttt{search\_web\_fast}). If two skills overlap in purpose, either merge them or give them maximally distinct names (e.g., rename \texttt{send\_email}/\texttt{compose\_email} to \texttt{email\_send}/\texttt{email\_draft\_with\_template}, or merge them with a \texttt{draft\_mode} parameter).
@@ -399,7 +399,7 @@ Interference did not meaningfully degrade accuracy, but it increased average tok
 \paragraph{Prompt-based selection.} Providing the full library in the prompt makes selection trivially easy via pattern matching. Our RAG experiment (Track B) addresses this partially, showing that retrieval-augmented selection closely matches gold retrieval (92.2\% vs.\ 92.5\%).
 
 \paragraph{Future directions.}
-Several experiments would sharpen these findings. First, scaling the skill library beyond 100 skills---to 500 or 1,000---would test whether the ceiling effect persists as retrieval difficulty increases. Second, targeted intervention studies (e.g., renaming \texttt{search\_web\_fast} $\rightarrow$ \texttt{quick\_web\_lookup}) would directly quantify the return on naming hygiene. Third, extending beyond web/email domains to code-generation or multi-modal skill libraries would test generality. Fourth, studying cumulative interference in multi-turn agent trajectories, where early errors propagate, would establish whether the null result holds under agentic execution. Finally, cost-accuracy trade-off curves across RAG-$k$ values (1, 3, 5, 10) with varying library sizes would give practitioners concrete guidance on Pareto-optimal retrieval configurations.
+Several experiments would sharpen these findings. First, scaling the skill library beyond 100 skills---to 500 or 1,000---would test whether the ceiling effect persists as retrieval difficulty increases. Second, targeted intervention studies (e.g., renaming \texttt{search\_web\_fast} $\rightarrow$ \texttt{quick\_web\_lookup}) would directly quantify the return on naming hygiene. Third, extending beyond web/email domains to code-generation or multi-modal skill libraries would test generality. Fourth, studying cumulative interference in multi-turn agent trajectories, where early errors propagate, would establish whether the null result holds under agentic execution. Finally, cost-accuracy trade-off curves across RAG-$k$ values (1, 3, 5, 10) with varying library sizes would give researchers concrete guidance on Pareto-optimal retrieval configurations.
 
 
 \section{Conclusion}

@@ -24,7 +24,7 @@ Skill library interference (near-duplicate, stale, conflicting descriptions) doe
 | **RAG solves retrieval** | Top-5 RAG: 92.2% vs gold retrieval 92.5% (0.3pp gap) |
 | **Oracle with 1 skill** | 99.8% — the task is retrieval, not invocation |
 
-## Practitioner Recommendations
+## Researcher Recommendations
 
 ### 1. Prioritize skill naming
 Every interference-induced error selected a **similar-seeming competitor** — never a random unrelated tool. The most effective intervention is eliminating near-identical names.
