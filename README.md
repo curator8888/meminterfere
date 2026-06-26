@@ -26,11 +26,30 @@ Skill library interference (near-duplicate, stale, conflicting descriptions) doe
 
 ## Practitioner Recommendations
 
-1. **Prioritize skill naming** — Eliminate near-identical names (`search_web` vs `search_web_fast`). If two skills overlap, merge them or give them maximally distinct names.
-2. **Use RAG for skill retrieval** — Top-5 RAG achieves 92.2% (vs oracle 92.5%). Injecting all skills costs 2.33× more tokens with no accuracy benefit.
-3. **Don't over-prune libraries** — Even with 60% noise, agents maintain 94.7% accuracy. Library size is not a first-order accuracy concern.
-4. **Audit for trap patterns** — Semantically overlapping skill clusters are high-risk zones. Review your library for near-duplicate names.
-5. **Monitor token cost** — 2.33× overhead dwarfs any accuracy benefit of including all skills in-context.
+### 1. Prioritize skill naming
+Every interference-induced error selected a **similar-seeming competitor** — never a random unrelated tool. The most effective intervention is eliminating near-identical names.
+
+**Example:** If you have `send_email` and `compose_email`, rename them to `email_send` and `email_draft_with_template` to make the functional distinction explicit — or merge them into one skill with a `draft_mode` parameter.
+
+### 2. Use RAG for skill retrieval
+A top-5 RAG retriever achieves 92.2% accuracy (vs oracle 92.5%). Injecting all skills costs 2.33× more tokens with no accuracy benefit.
+
+**Example:** A customer-service agent with 200 skills should index descriptions in a vector store, retrieve the top-5 per query, and pass only those to the LLM — rather than injecting all 200 descriptions into every prompt.
+
+### 3. Don't over-prune libraries
+Even with 60% interfering skills, agents maintained 94.7% accuracy. Library size is not a first-order accuracy concern. Time spent curating the library is better spent improving retrieval quality.
+
+**Example:** A coding assistant that grows from 20 to 80 skills over months does not need aggressive deduplication campaigns — the accuracy impact is negligible.
+
+### 4. Audit for trap patterns
+Tasks exploiting near-duplicate skills had a 22.2% error rate — 2.6× higher than regular tasks. Review your library for clusters of semantically overlapping skills.
+
+**Example:** Run a weekly script that computes pairwise skill-name similarity (edit distance or embedding cosine) and flags pairs above 0.8. When flagged, merge, rename, or add a disambiguating phrase like *"Use this tool for **live** web searches, not cached results."*
+
+### 5. Monitor token cost, not just accuracy
+Interference didn't meaningfully degrade accuracy, but increased token usage 2.33×. At scale, this cost dwarfs any accuracy benefit.
+
+**Example:** At $0.15/M input tokens, injecting 100 skills (4,743 avg tokens) costs 2.33× more than RAG retrieval (2,032 avg tokens) — a **$1,500/month difference** for 10K daily queries, with zero accuracy gain.
 
 ## Experiments
 
