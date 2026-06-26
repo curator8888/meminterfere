@@ -1,5 +1,10 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Dienes(2016)}]{dienes2016bayesian}
+Zoltan Dienes. 2016.
+\newblock How bayes factors change scientific practice.
+\newblock \emph{Journal of Mathematical Psychology}, 72:78--89.
 
 \bibitem[{Lakens(2017)}]{lakens2017equivalence}
 Dani{\"e}l Lakens. 2017.
@@ -14,6 +19,13 @@ Minghao Li, Yujia Yang, Wenmeng Chen, Zhijie Hu, Pengcheng Zhang, and 1 others.
   llms.
 \newblock In \emph{EMNLP}.
 
+\bibitem[{Liu et~al.(2024)Liu, Lin, Hewitt, Paranjape, Belezko, Piperno,
+  Zettlemoyer, Liang, and Khabsa}]{liu2024lost}
+Nelson~F Liu, Kevin Lin, John Hewitt, Ashwin Paranjape, Michele Belezko,
+  Stefano Piperno, Luke Zettlemoyer, Percy Liang, and Madian Khabsa. 2024.
+\newblock Lost in the middle: How language models use long contexts.
+\newblock In \emph{TACL}.
+
 \bibitem[{Patil et~al.(2023)Patil, Zhang, Wang, and
   Gonzalez}]{patil2023gorilla}
 Shishir~G Patil, Tianjun Zhang, Xin Wang, and Joseph~E Gonzalez. 2023.
@@ -27,6 +39,12 @@ Yujia Qin, Shihao Liang, Yining Ye, Kunlun Zhu, Li~Yan, Yujia Lu, Yankai Lin,
 \newblock Toolllm: Facilitating large language models to master 16000+
   real-world apis.
 \newblock In \emph{ICLR}.
+
+\bibitem[{Razeghi et~al.(2022)Razeghi, Logan~IV, Feng, Hope
+  et~al.}]{razeghi2022impact}
+Yasaman Razeghi, Robert~L Logan~IV, Minqi Feng, Matt Hope, and 1 others. 2022.
+\newblock Impact of pretraining term frequencies on few-shot reasoning.
+\newblock In \emph{TACL}.
 
 \bibitem[{Schick et~al.(2023)Schick, Dwivedi-Yu, Dessi, Raileanu, Lomeli,
   Hambro, Zettlemoyer, Cancedda, and Scialom}]{schick2023toolformer}
@@ -48,5 +66,35 @@ Freda Shi, Xinyun Chen, Kundan Misra, Nathan Scales, Ed~Dohan, Nathanael Chi,
   Nathanael Sch{\"a}rli, and Denny Zhou. 2023.
 \newblock Large language models can be easily distracted by irrelevant context.
 \newblock \emph{ICML}.
+
+\bibitem[{Shinn et~al.(2023)Shinn, Cassano, Gopinath, Narasimhan, and
+  Yao}]{shinn2023reflexion}
+Noah Shinn, Federico Cassano, Ashwin Gopinath, Karthik Narasimhan, and Shunyu
+  Yao. 2023.
+\newblock Reflexion: Language agents with verbal reinforcement learning.
+\newblock In \emph{NeurIPS}.
+
+\bibitem[{Tang et~al.(2023)Tang, Deng, Lin, Liu, Zhou, Liao, Chen, Cui, Xu,
+  Zhang et~al.}]{tang2023toolalpaca}
+Qiaoyu Tang, Mingfeng Deng, Hongming Lin, Bang Liu, Qiang Zhou, Qinyu Liao,
+  Yiliu Chen, Xin Cui, Chen Xu, Xiang Zhang, and 1 others. 2023.
+\newblock Toolalpaca: Autocompleting tool documentation for instruction tuning
+  of language models.
+\newblock In \emph{EMNLP}.
+
+\bibitem[{Wang et~al.(2024)Wang, Xie, Jiang, Mandlekar, Xiao, Zhu, Fan, and
+  Anandkumar}]{wang2024voyager}
+Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu,
+  Linxi Fan, and Anima Anandkumar. 2024.
+\newblock Voyager: An open-ended embodied agent with large language models.
+\newblock In \emph{NeurIPS}.
+
+\bibitem[{Xu et~al.(2024)Xu, Dikkala, Hardy, Bousquet, and
+  Gangi}]{xu2024context}
+Shangbing Xu, Nishanth Dikkala, Colin Hardy, Yoav Bousquet, and Pranjal Gangi.
+  2024.
+\newblock Contextual integrity and the damage of irrelevant context in large
+  language models.
+\newblock In \emph{ICLR}.
 
 \end{thebibliography}

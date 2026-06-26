@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: paper.aux
 The style file: acl_natbib.bst
-Illegal, another \bibstyle command---line 46 of file paper.aux
+Illegal, another \bibstyle command---line 83 of file paper.aux
  : \bibstyle
  :          {acl_nat}
 I'm skipping whatever remains of this command
@@ -13,45 +13,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: references.bib
-You've used 7 entries,
+You've used 14 entries,
             3764 wiz_defined-function locations,
-            771 strings with 7234 characters,
-and the built_in function-call counts, 5808 in all, are:
-= -- 449
-> -- 385
-< -- 2
-+ -- 164
-- -- 123
-* -- 393
-:= -- 901
-add.period$ -- 28
-call.type$ -- 7
-change.case$ -- 83
-chr.to.int$ -- 8
-cite$ -- 7
-duplicate$ -- 338
-empty$ -- 366
-format.name$ -- 137
-if$ -- 1203
+            798 strings with 8598 characters,
+and the built_in function-call counts, 11746 in all, are:
+= -- 902
+> -- 806
+< -- 3
++ -- 342
+- -- 257
+* -- 802
+:= -- 1794
+add.period$ -- 56
+call.type$ -- 14
+change.case$ -- 174
+chr.to.int$ -- 15
+cite$ -- 14
+duplicate$ -- 689
+empty$ -- 729
+format.name$ -- 288
+if$ -- 2436
 int.to.chr$ -- 1
-int.to.str$ -- 3
-missing$ -- 87
-newline$ -- 39
-num.names$ -- 28
-pop$ -- 229
+int.to.str$ -- 5
+missing$ -- 180
+newline$ -- 74
+num.names$ -- 56
+pop$ -- 491
 preamble$ -- 1
-purify$ -- 68
+purify$ -- 140
 quote$ -- 0
-skip$ -- 278
+skip$ -- 554
 stack$ -- 0
-substring$ -- 129
-swap$ -- 174
+substring$ -- 225
+swap$ -- 350
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 63
+type$ -- 126
 warning$ -- 0
-while$ -- 25
+while$ -- 48
 width$ -- 0
-write$ -- 89
+write$ -- 174
 (There was 1 error message)

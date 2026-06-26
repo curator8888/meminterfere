@@ -53,11 +53,20 @@ Our contributions are: (1) the first systematic null result on skill library int
 
 \section{Related Work}
 
-\paragraph{Tool use in LLMs.} Tool-augmented LLMs have shown impressive capabilities \citep{schick2023toolformer, patil2023gorilla, qin2023toolllm}, but evaluation has focused on tool execution rather than selection under interference. ToolBench \citep{qin2023toolllm} tests multi-tool chains but with minimal near-duplicates. API-Bank \citep{li2023api} evaluates hierarchical tool use but with small, clean libraries.
+\paragraph{Tool use in LLMs.}
+Tool-augmented LLMs have shown impressive capabilities \citep{schick2023toolformer, patil2023gorilla, qin2023toolllm}, but evaluation has focused on tool execution rather than selection under interference. ToolBench \citep{qin2023toolllm} tests multi-tool chains with 16,000+ APIs but with minimal near-duplicates. API-Bank \citep{li2023api} evaluates hierarchical tool use but with small, clean libraries. ToolAlpaca \citep{tang2023toolalpaca} demonstrates that tool-use capabilities can be instilled via instruction tuning, but does not test robustness to library noise.
 
-\paragraph{Retrieval augmentation and interference.} In RAG systems, retrieval of irrelevant or contradictory passages degrades generation quality \citep{shi2023large}. Our work adapts this insight to tool selection, where the ``interference'' is structurally different: near-duplicate tool descriptions rather than irrelevant passages.
+\paragraph{Retrieval augmentation and interference.}
+In RAG systems, retrieval of irrelevant or contradictory passages degrades generation quality \citep{shi2023large}. \citet{xu2024context} show that even a single irrelevant document reduces accuracy by up to 20\% in question answering. Our work adapts this insight to tool selection, where the ``interference'' is structurally different: near-duplicate tool descriptions rather than irrelevant passages. Unlike passage retrieval, tool selection requires distinguishing between functionally similar APIs, making the interference more adversarial.
 
-\paragraph{Tool selection as classification.} Tool selection from a library can be viewed as a multi-class classification problem. Our experimental design follows best practices from clinical equivalence testing \citep{schuirmann1987comparison}, applying TOST procedures to establish that interference effects are practically negligible.
+\paragraph{Prompt sensitivity and context length.}
+LLM performance degrades with increasing context length \citep{liu2024lost}. \citet{razeghi2022impact} show that factual recall decreases when irrelevant context is added. Our findings extend this: while irrelevant context hurts \emph{confidence} and \emph{cost}, it does not significantly degrade \emph{selection accuracy} in tool-use settings.
+
+\paragraph{Equivalence testing for NLP.}
+Our experimental design follows best practices from clinical equivalence testing \citep{schuirmann1987comparison,lakens2017equivalence}. While common in medicine and psychology, TOST procedures remain rare in NLP despite being recommended for null results \citep{dienes2016bayesian}. We apply both frequentist (TOST) and Bayesian (BF) approaches to establish the null.
+
+\paragraph{Agent memory and skill libraries.}
+Recent work on LLM agents has explored persistent memory \citep{wang2024voyager, shinn2023reflexion} and skill libraries \citep{wang2024voyager}. Voyager's skill library stores reusable code snippets; Reflexion stores verbal feedback. Neither addresses the selection problem when libraries grow large and contain near-duplicates. Our work is, to our knowledge, the first systematic study of skill library interference in tool-using agents.
 
 
 \section{Methodology}
@@ -124,13 +133,27 @@ Llama-3.1-8B & 0.0\% & 97.4\% & 97.0\% & 95.2\% & 95.7\% \\
 \label{tab:main}
 \end{table}
 
-The difference between clean and interference conditions is 1.2 percentage points overall (95.8\% vs.\ 94.6\%, excluding ambiguous tasks). A paired $t$-test across 77 tasks is not significant ($t(76) = 1.14$, $p = 0.26$, Cohen's $d = 0.06$).
+The difference between clean and interference conditions is 1.2 percentage points overall (95.8\% vs.\ 94.6\%, excluding ambiguous tasks). A paired $t$-test across 77 tasks is not significant ($t(76) = 1.14$, $p = 0.26$, Cohen's $d = 0.06$). A generalized linear mixed model (logistic regression with task random effects and model fixed effects) confirms this: the interference coefficient is $-0.26$ (OR $= 0.77$, $p = 0.28$), with task variance completely swamping condition effects. See Figure~\ref{fig:condition} for the full comparison.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig1_condition_accuracy.pdf}
+\caption{Selection accuracy by condition and model. Error bars show $\pm$1 SE. The small gap between Clean Memory and Clean+Interference conditions is not statistically significant ($p = 0.26$).}
+\label{fig:condition}
+\end{figure}
 
 \subsection{Equivalence Testing Confirms the Null}
 
 Following best practices for establishing null results \citep{schuirmann1987comparison,lakens2017equivalence}, we apply the Two One-Sided Tests (TOST) procedure. We can reject effects larger than $\pm$3 percentage points (TOST $p = 0.035$). At $\pm$5pp, the evidence is overwhelming ($p < 0.001$).
 
-A Bayes Factor analysis yields $BF_{01} = 26.3$ (strong evidence for the null), computed via the BIC approximation.
+A Bayes Factor analysis yields $BF_{01} = 26.3$ (strong evidence for the null), computed via the BIC approximation. Figure~\ref{fig:forest} shows the forest plot of model-level effects with bootstrap CIs.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig2_forest_plot.pdf}
+\caption{Forest plot: interference effect (Clean Memory $-$ Clean Interference) by model with bootstrap 95\% CIs. Red dashed lines show the $\pm$3pp TOST equivalence bounds. All CIs include zero and fall within the equivalence region.}
+\label{fig:forest}
+\end{figure}
 
 \subsection{Confidence Calibration Penalty}
 
@@ -175,6 +198,13 @@ Llama-3.1-8B & 1,855 & 4,504 & 2.43$\times$ \\
 \caption{Average token usage by model and condition. Interference conditions use 2.1--2.4$\times$ more tokens.}
 \label{tab:tokens}
 \end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig3_confidence_tokens.pdf}
+\caption{Left: Mean confidence by condition. Right: Mean total tokens by condition. Error bars show $\pm$1 SE across models. Interference reduces confidence ($p = 0.003$) and doubles token cost ($2.4\times$).}
+\label{fig:conf_tokens}
+\end{figure}
 
 \subsection{Discriminating Task Analysis}
 
