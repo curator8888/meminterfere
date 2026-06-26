@@ -1,0 +1,624 @@
+[
+  {
+    "task_id": "hard_info_001",
+    "domain": "information",
+    "difficulty": "hard",
+    "description": "I'm planning a camping trip this weekend and need to know if I should pack rain gear or sunscreen. Give me temperature, precipitation chance, and wind for the area.",
+    "gold_skill_ids": [
+      "get_weather"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "get_forecast",
+      "report_climate"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_info_002",
+    "domain": "information",
+    "difficulty": "hard",
+    "description": "Our corporate site has been slow to respond this morning. I need to know if it's actually unreachable from the outside or just my local connection, with a latency measurement.",
+    "gold_skill_ids": [
+      "check_website_status"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "monitor_page",
+      "browse_website"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_info_003",
+    "domain": "information",
+    "difficulty": "hard",
+    "description": "I need to pull specific data points from a competitor's pricing section \u2014 just the product names and their dollar amounts, nothing else.",
+    "gold_skill_ids": [
+      "scrape_page"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "extract_links",
+      "get_data_from_page",
+      "browse_website"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_info_004",
+    "domain": "information",
+    "difficulty": "hard",
+    "description": "I want to stay informed about regulatory changes in my industry. Set up something that will alert me when new policy documents are published on the FDA portal.",
+    "gold_skill_ids": [
+      "monitor_page"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "check_website_status",
+      "browse_website",
+      "read_rss"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_info_005",
+    "domain": "information",
+    "difficulty": "hard",
+    "description": "I'm researching a topic and found a long article. I don't need to read the whole thing \u2014 just get me the key points in bullet form.",
+    "gold_skill_ids": [
+      "summarize_page"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "get_data_from_page",
+      "find_information",
+      "browse_website"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_comm_001",
+    "domain": "communication",
+    "difficulty": "hard",
+    "description": "I've drafted a message to my team about the quarterly results and need it delivered to everyone on the engineering mailing list before end of day.",
+    "gold_skill_ids": [
+      "send_email"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "compose_email",
+      "find_information"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_comm_002",
+    "domain": "communication",
+    "difficulty": "hard",
+    "description": "I want to draft a follow-up note to last week's client call summarizing what was discussed and what action items were assigned, but I'm not ready to send it yet.",
+    "gold_skill_ids": [
+      "compose_email"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "send_email"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_comm_003",
+    "domain": "communication",
+    "difficulty": "hard",
+    "description": "I need to find Sarah's phone number and email address from our company directory \u2014 she just joined the product team and I need to coordinate a kickoff meeting.",
+    "gold_skill_ids": [
+      "lookup_contact"
+    ],
+    "interference_potential": "low",
+    "natural_interference": [
+      "search_web",
+      "find_information"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_comm_004",
+    "domain": "communication",
+    "difficulty": "hard",
+    "description": "I want to keep up with industry news without visiting multiple outlets. Give me a consolidated feed of headlines from tech blogs and news sources that I can scan quickly.",
+    "gold_skill_ids": [
+      "read_rss"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "search_web",
+      "browse_website",
+      "find_information"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_fin_001",
+    "domain": "finance",
+    "difficulty": "hard",
+    "description": "I need the current AAPL quote to decide whether to sell my position. Just the real-time number, no analysis needed.",
+    "gold_skill_ids": [
+      "get_stock_price"
+    ],
+    "interference_potential": "low",
+    "natural_interference": [
+      "query_database",
+      "search_web"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_fin_002",
+    "domain": "finance",
+    "difficulty": "hard",
+    "description": "Pull all transactions from our accounting system where the vendor name contains 'cloud' and the amount exceeds $1000, for Q4 budget review.",
+    "gold_skill_ids": [
+      "query_database"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "search_web",
+      "find_information",
+      "get_data_from_page"
+    ],
+    "requires_memory": true
+  },
+  {
+    "task_id": "hard_fin_003",
+    "domain": "finance",
+    "difficulty": "hard",
+    "description": "I need to work out the compound annual growth rate from a series of monthly revenue figures I have, going from $1M to $2.5M over 36 months.",
+    "gold_skill_ids": [
+      "calculate"
+    ],
+    "interference_potential": "low",
+    "natural_interference": [
+      "query_database",
+      "get_data_from_page"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_sched_001",
+    "domain": "scheduling",
+    "difficulty": "hard",
+    "description": "I need to block off next Tuesday from 2-4pm on my calendar for a design review with the mobile team. Include a video call link.",
+    "gold_skill_ids": [
+      "create_event"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "create_task",
+      "list_events"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_sched_002",
+    "domain": "scheduling",
+    "difficulty": "hard",
+    "description": "Show me all the meetings I have this Friday so I can see if I have time for a 30-minute sync.",
+    "gold_skill_ids": [
+      "list_events"
+    ],
+    "interference_potential": "low",
+    "natural_interference": [
+      "create_task",
+      "find_information"
+    ],
+    "requires_memory": true
+  },
+  {
+    "task_id": "hard_sched_003",
+    "domain": "scheduling",
+    "difficulty": "hard",
+    "description": "Add a reminder to follow up with the legal team about the contract renewal \u2014 doesn't need a specific time, just something on my to-do list.",
+    "gold_skill_ids": [
+      "create_task"
+    ],
+    "interference_potential": "low",
+    "natural_interference": [
+      "create_event",
+      "send_email"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_sched_004",
+    "domain": "scheduling",
+    "difficulty": "hard",
+    "description": "I want to see everything on my plate for this week \u2014 appointments, deadlines, and action items all in one view.",
+    "gold_skill_ids": [
+      "list_tasks"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "list_events",
+      "find_information"
+    ],
+    "requires_memory": true
+  },
+  {
+    "task_id": "hard_web_001",
+    "domain": "web",
+    "difficulty": "hard",
+    "description": "Go to the Stripe dashboard and grab the CSV of all payouts from last month for my tax records.",
+    "gold_skill_ids": [
+      "download_file"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "navigate_url",
+      "scrape_page",
+      "get_data_from_page"
+    ],
+    "requires_memory": true
+  },
+  {
+    "task_id": "hard_web_002",
+    "domain": "web",
+    "difficulty": "hard",
+    "description": "I need to systematically check every URL on our blog's homepage to identify which ones are returning 404 errors.",
+    "gold_skill_ids": [
+      "extract_links"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "scrape_page",
+      "crawl_site",
+      "browse_website"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_web_003",
+    "domain": "web",
+    "difficulty": "hard",
+    "description": "Recursively visit every document under docs.example.com and build a sitemap of all the documentation, following references up to 3 levels deep.",
+    "gold_skill_ids": [
+      "crawl_site"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "navigate_url",
+      "extract_links",
+      "browse_website"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_web_004",
+    "domain": "web",
+    "difficulty": "hard",
+    "description": "Open the Jira board for our sprint and find the ticket assigned to me with the highest priority so I know what to work on first.",
+    "gold_skill_ids": [
+      "navigate_url"
+    ],
+    "interference_potential": "low",
+    "natural_interference": [
+      "browse_website",
+      "get_data_from_page"
+    ],
+    "requires_memory": true
+  },
+  {
+    "task_id": "hard_web_005",
+    "domain": "web",
+    "difficulty": "hard",
+    "description": "Read through the Wikipedia article about the Ming dynasty and extract all the names of emperors along with their reign periods.",
+    "gold_skill_ids": [
+      "get_data_from_page"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "scrape_page",
+      "summarize_page",
+      "find_information"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_ambig_001",
+    "domain": "communication",
+    "difficulty": "hard",
+    "description": "The Q4 revenue report needs to go out to the finance team distribution list before market close.",
+    "gold_skill_ids": [
+      "send_email"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "compose_email"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_ambig_002",
+    "domain": "communication",
+    "difficulty": "hard",
+    "description": "Write up a brief note about the server incident and save it as a draft \u2014 I'll review and release it later.",
+    "gold_skill_ids": [
+      "compose_email"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "send_email"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_ambig_003",
+    "domain": "information",
+    "difficulty": "hard",
+    "description": "I need recent academic publications about developments in quantum computing, specifically from peer-reviewed journals.",
+    "gold_skill_ids": [
+      "find_information"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "search_web",
+      "browse_website",
+      "read_rss"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_ambig_004",
+    "domain": "information",
+    "difficulty": "hard",
+    "description": "I'm looking for the latest research on transformer architectures published this year, from any AI conference proceedings.",
+    "gold_skill_ids": [
+      "search_web"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "find_information",
+      "browse_website"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_ambig_005",
+    "domain": "web",
+    "difficulty": "hard",
+    "description": "Give me a short bullet-point overview of what this product does, based on its landing copy.",
+    "gold_skill_ids": [
+      "summarize_page"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "get_data_from_page",
+      "scrape_page",
+      "browse_website"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_trap_001",
+    "domain": "communication",
+    "difficulty": "hard",
+    "description": "I need to message the hiring manager about the interview schedule \u2014 a professional note confirming tomorrow's 3pm slot.",
+    "gold_skill_ids": [
+      "compose_email"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "send_email"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_trap_002",
+    "domain": "information",
+    "difficulty": "hard",
+    "description": "I'm calibrating my HVAC system and need the current outdoor temperature and humidity reading for Austin.",
+    "gold_skill_ids": [
+      "get_weather"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "get_forecast",
+      "report_climate"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_trap_003",
+    "domain": "web",
+    "difficulty": "hard",
+    "description": "Go through the SEC filing and extract just the revenue numbers from the financial table for the last 4 quarters.",
+    "gold_skill_ids": [
+      "scrape_page"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "get_data_from_page",
+      "extract_links",
+      "browse_website"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_trap_004",
+    "domain": "information",
+    "difficulty": "hard",
+    "description": "I'm running the Boston marathon next week and need to know wind direction and precipitation probability for each day of the race period.",
+    "gold_skill_ids": [
+      "get_forecast"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "get_weather",
+      "report_climate"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_trap_005",
+    "domain": "information",
+    "difficulty": "hard",
+    "description": "I'm writing a paper on long-term atmospheric trends. Get me 50 years of average temperature and CO2 data for the Northern Hemisphere.",
+    "gold_skill_ids": [
+      "report_climate"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "get_weather",
+      "get_forecast"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_nocue_001",
+    "domain": "information",
+    "difficulty": "hard",
+    "description": "I'm planning a picnic this Saturday and want to know if I should bring an umbrella or sunblock for the park.",
+    "gold_skill_ids": [
+      "get_weather"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "get_forecast",
+      "report_climate"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_nocue_002",
+    "domain": "communication",
+    "difficulty": "hard",
+    "description": "My boss asked me to circulate the updated vacation policy to everyone in the department.",
+    "gold_skill_ids": [
+      "send_email"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "compose_email"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_nocue_003",
+    "domain": "scheduling",
+    "difficulty": "hard",
+    "description": "I keep forgetting about the dentist appointment I made for next Thursday. Put it on my agenda so I don't miss it.",
+    "gold_skill_ids": [
+      "create_event"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "create_task",
+      "send_email"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_nocue_004",
+    "domain": "web",
+    "difficulty": "hard",
+    "description": "The marketing team needs every external URL referenced from our homepage.",
+    "gold_skill_ids": [
+      "extract_links"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "scrape_page",
+      "crawl_site",
+      "browse_website"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_nocue_005",
+    "domain": "finance",
+    "difficulty": "hard",
+    "description": "I have 12 monthly revenue numbers in a spreadsheet and need the year-over-year growth percentage.",
+    "gold_skill_ids": [
+      "calculate"
+    ],
+    "interference_potential": "low",
+    "natural_interference": [
+      "query_database",
+      "get_data_from_page"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_multi_001",
+    "domain": "communication",
+    "difficulty": "hard",
+    "description": "The office is closing tomorrow due to a storm \u2014 everyone needs to know before they commute in the morning.",
+    "gold_skill_ids": [
+      "send_email"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "compose_email"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_multi_002",
+    "domain": "information",
+    "difficulty": "hard",
+    "description": "I have 10 minutes before a meeting and need the main thesis and supporting arguments from this 50-page document.",
+    "gold_skill_ids": [
+      "summarize_page"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "get_data_from_page",
+      "find_information"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_multi_003",
+    "domain": "web",
+    "difficulty": "hard",
+    "description": "I need every product name and dollar amount from the competitor's pricing table, formatted as CSV.",
+    "gold_skill_ids": [
+      "scrape_page"
+    ],
+    "interference_potential": "high",
+    "natural_interference": [
+      "get_data_from_page",
+      "extract_links"
+    ],
+    "requires_memory": false
+  },
+  {
+    "task_id": "hard_multi_004",
+    "domain": "scheduling",
+    "difficulty": "hard",
+    "description": "I need to know if I'm free on Thursday afternoon \u2014 show me everything scheduled that day.",
+    "gold_skill_ids": [
+      "list_events"
+    ],
+    "interference_potential": "low",
+    "natural_interference": [
+      "list_tasks",
+      "find_information"
+    ],
+    "requires_memory": true
+  },
+  {
+    "task_id": "hard_multi_005",
+    "domain": "information",
+    "difficulty": "hard",
+    "description": "Track the SEC's cybersecurity disclosure section and notify me whenever they update their guidance.",
+    "gold_skill_ids": [
+      "monitor_page"
+    ],
+    "interference_potential": "medium",
+    "natural_interference": [
+      "check_website_status",
+      "browse_website"
+    ],
+    "requires_memory": false
+  }
+]

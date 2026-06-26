@@ -58,6 +58,7 @@ from retrieval_simulator import (
     compute_skill_embeddings, compute_task_embeddings,
     get_skills_for_track, get_condition_for_track, build_track_prompt,
 )
+from harder_tasks import HARDER_TASKS as HARDER_TASKS_LIST
 
 # ── Condition name mapping ───────────────────────────────────────────────────
 
@@ -331,6 +332,8 @@ def main():
                              "full (all skills). Overrides --condition with track-specific conditions.")
     parser.add_argument("--embed-model", type=str, default="all-MiniLM-L6-v2",
                         help="Sentence-transformers model for RAG embeddings (default: all-MiniLM-L6-v2)")
+    parser.add_argument("--harder-tasks", action="store_true",
+                        help="Use the harder task suite (Phase 6.3) with minimal keyword cues")
 
     args = parser.parse_args()
 
@@ -414,7 +417,11 @@ def main():
         tasks = ALL_TASKS if not args.tasks else ALL_TASKS[:args.tasks]
         logger.info(f"  (Using {len(tasks)} single-step tasks as base for multi-step evaluation)")
     else:
-        tasks = ALL_TASKS if not args.tasks else ALL_TASKS[:args.tasks]
+        if args.harder_tasks:
+            tasks = HARDER_TASKS_LIST if not args.tasks else HARDER_TASKS_LIST[:args.tasks]
+            logger.info(f"Using HARDER task suite (Phase 6.3) with {len(tasks)} tasks")
+        else:
+            tasks = ALL_TASKS if not args.tasks else ALL_TASKS[:args.tasks]
     logger.info(f"Using {len(tasks)} tasks")
 
     # Precompute embeddings for RAG tracks (deferred until tasks are loaded)
