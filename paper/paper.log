@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.26)  26 JUN 2026 11:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.26)  26 JUN 2026 11:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -505,14 +505,34 @@ Underfull \hbox (badness 7963) in paragraph at lines 32--33
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 32--33
-\OT1/ptm/m/n/10 in-ter-fer-ence does \OT1/ptm/b/n/10 not \OT1/ptm/m/n/10 sig-ni
-f-i-cantly de-grade
+Underfull \hbox (badness 7344) in paragraph at lines 32--33
+\OT1/ptm/m/n/10 in-ter-fer-ence). Sur-pris-ingly, in-ter-fer-ence
  []
 
 
-Underfull \hbox (badness 4341) in paragraph at lines 32--33
-\OT1/ptm/m/n/10 How-ever, in-ter-fer-ence im-poses sig-nif-i-cant
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+\OT1/ptm/m/n/10 does \OT1/ptm/b/n/10 not \OT1/ptm/m/n/10 sig-nif-i-cantly de-gr
+ade se-lec-tion
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 32--33
+\OT1/ptm/m/n/10 bound is in-formed by task ceil-ing ef-fects
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 32--33
+\OT1/ptm/m/n/10 re-vised or-a-cle con-di-tion (99.8% ac-cu-racy)
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 32--33
+\OT1/ptm/m/n/10 re-veals the task is fun-da-men-tally about
+ []
+
+
+Underfull \hbox (badness 1728) in paragraph at lines 32--33
+\OT1/ptm/m/n/10 of in-ter-fer-ence are sec-ondary: con-fi-dence
  []
 
 
@@ -632,94 +652,109 @@ File: figures/fig1_condition_accuracy.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/fig1_condition_accuracy.pdf  used on input lin
 e 140.
 (pdftex.def)             Requested size: 219.08614pt x 109.54166pt.
-<figures/fig2_forest_plot.pdf, id=210, 578.16pt x 289.08pt>
+<figures/fig2_forest_plot.pdf, id=213, 578.16pt x 289.08pt>
 File: figures/fig2_forest_plot.pdf Graphic file (type pdf)
 <use figures/fig2_forest_plot.pdf>
-Package pdftex.def Info: figures/fig2_forest_plot.pdf  used on input line 153.
+Package pdftex.def Info: figures/fig2_forest_plot.pdf  used on input line 155.
 (pdftex.def)             Requested size: 219.08614pt x 109.54276pt.
 
-Overfull \hbox (15.6027pt too wide) in paragraph at lines 165--177
+Overfull \hbox (15.6027pt too wide) in paragraph at lines 167--179
  [][] 
  []
 
 
-Overfull \hbox (13.4068pt too wide) in paragraph at lines 188--198
+Overfull \hbox (13.4068pt too wide) in paragraph at lines 190--200
  [][] 
  []
 
-<figures/fig3_confidence_tokens.pdf, id=213, 867.24pt x 361.35pt>
+<figures/fig3_confidence_tokens.pdf, id=216, 867.24pt x 361.35pt>
 File: figures/fig3_confidence_tokens.pdf Graphic file (type pdf)
 <use figures/fig3_confidence_tokens.pdf>
 Package pdftex.def Info: figures/fig3_confidence_tokens.pdf  used on input line
- 204.
+ 206.
 (pdftex.def)             Requested size: 219.08614pt x 91.28564pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+[3 <./figures/fig1_condition_accuracy.pdf> <./figures/fig2_forest_plot.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 []\OT1/ptm/m/n/10.95 The sin-gle largest out-lier is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 \OT1/pcr/m/n/10.95 interfere[]trap[]001 \OT1/ptm/m/n/10.95 (+88.9pp), an ad-
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 213--214
+Underfull \hbox (badness 1320) in paragraph at lines 215--216
 \OT1/ptm/m/n/10.95 skill is specif-i-cally crafted to match the task
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 213--214
+Underfull \hbox (badness 1448) in paragraph at lines 215--216
 \OT1/ptm/m/n/10.95 de-scrip-tion. Ex-clud-ing this task re-duces the
  []
 
-[3 <./figures/fig1_condition_accuracy.pdf> <./figures/fig2_forest_plot.pdf>]
-Underfull \hbox (badness 4819) in paragraph at lines 224--225
+
+Underfull \hbox (badness 4819) in paragraph at lines 226--227
  []\OT1/ptm/b/n/10.95 Interference di-lu-tion.[] \OT1/ptm/m/n/10.95 The 100-ski
 ll li-brary
  []
 
 
-Underfull \hbox (badness 7133) in paragraph at lines 252--253
+Underfull \hbox (badness 7133) in paragraph at lines 254--255
 \OT1/ptm/m/n/10.95 GPT-4o-mini shows zero in-ter-fer-ence ef-fect
  []
 
 
-Overfull \hbox (16.3789pt too wide) in paragraph at lines 265--274
+Overfull \hbox (16.3789pt too wide) in paragraph at lines 267--276
  [][] 
  []
 
-<figures/fig5_retrieval_decomposition.pdf, id=387, 425.8273pt x 280.97002pt>
+[4 <./figures/fig3_confidence_tokens.pdf>]
+<figures/fig5_retrieval_decomposition.pdf, id=466, 425.8273pt x 280.97002pt>
 File: figures/fig5_retrieval_decomposition.pdf Graphic file (type pdf)
 <use figures/fig5_retrieval_decomposition.pdf>
 Package pdftex.def Info: figures/fig5_retrieval_decomposition.pdf  used on inpu
-t line 282.
+t line 284.
 (pdftex.def)             Requested size: 219.08614pt x 144.56183pt.
-[4 <./figures/fig3_confidence_tokens.pdf>]
-<figures/fig4_harder_tasks.pdf, id=467, 714.90727pt x 281.29355pt>
+<figures/fig4_harder_tasks.pdf, id=469, 714.90727pt x 281.29355pt>
 File: figures/fig4_harder_tasks.pdf Graphic file (type pdf)
 <use figures/fig4_harder_tasks.pdf>
-Package pdftex.def Info: figures/fig4_harder_tasks.pdf  used on input line 311.
+Package pdftex.def Info: figures/fig4_harder_tasks.pdf  used on input line 316.
 
 (pdftex.def)             Requested size: 219.08614pt x 86.2043pt.
 
-Underfull \hbox (badness 1147) in paragraph at lines 320--321
+Underfull \hbox (badness 1147) in paragraph at lines 326--327
 \OT1/ptm/m/n/10.95 significantly de-grades ac-cu-racy. GPT-4o-mini
  []
 
 [5 <./figures/fig5_retrieval_decomposition.pdf> <./figures/fig4_harder_tasks.pd
 f>]
-Underfull \hbox (badness 1418) in paragraph at lines 364--365
-\OT1/ptm/m/n/10.95 augmented se-lec-tion closely matches gold re-
+Underfull \hbox (badness 1430) in paragraph at lines 353--354
+\OT1/ptm/m/n/10.95 In our orig-i-nal ex-per-i-ment, the or-a-cle con-di-
  []
 
 
-Underfull \hbox (badness 2452) in paragraph at lines 380--381
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
+\OT1/ptm/m/n/10.95 accuracy---paradoxically be-low clean[]memory
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 355--356
+[]\OT1/ptm/m/n/10.95 The 8pp gap be-tween the orig-i-nal or-a-cle
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 376--377
+\OT1/ptm/m/n/10.95 augmented se-lec-tion closely matches gold re-
+ []
+
+[6]
+Underfull \hbox (badness 2452) in paragraph at lines 394--395
 \OT1/ptm/m/n/10.95 at [][]$\OT1/pcr/m/n/10.95 https : / / github . com / curato
 r8888 /
  []
 
-(./paper.bbl [6]
+(./paper.bbl
 Underfull \hbox (badness 1990) in paragraph at lines 24--28
 []\OT1/ptm/m/n/10 Nelson F Liu, Kevin Lin, John He-witt, Ash-win
  []
@@ -754,12 +789,14 @@ Underfull \hbox (badness 3907) in paragraph at lines 65--69
 \OT1/ptm/m/n/10 Scales, Ed Do-han, Nathanael Chi, Nathanael
  []
 
-)
-Overfull \hbox (26.97414pt too wide) in paragraph at lines 435--444
+[7])
+Overfull \hbox (26.97414pt too wide) in paragraph at lines 448--457
  [][] 
  []
 
-[7] [8
+[8
+
+] [9
 
 ] (./paper.aux)
  ***********
@@ -770,13 +807,13 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: 61BBFE9E430209BEC93CAEE67B3446FD;4751.
  ) 
 Here is how much of TeX's memory you used:
- 12887 strings out of 476182
- 200760 string characters out of 5795595
- 1945975 words of memory out of 5000000
- 34608 multiletter control sequences out of 15000+600000
+ 12894 strings out of 476182
+ 200912 string characters out of 5795595
+ 1944975 words of memory out of 5000000
+ 34612 multiletter control sequences out of 15000+600000
  590226 words of font info for 112 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,10n,93p,1149b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,10n,93p,1470b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texliv
@@ -789,10 +826,10 @@ nts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (8 pages, 277100 bytes).
+Output written on paper.pdf (9 pages, 280975 bytes).
 PDF statistics:
- 704 PDF objects out of 1000 (max. 8388607)
- 378 compressed objects within 4 object streams
- 89 named destinations out of 1000 (max. 500000)
+ 717 PDF objects out of 1000 (max. 8388607)
+ 390 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
  250 words of extra memory for PDF output out of 10000 (max. 10000000)
 

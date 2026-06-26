@@ -14,7 +14,7 @@
 \usepackage{appendix}
 \usepackage{xcolor}
 
-\title{The Anatomy of Tool Interference: \\ Why LLM Agents Are Robust to Skill Library Noise}
+\title{Skill Library Interference in LLM Agents: \\ A Null Result with Ceiling and Cost Implications}
 
 \author{
   % Author names blinded for review
@@ -29,7 +29,7 @@
 \maketitle
 
 \begin{abstract}
-Large language model (LLM) agents rely on skill libraries---collections of tool descriptions---to select and invoke appropriate tools. A common concern is that \textit{skill library interference}---the presence of near-duplicate, stale, or conflicting skill descriptions---degrades tool selection accuracy. We present MemInterfere, a systematic investigation of this hypothesis across 4 models, 80 tasks, and 5 experimental conditions totaling 4,800 evaluation runs. Surprisingly, we find that interference does \textbf{not} significantly degrade selection accuracy: the difference between clean and interference conditions is 1.2 percentage points (Cohen's $d = 0.06$, $p = 0.26$), and equivalence testing confirms the effect is smaller than $\pm$3pp (TOST $p = 0.035$). However, interference imposes significant \textit{secondary costs}: confidence drops of 0.6--1.8pp ($p < 0.01$ overall) and token cost increases of 2.1--2.4$\times$. Only 17\% of tasks show any selection difference, and the effect is driven by a single adversarial task. We release our benchmark and analysis toolkit for reproducibility.
+Large language model (LLM) agents rely on skill libraries---collections of tool descriptions---to select and invoke appropriate tools. A common concern is that \textit{skill library interference}---the presence of near-duplicate, stale, or conflicting skill descriptions---degrades tool selection accuracy. We present MemInterfere, a systematic investigation of this hypothesis across 4 models, 80 tasks, and 5 conditions totaling 4,800 runs (excluding 3 ambiguous tasks; 95.8\% clean vs.\ 94.6\% interference). Surprisingly, interference does \textbf{not} significantly degrade selection accuracy: the difference is 1.2 percentage points (Cohen's $d = 0.06$, $p = 0.26$), and a logistic mixed-effects model confirms this (OR $= 0.77$, $p = 0.28$). Equivalence testing at $\pm$3pp (TOST $p = 0.035$) confirms the effect is smaller than a minimal clinically meaningful difference, though we note this bound is informed by task ceiling effects (83\% of tasks show identical outcomes across conditions). On harder tasks (68.7\% baseline), interference paradoxically \emph{improves} accuracy by 4.9pp ($p = 0.023$), though this finding requires replication with pre-registration. A revised oracle condition (99.8\% accuracy) reveals the task is fundamentally about retrieval, not invocation. The significant costs of interference are secondary: confidence drops of 0.6--1.8pp ($p < 0.01$) and token cost increases of 2.1--2.4$\times$.
 \end{abstract}
 
 \section{Introduction}
@@ -144,9 +144,11 @@ The difference between clean and interference conditions is 1.2 percentage point
 
 \subsection{Equivalence Testing Confirms the Null}
 
-Following best practices for establishing null results \citep{schuirmann1987comparison,lakens2017equivalence}, we apply the Two One-Sided Tests (TOST) procedure. We can reject effects larger than $\pm$3 percentage points (TOST $p = 0.035$). At $\pm$5pp, the evidence is overwhelming ($p < 0.001$).
+Following best practices for establishing null results \citep{schuirmann1987comparison,lakens2017equivalence}, we apply TOST with $\pm$3pp as the equivalence margin. This represents the smallest practically meaningful effect in deployed agent systems and approximately one-quarter of the baseline accuracy range. We reject effects larger than $\pm$3pp (TOST $p = 0.035$); at $\pm$5pp, $p < 0.001$.
 
-A Bayes Factor analysis yields $BF_{01} = 26.3$ (strong evidence for the null), computed via the BIC approximation. Figure~\ref{fig:forest} shows the forest plot of model-level effects with bootstrap CIs.
+However, 83\% of tasks show identical outcomes across conditions, so the null result holds within a constrained measurable range. The harder task suite (Section~\ref{sec:harder}) addresses this limitation.
+
+A Bayes Factor yields $BF_{01} = 26.3$ (strong evidence for the null), computed via BIC with a unit-information prior \citep{wagenmakers2007practical}. Figure~\ref{fig:forest} shows model-level effects with bootstrap CIs.
 
 \begin{figure}[t]
 \centering
@@ -285,6 +287,7 @@ The 0.3pp gap between gold and RAG retrieval (Table~\ref{tab:retrieval}) shows t
 \end{figure}
 
 \subsection{Harder Task Suite}
+\label{sec:harder}
 
 To address the ceiling effect (83\% of tasks showing zero difference), we designed 41 harder tasks with minimal keyword cues (7.3\% vs.\ 88.8\% in the original suite). The baseline dropped from 95.8\% to 68.7\%, confirming the tasks are substantially harder.
 
@@ -306,6 +309,8 @@ All Memory & 70.9\% & $+2.2$pp & --- \\
 
 Strikingly, on harder tasks, interference \emph{significantly improves} accuracy (Table~\ref{tab:harder}): 73.6\% vs.\ 68.7\% ($t(40) = -2.37$, $p = 0.023$). In 9 of 41 tasks, interference helps; in only 3, it hurts. This suggests that on genuinely difficult tasks, the additional context provided by interference skills aids disambiguation rather than confusing the model (Figure~\ref{fig:harder}).
 
+We note two caveats. First, this analysis was conducted as a follow-up after the main experiment revealed a ceiling effect; it was not pre-registered, and the $p = 0.023$ should be interpreted accordingly. Second, the mechanism remains unclear: interference skills may contain partial cues relevant to harder tasks, or the additional context may encourage more deliberate processing. We report this finding as hypothesis-generating rather than confirmatory.
+
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{figures/fig4_harder_tasks.pdf}
@@ -314,10 +319,13 @@ Strikingly, on harder tasks, interference \emph{significantly improves} accuracy
 \end{figure}
 
 \subsection{Interference Similarity Gradient}
+\label{sec:gradient}
 
 We tested whether the interference effect scales with skill similarity by constructing five gradient conditions, each adding only one type of interfering skill: near-identical (highest similarity), version conflicts, schema conflicts, semantic conflicts, and near-similar (lowest similarity).
 
 Across all four models (Table~\ref{tab:gradient}), there is no monotonic relationship between interference similarity and accuracy (linear regression: slope $= 0.08$, $R^2 = 0.06$, $p = 0.64$). No interference type---not even near-identical skill names---significantly degrades accuracy. GPT-4o-mini shows zero variance across all conditions (91.2\%), while other models show fluctuations of $\pm$1--2pp that do not follow any similarity gradient.
+
+We note that the gradient test shares the ceiling limitation: with baseline accuracy at 91--93\%, there is limited room for interference to depress performance. The harder task suite (Section~\ref{sec:harder}) breaks the ceiling, but gradient conditions have not yet been run on that subset. We interpret this result as ``no measurable gradient at high baseline'' rather than ``no gradient exists at any performance level.''
 
 \begin{table}[t]
 \centering
@@ -342,7 +350,9 @@ Clean Memory & 40 & 91.6\% \\
 
 \subsection{Oracle Condition Revisited}
 
-In our original experiment, the oracle condition showed all 40 clean skills, yielding 91.8\% accuracy. To isolate pure invocation competence, we revised the oracle to show only the single gold skill per task. This produces a near-perfect 99.8\% accuracy (958/960), with three models achieving 100\% and Claude Haiku at 99.2\%. The 8pp gap between the original oracle (91.8\%, 40 skills) and the revised oracle (99.8\%, 1 skill) confirms that the task is fundamentally a retrieval problem: given the correct skill, models almost always use it correctly.
+In our original experiment, the oracle condition showed all 40 clean skills, yielding 91.8\% accuracy---paradoxically below clean\_memory (92.2\%). This occurs because the oracle provides \emph{all} clean skills without task-relevant filtering, so models still face a retrieval problem among 40 candidates. To isolate invocation competence, we revised the oracle to show only the single gold skill per task, yielding 99.8\% accuracy (958/960; three models at 100\%, Claude Haiku at 99.2\%).
+
+The 8pp gap between the original oracle (91.8\%, 40 skills) and revised oracle (99.8\%, 1 skill) confirms tool selection is fundamentally a retrieval problem. This reframes our findings: the null result is not ``LLMs are robust to interference'' but ``retrieval is sufficiently robust that additional noise has minimal impact.''
 
 
 \section{Discussion}
@@ -355,9 +365,11 @@ However, the confidence and cost effects are real. A 2--3$\times$ token cost inc
 
 \subsection{Limitations}
 
+\paragraph{Ceiling effect.} With 95--96\% baseline accuracy, there is limited room for interference to cause errors. 83\% of tasks produce identical outcomes under both conditions. Our harder task suite (Section~\ref{sec:harder}; 41 tasks, 7.3\% keyword cues) breaks the ceiling (68.7\% baseline), but even there interference helps rather than hurts. The gradient test (Section~\ref{sec:gradient}) operates at 91--93\% baseline, which also limits sensitivity. Future work should test with tasks at 50--70\% baseline accuracy to fully characterize the interference effect.
+
 \paragraph{Task design.} Our tasks test single-step tool selection, not multi-step agent workflows. In practice, agents chain tools across turns, where small confidence errors can compound. We do not test invocation accuracy (correct parameters) or cascade failures.
 
-\paragraph{Ceiling effect (partially addressed).} The original 77 tasks have 95--96\% baseline accuracy, leaving little room for interference. Our harder task suite (41 tasks, 7.3\% keyword cues) breaks the ceiling (68.7\% baseline), but even there interference helps rather than hurts.
+\paragraph{Model selection.} All four models are budget-tier, instruction-tuned models. Frontier models (GPT-4, Claude Opus) may exhibit different interference sensitivity. The results may not generalize to larger models with more sophisticated reasoning capabilities.
 
 \paragraph{Library realism.} Our 22\% interference density exceeds real-world libraries (typically $<$5\%). The results may not generalize to sparser interference conditions.
 
@@ -366,9 +378,11 @@ However, the confidence and cost effects are real. A 2--3$\times$ token cost inc
 
 \section{Conclusion}
 
-We present the first rigorous null result on skill library interference in LLM agents. Across 4 models, 80 tasks, and 5 conditions, interference does not significantly degrade tool selection accuracy (1.2pp, $d = 0.06$, TOST equivalence at $\pm$3pp with $p = 0.035$). Follow-up experiments strengthen this conclusion: (1) on harder tasks where baseline accuracy drops to 68.7\%, interference \emph{significantly improves} accuracy by 4.9pp ($p = 0.023$); (2) RAG-based retrieval closely matches gold retrieval (92.2\% vs.\ 92.5\%), confirming that retrieval is not the bottleneck; (3) a revised oracle showing only the gold skill achieves 99.8\% accuracy, confirming that invocation competence is near-perfect and the task is fundamentally about retrieval; and (4) a gradient of interference types across four models shows no monotonic relationship between skill similarity and accuracy degradation (slope $= 0.08$, $R^2 = 0.06$, $p = 0.64$).
+We present a rigorous investigation of skill library interference in LLM agents. Across 4 models, 80 tasks, and 5 conditions, interference does not significantly degrade tool selection accuracy (1.2pp, $d = 0.06$, TOST equivalence at $\pm$3pp with $p = 0.035$). However, this null result is qualified by a ceiling effect: 83\% of tasks show identical outcomes across conditions, limiting the experiment's sensitivity to detect interference effects.
 
-These results suggest that the interference problem, while theoretically motivated, is not a practical concern for current LLMs in tool-selection settings. The more important costs are secondary: confidence calibration penalties of 0.6--1.8pp and token cost increases of 2.1--2.4$\times$. These compound in deployed multi-step agent systems. We release our benchmark and analysis toolkit to support future work on more adversarial and ecologically valid interference scenarios.
+Our follow-up experiments clarify the picture. On harder tasks where baseline accuracy drops to 68.7\%, interference \emph{significantly improves} accuracy by 4.9pp ($p = 0.023$), though we note this finding was not pre-registered and requires replication. RAG-based retrieval closely matches gold retrieval (92.2\% vs.\ 92.5\%), confirming that retrieval is not the bottleneck. A revised oracle showing only the gold skill achieves 99.8\% accuracy, confirming that invocation competence is near-perfect and the task is fundamentally about retrieval. A gradient of interference types across four models shows no monotonic relationship between skill similarity and accuracy degradation (slope $= 0.08$, $R^2 = 0.06$, $p = 0.64$).
+
+These results suggest that the interference problem, while theoretically motivated, is not a practical concern for current LLMs in tool-selection settings---at least for the task designs and performance levels we tested. The more important costs are secondary: confidence calibration penalties of 0.6--1.8pp and token cost increases of 2.1--2.4$\times$. These compound in deployed multi-step agent systems. We release our benchmark and analysis toolkit to support future work on more adversarial and ecologically valid interference scenarios, including larger skill libraries, multi-step workflows, and frontier models.
 
 
 \section*{Ethical Considerations}
@@ -380,7 +394,6 @@ This work evaluates LLM tool selection accuracy and does not involve human subje
 All code, data, and analysis scripts are available at \url{https://github.com/curator8888/meminterfere}. The experiment was run with fixed seeds and deterministic temperature=0.0 for all models. Total compute cost: approximately \$12 for 4,800 primary runs (Phase 5) + \$38 for 6,990 follow-up runs (Phase 6: retrieval tracks, harder tasks, gradient test, oracle) = \$50 total.
 
 \bibliography{references}
-\bibliographystyle{acl_nat}
 
 \appendix
 
