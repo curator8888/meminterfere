@@ -24,6 +24,14 @@ Skill library interference (near-duplicate, stale, conflicting descriptions) doe
 | **RAG solves retrieval** | Top-5 RAG: 92.2% vs gold retrieval 92.5% (0.3pp gap) |
 | **Oracle with 1 skill** | 99.8% — the task is retrieval, not invocation |
 
+## Practitioner Recommendations
+
+1. **Prioritize skill naming** — Eliminate near-identical names (`search_web` vs `search_web_fast`). If two skills overlap, merge them or give them maximally distinct names.
+2. **Use RAG for skill retrieval** — Top-5 RAG achieves 92.2% (vs oracle 92.5%). Injecting all skills costs 2.33× more tokens with no accuracy benefit.
+3. **Don't over-prune libraries** — Even with 60% noise, agents maintain 94.7% accuracy. Library size is not a first-order accuracy concern.
+4. **Audit for trap patterns** — Semantically overlapping skill clusters are high-risk zones. Review your library for near-duplicate names.
+5. **Monitor token cost** — 2.33× overhead dwarfs any accuracy benefit of including all skills in-context.
+
 ## Experiments
 
 - **4 models**: Llama 3.1 8B, Grok 3 mini, GPT-4o-mini, Claude Haiku 4.5
