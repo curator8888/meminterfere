@@ -22,7 +22,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # Load data
-with open('data/results/phase5_full/multi_model_results_latest.json') as f:
+with open('data/results/phase5_full_4model/multi_model_results_latest.json') as f:
     data = json.load(f)
 
 results = data['results']

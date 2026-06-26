@@ -1,0 +1,167 @@
+{
+  "claude-haiku-4.5|oracle|T=0.0": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 72,
+    "accuracy": 0.9,
+    "errors": 0,
+    "avg_latency_ms": 2938.3,
+    "avg_confidence": 0.9099,
+    "total_tokens": 167015
+  },
+  "claude-haiku-4.5|no_memory|T=0.0": {
+    "total_runs": 80,
+    "parsed": 37,
+    "parse_rate": 0.4625,
+    "correct": 0,
+    "accuracy": 0.0,
+    "errors": 0,
+    "avg_latency_ms": 3154.9,
+    "avg_confidence": 0.2544,
+    "total_tokens": 37706
+  },
+  "claude-haiku-4.5|clean_memory|T=0.0": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 73,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 2891.9,
+    "avg_confidence": 0.9111,
+    "total_tokens": 166684
+  },
+  "claude-haiku-4.5|clean_interference|T=0.0": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 74,
+    "accuracy": 0.925,
+    "errors": 0,
+    "avg_latency_ms": 3660.2,
+    "avg_confidence": 0.9094,
+    "total_tokens": 397596
+  },
+  "claude-haiku-4.5|all_memory|T=0.0": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 73,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 3798.7,
+    "avg_confidence": 0.9019,
+    "total_tokens": 439335
+  },
+  "claude-haiku-4.5|oracle|T=0.3": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 72,
+    "accuracy": 0.9,
+    "errors": 0,
+    "avg_latency_ms": 2821.7,
+    "avg_confidence": 0.9117,
+    "total_tokens": 166454
+  },
+  "claude-haiku-4.5|no_memory|T=0.3": {
+    "total_runs": 80,
+    "parsed": 40,
+    "parse_rate": 0.5,
+    "correct": 0,
+    "accuracy": 0.0,
+    "errors": 0,
+    "avg_latency_ms": 3120.1,
+    "avg_confidence": 0.1269,
+    "total_tokens": 37657
+  },
+  "claude-haiku-4.5|clean_memory|T=0.3": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 73,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 2888.0,
+    "avg_confidence": 0.9061,
+    "total_tokens": 166911
+  },
+  "claude-haiku-4.5|clean_interference|T=0.3": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 73,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 3637.9,
+    "avg_confidence": 0.9088,
+    "total_tokens": 397584
+  },
+  "claude-haiku-4.5|all_memory|T=0.3": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 73,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 3895.5,
+    "avg_confidence": 0.8975,
+    "total_tokens": 439056
+  },
+  "claude-haiku-4.5|oracle|T=0.7": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 72,
+    "accuracy": 0.9,
+    "errors": 0,
+    "avg_latency_ms": 2914.6,
+    "avg_confidence": 0.9124,
+    "total_tokens": 167208
+  },
+  "claude-haiku-4.5|no_memory|T=0.7": {
+    "total_runs": 80,
+    "parsed": 28,
+    "parse_rate": 0.35,
+    "correct": 0,
+    "accuracy": 0.0,
+    "errors": 0,
+    "avg_latency_ms": 3275.1,
+    "avg_confidence": 0.135,
+    "total_tokens": 37284
+  },
+  "claude-haiku-4.5|clean_memory|T=0.7": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 74,
+    "accuracy": 0.925,
+    "errors": 0,
+    "avg_latency_ms": 2966.0,
+    "avg_confidence": 0.9111,
+    "total_tokens": 167133
+  },
+  "claude-haiku-4.5|clean_interference|T=0.7": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 71,
+    "accuracy": 0.8875,
+    "errors": 0,
+    "avg_latency_ms": 4395.2,
+    "avg_confidence": 0.8918,
+    "total_tokens": 397979
+  },
+  "claude-haiku-4.5|all_memory|T=0.7": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 73,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 4468.1,
+    "avg_confidence": 0.8838,
+    "total_tokens": 439715
+  }
+}

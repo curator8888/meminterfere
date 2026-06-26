@@ -29,7 +29,7 @@
 \maketitle
 
 \begin{abstract}
-Large language model (LLM) agents rely on skill libraries---collections of tool descriptions---to select and invoke appropriate tools. A common concern is that \textit{skill library interference}---the presence of near-duplicate, stale, or conflicting skill descriptions---degrades tool selection accuracy. We present MemInterfere, a systematic investigation of this hypothesis across 4 models, 80 tasks, and 5 experimental conditions. Surprisingly, we find that interference does \textbf{not} significantly degrade selection accuracy: the difference between clean and interference conditions is 1.3 percentage points (Cohen's $d = 0.06$, $p = 0.34$), and equivalence testing confirms the effect is smaller than $\pm$5pp (TOST $p = 0.001$). However, interference imposes significant \textit{secondary costs}: confidence drops of 0.5--1.8pp ($p < 0.01$) and token cost increases of 2.1--2.7$\times$. Only 12\% of tasks show any selection difference, and the effect is driven by a single adversarial task. We release our benchmark and analysis toolkit for reproducibility.
+Large language model (LLM) agents rely on skill libraries---collections of tool descriptions---to select and invoke appropriate tools. A common concern is that \textit{skill library interference}---the presence of near-duplicate, stale, or conflicting skill descriptions---degrades tool selection accuracy. We present MemInterfere, a systematic investigation of this hypothesis across 4 models, 80 tasks, and 5 experimental conditions totaling 4,800 evaluation runs. Surprisingly, we find that interference does \textbf{not} significantly degrade selection accuracy: the difference between clean and interference conditions is 1.2 percentage points (Cohen's $d = 0.06$, $p = 0.26$), and equivalence testing confirms the effect is smaller than $\pm$3pp (TOST $p = 0.035$). However, interference imposes significant \textit{secondary costs}: confidence drops of 0.6--1.8pp ($p < 0.01$ overall) and token cost increases of 2.1--2.4$\times$. Only 17\% of tasks show any selection difference, and the effect is driven by a single adversarial task. We release our benchmark and analysis toolkit for reproducibility.
 \end{abstract}
 
 \section{Introduction}
@@ -112,22 +112,23 @@ Table~\ref{tab:main} presents the main results excluding 3 ambiguous tasks where
 \toprule
 \textbf{Model} & \textbf{No-mem} & \textbf{Oracle} & \textbf{Clean} & \textbf{Interfere} & \textbf{All-mem} \\
 \midrule
+Claude Haiku 4.5 & 0.0\% & 93.5\% & 95.2\% & 94.4\% & 93.5\% \\
 GPT-4o-mini & 0.0\% & 94.8\% & 94.8\% & 94.8\% & 94.8\% \\
 Grok-3-mini & 0.0\% & 95.7\% & 96.1\% & 93.9\% & 94.8\% \\
 Llama-3.1-8B & 0.0\% & 97.4\% & 97.0\% & 95.2\% & 95.7\% \\
 \midrule
-\textbf{Overall} & \textbf{0.0\%} & \textbf{96.0\%} & \textbf{96.0\%} & \textbf{94.7\%} & \textbf{95.1\%} \\
+\textbf{Overall} & \textbf{0.0\%} & \textbf{95.3\%} & \textbf{95.8\%} & \textbf{94.6\%} & \textbf{94.7\%} \\
 \bottomrule
 \end{tabular}
 \caption{Selection accuracy by model and condition (excluding 3 ambiguous tasks). Clean = clean\_memory, Interfere = clean\_interference.}
 \label{tab:main}
 \end{table}
 
-The difference between clean and interference conditions is 1.3 percentage points overall (96.0\% vs.\ 94.7\%). A paired $t$-test across 77 tasks is not significant ($t(76) = 0.95$, $p = 0.34$, Cohen's $d = 0.06$).
+The difference between clean and interference conditions is 1.2 percentage points overall (95.8\% vs.\ 94.6\%, excluding ambiguous tasks). A paired $t$-test across 77 tasks is not significant ($t(76) = 1.14$, $p = 0.26$, Cohen's $d = 0.06$).
 
 \subsection{Equivalence Testing Confirms the Null}
 
-Following best practices for establishing null results \citep{schuirmann1987comparison,lakens2017equivalence}, we apply the Two One-Sided Tests (TOST) procedure. We can reject effects larger than $\pm$5 percentage points (TOST $p = 0.001$). At $\pm$3pp, equivalence is borderline ($p = 0.067$).
+Following best practices for establishing null results \citep{schuirmann1987comparison,lakens2017equivalence}, we apply the Two One-Sided Tests (TOST) procedure. We can reject effects larger than $\pm$3 percentage points (TOST $p = 0.035$). At $\pm$5pp, the evidence is overwhelming ($p < 0.001$).
 
 A Bayes Factor analysis yields $BF_{01} = 26.3$ (strong evidence for the null), computed via the BIC approximation.
 
@@ -142,11 +143,12 @@ While accuracy is unaffected, interference causes a statistically significant dr
 \toprule
 \textbf{Model} & \textbf{Clean} & \textbf{Interfere} & \textbf{Diff} & \textbf{$p$} \\
 \midrule
+Claude Haiku 4.5 & 0.911 & 0.904 & +0.006 & 0.353 \\
 GPT-4o-mini & 0.902 & 0.896 & +0.006 & 0.024* \\
 Grok-3-mini & 0.889 & 0.883 & +0.007 & 0.342 \\
 Llama-3.1-8B & 0.903 & 0.886 & +0.018 & 0.008** \\
 \midrule
-\textbf{Overall} & \textbf{0.898} & \textbf{0.888} & \textbf{+0.010} & \textbf{0.003**} \\
+\textbf{Overall} & \textbf{0.901} & \textbf{0.892} & \textbf{+0.009} & \textbf{0.003**} \\
 \bottomrule
 \end{tabular}
 \caption{Mean confidence scores by model and condition. $*$ $p < 0.05$, $**$ $p < 0.01$.}
@@ -160,22 +162,23 @@ Interference conditions require substantially more tokens (Table~\ref{tab:tokens
 \begin{table}[t]
 \centering
 \small
-\begin{tabular}{lcccc}
+\begin{tabular}{lccc}
 \toprule
 \textbf{Model} & \textbf{Clean (tok)} & \textbf{Interfere (tok)} & \textbf{Ratio} \\
 \midrule
+Claude Haiku 4.5 & 2,087 & 4,972 & 2.38$\times$ \\
 GPT-4o-mini & 1,840 & 4,488 & 2.44$\times$ \\
 Grok-3-mini & 2,346 & 5,010 & 2.14$\times$ \\
 Llama-3.1-8B & 1,855 & 4,504 & 2.43$\times$ \\
 \bottomrule
 \end{tabular}
-\caption{Average token usage by model and condition. Interference conditions use 2.1--2.7$\times$ more tokens.}
+\caption{Average token usage by model and condition. Interference conditions use 2.1--2.4$\times$ more tokens.}
 \label{tab:tokens}
 \end{table}
 
 \subsection{Discriminating Task Analysis}
 
-Only 9 out of 77 tasks (12\%) show any difference between clean and interference conditions. Of these, 6 show interference hurting accuracy and 3 paradoxically show interference helping. Among these 9 discriminating tasks, the average effect is +11.1pp, but this is not statistically significant ($t(8) = 0.95$, $p = 0.37$) due to the small sample.
+Only 13 out of 77 tasks (17\%) show any difference between clean and interference conditions. Of these, 9 show interference hurting accuracy and 4 paradoxically show interference helping. Among these 13 discriminating tasks, the average effect is +8.3pp, but this is not statistically significant ($t(12) = 1.14$, $p = 0.28$) due to the small sample.
 
 The single largest outlier is \texttt{interfere\_trap\_001} (+88.9pp), an adversarially designed task where the interference skill is specifically crafted to match the task description. Excluding this task reduces the overall effect from 1.3pp to 0.15pp---essentially zero.
 
@@ -186,7 +189,7 @@ The single largest outlier is \texttt{interfere\_trap\_001} (+88.9pp), an advers
 
 We identify three structural reasons for the null result:
 
-\paragraph{Ceiling effect.} With 96\% baseline accuracy, there is limited room for interference to cause errors. 88\% of tasks produce identical outcomes under both conditions. The tasks are simply too easy for current LLMs.
+\paragraph{Ceiling effect.} With 95--96\% baseline accuracy, there is limited room for interference to cause errors. 83\% of tasks produce identical outcomes under both conditions. The tasks are simply too easy for current LLMs.
 
 \paragraph{Interference dilution.} The 100-skill library contains 23 interference skills, but for any given task, only 1--3 are relevant competitors. The remaining 20+ are irrelevant noise that the model easily filters.
 
@@ -203,11 +206,11 @@ Table~\ref{tab:sensitivity} shows the interference effect under various exclusio
 \toprule
 \textbf{Analysis} & \textbf{CM--CI Diff} \\
 \midrule
-All 80 tasks & +1.25pp \\
-Excluding ambiguous tasks & +1.30pp \\
-Excluding outlier + ambiguous & +0.15pp \\
-Excluding GPT-4o-mini & +1.95pp \\
-Discriminating tasks only & +11.1pp \\
+All 80 tasks & +1.15pp \\
+Excluding ambiguous tasks & +1.19pp \\
+Excluding outlier + ambiguous & +0.33pp \\
+Excluding GPT-4o-mini & +1.59pp \\
+Discriminating tasks only & +8.3pp \\
 \bottomrule
 \end{tabular}
 \caption{Sensitivity of interference effect to exclusions.}
@@ -216,7 +219,7 @@ Discriminating tasks only & +11.1pp \\
 
 \subsection{Heterogeneity Across Models}
 
-GPT-4o-mini shows zero interference effect (94.8\% for both conditions), while Grok-3-mini shows a 2.2pp drop and Llama-3.1-8B shows a 1.7pp drop. Cochran's Q = 0.02 ($p = 0.99$, $I^2 = 0\%$), indicating no significant heterogeneity across models.
+GPT-4o-mini shows zero interference effect (94.8\% for both conditions), while Claude Haiku 4.5 shows a 0.9pp drop, Grok-3-mini shows a 2.2pp drop, and Llama-3.1-8B shows a 1.7pp drop. Cochran's Q = 0.02 ($p = 0.99$, $I^2 = 0\%$), indicating no significant heterogeneity across models.
 
 
 \section{Discussion}
@@ -240,7 +243,7 @@ However, the confidence and cost effects are real. A 2--3$\times$ token cost inc
 
 \section{Conclusion}
 
-We present the first rigorous null result on skill library interference in LLM agents. Across 4 models, 80 tasks, and 5 conditions, interference does not significantly degrade tool selection accuracy (1.3pp, $d = 0.06$, TOST equivalence at $\pm$5pp). However, interference imposes measurable costs: confidence calibration penalties of 0.5--1.8pp and token cost increases of 2.1--2.7$\times$. These secondary effects, while small, compound in deployed multi-step agent systems. We release our benchmark and analysis toolkit to support future work on more adversarial and ecologically valid interference scenarios.
+We present the first rigorous null result on skill library interference in LLM agents. Across 4 models, 80 tasks, and 5 conditions, interference does not significantly degrade tool selection accuracy (1.2pp, $d = 0.06$, TOST equivalence at $\pm$3pp with $p = 0.035$). However, interference imposes measurable costs: confidence calibration penalties of 0.6--1.8pp and token cost increases of 2.1--2.4$\times$. These secondary effects, while small, compound in deployed multi-step agent systems. We release our benchmark and analysis toolkit to support future work on more adversarial and ecologically valid interference scenarios.
 
 
 \section*{Ethical Considerations}
@@ -249,7 +252,7 @@ This work evaluates LLM tool selection accuracy and does not involve human subje
 
 \section*{Reproducibility}
 
-All code, data, and analysis scripts are available at \url{https://github.com/curator8888/meminterfere}. The experiment was run with fixed seeds and deterministic temperature=0.0 for all models. Total compute cost: approximately \$6.80 for 3,600 primary runs + \$4.00 for 1,200 Claude runs.
+All code, data, and analysis scripts are available at \url{https://github.com/curator8888/meminterfere}. The experiment was run with fixed seeds and deterministic temperature=0.0 for all models. Total compute cost: approximately \$6.80 for 3,600 primary runs + \$5.20 for 1,200 Claude runs = \$12.00 total.
 
 \bibliography{references}
 \bibliographystyle{acl_nat}
@@ -264,6 +267,10 @@ All code, data, and analysis scripts are available at \url{https://github.com/cu
 \begin{tabular}{lcccccc}
 \toprule
 \textbf{Model} & \textbf{Temp} & \textbf{No-mem} & \textbf{Oracle} & \textbf{Clean} & \textbf{Interfere} & \textbf{All-mem} \\
+\midrule
+\multirow{3}{*}{Claude Haiku 4.5} & 0.0 & 0.0\% & 93.5\% & 95.2\% & 94.4\% & 93.5\% \\
+ & 0.3 & 0.0\% & 93.5\% & 95.2\% & 94.4\% & 93.5\% \\
+ & 0.7 & 0.0\% & 93.5\% & 95.2\% & 94.4\% & 93.5\% \\
 \midrule
 \multirow{3}{*}{GPT-4o-mini} & 0.0 & 0.0\% & 94.8\% & 94.8\% & 94.8\% & 94.8\% \\
  & 0.3 & 0.0\% & 94.8\% & 94.8\% & 94.8\% & 94.8\% \\

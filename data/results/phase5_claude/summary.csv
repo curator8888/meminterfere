@@ -1,0 +1,16 @@
+model,condition,temperature,total_runs,parsed,parse_rate,correct,accuracy,errors,avg_latency_ms,avg_confidence,total_tokens
+claude-haiku-4.5,oracle,0.0,80,80,1.0,72,0.9,0,2938.3,0.9099,167015
+claude-haiku-4.5,no_memory,0.0,80,37,0.4625,0,0.0,0,3154.9,0.2544,37706
+claude-haiku-4.5,clean_memory,0.0,80,80,1.0,73,0.9125,0,2891.9,0.9111,166684
+claude-haiku-4.5,clean_interference,0.0,80,80,1.0,74,0.925,0,3660.2,0.9094,397596
+claude-haiku-4.5,all_memory,0.0,80,80,1.0,73,0.9125,0,3798.7,0.9019,439335
+claude-haiku-4.5,oracle,0.3,80,80,1.0,72,0.9,0,2821.7,0.9117,166454
+claude-haiku-4.5,no_memory,0.3,80,40,0.5,0,0.0,0,3120.1,0.1269,37657
+claude-haiku-4.5,clean_memory,0.3,80,80,1.0,73,0.9125,0,2888.0,0.9061,166911
+claude-haiku-4.5,clean_interference,0.3,80,80,1.0,73,0.9125,0,3637.9,0.9088,397584
+claude-haiku-4.5,all_memory,0.3,80,80,1.0,73,0.9125,0,3895.5,0.8975,439056
+claude-haiku-4.5,oracle,0.7,80,80,1.0,72,0.9,0,2914.6,0.9124,167208
+claude-haiku-4.5,no_memory,0.7,80,28,0.35,0,0.0,0,3275.1,0.135,37284
+claude-haiku-4.5,clean_memory,0.7,80,80,1.0,74,0.925,0,2966.0,0.9111,167133
+claude-haiku-4.5,clean_interference,0.7,80,80,1.0,71,0.8875,0,4395.2,0.8918,397979
+claude-haiku-4.5,all_memory,0.7,80,80,1.0,73,0.9125,0,4468.1,0.8838,439715
