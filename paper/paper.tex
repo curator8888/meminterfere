@@ -317,6 +317,10 @@ Strikingly, on harder tasks, interference \emph{significantly improves} accuracy
 
 We tested whether the interference effect scales with skill similarity by constructing five gradient conditions, each adding only one type of interfering skill: near-identical (highest similarity), version conflicts, schema conflicts, semantic conflicts, and near-similar (lowest similarity).
 
+\subsection{Oracle Condition Revisited}
+
+In our original experiment, the oracle condition showed all 40 clean skills, yielding 91.8\% accuracy. To isolate pure invocation competence, we revised the oracle to show only the single gold skill per task. This produces a near-perfect 99.8\% accuracy (958/960), with three models achieving 100\% and Claude Haiku at 99.2\%. The 8pp gap between the original oracle (91.8\%, 40 skills) and the revised oracle (99.8\%, 1 skill) confirms that the task is fundamentally a retrieval problem: given the correct skill, models almost always use it correctly.
+
 
 \section{Discussion}
 
@@ -339,7 +343,7 @@ However, the confidence and cost effects are real. A 2--3$\times$ token cost inc
 
 \section{Conclusion}
 
-We present the first rigorous null result on skill library interference in LLM agents. Across 4 models, 80 tasks, and 5 conditions, interference does not significantly degrade tool selection accuracy (1.2pp, $d = 0.06$, TOST equivalence at $\pm$3pp with $p = 0.035$). Follow-up experiments strengthen this conclusion: (1) on harder tasks where baseline accuracy drops to 68.7\%, interference \emph{significantly improves} accuracy by 4.9pp ($p = 0.023$); (2) RAG-based retrieval closely matches gold retrieval (92.2\% vs.\ 92.5\%), confirming that retrieval is not the bottleneck; and (3) a gradient of interference types shows no monotonic relationship between skill similarity and accuracy degradation.
+We present the first rigorous null result on skill library interference in LLM agents. Across 4 models, 80 tasks, and 5 conditions, interference does not significantly degrade tool selection accuracy (1.2pp, $d = 0.06$, TOST equivalence at $\pm$3pp with $p = 0.035$). Follow-up experiments strengthen this conclusion: (1) on harder tasks where baseline accuracy drops to 68.7\%, interference \emph{significantly improves} accuracy by 4.9pp ($p = 0.023$); (2) RAG-based retrieval closely matches gold retrieval (92.2\% vs.\ 92.5\%), confirming that retrieval is not the bottleneck; (3) a revised oracle showing only the gold skill achieves 99.8\% accuracy, confirming that invocation competence is near-perfect and the task is fundamentally about retrieval; and (4) a gradient of interference types shows no monotonic relationship between skill similarity and accuracy degradation.
 
 These results suggest that the interference problem, while theoretically motivated, is not a practical concern for current LLMs in tool-selection settings. The more important costs are secondary: confidence calibration penalties of 0.6--1.8pp and token cost increases of 2.1--2.4$\times$. These compound in deployed multi-step agent systems. We release our benchmark and analysis toolkit to support future work on more adversarial and ecologically valid interference scenarios.
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.26)  26 JUN 2026 09:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.26)  26 JUN 2026 10:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -626,13 +626,13 @@ Overfull \hbox (67.68808pt too wide) in paragraph at lines 120--132
  [][] 
  []
 
-<figures/fig1_condition_accuracy.pdf, id=200, 722.7pt x 361.35pt>
+<figures/fig1_condition_accuracy.pdf, id=204, 722.7pt x 361.35pt>
 File: figures/fig1_condition_accuracy.pdf Graphic file (type pdf)
 <use figures/fig1_condition_accuracy.pdf>
 Package pdftex.def Info: figures/fig1_condition_accuracy.pdf  used on input lin
 e 140.
 (pdftex.def)             Requested size: 219.08614pt x 109.54166pt.
-<figures/fig2_forest_plot.pdf, id=206, 578.16pt x 289.08pt>
+<figures/fig2_forest_plot.pdf, id=210, 578.16pt x 289.08pt>
 File: figures/fig2_forest_plot.pdf Graphic file (type pdf)
 <use figures/fig2_forest_plot.pdf>
 Package pdftex.def Info: figures/fig2_forest_plot.pdf  used on input line 153.
@@ -647,7 +647,7 @@ Overfull \hbox (13.4068pt too wide) in paragraph at lines 188--198
  [][] 
  []
 
-<figures/fig3_confidence_tokens.pdf, id=209, 867.24pt x 361.35pt>
+<figures/fig3_confidence_tokens.pdf, id=213, 867.24pt x 361.35pt>
 File: figures/fig3_confidence_tokens.pdf Graphic file (type pdf)
 <use figures/fig3_confidence_tokens.pdf>
 Package pdftex.def Info: figures/fig3_confidence_tokens.pdf  used on input line
@@ -689,27 +689,27 @@ Overfull \hbox (16.3789pt too wide) in paragraph at lines 265--274
  [][] 
  []
 
-<figures/fig5_retrieval_decomposition.pdf, id=383, 425.8273pt x 280.97002pt>
+<figures/fig5_retrieval_decomposition.pdf, id=387, 425.8273pt x 280.97002pt>
 File: figures/fig5_retrieval_decomposition.pdf Graphic file (type pdf)
 <use figures/fig5_retrieval_decomposition.pdf>
 Package pdftex.def Info: figures/fig5_retrieval_decomposition.pdf  used on inpu
 t line 282.
 (pdftex.def)             Requested size: 219.08614pt x 144.56183pt.
 [4 <./figures/fig3_confidence_tokens.pdf>]
-<figures/fig4_harder_tasks.pdf, id=463, 714.90727pt x 281.29355pt>
+<figures/fig4_harder_tasks.pdf, id=467, 714.90727pt x 281.29355pt>
 File: figures/fig4_harder_tasks.pdf Graphic file (type pdf)
 <use figures/fig4_harder_tasks.pdf>
 Package pdftex.def Info: figures/fig4_harder_tasks.pdf  used on input line 311.
 
 (pdftex.def)             Requested size: 219.08614pt x 86.2043pt.
-
-Underfull \hbox (badness 1418) in paragraph at lines 337--338
+ [5 <./figures/fig5_retrieval_decomposition.pdf> <./figures/fig4_harder_tasks.p
+df>]
+Underfull \hbox (badness 1418) in paragraph at lines 341--342
 \OT1/ptm/m/n/10.95 augmented se-lec-tion closely matches gold re-
  []
 
-[5 <./figures/fig5_retrieval_decomposition.pdf> <./figures/fig4_harder_tasks.pd
-f>]
-Underfull \hbox (badness 2452) in paragraph at lines 353--354
+
+Underfull \hbox (badness 2452) in paragraph at lines 357--358
 \OT1/ptm/m/n/10.95 at [][]$\OT1/pcr/m/n/10.95 https : / / github . com / curato
 r8888 /
  []
@@ -739,7 +739,7 @@ Underfull \hbox (badness 1168) in paragraph at lines 51--55
 \OT1/ptm/m/n/10 Roberta Raileanu, Maria Lomeli, Eric Ham-bro,
  []
 
-
+[6]
 Underfull \hbox (badness 1648) in paragraph at lines 65--69
 []\OT1/ptm/m/n/10 Freda Shi, Xinyun Chen, Kun-dan Misra, Nathan
  []
@@ -749,8 +749,8 @@ Underfull \hbox (badness 3907) in paragraph at lines 65--69
 \OT1/ptm/m/n/10 Scales, Ed Do-han, Nathanael Chi, Nathanael
  []
 
-[6])
-Overfull \hbox (26.97414pt too wide) in paragraph at lines 408--417
+)
+Overfull \hbox (26.97414pt too wide) in paragraph at lines 412--421
  [][] 
  []
 
@@ -764,16 +764,16 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 13FA30D91B68FF805C14D680F16EBA21;4557.
+(rerunfilecheck)             Checksum: 61BBFE9E430209BEC93CAEE67B3446FD;4751.
  ) 
 Here is how much of TeX's memory you used:
- 12881 strings out of 476182
- 200679 string characters out of 5795595
+ 12883 strings out of 476182
+ 200709 string characters out of 5795595
  1945975 words of memory out of 5000000
- 34605 multiletter control sequences out of 15000+600000
+ 34606 multiletter control sequences out of 15000+600000
  588542 words of font info for 110 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,10n,93p,1149b,592s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,10n,93p,1149b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texliv
@@ -785,10 +785,10 @@ ic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier
 /ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (8 pages, 266159 bytes).
+Output written on paper.pdf (8 pages, 266950 bytes).
 PDF statistics:
- 693 PDF objects out of 1000 (max. 8388607)
- 369 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 242 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 697 PDF objects out of 1000 (max. 8388607)
+ 373 compressed objects within 4 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 250 words of extra memory for PDF output out of 10000 (max. 10000000)
 
