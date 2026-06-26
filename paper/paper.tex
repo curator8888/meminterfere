@@ -275,7 +275,14 @@ RAG Top-5 (5 skills) & 92.2\% & $-3.6$pp \\
 \label{tab:retrieval}
 \end{table}
 
-The 0.3pp gap between gold and RAG retrieval (Table~\ref{tab:retrieval}) shows that RAG effectively solves the retrieval problem. The 3--4pp drop from clean memory is unexpected: providing \emph{more} skills (40 vs.\ 1--5) actually improves accuracy, not hurts it. This suggests models benefit from contextual information provided by the full skill library.
+The 0.3pp gap between gold and RAG retrieval (Table~\ref{tab:retrieval}) shows that RAG effectively solves the retrieval problem. The 3--4pp drop from clean memory is unexpected: providing \emph{more} skills (40 vs.\ 1--5) actually improves accuracy, not hurts it. This suggests models benefit from contextual information provided by the full skill library (Figure~\ref{fig:retrieval}).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig5_retrieval_decomposition.pdf}
+\caption{Retrieval--planning decomposition. Gold retrieval (1 skill) and RAG top-5 (5 skills) both achieve $>$92\% accuracy, close to clean memory (40 skills). The 3--4pp gap reflects context benefit, not retrieval failure.}
+\label{fig:retrieval}
+\end{figure}
 
 \subsection{Harder Task Suite}
 
@@ -297,7 +304,14 @@ All Memory & 70.9\% & $+2.2$pp & --- \\
 \label{tab:harder}
 \end{table}
 
-Strikingly, on harder tasks, interference \emph{significantly improves} accuracy (Table~\ref{tab:harder}): 73.6\% vs.\ 68.7\% ($t(40) = -2.37$, $p = 0.023$). In 9 of 41 tasks, interference helps; in only 3, it hurts. This suggests that on genuinely difficult tasks, the additional context provided by interference skills aids disambiguation rather than confusing the model.
+Strikingly, on harder tasks, interference \emph{significantly improves} accuracy (Table~\ref{tab:harder}): 73.6\% vs.\ 68.7\% ($t(40) = -2.37$, $p = 0.023$). In 9 of 41 tasks, interference helps; in only 3, it hurts. This suggests that on genuinely difficult tasks, the additional context provided by interference skills aids disambiguation rather than confusing the model (Figure~\ref{fig:harder}).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig4_harder_tasks.pdf}
+\caption{Left: Original tasks (88.8\% keyword cues) show no significant interference effect. Right: Harder tasks (7.3\% keyword cues) show interference \emph{significantly improving} accuracy ($p = 0.023$). Error bars omitted for clarity; see Table~\ref{tab:harder} for exact values.}
+\label{fig:harder}
+\end{figure}
 
 \subsection{Interference Similarity Gradient}
 
