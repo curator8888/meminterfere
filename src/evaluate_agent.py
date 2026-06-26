@@ -59,8 +59,12 @@ from metrics import (
 )
 
 
-def get_library_for_condition(condition: Condition, session: int = 0) -> list[Skill]:
-    """Get the skill library for a given experimental condition."""
+def get_library_for_condition(condition: Condition, session: int = 0, task: EvalTask = None) -> list[Skill]:
+    """Get the skill library for a given experimental condition.
+    
+    If task is provided for ORACLE condition, returns only the gold skill(s)
+    for that task (true oracle). Otherwise returns all clean skills (legacy behavior).
+    """
     clean = get_skills_by_type("clean")
     interference = get_skills_by_type("interference")
     stale = get_skills_by_type("stale")
@@ -69,7 +73,11 @@ def get_library_for_condition(condition: Condition, session: int = 0) -> list[Sk
     # Use .value comparison to avoid cross-module enum identity issues
     cv = condition.value if hasattr(condition, 'value') else condition
     if cv == "oracle":
-        return clean  # Only clean skills, but gold one always provided
+        if task is not None:
+            # True oracle: only the gold skill(s) for this task
+            return [s for s in clean if s.name in task.expected_skill_ids or 
+                    s.skill_id in task.expected_skill_ids]
+        return clean  # Legacy: all clean skills
     elif cv == "no_memory":
         return []
     elif cv == "clean_memory":

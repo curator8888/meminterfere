@@ -120,3 +120,1536 @@ Running REAL experiment (API calls)
 2026-06-26 08:21:33,286 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
 2026-06-26 08:21:35,775 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
 2026-06-26 08:21:38,959 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:21:42,662 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:21:44,711 [INFO] Saved 60 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:21:44,711 [INFO]   Progress: 60/369 runs
+2026-06-26 08:21:44,711 [INFO] Rate limit for openrouter: sleeping 2.5s
+2026-06-26 08:21:48,092 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:21:48,581 [INFO] Rate limit for openrouter: sleeping 1.5s
+2026-06-26 08:21:51,276 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:21:54,052 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 08:21:54,761 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:21:55,187 [INFO] Rate limit for openrouter: sleeping 2.5s
+2026-06-26 08:21:58,888 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:01,021 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:02,893 [INFO] Saved 65 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:22:02,894 [INFO]   Progress: 65/369 runs
+2026-06-26 08:22:02,894 [INFO] Rate limit for openrouter: sleeping 1.1s
+2026-06-26 08:22:04,223 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:06,809 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-26 08:22:07,834 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:09,227 [INFO] Rate limit for openrouter: sleeping 3.0s
+2026-06-26 08:22:12,541 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:16,072 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:17,505 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:19,555 [INFO] Saved 70 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:22:19,556 [INFO]   Progress: 70/369 runs
+2026-06-26 08:22:20,380 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:20,972 [INFO] Rate limit for openrouter: sleeping 1.3s
+2026-06-26 08:22:22,596 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:25,276 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:27,033 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:29,905 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:30,386 [INFO] Saved 75 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:22:30,386 [INFO]   Progress: 75/369 runs
+2026-06-26 08:22:30,386 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 08:22:31,353 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:31,789 [INFO] Rate limit for openrouter: sleeping 1.3s
+2026-06-26 08:22:33,420 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:34,990 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-26 08:22:35,774 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:40,700 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:44,421 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:45,322 [INFO] Saved 80 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:22:45,322 [INFO]   Progress: 80/369 runs
+2026-06-26 08:22:45,323 [INFO] Rate limit for openrouter: sleeping 2.0s
+2026-06-26 08:22:47,597 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:49,251 [INFO] Rate limit for openrouter: sleeping 1.0s
+2026-06-26 08:22:51,101 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:51,925 [INFO] Rate limit for openrouter: sleeping 2.7s
+2026-06-26 08:22:54,905 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:56,528 [INFO] Rate limit for openrouter: sleeping 1.3s
+2026-06-26 08:22:58,645 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:22:59,299 [INFO] Rate limit for openrouter: sleeping 1.4s
+2026-06-26 08:23:00,971 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:04,434 [INFO] Saved 85 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:23:04,435 [INFO]   Progress: 85/369 runs
+2026-06-26 08:23:04,701 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:06,539 [INFO] Rate limit for openrouter: sleeping 1.1s
+2026-06-26 08:23:07,976 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:09,662 [INFO] Rate limit for openrouter: sleeping 2.7s
+2026-06-26 08:23:12,678 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:14,312 [INFO] Rate limit for openrouter: sleeping 1.5s
+2026-06-26 08:23:16,698 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:18,022 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:18,479 [INFO] Saved 90 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:23:18,480 [INFO]   Progress: 90/369 runs
+2026-06-26 08:23:18,480 [INFO] Rate limit for openrouter: sleeping 1.2s
+2026-06-26 08:23:19,928 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:21,573 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-26 08:23:22,714 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:23,688 [INFO] Rate limit for openrouter: sleeping 1.3s
+2026-06-26 08:23:25,343 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:27,618 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:29,441 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 08:23:30,514 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:30,936 [INFO] Saved 95 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:23:30,936 [INFO]   Progress: 95/369 runs
+2026-06-26 08:23:31,795 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:32,376 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-26 08:23:33,483 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:35,984 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:37,177 [INFO] Rate limit for openrouter: sleeping 3.3s
+2026-06-26 08:23:40,789 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:42,306 [INFO] Rate limit for openrouter: sleeping 1.4s
+2026-06-26 08:23:44,009 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:45,410 [INFO] Saved 100 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:23:45,410 [INFO]   Progress: 100/369 runs
+2026-06-26 08:23:45,410 [INFO] Rate limit for openrouter: sleeping 2.0s
+2026-06-26 08:23:48,414 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:49,150 [INFO] Rate limit for openrouter: sleeping 1.2s
+2026-06-26 08:23:50,623 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:51,933 [INFO] Rate limit for openrouter: sleeping 2.8s
+2026-06-26 08:23:55,039 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:56,665 [INFO] Rate limit for openrouter: sleeping 1.2s
+2026-06-26 08:23:58,849 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:23:59,419 [INFO] Rate limit for openrouter: sleeping 1.4s
+2026-06-26 08:24:01,094 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:02,280 [INFO] Saved 105 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:24:02,280 [INFO]   Progress: 105/369 runs
+2026-06-26 08:24:02,281 [INFO] Rate limit for openrouter: sleeping 2.3s
+2026-06-26 08:24:05,746 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:08,188 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:10,046 [INFO] Rate limit for openrouter: sleeping 2.4s
+2026-06-26 08:24:13,478 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:14,004 [INFO] Rate limit for openrouter: sleeping 1.9s
+2026-06-26 08:24:16,923 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:18,341 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:18,878 [INFO] Saved 110 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:24:18,878 [INFO]   Progress: 110/369 runs
+2026-06-26 08:24:18,878 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-26 08:24:20,337 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:23,320 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:24,039 [INFO] Rate limit for openrouter: sleeping 1.1s
+2026-06-26 08:24:26,519 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:44,630 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:46,229 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:46,733 [INFO] Saved 115 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:24:46,734 [INFO]   Progress: 115/369 runs
+2026-06-26 08:24:47,568 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:48,202 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:50,742 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:52,201 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:53,670 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:54,549 [INFO] Saved 120 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:24:54,549 [INFO]   Progress: 120/369 runs
+2026-06-26 08:24:55,402 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:56,815 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:58,223 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:24:59,766 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:00,176 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-26 08:25:01,666 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:03,004 [INFO] Saved 125 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:25:03,005 [INFO]   Progress: 125/369 runs
+2026-06-26 08:25:03,005 [INFO] Rate limit for openrouter: sleeping 1.6s
+2026-06-26 08:25:04,913 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:06,405 [INFO] Rate limit for openrouter: sleeping 1.6s
+2026-06-26 08:25:08,245 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:10,006 [INFO] Rate limit for openrouter: sleeping 2.6s
+2026-06-26 08:25:12,803 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:14,061 [INFO] Rate limit for openrouter: sleeping 2.0s
+2026-06-26 08:25:16,149 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:16,394 [INFO] Rate limit for openrouter: sleeping 1.2s
+2026-06-26 08:25:17,857 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:19,592 [INFO] Saved 130 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:25:19,593 [INFO]   Progress: 130/369 runs
+2026-06-26 08:25:19,593 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 08:25:20,653 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:21,123 [INFO] Rate limit for openrouter: sleeping 1.5s
+2026-06-26 08:25:22,843 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:23,173 [INFO] Rate limit for openrouter: sleeping 2.1s
+2026-06-26 08:25:26,247 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:26,657 [INFO] Rate limit for openrouter: sleeping 17.8s
+2026-06-26 08:25:44,946 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:47,383 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:47,686 [INFO] Saved 135 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:25:47,687 [INFO]   Progress: 135/369 runs
+2026-06-26 08:25:47,921 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:49,636 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:51,142 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:52,960 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:54,712 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:55,717 [INFO] Saved 140 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:25:55,718 [INFO]   Progress: 140/369 runs
+2026-06-26 08:25:55,998 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:25:59,384 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:00,326 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:01,506 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:03,231 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:04,876 [INFO] Saved 145 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:26:04,877 [INFO]   Progress: 145/369 runs
+2026-06-26 08:26:05,168 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:06,444 [INFO] Rate limit for openrouter: sleeping 1.7s
+2026-06-26 08:26:08,511 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:08,760 [INFO] Rate limit for openrouter: sleeping 3.9s
+2026-06-26 08:26:13,305 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:14,725 [INFO] Rate limit for openrouter: sleeping 1.4s
+2026-06-26 08:26:16,447 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:17,474 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 08:26:18,016 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:19,770 [INFO] Saved 150 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:26:19,771 [INFO]   Progress: 150/369 runs
+2026-06-26 08:26:19,771 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 08:26:20,782 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:21,366 [INFO] Rate limit for openrouter: sleeping 1.4s
+2026-06-26 08:26:22,986 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:24,429 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-26 08:26:25,827 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:28,027 [INFO] Rate limit for openrouter: sleeping 16.5s
+2026-06-26 08:26:44,863 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:46,768 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 08:26:47,230 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:48,453 [INFO] Saved 155 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:26:48,453 [INFO]   Progress: 155/369 runs
+2026-06-26 08:26:49,890 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:53,348 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:53,815 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:55,543 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:56,075 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:26:57,891 [INFO] Saved 160 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:26:57,891 [INFO]   Progress: 160/369 runs
+2026-06-26 08:26:58,178 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:00,922 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:02,335 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:04,114 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:06,715 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:08,878 [INFO] Saved 165 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:27:08,878 [INFO]   Progress: 165/369 runs
+2026-06-26 08:27:09,226 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:11,551 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:12,198 [INFO] Rate limit for openrouter: sleeping 0.6s
+2026-06-26 08:27:13,029 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:14,765 [INFO] Rate limit for openrouter: sleeping 1.5s
+2026-06-26 08:27:17,075 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:17,513 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 08:27:17,997 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:18,505 [INFO] Saved 170 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:27:18,505 [INFO]   Progress: 170/369 runs
+2026-06-26 08:27:18,505 [INFO] Rate limit for openrouter: sleeping 1.6s
+2026-06-26 08:27:20,332 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:21,662 [INFO] Rate limit for openrouter: sleeping 1.2s
+2026-06-26 08:27:23,106 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:25,057 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 08:27:25,714 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:27,163 [INFO] Rate limit for openrouter: sleeping 17.5s
+2026-06-26 08:27:44,911 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:46,221 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-26 08:27:47,302 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:49,029 [INFO] Saved 175 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:27:49,031 [INFO]   Progress: 175/369 runs
+2026-06-26 08:27:49,237 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:49,726 [INFO] Rate limit for openrouter: sleeping 2.8s
+2026-06-26 08:27:53,948 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:55,866 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:56,769 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:27:58,671 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:00,976 [INFO] Saved 180 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:28:00,976 [INFO]   Progress: 180/369 runs
+2026-06-26 08:28:01,219 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:02,694 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:03,325 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:05,753 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:08,130 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:08,985 [INFO] Saved 185 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:28:08,985 [INFO]   Progress: 185/369 runs
+2026-06-26 08:28:09,242 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:11,257 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:13,219 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:15,292 [INFO] Rate limit for openrouter: sleeping 1.1s
+2026-06-26 08:28:17,280 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:18,119 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:19,350 [INFO] Saved 190 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:28:19,350 [INFO]   Progress: 190/369 runs
+2026-06-26 08:28:19,350 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-26 08:28:20,450 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:22,613 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 08:28:23,862 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:24,481 [INFO] Rate limit for openrouter: sleeping 1.1s
+2026-06-26 08:28:25,809 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:27,970 [INFO] Rate limit for openrouter: sleeping 16.8s
+2026-06-26 08:28:45,053 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:47,328 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:49,578 [INFO] Saved 195 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:28:49,579 [INFO]   Progress: 195/369 runs
+2026-06-26 08:28:50,397 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:50,843 [INFO] Rate limit for openrouter: sleeping 1.7s
+2026-06-26 08:28:52,989 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:55,287 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:56,504 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-26 08:28:57,206 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:58,289 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 08:28:58,724 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:28:59,176 [INFO] Saved 200 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:28:59,176 [INFO]   Progress: 200/369 runs
+2026-06-26 08:28:59,176 [INFO] Rate limit for openrouter: sleeping 1.9s
+2026-06-26 08:29:01,933 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:02,829 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:04,862 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:08,037 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:08,720 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:11,551 [INFO] Saved 205 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:29:11,551 [INFO]   Progress: 205/369 runs
+2026-06-26 08:29:12,184 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:14,626 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:15,358 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:17,307 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:19,407 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:21,298 [INFO] Saved 210 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:29:21,298 [INFO]   Progress: 210/369 runs
+2026-06-26 08:29:21,456 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:22,045 [INFO] Rate limit for openrouter: sleeping 1.0s
+2026-06-26 08:29:23,213 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:23,619 [INFO] Rate limit for openrouter: sleeping 2.0s
+2026-06-26 08:29:26,496 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:26,976 [INFO] Rate limit for openrouter: sleeping 17.9s
+2026-06-26 08:29:45,158 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:48,695 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:49,193 [INFO] Saved 215 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:29:49,193 [INFO]   Progress: 215/369 runs
+2026-06-26 08:29:49,193 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-26 08:29:50,568 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:51,117 [INFO] Rate limit for openrouter: sleeping 1.6s
+2026-06-26 08:29:52,922 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:53,441 [INFO] Rate limit for openrouter: sleeping 1.7s
+2026-06-26 08:29:56,017 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:56,970 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:29:59,311 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:02,673 [INFO] Saved 220 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:30:02,673 [INFO]   Progress: 220/369 runs
+2026-06-26 08:30:03,199 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:06,264 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:06,985 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:07,676 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:11,082 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:13,658 [INFO] Saved 225 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:30:13,659 [INFO]   Progress: 225/369 runs
+2026-06-26 08:30:13,846 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:15,008 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:16,137 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:19,250 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:22,071 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:24,358 [INFO] Saved 230 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:30:24,358 [INFO]   Progress: 230/369 runs
+2026-06-26 08:30:24,974 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:26,901 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:29,783 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:31,427 [INFO] Rate limit for openrouter: sleeping 13.6s
+2026-06-26 08:30:45,851 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:46,615 [INFO] Rate limit for openrouter: sleeping 1.4s
+2026-06-26 08:30:48,514 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:51,549 [INFO] Saved 235 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:30:51,552 [INFO]   Progress: 235/369 runs
+2026-06-26 08:30:53,902 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:57,326 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:30:58,054 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:00,475 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:01,188 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:02,974 [INFO] Saved 240 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:31:02,975 [INFO]   Progress: 240/369 runs
+2026-06-26 08:31:03,843 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:05,770 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 08:31:07,499 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:13,796 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:15,158 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:16,953 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:17,484 [INFO] Saved 245 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:31:17,484 [INFO]   Progress: 245/369 runs
+2026-06-26 08:31:18,942 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:24,762 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:25,577 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:28,915 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:29,781 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:31,780 [INFO] Saved 250 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:31:31,781 [INFO]   Progress: 250/369 runs
+2026-06-26 08:31:32,079 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:34,447 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:36,438 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:36,675 [INFO] Rate limit for openrouter: sleeping 8.4s
+2026-06-26 08:31:45,927 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:46,414 [INFO] Rate limit for openrouter: sleeping 1.7s
+2026-06-26 08:31:48,399 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:50,308 [INFO] Saved 255 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:31:50,309 [INFO]   Progress: 255/369 runs
+2026-06-26 08:31:50,309 [INFO] Rate limit for openrouter: sleeping 1.3s
+2026-06-26 08:31:51,880 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:52,913 [INFO] Rate limit for openrouter: sleeping 3.7s
+2026-06-26 08:31:56,884 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:31:59,702 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:03,284 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:06,851 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:08,287 [INFO] Saved 260 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:32:08,287 [INFO]   Progress: 260/369 runs
+2026-06-26 08:32:08,542 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:10,941 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:11,326 [INFO] Rate limit for openrouter: sleeping 1.8s
+2026-06-26 08:32:13,856 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:14,103 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 08:32:14,772 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:15,204 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-26 08:32:17,411 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:18,069 [INFO] Saved 265 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:32:18,069 [INFO]   Progress: 265/369 runs
+2026-06-26 08:32:18,194 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:18,431 [INFO] Rate limit for openrouter: sleeping 5.7s
+2026-06-26 08:32:24,278 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:24,520 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-26 08:32:25,657 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:27,398 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-26 08:32:28,458 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:30,973 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:32,958 [INFO] Saved 270 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:32:32,959 [INFO]   Progress: 270/369 runs
+2026-06-26 08:32:33,768 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:34,737 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:35,372 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-26 08:32:36,601 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:38,388 [INFO] Rate limit for openrouter: sleeping 6.8s
+2026-06-26 08:32:45,469 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:47,154 [INFO] Rate limit for openrouter: sleeping 1.0s
+2026-06-26 08:32:48,517 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:50,131 [INFO] Saved 275 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:32:50,131 [INFO]   Progress: 275/369 runs
+2026-06-26 08:32:50,132 [INFO] Rate limit for openrouter: sleeping 1.6s
+2026-06-26 08:32:52,558 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:53,186 [INFO] Rate limit for openrouter: sleeping 3.5s
+2026-06-26 08:32:57,696 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:32:58,536 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-26 08:33:01,393 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:01,969 [INFO] Rate limit for openrouter: sleeping 1.0s
+2026-06-26 08:33:03,773 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:04,410 [INFO] Rate limit for openrouter: sleeping 2.3s
+2026-06-26 08:33:07,496 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:07,899 [INFO] Saved 280 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:33:07,899 [INFO]   Progress: 280/369 runs
+2026-06-26 08:33:07,900 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-26 08:33:08,884 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:09,971 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 08:33:11,040 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:11,975 [INFO] Rate limit for openrouter: sleeping 1.2s
+2026-06-26 08:33:14,163 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:15,264 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:18,663 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:19,756 [INFO] Saved 285 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:33:19,757 [INFO]   Progress: 285/369 runs
+2026-06-26 08:33:20,035 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:22,183 [INFO] Rate limit for openrouter: sleeping 2.0s
+2026-06-26 08:33:25,039 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:26,238 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:28,732 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:30,320 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-26 08:33:31,104 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:33,638 [INFO] Saved 290 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:33:33,638 [INFO]   Progress: 290/369 runs
+2026-06-26 08:33:34,482 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:35,217 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:36,317 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-26 08:33:36,702 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:38,677 [INFO] Rate limit for openrouter: sleeping 6.6s
+2026-06-26 08:33:45,476 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:45,995 [INFO] Rate limit for openrouter: sleeping 2.3s
+2026-06-26 08:33:48,541 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:48,979 [INFO] Saved 295 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:33:48,979 [INFO]   Progress: 295/369 runs
+2026-06-26 08:33:48,980 [INFO] Rate limit for openrouter: sleeping 2.9s
+2026-06-26 08:33:52,688 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:53,522 [INFO] Rate limit for openrouter: sleeping 3.3s
+2026-06-26 08:33:57,144 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:33:58,200 [INFO] Rate limit for openrouter: sleeping 1.2s
+2026-06-26 08:34:00,281 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:00,738 [INFO] Rate limit for openrouter: sleeping 2.3s
+2026-06-26 08:34:03,295 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:05,748 [INFO] Rate limit for openrouter: sleeping 1.1s
+2026-06-26 08:34:07,106 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:09,738 [INFO] Saved 300 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:34:09,738 [INFO]   Progress: 300/369 runs
+2026-06-26 08:34:10,432 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:12,215 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:12,588 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-26 08:34:14,111 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:14,434 [INFO] Rate limit for openrouter: sleeping 0.6s
+2026-06-26 08:34:15,949 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:16,345 [INFO] Rate limit for openrouter: sleeping 1.2s
+2026-06-26 08:34:17,868 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:18,423 [INFO] Saved 305 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:34:18,424 [INFO]   Progress: 305/369 runs
+2026-06-26 08:34:18,424 [INFO] Rate limit for openrouter: sleeping 1.4s
+2026-06-26 08:34:20,128 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:22,619 [INFO] Rate limit for openrouter: sleeping 1.7s
+2026-06-26 08:34:25,124 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:25,606 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 08:34:26,209 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:26,642 [INFO] Rate limit for openrouter: sleeping 1.7s
+2026-06-26 08:34:29,382 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:31,251 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:33,489 [INFO] Saved 310 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:34:33,489 [INFO]   Progress: 310/369 runs
+2026-06-26 08:34:33,489 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 08:34:33,951 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:34,295 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-26 08:34:35,879 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:36,370 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-26 08:34:36,832 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:39,036 [INFO] Rate limit for openrouter: sleeping 6.3s
+2026-06-26 08:34:45,814 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:48,226 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 08:34:49,226 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:49,656 [INFO] Saved 315 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:34:49,656 [INFO]   Progress: 315/369 runs
+2026-06-26 08:34:49,657 [INFO] Rate limit for openrouter: sleeping 2.3s
+2026-06-26 08:34:52,244 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:53,606 [INFO] Rate limit for openrouter: sleeping 3.3s
+2026-06-26 08:34:57,117 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:34:57,646 [INFO] Rate limit for openrouter: sleeping 1.9s
+2026-06-26 08:34:59,756 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:02,563 [INFO] Rate limit for openrouter: sleeping 0.6s
+2026-06-26 08:35:03,667 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:05,969 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-26 08:35:07,485 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:09,284 [INFO] Saved 320 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:35:09,284 [INFO]   Progress: 320/369 runs
+2026-06-26 08:35:09,284 [INFO] Rate limit for openrouter: sleeping 0.6s
+2026-06-26 08:35:10,718 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:11,316 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 08:35:12,069 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:13,700 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:16,037 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:16,473 [INFO] Rate limit for openrouter: sleeping 1.1s
+2026-06-26 08:35:17,891 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:19,452 [INFO] Saved 325 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:35:19,455 [INFO]   Progress: 325/369 runs
+2026-06-26 08:35:19,456 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-26 08:35:20,201 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:23,449 [INFO] Rate limit for openrouter: sleeping 1.0s
+2026-06-26 08:35:24,657 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:26,514 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:29,425 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:29,947 [INFO] Rate limit for openrouter: sleeping 1.2s
+2026-06-26 08:35:31,411 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:33,664 [INFO] Saved 330 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:35:33,664 [INFO]   Progress: 330/369 runs
+2026-06-26 08:35:33,664 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 08:35:34,953 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:35,337 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:38,092 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:39,794 [INFO] Rate limit for openrouter: sleeping 5.7s
+2026-06-26 08:35:45,762 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:48,008 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-26 08:35:48,774 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:51,002 [INFO] Saved 335 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:35:51,002 [INFO]   Progress: 335/369 runs
+2026-06-26 08:35:51,003 [INFO] Rate limit for openrouter: sleeping 1.1s
+2026-06-26 08:35:53,913 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:56,904 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-26 08:35:57,312 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:35:58,912 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-26 08:35:59,901 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:01,775 [INFO] Rate limit for openrouter: sleeping 1.5s
+2026-06-26 08:36:03,682 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:06,109 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-26 08:36:07,304 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:09,580 [INFO] Saved 340 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:36:09,581 [INFO]   Progress: 340/369 runs
+2026-06-26 08:36:09,581 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 08:36:10,261 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:12,226 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:14,948 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:20,905 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:24,417 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:26,283 [INFO] Saved 345 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:36:26,284 [INFO]   Progress: 345/369 runs
+2026-06-26 08:36:26,565 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:31,202 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:33,152 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:35,245 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:36,152 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:39,635 [INFO] Saved 350 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:36:39,635 [INFO]   Progress: 350/369 runs
+2026-06-26 08:36:40,160 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:41,570 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:44,434 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:50,773 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:52,062 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:52,714 [INFO] Saved 355 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:36:52,714 [INFO]   Progress: 355/369 runs
+2026-06-26 08:36:52,948 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:36:54,385 [INFO] Rate limit for openrouter: sleeping 2.7s
+2026-06-26 08:36:58,649 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:01,363 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:04,966 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:06,422 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-26 08:37:07,751 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:09,883 [INFO] Saved 360 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:37:09,884 [INFO]   Progress: 360/369 runs
+2026-06-26 08:37:09,884 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 08:37:10,309 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:12,353 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:13,323 [INFO] Rate limit for openrouter: sleeping 1.4s
+2026-06-26 08:37:14,967 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:16,907 [INFO] Rate limit for openrouter: sleeping 3.8s
+2026-06-26 08:37:20,950 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:22,262 [INFO] Rate limit for openrouter: sleeping 2.0s
+2026-06-26 08:37:24,518 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:26,561 [INFO] Saved 365 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:37:26,561 [INFO]   Progress: 365/369 runs
+2026-06-26 08:37:26,865 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:28,293 [INFO] Rate limit for openrouter: sleeping 2.7s
+2026-06-26 08:37:31,362 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:34,598 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:37,738 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:38,444 [INFO] Saved 369 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:37:38,445 [INFO] 
+Batch complete! 369 results saved to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:37:38,445 [INFO] Batch run: 1 models × 41 tasks × 3 conditions × 3 temps = 369 total runs
+2026-06-26 08:37:38,445 [INFO] Already completed: 369, remaining: 0
+2026-06-26 08:37:38,445 [INFO] 
+============================================================
+2026-06-26 08:37:38,446 [INFO] Running model: grok-3-mini (xai)
+2026-06-26 08:37:38,446 [INFO] ============================================================
+2026-06-26 08:37:41,765 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:44,346 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:47,489 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:50,976 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:54,610 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:37:54,643 [INFO] Saved 374 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:37:54,643 [INFO]   Progress: 374/369 runs
+2026-06-26 08:37:57,363 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:02,876 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:04,859 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:07,919 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:10,658 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:10,687 [INFO] Saved 379 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:38:10,687 [INFO]   Progress: 379/369 runs
+2026-06-26 08:38:14,071 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:16,637 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:18,612 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:21,202 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:23,647 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:23,679 [INFO] Saved 384 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:38:23,679 [INFO]   Progress: 384/369 runs
+2026-06-26 08:38:31,990 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:37,998 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:43,404 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:46,359 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:52,482 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:38:52,543 [INFO] Saved 389 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:38:52,543 [INFO]   Progress: 389/369 runs
+2026-06-26 08:38:56,821 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:01,597 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:07,227 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:09,772 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:12,207 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:12,238 [INFO] Saved 394 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:39:12,238 [INFO]   Progress: 394/369 runs
+2026-06-26 08:39:17,169 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:19,970 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:21,854 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:26,502 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:29,195 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:29,228 [INFO] Saved 399 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:39:29,230 [INFO]   Progress: 399/369 runs
+2026-06-26 08:39:32,329 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:35,640 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:39,861 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:42,721 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:45,466 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:45,534 [INFO] Saved 404 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:39:45,536 [INFO]   Progress: 404/369 runs
+2026-06-26 08:39:49,784 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:53,473 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:39:59,885 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:03,810 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:07,845 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:07,897 [INFO] Saved 409 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:40:07,899 [INFO]   Progress: 409/369 runs
+2026-06-26 08:40:10,566 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:14,101 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:17,207 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:20,960 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:24,226 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:24,249 [INFO] Saved 414 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:40:24,250 [INFO]   Progress: 414/369 runs
+2026-06-26 08:40:27,204 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:30,945 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:36,956 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:40,387 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:43,573 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:43,614 [INFO] Saved 419 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:40:43,614 [INFO]   Progress: 419/369 runs
+2026-06-26 08:40:45,873 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:48,478 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:51,263 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:54,559 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:57,594 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:40:57,627 [INFO] Saved 424 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:40:57,628 [INFO]   Progress: 424/369 runs
+2026-06-26 08:40:59,377 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:41:05,453 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:41:11,029 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:41:16,456 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:41:20,908 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:41:20,964 [INFO] Saved 429 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:41:20,964 [INFO]   Progress: 429/369 runs
+2026-06-26 08:41:26,167 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:41:32,473 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:41:38,706 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:41:42,547 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:41:46,406 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:41:46,432 [INFO] Saved 434 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:41:46,433 [INFO]   Progress: 434/369 runs
+2026-06-26 08:41:50,173 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:41:54,073 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:41:58,163 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:01,123 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:04,228 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:04,254 [INFO] Saved 439 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:42:04,255 [INFO]   Progress: 439/369 runs
+2026-06-26 08:42:06,964 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:09,744 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:13,609 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:17,320 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:20,142 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:20,190 [INFO] Saved 444 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:42:20,190 [INFO]   Progress: 444/369 runs
+2026-06-26 08:42:24,252 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:29,566 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:33,430 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:39,237 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:45,370 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:45,403 [INFO] Saved 449 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:42:45,404 [INFO]   Progress: 449/369 runs
+2026-06-26 08:42:49,433 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:51,550 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:56,253 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:42:58,480 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:01,202 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:01,240 [INFO] Saved 454 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:43:01,241 [INFO]   Progress: 454/369 runs
+2026-06-26 08:43:04,794 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:07,662 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:11,033 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:15,020 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:17,311 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:17,341 [INFO] Saved 459 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:43:17,342 [INFO]   Progress: 459/369 runs
+2026-06-26 08:43:20,417 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:23,373 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:26,770 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:29,509 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:31,973 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:32,019 [INFO] Saved 464 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:43:32,020 [INFO]   Progress: 464/369 runs
+2026-06-26 08:43:36,572 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:38,797 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:43,774 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:49,454 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:55,412 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:43:55,471 [INFO] Saved 469 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:43:55,472 [INFO]   Progress: 469/369 runs
+2026-06-26 08:43:59,883 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:04,117 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:08,575 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:12,354 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:17,428 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:17,480 [INFO] Saved 474 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:44:17,480 [INFO]   Progress: 474/369 runs
+2026-06-26 08:44:20,119 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:22,529 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:27,093 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:31,940 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:34,695 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:34,722 [INFO] Saved 479 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:44:34,722 [INFO]   Progress: 479/369 runs
+2026-06-26 08:44:38,910 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:42,632 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:46,019 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:50,745 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:55,833 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:44:55,862 [INFO] Saved 484 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:44:55,862 [INFO]   Progress: 484/369 runs
+2026-06-26 08:44:58,671 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:02,444 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:07,059 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:10,467 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:16,837 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:16,873 [INFO] Saved 489 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:45:16,873 [INFO]   Progress: 489/369 runs
+2026-06-26 08:45:21,133 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:24,252 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:27,389 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:31,911 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:34,603 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:34,660 [INFO] Saved 494 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:45:34,661 [INFO]   Progress: 494/369 runs
+2026-06-26 08:45:37,766 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:42,209 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:45,904 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:49,209 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:53,861 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:45:53,896 [INFO] Saved 499 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:45:53,896 [INFO]   Progress: 499/369 runs
+2026-06-26 08:45:56,748 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:00,061 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:02,453 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:05,058 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:07,657 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:07,716 [INFO] Saved 504 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:46:07,717 [INFO]   Progress: 504/369 runs
+2026-06-26 08:46:09,750 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:12,919 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:16,028 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:20,291 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:24,886 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:24,932 [INFO] Saved 509 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:46:24,932 [INFO]   Progress: 509/369 runs
+2026-06-26 08:46:33,117 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:37,325 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:41,949 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:49,044 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:52,073 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:52,117 [INFO] Saved 514 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:46:52,117 [INFO]   Progress: 514/369 runs
+2026-06-26 08:46:54,978 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:57,662 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:46:59,910 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:03,992 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:07,798 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:07,854 [INFO] Saved 519 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:47:07,855 [INFO]   Progress: 519/369 runs
+2026-06-26 08:47:10,264 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:14,565 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:17,402 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:21,272 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:24,215 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:24,242 [INFO] Saved 524 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:47:24,243 [INFO]   Progress: 524/369 runs
+2026-06-26 08:47:28,035 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:30,762 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:33,921 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:38,053 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:42,764 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:42,801 [INFO] Saved 529 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:47:42,801 [INFO]   Progress: 529/369 runs
+2026-06-26 08:47:48,099 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:52,322 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:55,723 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:47:58,300 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:02,718 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:02,750 [INFO] Saved 534 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:48:02,750 [INFO]   Progress: 534/369 runs
+2026-06-26 08:48:05,809 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:09,101 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:13,256 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:15,907 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:18,641 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:18,686 [INFO] Saved 539 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:48:18,688 [INFO]   Progress: 539/369 runs
+2026-06-26 08:48:22,657 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:25,914 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:29,074 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:32,365 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:35,103 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:35,150 [INFO] Saved 544 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:48:35,151 [INFO]   Progress: 544/369 runs
+2026-06-26 08:48:38,286 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:41,123 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:44,201 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:46,285 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:50,665 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:48:50,694 [INFO] Saved 549 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:48:50,694 [INFO]   Progress: 549/369 runs
+2026-06-26 08:48:55,219 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:00,321 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:04,084 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:09,154 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:12,553 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:12,615 [INFO] Saved 554 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:49:12,616 [INFO]   Progress: 554/369 runs
+2026-06-26 08:49:16,418 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:22,076 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:24,546 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:26,888 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:30,681 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:30,712 [INFO] Saved 559 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:49:30,713 [INFO]   Progress: 559/369 runs
+2026-06-26 08:49:34,588 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:37,321 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:40,889 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:44,213 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:48,846 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:48,919 [INFO] Saved 564 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:49:48,919 [INFO]   Progress: 564/369 runs
+2026-06-26 08:49:51,781 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:56,088 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:49:58,610 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:01,862 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:06,000 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:06,042 [INFO] Saved 569 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:50:06,043 [INFO]   Progress: 569/369 runs
+2026-06-26 08:50:08,779 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:13,247 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:17,295 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:19,773 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:22,102 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:22,129 [INFO] Saved 574 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:50:22,130 [INFO]   Progress: 574/369 runs
+2026-06-26 08:50:25,666 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:28,403 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:31,412 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:35,296 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:38,717 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:38,781 [INFO] Saved 579 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:50:38,781 [INFO]   Progress: 579/369 runs
+2026-06-26 08:50:41,904 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:46,848 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:49,378 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:52,386 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:54,958 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:50:54,992 [INFO] Saved 584 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:50:54,993 [INFO]   Progress: 584/369 runs
+2026-06-26 08:50:58,197 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:00,636 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:03,890 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:08,420 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:10,578 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:10,616 [INFO] Saved 589 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:51:10,616 [INFO]   Progress: 589/369 runs
+2026-06-26 08:51:17,975 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:23,297 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:30,540 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:34,708 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:39,281 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:39,336 [INFO] Saved 594 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:51:39,336 [INFO]   Progress: 594/369 runs
+2026-06-26 08:51:43,808 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:48,506 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:52,115 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:55,142 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:57,201 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:51:57,243 [INFO] Saved 599 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:51:57,243 [INFO]   Progress: 599/369 runs
+2026-06-26 08:52:04,018 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:07,539 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:10,308 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:14,553 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:17,224 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:17,259 [INFO] Saved 604 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:52:17,260 [INFO]   Progress: 604/369 runs
+2026-06-26 08:52:20,732 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:23,732 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:26,989 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:30,181 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:33,553 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:33,624 [INFO] Saved 609 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:52:33,625 [INFO]   Progress: 609/369 runs
+2026-06-26 08:52:39,210 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:42,434 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:47,539 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:51,163 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:55,086 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:52:55,133 [INFO] Saved 614 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:52:55,134 [INFO]   Progress: 614/369 runs
+2026-06-26 08:52:57,970 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:00,915 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:04,032 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:06,888 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:10,264 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:10,296 [INFO] Saved 619 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:53:10,296 [INFO]   Progress: 619/369 runs
+2026-06-26 08:53:13,879 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:16,632 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:21,193 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:24,071 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:27,189 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:27,318 [INFO] Saved 624 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:53:27,318 [INFO]   Progress: 624/369 runs
+2026-06-26 08:53:29,382 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:32,044 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:35,111 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:37,756 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:41,842 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:41,910 [INFO] Saved 629 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:53:41,911 [INFO]   Progress: 629/369 runs
+2026-06-26 08:53:43,927 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:48,177 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:55,499 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:53:59,602 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:03,071 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:03,104 [INFO] Saved 634 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:54:03,104 [INFO]   Progress: 634/369 runs
+2026-06-26 08:54:08,538 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:18,161 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:21,565 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:25,059 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:27,620 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:27,708 [INFO] Saved 639 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:54:27,708 [INFO]   Progress: 639/369 runs
+2026-06-26 08:54:30,149 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:33,709 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:37,310 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:39,000 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:42,469 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:42,541 [INFO] Saved 644 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:54:42,542 [INFO]   Progress: 644/369 runs
+2026-06-26 08:54:44,728 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:47,484 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:50,901 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:54,227 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:56,995 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:54:57,041 [INFO] Saved 649 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:54:57,042 [INFO]   Progress: 649/369 runs
+2026-06-26 08:55:00,091 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:04,053 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:07,240 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:14,232 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:19,846 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:19,898 [INFO] Saved 654 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:55:19,899 [INFO]   Progress: 654/369 runs
+2026-06-26 08:55:22,623 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:25,211 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:28,414 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:31,075 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:35,764 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:35,807 [INFO] Saved 659 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:55:35,808 [INFO]   Progress: 659/369 runs
+2026-06-26 08:55:38,235 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:41,261 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:44,585 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:48,339 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:50,817 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:50,860 [INFO] Saved 664 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:55:50,861 [INFO]   Progress: 664/369 runs
+2026-06-26 08:55:54,565 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:55:56,703 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:00,330 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:03,037 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:06,280 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:06,313 [INFO] Saved 669 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:56:06,314 [INFO]   Progress: 669/369 runs
+2026-06-26 08:56:09,116 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:12,288 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:16,433 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:22,892 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:29,818 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:29,871 [INFO] Saved 674 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:56:29,872 [INFO]   Progress: 674/369 runs
+2026-06-26 08:56:33,471 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:38,133 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:42,387 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:45,424 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:48,542 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:48,603 [INFO] Saved 679 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:56:48,605 [INFO]   Progress: 679/369 runs
+2026-06-26 08:56:51,365 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:54,671 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:56:57,830 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:01,589 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:03,523 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:03,642 [INFO] Saved 684 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:57:03,644 [INFO]   Progress: 684/369 runs
+2026-06-26 08:57:07,367 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:10,487 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:14,217 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:17,402 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:21,624 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:21,667 [INFO] Saved 689 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:57:21,667 [INFO]   Progress: 689/369 runs
+2026-06-26 08:57:25,563 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:28,861 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:33,885 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:38,355 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:45,889 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:45,933 [INFO] Saved 694 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:57:45,933 [INFO]   Progress: 694/369 runs
+2026-06-26 08:57:50,081 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:52,704 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:57:56,328 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:00,490 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:03,727 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:03,775 [INFO] Saved 699 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:58:03,776 [INFO]   Progress: 699/369 runs
+2026-06-26 08:58:07,120 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:11,170 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:14,103 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:17,144 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:22,488 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:22,541 [INFO] Saved 704 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:58:22,542 [INFO]   Progress: 704/369 runs
+2026-06-26 08:58:25,138 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:28,456 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:31,019 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:33,731 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:35,907 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:35,961 [INFO] Saved 709 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:58:35,962 [INFO]   Progress: 709/369 runs
+2026-06-26 08:58:38,731 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:41,849 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:44,228 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:47,602 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:54,136 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:58:54,176 [INFO] Saved 714 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:58:54,177 [INFO]   Progress: 714/369 runs
+2026-06-26 08:58:59,544 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:02,654 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:07,330 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:12,259 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:16,200 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:16,251 [INFO] Saved 719 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:59:16,251 [INFO]   Progress: 719/369 runs
+2026-06-26 08:59:19,363 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:22,114 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:25,128 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:29,492 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:32,898 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:32,936 [INFO] Saved 724 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:59:32,936 [INFO]   Progress: 724/369 runs
+2026-06-26 08:59:35,067 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:38,109 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:40,868 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:46,347 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:50,419 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:50,474 [INFO] Saved 729 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 08:59:50,474 [INFO]   Progress: 729/369 runs
+2026-06-26 08:59:53,938 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:56,402 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 08:59:59,088 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:06,955 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:10,102 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:10,158 [INFO] Saved 734 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:00:10,159 [INFO]   Progress: 734/369 runs
+2026-06-26 09:00:16,386 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:22,924 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:26,552 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:30,418 [INFO] HTTP Request: POST https://api.x.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:30,458 [INFO] Saved 738 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:00:30,458 [INFO] 
+Batch complete! 738 results saved to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:00:30,458 [INFO] Batch run: 1 models × 41 tasks × 3 conditions × 3 temps = 369 total runs
+2026-06-26 09:00:30,460 [INFO] Already completed: 738, remaining: -369
+2026-06-26 09:00:30,460 [INFO] 
+============================================================
+2026-06-26 09:00:30,460 [INFO] Running model: gpt-4o-mini (openrouter)
+2026-06-26 09:00:30,460 [INFO] ============================================================
+2026-06-26 09:00:31,021 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:33,202 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:35,086 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:36,709 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:38,378 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:39,422 [INFO] Saved 743 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:00:39,423 [INFO]   Progress: 743/369 runs
+2026-06-26 09:00:40,045 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:41,582 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:42,921 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:44,193 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:45,382 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:46,308 [INFO] Saved 748 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:00:46,309 [INFO]   Progress: 748/369 runs
+2026-06-26 09:00:46,941 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:48,594 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:51,036 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:52,674 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:54,298 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:55,269 [INFO] Saved 753 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:00:55,270 [INFO]   Progress: 753/369 runs
+2026-06-26 09:00:56,089 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:57,629 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:00:58,980 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:00,270 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:01,704 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:02,576 [INFO] Saved 758 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:01:02,577 [INFO]   Progress: 758/369 runs
+2026-06-26 09:01:02,577 [INFO] Rate limit for openrouter: sleeping 28.0s
+2026-06-26 09:01:31,151 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:32,850 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:33,884 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-26 09:01:35,199 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:35,737 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-26 09:01:36,863 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:38,782 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:40,072 [INFO] Saved 763 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:01:40,074 [INFO]   Progress: 763/369 runs
+2026-06-26 09:01:40,601 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:42,418 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:43,962 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:45,464 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:47,378 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:48,276 [INFO] Saved 768 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:01:48,277 [INFO]   Progress: 768/369 runs
+2026-06-26 09:01:48,810 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:50,686 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:52,410 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:54,183 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:55,723 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:56,569 [INFO] Saved 773 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:01:56,573 [INFO]   Progress: 773/369 runs
+2026-06-26 09:01:57,185 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:01:59,295 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:01,971 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:03,592 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:05,338 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:06,378 [INFO] Saved 778 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:02:06,379 [INFO]   Progress: 778/369 runs
+2026-06-26 09:02:06,379 [INFO] Rate limit for openrouter: sleeping 24.3s
+2026-06-26 09:02:31,315 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:33,582 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:34,467 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 09:02:35,385 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:37,283 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:38,892 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:39,909 [INFO] Saved 783 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:02:39,909 [INFO]   Progress: 783/369 runs
+2026-06-26 09:02:39,910 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 09:02:40,811 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:42,493 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:44,080 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:45,726 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:46,188 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-26 09:02:47,611 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:48,443 [INFO] Saved 788 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:02:48,443 [INFO]   Progress: 788/369 runs
+2026-06-26 09:02:49,196 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:50,609 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:51,622 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 09:02:52,594 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:54,773 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:56,802 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:02:58,036 [INFO] Saved 793 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:02:58,036 [INFO]   Progress: 793/369 runs
+2026-06-26 09:02:59,482 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:03,956 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:08,273 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:11,774 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:13,697 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:14,768 [INFO] Saved 798 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:03:14,768 [INFO]   Progress: 798/369 runs
+2026-06-26 09:03:14,769 [INFO] Rate limit for openrouter: sleeping 16.0s
+2026-06-26 09:03:31,267 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:32,018 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-26 09:03:33,509 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:35,462 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:36,017 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-26 09:03:37,174 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:37,830 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-26 09:03:39,279 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:40,631 [INFO] Saved 803 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:03:40,633 [INFO]   Progress: 803/369 runs
+2026-06-26 09:03:41,198 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:43,128 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:44,418 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:46,268 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:48,214 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:48,961 [INFO] Saved 808 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:03:48,962 [INFO]   Progress: 808/369 runs
+2026-06-26 09:03:49,566 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:51,627 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:53,318 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:54,941 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:55,691 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 09:03:56,477 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:57,213 [INFO] Saved 813 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:03:57,214 [INFO]   Progress: 813/369 runs
+2026-06-26 09:03:57,214 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-26 09:03:58,692 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:03:59,151 [INFO] Rate limit for openrouter: sleeping 2.6s
+2026-06-26 09:04:02,746 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:04,462 [INFO] Rate limit for openrouter: sleeping 2.7s
+2026-06-26 09:04:08,440 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:09,471 [INFO] Rate limit for openrouter: sleeping 1.8s
+2026-06-26 09:04:11,897 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:12,952 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 09:04:13,764 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:14,511 [INFO] Saved 818 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:04:14,511 [INFO]   Progress: 818/369 runs
+2026-06-26 09:04:14,512 [INFO] Rate limit for openrouter: sleeping 16.3s
+2026-06-26 09:04:31,518 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:32,332 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-26 09:04:33,606 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:34,731 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 09:04:35,669 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:36,712 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-26 09:04:37,460 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:39,254 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:40,281 [INFO] Saved 823 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:04:40,282 [INFO]   Progress: 823/369 runs
+2026-06-26 09:04:40,282 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-26 09:04:41,211 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:42,101 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 09:04:43,315 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:44,964 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:46,618 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:47,031 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-26 09:04:48,256 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:48,863 [INFO] Saved 828 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:04:48,863 [INFO]   Progress: 828/369 runs
+2026-06-26 09:04:48,863 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 09:04:49,564 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:50,271 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-26 09:04:51,698 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:52,466 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 09:04:53,348 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:54,174 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 09:04:55,074 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:57,409 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:04:58,624 [INFO] Saved 833 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:04:58,625 [INFO]   Progress: 833/369 runs
+2026-06-26 09:04:59,254 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:00,497 [INFO] Rate limit for openrouter: sleeping 1.4s
+2026-06-26 09:05:02,415 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:03,057 [INFO] Rate limit for openrouter: sleeping 4.2s
+2026-06-26 09:05:07,680 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:08,521 [INFO] Rate limit for openrouter: sleeping 2.9s
+2026-06-26 09:05:12,432 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:13,980 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:14,823 [INFO] Saved 838 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:05:14,824 [INFO]   Progress: 838/369 runs
+2026-06-26 09:05:14,824 [INFO] Rate limit for openrouter: sleeping 16.1s
+2026-06-26 09:05:31,524 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:32,312 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-26 09:05:33,702 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:34,483 [INFO] Rate limit for openrouter: sleeping 0.6s
+2026-06-26 09:05:35,790 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:36,646 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 09:05:40,091 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:41,631 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:42,087 [INFO] Saved 843 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:05:42,088 [INFO]   Progress: 843/369 runs
+2026-06-26 09:05:42,739 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:44,299 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:45,907 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:47,401 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:48,834 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:49,648 [INFO] Saved 848 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:05:49,649 [INFO]   Progress: 848/369 runs
+2026-06-26 09:05:50,405 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:50,923 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 09:05:51,866 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:52,793 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 09:05:54,118 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:55,786 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:56,736 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-26 09:05:57,545 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:05:58,312 [INFO] Saved 853 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:05:58,313 [INFO]   Progress: 853/369 runs
+2026-06-26 09:05:58,313 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 09:05:59,226 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:00,056 [INFO] Rate limit for openrouter: sleeping 2.0s
+2026-06-26 09:06:02,873 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:03,410 [INFO] Rate limit for openrouter: sleeping 3.9s
+2026-06-26 09:06:09,067 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:10,146 [INFO] Rate limit for openrouter: sleeping 1.3s
+2026-06-26 09:06:12,073 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:13,162 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 09:06:14,258 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:15,412 [INFO] Saved 858 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:06:15,413 [INFO]   Progress: 858/369 runs
+2026-06-26 09:06:15,413 [INFO] Rate limit for openrouter: sleeping 15.6s
+2026-06-26 09:06:31,636 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:32,479 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-26 09:06:33,935 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:34,772 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 09:06:35,866 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:36,890 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-26 09:06:37,766 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:38,618 [INFO] Rate limit for openrouter: sleeping 2.6s
+2026-06-26 09:06:42,476 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:43,709 [INFO] Saved 863 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:06:43,710 [INFO]   Progress: 863/369 runs
+2026-06-26 09:06:44,361 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:45,745 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:47,008 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:48,744 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:50,293 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:51,135 [INFO] Saved 868 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:06:51,136 [INFO]   Progress: 868/369 runs
+2026-06-26 09:06:51,609 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:52,968 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:55,105 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:56,321 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:57,482 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:06:58,797 [INFO] Saved 873 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:06:58,797 [INFO]   Progress: 873/369 runs
+2026-06-26 09:06:59,903 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:00,530 [INFO] Rate limit for openrouter: sleeping 1.6s
+2026-06-26 09:07:02,664 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:03,475 [INFO] Rate limit for openrouter: sleeping 3.9s
+2026-06-26 09:07:07,916 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:08,622 [INFO] Rate limit for openrouter: sleeping 3.0s
+2026-06-26 09:07:12,240 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:13,119 [INFO] Rate limit for openrouter: sleeping 0.6s
+2026-06-26 09:07:14,178 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:14,936 [INFO] Saved 878 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:07:14,937 [INFO]   Progress: 878/369 runs
+2026-06-26 09:07:14,937 [INFO] Rate limit for openrouter: sleeping 16.2s
+2026-06-26 09:07:31,630 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:32,523 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-26 09:07:33,730 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:34,720 [INFO] Rate limit for openrouter: sleeping 0.6s
+2026-06-26 09:07:35,860 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:36,831 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 09:07:37,691 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:38,604 [INFO] Rate limit for openrouter: sleeping 2.7s
+2026-06-26 09:07:41,878 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:42,679 [INFO] Saved 883 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:07:42,679 [INFO]   Progress: 883/369 runs
+2026-06-26 09:07:42,679 [INFO] Rate limit for openrouter: sleeping 1.1s
+2026-06-26 09:07:44,463 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:44,956 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 09:07:46,284 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:47,761 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:49,229 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:50,682 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:51,790 [INFO] Saved 888 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:07:51,790 [INFO]   Progress: 888/369 runs
+2026-06-26 09:07:52,793 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:54,282 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:55,905 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:57,363 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:07:59,129 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:00,375 [INFO] Saved 893 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:08:00,376 [INFO]   Progress: 893/369 runs
+2026-06-26 09:08:00,988 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:01,769 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 09:08:02,759 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:03,349 [INFO] Rate limit for openrouter: sleeping 4.2s
+2026-06-26 09:08:08,009 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:08,553 [INFO] Rate limit for openrouter: sleeping 3.1s
+2026-06-26 09:08:12,266 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:13,495 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 09:08:14,360 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:15,412 [INFO] Saved 898 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:08:15,413 [INFO]   Progress: 898/369 runs
+2026-06-26 09:08:15,413 [INFO] Rate limit for openrouter: sleeping 15.8s
+2026-06-26 09:08:31,816 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:32,697 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-26 09:08:33,876 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:34,530 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-26 09:08:36,091 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:37,026 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 09:08:37,850 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:38,796 [INFO] Rate limit for openrouter: sleeping 2.6s
+2026-06-26 09:08:42,025 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:43,035 [INFO] Saved 903 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:08:43,040 [INFO]   Progress: 903/369 runs
+2026-06-26 09:08:43,041 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-26 09:08:44,880 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:46,670 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:48,300 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:49,619 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:51,737 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:53,381 [INFO] Saved 908 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:08:53,382 [INFO]   Progress: 908/369 runs
+2026-06-26 09:08:53,926 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:55,066 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:55,995 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:56,754 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-26 09:08:57,558 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:08:59,167 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:00,647 [INFO] Saved 913 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:09:00,647 [INFO]   Progress: 913/369 runs
+2026-06-26 09:09:01,316 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:03,422 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:04,379 [INFO] Rate limit for openrouter: sleeping 3.2s
+2026-06-26 09:09:08,246 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:09,232 [INFO] Rate limit for openrouter: sleeping 2.6s
+2026-06-26 09:09:12,261 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:12,725 [INFO] Rate limit for openrouter: sleeping 1.2s
+2026-06-26 09:09:14,378 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:15,606 [INFO] Saved 918 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:09:15,608 [INFO]   Progress: 918/369 runs
+2026-06-26 09:09:15,608 [INFO] Rate limit for openrouter: sleeping 15.8s
+2026-06-26 09:09:31,833 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:32,636 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-26 09:09:34,040 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:34,677 [INFO] Rate limit for openrouter: sleeping 0.8s
+2026-06-26 09:09:35,975 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:37,065 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 09:09:37,803 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:38,460 [INFO] Rate limit for openrouter: sleeping 3.0s
+2026-06-26 09:09:41,993 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:43,103 [INFO] Saved 923 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:09:43,104 [INFO]   Progress: 923/369 runs
+2026-06-26 09:09:43,104 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-26 09:09:44,488 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:44,978 [INFO] Rate limit for openrouter: sleeping 1.0s
+2026-06-26 09:09:47,130 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:47,635 [INFO] Rate limit for openrouter: sleeping 0.1s
+2026-06-26 09:09:48,333 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:50,187 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:51,889 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:52,548 [INFO] Saved 928 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:09:52,548 [INFO]   Progress: 928/369 runs
+2026-06-26 09:09:52,548 [INFO] Rate limit for openrouter: sleeping 0.9s
+2026-06-26 09:09:54,134 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:56,146 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:57,779 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:59,053 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:00,478 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:01,481 [INFO] Saved 933 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:10:01,482 [INFO]   Progress: 933/369 runs
+2026-06-26 09:10:02,199 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:03,893 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:04,663 [INFO] Rate limit for openrouter: sleeping 3.1s
+2026-06-26 09:10:08,267 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:08,741 [INFO] Rate limit for openrouter: sleeping 3.1s
+2026-06-26 09:10:12,375 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:12,997 [INFO] Rate limit for openrouter: sleeping 1.0s
+2026-06-26 09:10:14,688 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:16,098 [INFO] Saved 938 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:10:16,100 [INFO]   Progress: 938/369 runs
+2026-06-26 09:10:16,100 [INFO] Rate limit for openrouter: sleeping 15.4s
+2026-06-26 09:10:32,077 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:33,145 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 09:10:34,176 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:35,370 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 09:10:36,561 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:37,145 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 09:10:38,114 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:39,011 [INFO] Rate limit for openrouter: sleeping 2.6s
+2026-06-26 09:10:42,310 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:43,731 [INFO] Saved 943 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:10:43,732 [INFO]   Progress: 943/369 runs
+2026-06-26 09:10:43,732 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 09:10:44,787 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:45,697 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 09:10:46,710 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:47,684 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 09:10:48,764 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:50,378 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:51,154 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 09:10:52,303 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:53,184 [INFO] Saved 948 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:10:53,184 [INFO]   Progress: 948/369 runs
+2026-06-26 09:10:53,185 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 09:10:54,474 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:55,975 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:56,574 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 09:10:57,534 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:58,044 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-26 09:10:59,759 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:01,204 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:01,915 [INFO] Saved 953 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:11:01,917 [INFO]   Progress: 953/369 runs
+2026-06-26 09:11:02,584 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:04,428 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:05,623 [INFO] Rate limit for openrouter: sleeping 2.2s
+2026-06-26 09:11:08,419 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:09,410 [INFO] Rate limit for openrouter: sleeping 2.6s
+2026-06-26 09:11:12,700 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:13,688 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 09:11:14,554 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:15,231 [INFO] Saved 958 results to data/results/phase6_harder/multi_model_results_latest.json
+2026-06-26 09:11:15,231 [INFO]   Progress: 958/369 runs
+2026-06-26 09:11:15,232 [INFO] Rate limit for openrouter: sleeping 16.3s
+2026-06-26 09:11:32,649 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:34,673 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:35,391 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 09:11:36,207 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"

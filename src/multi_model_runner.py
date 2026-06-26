@@ -618,9 +618,15 @@ class MultiModelRunner:
                 temp_config = ModelConfig(**config_dict)
 
                 for condition_name in conditions:
-                    skill_lib = skill_libraries.get(condition_name, [])
+                    base_skill_lib = skill_libraries.get(condition_name, [])
 
                     for task in tasks:
+                        # Oracle fix: show only the gold skill(s) for this task, not all 40 clean skills
+                        if condition_name == "oracle":
+                            gold_ids = set(task.expected_skill_ids)
+                            skill_lib = [s for s in base_skill_lib if s.name in gold_ids or s.skill_id in gold_ids]
+                        else:
+                            skill_lib = base_skill_lib
                         try:
                             result = self.run_single(
                                 model_config=temp_config,

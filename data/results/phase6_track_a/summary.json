@@ -1,0 +1,134 @@
+{
+  "llama-3.1-8b-instruct|gold_retrieval|T=0.0": {
+    "total_runs": 320,
+    "parsed": 320,
+    "parse_rate": 1.0,
+    "correct": 296,
+    "accuracy": 0.925,
+    "errors": 0,
+    "avg_latency_ms": 2354.5,
+    "avg_confidence": 0.8912,
+    "total_tokens": 1585468
+  },
+  "llama-3.1-8b-instruct|gold_retrieval|T=0.3": {
+    "total_runs": 320,
+    "parsed": 320,
+    "parse_rate": 1.0,
+    "correct": 300,
+    "accuracy": 0.9375,
+    "errors": 0,
+    "avg_latency_ms": 1891.2,
+    "avg_confidence": 0.89,
+    "total_tokens": 1584344
+  },
+  "llama-3.1-8b-instruct|gold_retrieval|T=0.7": {
+    "total_runs": 320,
+    "parsed": 320,
+    "parse_rate": 1.0,
+    "correct": 304,
+    "accuracy": 0.95,
+    "errors": 0,
+    "avg_latency_ms": 1566.0,
+    "avg_confidence": 0.8875,
+    "total_tokens": 1588184
+  },
+  "grok-3-mini|gold_retrieval|T=0.0": {
+    "total_runs": 240,
+    "parsed": 240,
+    "parse_rate": 1.0,
+    "correct": 222,
+    "accuracy": 0.925,
+    "errors": 0,
+    "avg_latency_ms": 3632.1,
+    "avg_confidence": 0.8831,
+    "total_tokens": 1314315
+  },
+  "grok-3-mini|gold_retrieval|T=0.3": {
+    "total_runs": 240,
+    "parsed": 240,
+    "parse_rate": 1.0,
+    "correct": 219,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 3712.6,
+    "avg_confidence": 0.8844,
+    "total_tokens": 1313688
+  },
+  "grok-3-mini|gold_retrieval|T=0.7": {
+    "total_runs": 240,
+    "parsed": 240,
+    "parse_rate": 1.0,
+    "correct": 216,
+    "accuracy": 0.9,
+    "errors": 0,
+    "avg_latency_ms": 3621.8,
+    "avg_confidence": 0.89,
+    "total_tokens": 1311927
+  },
+  "gpt-4o-mini|gold_retrieval|T=0.0": {
+    "total_runs": 160,
+    "parsed": 160,
+    "parse_rate": 1.0,
+    "correct": 148,
+    "accuracy": 0.925,
+    "errors": 0,
+    "avg_latency_ms": 1709.2,
+    "avg_confidence": 0.8988,
+    "total_tokens": 791184
+  },
+  "gpt-4o-mini|gold_retrieval|T=0.3": {
+    "total_runs": 160,
+    "parsed": 160,
+    "parse_rate": 1.0,
+    "correct": 146,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 1754.7,
+    "avg_confidence": 0.895,
+    "total_tokens": 791352
+  },
+  "gpt-4o-mini|gold_retrieval|T=0.7": {
+    "total_runs": 160,
+    "parsed": 160,
+    "parse_rate": 1.0,
+    "correct": 148,
+    "accuracy": 0.925,
+    "errors": 0,
+    "avg_latency_ms": 1848.2,
+    "avg_confidence": 0.8994,
+    "total_tokens": 791074
+  },
+  "claude-haiku-4.5|gold_retrieval|T=0.0": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 75,
+    "accuracy": 0.9375,
+    "errors": 0,
+    "avg_latency_ms": 3944.7,
+    "avg_confidence": 0.8969,
+    "total_tokens": 439747
+  },
+  "claude-haiku-4.5|gold_retrieval|T=0.3": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 74,
+    "accuracy": 0.925,
+    "errors": 0,
+    "avg_latency_ms": 3912.5,
+    "avg_confidence": 0.905,
+    "total_tokens": 439041
+  },
+  "claude-haiku-4.5|gold_retrieval|T=0.7": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 74,
+    "accuracy": 0.925,
+    "errors": 0,
+    "avg_latency_ms": 4054.8,
+    "avg_confidence": 0.8924,
+    "total_tokens": 440611
+  }
+}

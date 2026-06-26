@@ -37,3 +37,152 @@
 2026-06-26 08:11:41,883 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
 2026-06-26 08:11:41,984 [INFO] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
 2026-06-26 08:11:44,991 [INFO] Saved embeddings to /home/openhermes/meminterfere/src/../data/cache/skill_embeddings_7fd9a0dfe9b8_61365361.npz
+2026-06-26 09:08:35,048 [INFO] Track mode: rag_k5 → condition: rag_retrieval_k5
+2026-06-26 09:08:35,049 [INFO] Using 80 tasks
+2026-06-26 09:08:35,065 [INFO] Loaded 100 skill embeddings from cache
+2026-06-26 09:08:51,899 [INFO] No device provided, using cpu
+2026-06-26 09:08:52,054 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-26 09:08:52,064 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-06-26 09:08:52,160 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-26 09:08:52,170 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-26 09:08:52,171 [INFO] Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-06-26 09:08:52,269 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-26 09:08:52,269 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-26 09:08:52,280 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-26 09:08:52,384 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-06-26 09:08:52,394 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+2026-06-26 09:08:52,500 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-26 09:08:52,511 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-06-26 09:08:52,613 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-26 09:08:52,643 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-06-26 09:08:52,764 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-26 09:08:52,866 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-26 09:08:52,902 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-26 09:08:53,425 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-06-26 09:08:53,531 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-26 09:08:53,632 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-26 09:08:53,733 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-26 09:08:53,828 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-26 09:08:53,838 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-26 09:08:53,958 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-26 09:08:53,970 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-26 09:08:54,101 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-26 09:08:54,113 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-26 09:08:54,223 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-26 09:08:54,263 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-26 09:08:54,392 [INFO] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-26 09:08:54,498 [INFO] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-26 09:08:54,726 [INFO] HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-26 09:08:54,740 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-06-26 09:08:54,851 [INFO] HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-06-26 09:08:59,927 [INFO] Skill library sizes: rag_retrieval_k5: 100
+2026-06-26 09:08:59,927 [INFO] 
+============================================================
+2026-06-26 09:08:59,927 [INFO] Experiment Configuration
+2026-06-26 09:08:59,927 [INFO] ============================================================
+2026-06-26 09:08:59,927 [INFO] Models: llama-3.1-8b-instruct, grok-3-mini, gpt-4o-mini, claude-haiku-4.5
+2026-06-26 09:08:59,927 [INFO] Conditions: rag_retrieval_k5
+2026-06-26 09:08:59,927 [INFO] Temperatures: [0.0]
+2026-06-26 09:08:59,927 [INFO] Tasks: 80
+2026-06-26 09:08:59,927 [INFO] Total runs: 320
+2026-06-26 09:08:59,927 [INFO]   llama-3.1-8b-instruct: ~$0.00 (openrouter)
+2026-06-26 09:08:59,927 [INFO]   grok-3-mini: ~$0.02 (xai)
+2026-06-26 09:08:59,927 [INFO]   gpt-4o-mini: ~$0.01 (openrouter)
+2026-06-26 09:08:59,927 [INFO]   claude-haiku-4.5: ~$0.09 (openrouter)
+2026-06-26 09:08:59,927 [INFO]   Total estimated cost: $0.12
+2026-06-26 09:08:59,928 [INFO] 
+Running REAL experiment (API calls)
+2026-06-26 09:08:59,928 [INFO] Batch run: 1 models × 80 tasks × 1 conditions × 1 temps = 80 total runs
+2026-06-26 09:08:59,928 [INFO] Already completed: 0, remaining: 80
+2026-06-26 09:08:59,928 [INFO] 
+============================================================
+2026-06-26 09:08:59,928 [INFO] Running model: llama-3.1-8b-instruct (openrouter)
+2026-06-26 09:08:59,928 [INFO] ============================================================
+2026-06-26 09:09:00,258 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:02,323 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:04,390 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:05,092 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:07,125 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:08,440 [INFO] Saved 5 results to data/results/phase6_track_b_k5/multi_model_results_latest.json
+2026-06-26 09:09:08,440 [INFO]   Progress: 5/80 runs
+2026-06-26 09:09:08,735 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:09,914 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:14,038 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:16,235 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:16,929 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:18,283 [INFO] Saved 10 results to data/results/phase6_track_b_k5/multi_model_results_latest.json
+2026-06-26 09:09:18,283 [INFO]   Progress: 10/80 runs
+2026-06-26 09:09:18,676 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:20,735 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:21,827 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:22,695 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:25,407 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:26,329 [INFO] Saved 15 results to data/results/phase6_track_b_k5/multi_model_results_latest.json
+2026-06-26 09:09:26,329 [INFO]   Progress: 15/80 runs
+2026-06-26 09:09:26,610 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:27,825 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:29,469 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:31,332 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:32,181 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:09:34,833 [INFO] Saved 20 results to data/results/phase6_track_b_k5/multi_model_results_latest.json
+2026-06-26 09:09:34,834 [INFO]   Progress: 20/80 runs
+2026-06-26 09:09:34,834 [INFO] Rate limit for openrouter: sleeping 25.2s
+2026-06-26 09:10:00,873 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:01,228 [INFO] Rate limit for openrouter: sleeping 0.7s
+2026-06-26 09:10:02,343 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:03,222 [INFO] Rate limit for openrouter: sleeping 0.2s
+2026-06-26 09:10:04,230 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:04,602 [INFO] Rate limit for openrouter: sleeping 0.3s
+2026-06-26 09:10:05,239 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:06,210 [INFO] Rate limit for openrouter: sleeping 0.5s
+2026-06-26 09:10:07,009 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:08,168 [INFO] Saved 25 results to data/results/phase6_track_b_k5/multi_model_results_latest.json
+2026-06-26 09:10:08,170 [INFO]   Progress: 25/80 runs
+2026-06-26 09:10:08,170 [INFO] Rate limit for openrouter: sleeping 0.4s
+2026-06-26 09:10:13,075 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:15,143 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:16,297 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:17,636 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:19,114 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:20,443 [INFO] Saved 30 results to data/results/phase6_track_b_k5/multi_model_results_latest.json
+2026-06-26 09:10:20,443 [INFO]   Progress: 30/80 runs
+2026-06-26 09:10:20,747 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:22,006 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:24,413 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:25,801 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:26,563 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:29,170 [INFO] Saved 35 results to data/results/phase6_track_b_k5/multi_model_results_latest.json
+2026-06-26 09:10:29,170 [INFO]   Progress: 35/80 runs
+2026-06-26 09:10:29,506 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:31,924 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:33,102 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:34,357 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:35,894 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:10:37,171 [INFO] Saved 40 results to data/results/phase6_track_b_k5/multi_model_results_latest.json
+2026-06-26 09:10:37,172 [INFO]   Progress: 40/80 runs
+2026-06-26 09:10:37,172 [INFO] Rate limit for openrouter: sleeping 23.0s
+2026-06-26 09:11:00,684 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:03,850 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:06,338 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:08,229 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:12,849 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:14,303 [INFO] Saved 45 results to data/results/phase6_track_b_k5/multi_model_results_latest.json
+2026-06-26 09:11:14,304 [INFO]   Progress: 45/80 runs
+2026-06-26 09:11:14,774 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:16,605 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:19,753 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:21,960 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:23,312 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:23,701 [INFO] Saved 50 results to data/results/phase6_track_b_k5/multi_model_results_latest.json
+2026-06-26 09:11:23,701 [INFO]   Progress: 50/80 runs
+2026-06-26 09:11:24,250 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:26,724 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:28,018 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:30,115 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:31,893 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:32,070 [INFO] Saved 55 results to data/results/phase6_track_b_k5/multi_model_results_latest.json
+2026-06-26 09:11:32,071 [INFO]   Progress: 55/80 runs
+2026-06-26 09:11:32,918 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:33,775 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:35,533 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-26 09:11:36,929 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"

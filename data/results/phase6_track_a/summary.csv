@@ -1,0 +1,13 @@
+model,condition,temperature,total_runs,parsed,parse_rate,correct,accuracy,errors,avg_latency_ms,avg_confidence,total_tokens
+llama-3.1-8b-instruct,gold_retrieval,0.0,320,320,1.0,296,0.925,0,2354.5,0.8912,1585468
+llama-3.1-8b-instruct,gold_retrieval,0.3,320,320,1.0,300,0.9375,0,1891.2,0.89,1584344
+llama-3.1-8b-instruct,gold_retrieval,0.7,320,320,1.0,304,0.95,0,1566.0,0.8875,1588184
+grok-3-mini,gold_retrieval,0.0,240,240,1.0,222,0.925,0,3632.1,0.8831,1314315
+grok-3-mini,gold_retrieval,0.3,240,240,1.0,219,0.9125,0,3712.6,0.8844,1313688
+grok-3-mini,gold_retrieval,0.7,240,240,1.0,216,0.9,0,3621.8,0.89,1311927
+gpt-4o-mini,gold_retrieval,0.0,160,160,1.0,148,0.925,0,1709.2,0.8988,791184
+gpt-4o-mini,gold_retrieval,0.3,160,160,1.0,146,0.9125,0,1754.7,0.895,791352
+gpt-4o-mini,gold_retrieval,0.7,160,160,1.0,148,0.925,0,1848.2,0.8994,791074
+claude-haiku-4.5,gold_retrieval,0.0,80,80,1.0,75,0.9375,0,3944.7,0.8969,439747
+claude-haiku-4.5,gold_retrieval,0.3,80,80,1.0,74,0.925,0,3912.5,0.905,439041
+claude-haiku-4.5,gold_retrieval,0.7,80,80,1.0,74,0.925,0,4054.8,0.8924,440611
