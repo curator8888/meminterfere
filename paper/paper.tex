@@ -317,9 +317,7 @@ Strikingly, on harder tasks, interference \emph{significantly improves} accuracy
 
 We tested whether the interference effect scales with skill similarity by constructing five gradient conditions, each adding only one type of interfering skill: near-identical (highest similarity), version conflicts, schema conflicts, semantic conflicts, and near-similar (lowest similarity).
 
-Preliminary results across two models (Grok-3-mini and Llama-3.1-8B) show no monotonic relationship between interference similarity and accuracy (linear regression: slope $= 0.23$, $R^2 = 0.24$, $p = 0.33$). All gradient conditions achieve 92.5--93.8\% accuracy, compared to 91.1\% for clean memory alone. The absence of a gradient effect further supports the null: interference does not systematically degrade tool selection, regardless of how similar the interfering skills are to the correct one.
-
-Across all four models (Table~\ref{tab:gradient}), the full gradient test confirms this pattern: slope $= 0.08$, $R^2 = 0.06$, $p = 0.64$. No interference type---not even near-identical skill names---significantly degrades accuracy. GPT-4o-mini shows zero variance across all conditions (91.2\%), while other models show fluctuations of $\pm$1--2pp that do not follow any similarity gradient.
+Across all four models (Table~\ref{tab:gradient}), there is no monotonic relationship between interference similarity and accuracy (linear regression: slope $= 0.08$, $R^2 = 0.06$, $p = 0.64$). No interference type---not even near-identical skill names---significantly degrades accuracy. GPT-4o-mini shows zero variance across all conditions (91.2\%), while other models show fluctuations of $\pm$1--2pp that do not follow any similarity gradient.
 
 \begin{table}[t]
 \centering
