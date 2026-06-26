@@ -1,0 +1,46 @@
+{
+  "llama-3.1-8b-instruct|rag_retrieval_k5|T=0.0": {
+    "total_runs": 320,
+    "parsed": 320,
+    "parse_rate": 1.0,
+    "correct": 296,
+    "accuracy": 0.925,
+    "errors": 0,
+    "avg_latency_ms": 1757.8,
+    "avg_confidence": 0.8888,
+    "total_tokens": 1585600
+  },
+  "grok-3-mini|rag_retrieval_k5|T=0.0": {
+    "total_runs": 240,
+    "parsed": 240,
+    "parse_rate": 1.0,
+    "correct": 222,
+    "accuracy": 0.925,
+    "errors": 0,
+    "avg_latency_ms": 3710.1,
+    "avg_confidence": 0.8831,
+    "total_tokens": 1312677
+  },
+  "gpt-4o-mini|rag_retrieval_k5|T=0.0": {
+    "total_runs": 160,
+    "parsed": 160,
+    "parse_rate": 1.0,
+    "correct": 146,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 1917.3,
+    "avg_confidence": 0.8962,
+    "total_tokens": 791044
+  },
+  "claude-haiku-4.5|rag_retrieval_k5|T=0.0": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 74,
+    "accuracy": 0.925,
+    "errors": 0,
+    "avg_latency_ms": 3939.7,
+    "avg_confidence": 0.9019,
+    "total_tokens": 439143
+  }
+}

@@ -1,0 +1,5 @@
+model,condition,temperature,total_runs,parsed,parse_rate,correct,accuracy,errors,avg_latency_ms,avg_confidence,total_tokens
+llama-3.1-8b-instruct,rag_retrieval_k5,0.0,320,320,1.0,296,0.925,0,1757.8,0.8888,1585600
+grok-3-mini,rag_retrieval_k5,0.0,240,240,1.0,222,0.925,0,3710.1,0.8831,1312677
+gpt-4o-mini,rag_retrieval_k5,0.0,160,160,1.0,146,0.9125,0,1917.3,0.8962,791044
+claude-haiku-4.5,rag_retrieval_k5,0.0,80,80,1.0,74,0.925,0,3939.7,0.9019,439143
