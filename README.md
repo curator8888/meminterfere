@@ -106,7 +106,7 @@ python src/phase6_comprehensive_analysis.py
 ```bibtex
 @article{meminterfere2025,
   title={Skill Library Interference in LLM Agents: Mostly Harmless, Sometimes Costly},
-  author={MemInterfere Authors},
+  author={David Tyler},
   year={2025},
   url={https://github.com/curator8888/meminterfere}
 }

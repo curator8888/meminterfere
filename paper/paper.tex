@@ -17,9 +17,8 @@
 \title{Skill Library Interference in LLM Agents: \\ Mostly Harmless, Sometimes Costly}
 
 \author{
-  % Author names blinded for review
-  Anonymous Authors \\
-  Anonymous Institution
+  David Tyler \\
+  Independent Researcher
 }
 
 \date{}
@@ -373,19 +372,19 @@ The 8pp gap between the original oracle (91.8\%, 40 skills) and revised oracle (
 \subsection{What This Means for Agent Designers}
 
 \paragraph{Prioritize skill naming.}
-Every interference-induced error selected a \emph{similar-seeming} competitor skill---never an unrelated one. The most effective intervention is eliminating near-identical skill names (e.g., \texttt{search\_web} vs.\ \texttt{search\_web\_fast}). If two skills overlap in purpose, either merge them or give them maximally distinct names.
+Every interference-induced error selected a \emph{similar-seeming} competitor skill---never an unrelated one. The most effective intervention is eliminating near-identical skill names (e.g., \texttt{search\_web} vs.\ \texttt{search\_web\_fast}). If two skills overlap in purpose, either merge them or give them maximally distinct names (e.g., rename \texttt{send\_email}/\texttt{compose\_email} to \texttt{email\_send}/\texttt{email\_draft\_with\_template}, or merge them with a \texttt{draft\_mode} parameter).
 
 \paragraph{Use RAG for skill retrieval.}
-A simple top-5 RAG retriever achieves 92.2\% accuracy, statistically indistinguishable from oracle retrieval (92.5\%). Feeding all skill descriptions into the prompt increases token cost by 2.33$\times$ (4,743 vs.\ 2,032 average tokens) with no accuracy benefit. Retrieve first; invoke second.
+A simple top-5 RAG retriever achieves 92.2\% accuracy, statistically indistinguishable from oracle retrieval (92.5\%). Feeding all skill descriptions into the prompt increases token cost by 2.33$\times$ (4,743 vs.\ 2,032 average tokens) with no accuracy benefit. Retrieve first; invoke second. A customer-service agent with 200 skills should index descriptions in a vector store, retrieve the top-5 per query, and pass only those to the LLM---rather than injecting all 200 descriptions into every prompt.
 
 \paragraph{Don't over-prune skill libraries for fear of interference.}
-Even with 60\% interfering skills in the prompt, agents maintained 94.7\% accuracy, and 83\% of tasks produced identical outcomes with or without interference. Library size is not a first-order accuracy concern.
+Even with 60\% interfering skills in the prompt, agents maintained 94.7\% accuracy, and 83\% of tasks produced identical outcomes with or without interference. Library size is not a first-order accuracy concern---time spent curating the library is better spent improving retrieval quality.
 
 \paragraph{Audit for trap patterns.}
-Tasks exploiting near-duplicate skills had a 22.2\% error rate---2.6$\times$ higher than regular tasks. Systematically review your library for clusters of semantically overlapping skills and treat these as high-risk zones requiring explicit disambiguation.
+Tasks exploiting near-duplicate skills had a 22.2\% error rate---2.6$\times$ higher than regular tasks. Systematically review your library for clusters of semantically overlapping skills and treat these as high-risk zones. Run a weekly script that computes pairwise skill-name similarity (edit distance or embedding cosine) and flags pairs above 0.8; when flagged, merge, rename, or add a disambiguating phrase to the description (e.g., ``Use this tool for \emph{live} web searches, not cached results'').
 
 \paragraph{Monitor token cost, not just accuracy.}
-Interference did not meaningfully degrade accuracy, but it increased average token usage by 2.33$\times$. At scale, this cost increase may dwarf any accuracy benefit of including all skills in-context.
+Interference did not meaningfully degrade accuracy, but it increased average token usage by 2.33$\times$. At scale, this cost increase may dwarf any accuracy benefit of including all skills in-context. At \$0.15/M input tokens, injecting 100 skills (4,743 avg tokens) costs 2.33$\times$ more than RAG retrieval (2,032 avg tokens)---a \$1,500/month difference for 10K daily queries, with zero accuracy gain.
 
 \subsection{Limitations}
 
