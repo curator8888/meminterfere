@@ -1,0 +1,13 @@
+model,condition,temperature,total_runs,parsed,parse_rate,correct,accuracy,errors,avg_latency_ms,avg_confidence,total_tokens
+gpt-4o-mini,clean_memory,0.0,160,160,1.0,146,0.9125,0,1732.5,0.8988,294442
+gpt-4o-mini,grad_near_identical,0.0,160,160,1.0,146,0.9125,0,1595.8,0.8975,444862
+gpt-4o-mini,grad_version_conflict,0.0,160,160,1.0,146,0.9125,0,1581.5,0.8988,348432
+gpt-4o-mini,grad_schema_conflict,0.0,160,160,1.0,146,0.9125,0,1543.3,0.8975,351246
+gpt-4o-mini,grad_semantic_conflict,0.0,160,160,1.0,146,0.9125,0,1536.6,0.895,332282
+gpt-4o-mini,grad_near_similar,0.0,160,160,1.0,146,0.9125,0,1618.9,0.8975,381540
+claude-haiku-4.5,clean_memory,0.0,80,80,1.0,73,0.9125,0,3740.0,0.9105,166427
+claude-haiku-4.5,grad_near_identical,0.0,80,80,1.0,73,0.9125,0,3854.8,0.9105,247916
+claude-haiku-4.5,grad_version_conflict,0.0,80,80,1.0,73,0.9125,0,4675.9,0.9074,198161
+claude-haiku-4.5,grad_schema_conflict,0.0,80,80,1.0,74,0.925,0,4253.2,0.9211,199887
+claude-haiku-4.5,grad_semantic_conflict,0.0,80,80,1.0,75,0.9375,0,4097.7,0.913,187601
+claude-haiku-4.5,grad_near_similar,0.0,80,80,1.0,72,0.9,0,3531.6,0.9045,214096

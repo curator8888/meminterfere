@@ -1,0 +1,134 @@
+{
+  "gpt-4o-mini|clean_memory|T=0.0": {
+    "total_runs": 160,
+    "parsed": 160,
+    "parse_rate": 1.0,
+    "correct": 146,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 1732.5,
+    "avg_confidence": 0.8988,
+    "total_tokens": 294442
+  },
+  "gpt-4o-mini|grad_near_identical|T=0.0": {
+    "total_runs": 160,
+    "parsed": 160,
+    "parse_rate": 1.0,
+    "correct": 146,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 1595.8,
+    "avg_confidence": 0.8975,
+    "total_tokens": 444862
+  },
+  "gpt-4o-mini|grad_version_conflict|T=0.0": {
+    "total_runs": 160,
+    "parsed": 160,
+    "parse_rate": 1.0,
+    "correct": 146,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 1581.5,
+    "avg_confidence": 0.8988,
+    "total_tokens": 348432
+  },
+  "gpt-4o-mini|grad_schema_conflict|T=0.0": {
+    "total_runs": 160,
+    "parsed": 160,
+    "parse_rate": 1.0,
+    "correct": 146,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 1543.3,
+    "avg_confidence": 0.8975,
+    "total_tokens": 351246
+  },
+  "gpt-4o-mini|grad_semantic_conflict|T=0.0": {
+    "total_runs": 160,
+    "parsed": 160,
+    "parse_rate": 1.0,
+    "correct": 146,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 1536.6,
+    "avg_confidence": 0.895,
+    "total_tokens": 332282
+  },
+  "gpt-4o-mini|grad_near_similar|T=0.0": {
+    "total_runs": 160,
+    "parsed": 160,
+    "parse_rate": 1.0,
+    "correct": 146,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 1618.9,
+    "avg_confidence": 0.8975,
+    "total_tokens": 381540
+  },
+  "claude-haiku-4.5|clean_memory|T=0.0": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 73,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 3740.0,
+    "avg_confidence": 0.9105,
+    "total_tokens": 166427
+  },
+  "claude-haiku-4.5|grad_near_identical|T=0.0": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 73,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 3854.8,
+    "avg_confidence": 0.9105,
+    "total_tokens": 247916
+  },
+  "claude-haiku-4.5|grad_version_conflict|T=0.0": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 73,
+    "accuracy": 0.9125,
+    "errors": 0,
+    "avg_latency_ms": 4675.9,
+    "avg_confidence": 0.9074,
+    "total_tokens": 198161
+  },
+  "claude-haiku-4.5|grad_schema_conflict|T=0.0": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 74,
+    "accuracy": 0.925,
+    "errors": 0,
+    "avg_latency_ms": 4253.2,
+    "avg_confidence": 0.9211,
+    "total_tokens": 199887
+  },
+  "claude-haiku-4.5|grad_semantic_conflict|T=0.0": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 75,
+    "accuracy": 0.9375,
+    "errors": 0,
+    "avg_latency_ms": 4097.7,
+    "avg_confidence": 0.913,
+    "total_tokens": 187601
+  },
+  "claude-haiku-4.5|grad_near_similar|T=0.0": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 72,
+    "accuracy": 0.9,
+    "errors": 0,
+    "avg_latency_ms": 3531.6,
+    "avg_confidence": 0.9045,
+    "total_tokens": 214096
+  }
+}
