@@ -251,12 +251,64 @@ Discriminating tasks only & +8.3pp \\
 
 GPT-4o-mini shows zero interference effect (94.8\% for both conditions), while Claude Haiku 4.5 shows a 0.9pp drop, Grok-3-mini shows a 2.2pp drop, and Llama-3.1-8B shows a 1.7pp drop. Cochran's Q = 0.02 ($p = 0.99$, $I^2 = 0\%$), indicating no significant heterogeneity across models.
 
+\section{Follow-Up Experiments}
+
+To address reviewer concerns about the ceiling effect and the confound between retrieval and planning, we conducted three follow-up experiments.
+
+\subsection{Retrieval--Planning Decomposition}
+
+To isolate planning failures from retrieval failures, we ran two conditions: (1) \textbf{Gold retrieval}---showing only the correct skill(s) for each task, and (2) \textbf{RAG top-5 retrieval}---using embedding similarity to select the 5 most relevant skills.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lcc}
+\toprule
+\textbf{Condition} & \textbf{Accuracy} & \textbf{vs.\ Clean Memory} \\
+\midrule
+Clean Memory (40 skills) & 95.8\% & --- \\
+Gold Retrieval (1 skill) & 92.5\% & $-3.3$pp \\
+RAG Top-5 (5 skills) & 92.2\% & $-3.6$pp \\
+\bottomrule
+\end{tabular}
+\caption{Retrieval--planning decomposition. Both gold and RAG conditions are 3--4pp below clean memory, indicating that retrieval is solved but having more context aids selection.}
+\label{tab:retrieval}
+\end{table}
+
+The 0.3pp gap between gold and RAG retrieval (Table~\ref{tab:retrieval}) shows that RAG effectively solves the retrieval problem. The 3--4pp drop from clean memory is unexpected: providing \emph{more} skills (40 vs.\ 1--5) actually improves accuracy, not hurts it. This suggests models benefit from contextual information provided by the full skill library.
+
+\subsection{Harder Task Suite}
+
+To address the ceiling effect (83\% of tasks showing zero difference), we designed 41 harder tasks with minimal keyword cues (7.3\% vs.\ 88.8\% in the original suite). The baseline dropped from 95.8\% to 68.7\%, confirming the tasks are substantially harder.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lccc}
+\toprule
+\textbf{Condition} & \textbf{Accuracy} & \textbf{vs.\ CM} & \textbf{$p$} \\
+\midrule
+Clean Memory & 68.7\% & --- & --- \\
+Clean + Interference & 73.6\% & $+4.9$pp & 0.023 \\
+All Memory & 70.9\% & $+2.2$pp & --- \\
+\bottomrule
+\end{tabular}
+\caption{Results on the harder task suite (7.3\% keyword cues). Interference \emph{significantly improves} accuracy ($p = 0.023$), reversing the direction from the original tasks.}
+\label{tab:harder}
+\end{table}
+
+Strikingly, on harder tasks, interference \emph{significantly improves} accuracy (Table~\ref{tab:harder}): 73.6\% vs.\ 68.7\% ($t(40) = -2.37$, $p = 0.023$). In 9 of 41 tasks, interference helps; in only 3, it hurts. This suggests that on genuinely difficult tasks, the additional context provided by interference skills aids disambiguation rather than confusing the model.
+
+\subsection{Interference Similarity Gradient}
+
+We tested whether the interference effect scales with skill similarity by constructing five gradient conditions, each adding only one type of interfering skill: near-identical (highest similarity), version conflicts, schema conflicts, semantic conflicts, and near-similar (lowest similarity).
+
 
 \section{Discussion}
 
 \subsection{What This Means for Agent Designers}
 
-Our null result is good news: current LLMs are surprisingly robust to skill library interference. Simply adding more tools---even near-duplicates---will not catastrophically break selection accuracy.
+Our null result is good news: current LLMs are surprisingly robust to skill library interference. Simply adding more tools---even near-duplicates---will not catastrophically break selection accuracy. On harder tasks, interference may even \emph{help} by providing additional context for disambiguation.
 
 However, the confidence and cost effects are real. A 2--3$\times$ token cost increase directly translates to higher inference costs in deployed systems. And confidence calibration errors, while small, compound over multi-step agent trajectories.
 
@@ -264,11 +316,11 @@ However, the confidence and cost effects are real. A 2--3$\times$ token cost inc
 
 \paragraph{Task design.} Our tasks test single-step tool selection, not multi-step agent workflows. In practice, agents chain tools across turns, where small confidence errors can compound. We do not test invocation accuracy (correct parameters) or cascade failures.
 
-\paragraph{Ceiling effect.} With 96\% baseline accuracy, interference has little room to matter. Harder tasks or more adversarial interference would stress-test this finding.
+\paragraph{Ceiling effect (partially addressed).} The original 77 tasks have 95--96\% baseline accuracy, leaving little room for interference. Our harder task suite (41 tasks, 7.3\% keyword cues) breaks the ceiling (68.7\% baseline), but even there interference helps rather than hurts.
 
 \paragraph{Library realism.} Our 22\% interference density exceeds real-world libraries (typically $<$5\%). The results may not generalize to sparser interference conditions.
 
-\paragraph{Prompt-based selection.} Providing the full library in the prompt makes selection trivially easy via pattern matching. RAG-based selection (where retrieval is the bottleneck) may show different results.
+\paragraph{Prompt-based selection.} Providing the full library in the prompt makes selection trivially easy via pattern matching. Our RAG experiment (Track B) addresses this partially, showing that retrieval-augmented selection closely matches gold retrieval (92.2\% vs.\ 92.5\%).
 
 
 \section{Conclusion}
