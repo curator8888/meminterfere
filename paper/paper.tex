@@ -14,7 +14,7 @@
 \usepackage{appendix}
 \usepackage{xcolor}
 
-\title{Skill Library Interference in LLM Agents: \\ A Null Result with Ceiling and Cost Implications}
+\title{Skill Library Interference in LLM Agents: \\ Mostly Harmless, Sometimes Costly}
 
 \author{
   % Author names blinded for review
@@ -214,6 +214,19 @@ Only 13 out of 77 tasks (17\%) show any difference between clean and interferenc
 
 The single largest outlier is \texttt{interfere\_trap\_001} (+88.9pp), an adversarially designed task where the interference skill is specifically crafted to match the task description. Excluding this task reduces the overall effect from 1.3pp to 0.15pp---essentially zero.
 
+\subsection{Failure Mode Analysis}
+
+Although interference had a modest overall effect, analyzing the rare cases where it \emph{did} cause errors reveals a consistent pattern. We examine the 5 interference-only failures (correct under clean memory, wrong under interference at temperature 0.0) and all 86 errors across temperatures.
+
+\paragraph{Interference redirects to similar-seeming competitors.}
+In 100\% of interference-induced errors, the model selected an interfering skill rather than an unrelated one. The three most common wrong-tool selections---\texttt{crawl\_site} (24), \texttt{get\_forecast} (21), and \texttt{search\_news} (15)---are all high-similarity decoy skills designed to compete with specific gold tools. Interference does not cause random tool confusion; it produces \emph{systematic} confusion between semantically adjacent skills.
+
+\paragraph{Near-identical names are disproportionately dangerous.}
+The single task \texttt{interfere\_trap\_001}---where the gold skill is \texttt{search\_web} and the decoy is \texttt{search\_web\_fast}---accounts for 3 of 5 interference-only failures (60\%), affecting Llama, Grok, and GPT-4o-mini. The remaining two failures follow the same pattern: \texttt{scrape\_page} chosen over \texttt{summarize\_page} (semantic near-synonym) and \texttt{compose\_email} over \texttt{send\_email} (functional near-duplicate). The common thread is lexical or semantic proximity in skill names, not conceptual breadth of the library.
+
+\paragraph{Trap tasks amplify the effect.}
+Tasks specifically designed to exploit near-duplicate skills (``trap tasks'') had an error rate of 22.2\% versus 8.4\% for non-trap tasks---a 2.6$\times$ increase. However, even trap-task error rates remained below 25\%, reinforcing that agents are largely resilient even to adversarially designed interference.
+
 
 \section{Analysis}
 
@@ -359,9 +372,20 @@ The 8pp gap between the original oracle (91.8\%, 40 skills) and revised oracle (
 
 \subsection{What This Means for Agent Designers}
 
-Our null result is good news: current LLMs are surprisingly robust to skill library interference. Simply adding more tools---even near-duplicates---will not catastrophically break selection accuracy. On harder tasks, interference may even \emph{help} by providing additional context for disambiguation.
+\paragraph{Prioritize skill naming.}
+Every interference-induced error selected a \emph{similar-seeming} competitor skill---never an unrelated one. The most effective intervention is eliminating near-identical skill names (e.g., \texttt{search\_web} vs.\ \texttt{search\_web\_fast}). If two skills overlap in purpose, either merge them or give them maximally distinct names.
 
-However, the confidence and cost effects are real. A 2--3$\times$ token cost increase directly translates to higher inference costs in deployed systems. And confidence calibration errors, while small, compound over multi-step agent trajectories.
+\paragraph{Use RAG for skill retrieval.}
+A simple top-5 RAG retriever achieves 92.2\% accuracy, statistically indistinguishable from oracle retrieval (92.5\%). Feeding all skill descriptions into the prompt increases token cost by 2.33$\times$ (4,743 vs.\ 2,032 average tokens) with no accuracy benefit. Retrieve first; invoke second.
+
+\paragraph{Don't over-prune skill libraries for fear of interference.}
+Even with 60\% interfering skills in the prompt, agents maintained 94.7\% accuracy, and 83\% of tasks produced identical outcomes with or without interference. Library size is not a first-order accuracy concern.
+
+\paragraph{Audit for trap patterns.}
+Tasks exploiting near-duplicate skills had a 22.2\% error rate---2.6$\times$ higher than regular tasks. Systematically review your library for clusters of semantically overlapping skills and treat these as high-risk zones requiring explicit disambiguation.
+
+\paragraph{Monitor token cost, not just accuracy.}
+Interference did not meaningfully degrade accuracy, but it increased average token usage by 2.33$\times$. At scale, this cost increase may dwarf any accuracy benefit of including all skills in-context.
 
 \subsection{Limitations}
 
@@ -374,6 +398,9 @@ However, the confidence and cost effects are real. A 2--3$\times$ token cost inc
 \paragraph{Library realism.} Our 22\% interference density exceeds real-world libraries (typically $<$5\%). The results may not generalize to sparser interference conditions.
 
 \paragraph{Prompt-based selection.} Providing the full library in the prompt makes selection trivially easy via pattern matching. Our RAG experiment (Track B) addresses this partially, showing that retrieval-augmented selection closely matches gold retrieval (92.2\% vs.\ 92.5\%).
+
+\paragraph{Future directions.}
+Several experiments would sharpen these findings. First, scaling the skill library beyond 100 skills---to 500 or 1,000---would test whether the ceiling effect persists as retrieval difficulty increases. Second, targeted intervention studies (e.g., renaming \texttt{search\_web\_fast} $\rightarrow$ \texttt{quick\_web\_lookup}) would directly quantify the return on naming hygiene. Third, extending beyond web/email domains to code-generation or multi-modal skill libraries would test generality. Fourth, studying cumulative interference in multi-turn agent trajectories, where early errors propagate, would establish whether the null result holds under agentic execution. Finally, cost-accuracy trade-off curves across RAG-$k$ values (1, 3, 5, 10) with varying library sizes would give practitioners concrete guidance on Pareto-optimal retrieval configurations.
 
 
 \section{Conclusion}
