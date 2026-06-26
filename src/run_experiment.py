@@ -59,6 +59,7 @@ from retrieval_simulator import (
     get_skills_for_track, get_condition_for_track, build_track_prompt,
 )
 from harder_tasks import HARDER_TASKS as HARDER_TASKS_LIST
+from gradient_tasks import GRADIENT_CONDITIONS, get_library_for_gradient_condition
 
 # ── Condition name mapping ───────────────────────────────────────────────────
 
@@ -75,6 +76,12 @@ CONDITION_NAMES = {
     "rag_retrieval_k3": Condition.RAG_RETRIEVAL_K3,
     "rag_retrieval_k5": Condition.RAG_RETRIEVAL_K5,
     "rag_retrieval_k10": Condition.RAG_RETRIEVAL_K10,
+    # Phase 6.4: Gradient conditions (use CLEAN_INTERFERENCE as base, but custom libraries)
+    "grad_near_identical": Condition.CLEAN_INTERFERENCE,
+    "grad_version_conflict": Condition.CLEAN_INTERFERENCE,
+    "grad_schema_conflict": Condition.CLEAN_INTERFERENCE,
+    "grad_semantic_conflict": Condition.CLEAN_INTERFERENCE,
+    "grad_near_similar": Condition.CLEAN_INTERFERENCE,
 }
 
 ALL_CONDITION_NAMES = list(CONDITION_NAMES.keys())
@@ -334,6 +341,8 @@ def main():
                         help="Sentence-transformers model for RAG embeddings (default: all-MiniLM-L6-v2)")
     parser.add_argument("--harder-tasks", action="store_true",
                         help="Use the harder task suite (Phase 6.3) with minimal keyword cues")
+    parser.add_argument("--gradient", action="store_true",
+                        help="Run gradient test (Phase 6.4): test interference effect by similarity level")
 
     args = parser.parse_args()
 
@@ -372,6 +381,10 @@ def main():
         condition_names = [track_condition]
         logger.info(f"Track mode: {track_mode} → condition: {track_condition}")
         # Note: RAG embedding computation is deferred until after tasks are loaded
+    elif args.gradient:
+        # Override conditions to gradient test conditions
+        condition_names = list(GRADIENT_CONDITIONS.keys())
+        logger.info(f"Gradient mode: using {len(condition_names)} conditions: {condition_names}")
 
     # Validate conditions
     for name in condition_names:
@@ -450,6 +463,11 @@ def main():
             skill_libraries = build_skill_libraries_for_track(
                 tasks, condition_name, track_mode, all_skills,
             )
+    elif args.gradient:
+        # Gradient test: use per-similarity condition libraries
+        skill_libraries = {}
+        for cond_name in condition_names:
+            skill_libraries[cond_name] = get_library_for_gradient_condition(cond_name)
     else:
         skill_libraries = build_skill_libraries(condition_names)
     valid_skill_names = get_all_skill_names()

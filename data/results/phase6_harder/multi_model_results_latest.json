@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "timestamp": "2026-06-26T09:11:15.145204",
-    "num_results": 958,
+    "timestamp": "2026-06-26T09:14:43.351787",
+    "num_results": 1023,
     "parse_stats": {
-      "total": 958,
-      "json": 954,
+      "total": 1023,
+      "json": 1019,
       "regex": 4,
       "freeform": 0,
       "error": 0,
       "parse_rate": 1.0,
-      "json_rate": 0.9958,
-      "regex_rate": 0.0042,
+      "json_rate": 0.9961,
+      "regex_rate": 0.0039,
       "freeform_rate": 0.0
     },
     "models": [
@@ -26008,6 +26008,1764 @@
       ],
       "expected_skills": [
         "create_task"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "544f2d7deda2094b",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_sched_004",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 2132,
+      "timestamp": "2026-06-26T09:11:33.709197",
+      "prompt_tokens": 4876,
+      "completion_tokens": 89,
+      "total_tokens": 4965,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I want to see everything on my plate for this week \u2014 appointments, deadlines, and action items all in one view.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"list_events\", \"confidence\": 0.9, \"approach\": \"I would use the 'list_events' skill to retrieve all calendar events for the current week. Additionally, I would use the 'list_tasks' skill to gather all action items and deadlines from the task manager. By combining the outputs from both skills, I can present a comprehensive view of appointments, deadlines, and action items for the week.\"}",
+      "parsed_tool": "list_events",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'list_events' skill to retrieve all calendar events for the current week. Additionally, I would use the 'list_tasks' skill to gather all action items and deadlines from the task manager. By combining the outputs from both skills, I can present a comprehensive view of appointments, deadlines, and action items for the week.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "list_events",
+        "list_tasks"
+      ],
+      "expected_skills": [
+        "list_tasks"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "985a542f6e9459f6",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_web_001",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1680,
+      "timestamp": "2026-06-26T09:11:35.390744",
+      "prompt_tokens": 4872,
+      "completion_tokens": 70,
+      "total_tokens": 4942,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Go to the Stripe dashboard and grab the CSV of all payouts from last month for my tax records.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"navigate_url\", \"confidence\": 0.8, \"approach\": \"I would use the navigate_url skill to go to the Stripe dashboard, log in if necessary, and then locate the section for payouts. From there, I would look for the option to download the CSV file for all payouts from the previous month.\"}",
+      "parsed_tool": "navigate_url",
+      "parsed_confidence": 0.8,
+      "parsed_approach": "I would use the navigate_url skill to go to the Stripe dashboard, log in if necessary, and then locate the section for payouts. From there, I would look for the option to download the CSV file for all payouts from the previous month.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "navigate_url"
+      ],
+      "expected_skills": [
+        "download_file"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "9e843265f86f43f1",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_web_002",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1472,
+      "timestamp": "2026-06-26T09:11:37.204095",
+      "prompt_tokens": 4874,
+      "completion_tokens": 69,
+      "total_tokens": 4943,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I need to systematically check every URL on our blog's homepage to identify which ones are returning 404 errors.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"extract_links\", \"confidence\": 0.9, \"approach\": \"I would first extract all hyperlinks from the blog's homepage using the 'extract_links' skill. Then, I would systematically check each extracted URL to see if they return a 404 error by using the 'check_website_status' skill.\"}",
+      "parsed_tool": "extract_links",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would first extract all hyperlinks from the blog's homepage using the 'extract_links' skill. Then, I would systematically check each extracted URL to see if they return a 404 error by using the 'check_website_status' skill.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "check_website_status",
+        "extract_links"
+      ],
+      "expected_skills": [
+        "extract_links"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "99fc330b615082e5",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_web_003",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1832,
+      "timestamp": "2026-06-26T09:11:39.369792",
+      "prompt_tokens": 4879,
+      "completion_tokens": 86,
+      "total_tokens": 4965,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Recursively visit every document under docs.example.com and build a sitemap of all the documentation, following references up to 3 levels deep.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\n  \"tool\": \"crawl_site\",\n  \"confidence\": 0.9,\n  \"approach\": \"I would use the 'crawl_site' skill to recursively visit every document under docs.example.com, extracting structured content from multiple pages. I would set the base_url to 'docs.example.com', limit the crawl to a maximum of 3 levels deep, and ensure that the pattern captures all relevant documentation links.\"\n}",
+      "parsed_tool": "crawl_site",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'crawl_site' skill to recursively visit every document under docs.example.com, extracting structured content from multiple pages. I would set the base_url to 'docs.example.com', limit the crawl to a maximum of 3 levels deep, and ensure that the pattern captures all relevant documentation links.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "crawl_site"
+      ],
+      "expected_skills": [
+        "crawl_site"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "62e64a24bde39bec",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_web_004",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 2301,
+      "timestamp": "2026-06-26T09:11:43.996617",
+      "prompt_tokens": 4879,
+      "completion_tokens": 67,
+      "total_tokens": 4946,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Open the Jira board for our sprint and find the ticket assigned to me with the highest priority so I know what to work on first.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\n  \"tool\": \"navigate_url\",\n  \"confidence\": 0.8,\n  \"approach\": \"I would use the navigate_url skill to open the Jira board URL and extract the content related to the tickets. Then, I would look for the ticket assigned to you and identify the one with the highest priority.\"\n}",
+      "parsed_tool": "navigate_url",
+      "parsed_confidence": 0.8,
+      "parsed_approach": "I would use the navigate_url skill to open the Jira board URL and extract the content related to the tickets. Then, I would look for the ticket assigned to you and identify the one with the highest priority.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "navigate_url"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "0f434ce8dfdc61d5",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_web_005",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1657,
+      "timestamp": "2026-06-26T09:11:45.871053",
+      "prompt_tokens": 4875,
+      "completion_tokens": 63,
+      "total_tokens": 4938,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Read through the Wikipedia article about the Ming dynasty and extract all the names of emperors along with their reign periods.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"scrape_page\", \"confidence\": 0.9, \"approach\": \"I would use the 'scrape_page' skill to extract the names of emperors and their reign periods from the Wikipedia article about the Ming dynasty by targeting the appropriate HTML elements that contain this information.\"}",
+      "parsed_tool": "scrape_page",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'scrape_page' skill to extract the names of emperors and their reign periods from the Wikipedia article about the Ming dynasty by targeting the appropriate HTML elements that contain this information.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "scrape_page"
+      ],
+      "expected_skills": [
+        "get_data_from_page"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "36695724d21b730f",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_ambig_001",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1001,
+      "timestamp": "2026-06-26T09:11:47.219748",
+      "prompt_tokens": 4871,
+      "completion_tokens": 52,
+      "total_tokens": 4923,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: The Q4 revenue report needs to go out to the finance team distribution list before market close.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"send_email\", \"confidence\": 0.9, \"approach\": \"I would use the send_email skill to compose and send the Q4 revenue report to the finance team distribution list, ensuring it is sent before market close.\"}",
+      "parsed_tool": "send_email",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the send_email skill to compose and send the Q4 revenue report to the finance team distribution list, ensuring it is sent before market close.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "send_email"
+      ],
+      "expected_skills": [
+        "send_email"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "14d6ba153045dc03",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_ambig_002",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1067,
+      "timestamp": "2026-06-26T09:11:49.035481",
+      "prompt_tokens": 4875,
+      "completion_tokens": 53,
+      "total_tokens": 4928,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Write up a brief note about the server incident and save it as a draft \u2014 I'll review and release it later.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"write_file\", \"confidence\": 0.9, \"approach\": \"I would compose a brief note about the server incident and save it as a draft in a designated file format, ensuring it's ready for your review and release later.\"}",
+      "parsed_tool": "write_file",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would compose a brief note about the server incident and save it as a draft in a designated file format, ensuring it's ready for your review and release later.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "write_file"
+      ],
+      "expected_skills": [
+        "compose_email"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "2d6a055a7f11fca1",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_ambig_003",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1582,
+      "timestamp": "2026-06-26T09:11:51.568242",
+      "prompt_tokens": 4869,
+      "completion_tokens": 53,
+      "total_tokens": 4922,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I need recent academic publications about developments in quantum computing, specifically from peer-reviewed journals.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"search_web\", \"confidence\": 0.9, \"approach\": \"I would use the search_web skill to find recent academic publications about developments in quantum computing from peer-reviewed journals by querying relevant keywords and filtering for recent publications.\"}",
+      "parsed_tool": "search_web",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the search_web skill to find recent academic publications about developments in quantum computing from peer-reviewed journals by querying relevant keywords and filtering for recent publications.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "search_web"
+      ],
+      "expected_skills": [
+        "find_information"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "e3e0b2affbc053b7",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_ambig_004",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1687,
+      "timestamp": "2026-06-26T09:11:53.256578",
+      "prompt_tokens": 4871,
+      "completion_tokens": 60,
+      "total_tokens": 4931,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I'm looking for the latest research on transformer architectures published this year, from any AI conference proceedings.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"search_web\", \"confidence\": 0.9, \"approach\": \"I would use the search_web skill to query for the latest research on transformer architectures published in 2023, specifically focusing on AI conference proceedings. This will help gather relevant articles and papers.\"}",
+      "parsed_tool": "search_web",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the search_web skill to query for the latest research on transformer architectures published in 2023, specifically focusing on AI conference proceedings. This will help gather relevant articles and papers.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "search_web"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "594cdd87274c36bc",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_ambig_005",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1387,
+      "timestamp": "2026-06-26T09:11:55.075844",
+      "prompt_tokens": 4871,
+      "completion_tokens": 60,
+      "total_tokens": 4931,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Give me a short bullet-point overview of what this product does, based on its landing copy.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"summarize_page\", \"confidence\": 0.9, \"approach\": \"I would use the 'summarize_page' skill to extract and summarize the main content of the product's landing page, providing a concise bullet-point overview of its features and benefits.\"}",
+      "parsed_tool": "summarize_page",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'summarize_page' skill to extract and summarize the main content of the product's landing page, providing a concise bullet-point overview of its features and benefits.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "summarize_page"
+      ],
+      "expected_skills": [
+        "summarize_page"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "4d43c83d38106205",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_trap_001",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1517,
+      "timestamp": "2026-06-26T09:11:57.022834",
+      "prompt_tokens": 4875,
+      "completion_tokens": 69,
+      "total_tokens": 4944,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I need to message the hiring manager about the interview schedule \u2014 a professional note confirming tomorrow's 3pm slot.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"send_email\", \"confidence\": 0.9, \"approach\": \"I would use the send_email skill to compose a professional message to the hiring manager, confirming the interview schedule for tomorrow at 3pm. The email will include a polite greeting, a confirmation of the time, and a closing statement.\"}",
+      "parsed_tool": "send_email",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the send_email skill to compose a professional message to the hiring manager, confirming the interview schedule for tomorrow at 3pm. The email will include a polite greeting, a confirmation of the time, and a closing statement.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "send_email"
+      ],
+      "expected_skills": [
+        "compose_email"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "dd1493124f49c163",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_trap_002",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1591,
+      "timestamp": "2026-06-26T09:11:58.615370",
+      "prompt_tokens": 4870,
+      "completion_tokens": 51,
+      "total_tokens": 4921,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I'm calibrating my HVAC system and need the current outdoor temperature and humidity reading for Austin.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"get_weather\", \"confidence\": 0.9, \"approach\": \"I would use the 'get_weather' skill to retrieve the current temperature and humidity for Austin by specifying the location and the units for the measurements.\"}",
+      "parsed_tool": "get_weather",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'get_weather' skill to retrieve the current temperature and humidity for Austin by specifying the location and the units for the measurements.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "get_weather"
+      ],
+      "expected_skills": [
+        "get_weather"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "835bf7b24cf982fb",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_trap_003",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1657,
+      "timestamp": "2026-06-26T09:12:00.275178",
+      "prompt_tokens": 4874,
+      "completion_tokens": 70,
+      "total_tokens": 4944,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Go through the SEC filing and extract just the revenue numbers from the financial table for the last 4 quarters.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"extract_table\", \"confidence\": 0.9, \"approach\": \"I would use the extract_table skill to extract the financial table from the SEC filing page. I would specify the index of the table that contains the revenue numbers and then filter the results to obtain only the revenue figures for the last 4 quarters.\"}",
+      "parsed_tool": "extract_table",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the extract_table skill to extract the financial table from the SEC filing page. I would specify the index of the table that contains the revenue numbers and then filter the results to obtain only the revenue figures for the last 4 quarters.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "extract_table"
+      ],
+      "expected_skills": [
+        "scrape_page"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "84250850412c1893",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_trap_004",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1362,
+      "timestamp": "2026-06-26T09:12:02.024734",
+      "prompt_tokens": 4876,
+      "completion_tokens": 59,
+      "total_tokens": 4935,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I'm running the Boston marathon next week and need to know wind direction and precipitation probability for each day of the race period.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"get_forecast\", \"confidence\": 0.9, \"approach\": \"I would use the 'get_forecast' skill to retrieve the 7-day weather forecast for Boston, focusing on wind direction and precipitation probability for each day of the marathon period.\"}",
+      "parsed_tool": "get_forecast",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'get_forecast' skill to retrieve the 7-day weather forecast for Boston, focusing on wind direction and precipitation probability for each day of the marathon period.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "get_forecast"
+      ],
+      "expected_skills": [
+        "get_forecast"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "dd714c2edd1d43c7",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_trap_005",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1612,
+      "timestamp": "2026-06-26T09:12:03.721688",
+      "prompt_tokens": 4879,
+      "completion_tokens": 70,
+      "total_tokens": 4949,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I'm writing a paper on long-term atmospheric trends. Get me 50 years of average temperature and CO2 data for the Northern Hemisphere.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"search_web\", \"confidence\": 0.9, \"approach\": \"I would use the search_web skill to find reliable sources that provide 50 years of average temperature and CO2 data specifically for the Northern Hemisphere. I would craft a query that targets climate data repositories, scientific publications, or governmental environmental agencies.\"}",
+      "parsed_tool": "search_web",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the search_web skill to find reliable sources that provide 50 years of average temperature and CO2 data specifically for the Northern Hemisphere. I would craft a query that targets climate data repositories, scientific publications, or governmental environmental agencies.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "search_web"
+      ],
+      "expected_skills": [
+        "report_climate"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "59527ed051927e47",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_nocue_001",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1597,
+      "timestamp": "2026-06-26T09:12:05.320987",
+      "prompt_tokens": 4875,
+      "completion_tokens": 73,
+      "total_tokens": 4948,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I'm planning a picnic this Saturday and want to know if I should bring an umbrella or sunblock for the park.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"get_weather\", \"confidence\": 0.9, \"approach\": \"I would use the 'get_weather' skill to check the current weather conditions for the park location on Saturday. This will help determine if there is a likelihood of rain (suggesting an umbrella) or if it will be sunny (suggesting sunblock).\" }",
+      "parsed_tool": "get_weather",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'get_weather' skill to check the current weather conditions for the park location on Saturday. This will help determine if there is a likelihood of rain (suggesting an umbrella) or if it will be sunny (suggesting sunblock).",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "get_weather"
+      ],
+      "expected_skills": [
+        "get_weather"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "e42bcb3f65342448",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_nocue_002",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1780,
+      "timestamp": "2026-06-26T09:12:09.700415",
+      "prompt_tokens": 4868,
+      "completion_tokens": 49,
+      "total_tokens": 4917,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: My boss asked me to circulate the updated vacation policy to everyone in the department.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"send_email\", \"confidence\": 0.9, \"approach\": \"I would use the send_email skill to draft an email that includes the updated vacation policy and send it to all members of the department.\"}",
+      "parsed_tool": "send_email",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the send_email skill to draft an email that includes the updated vacation policy and send it to all members of the department.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "send_email"
+      ],
+      "expected_skills": [
+        "send_email"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "6c938e9277340c25",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_nocue_003",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1133,
+      "timestamp": "2026-06-26T09:12:13.234099",
+      "prompt_tokens": 4876,
+      "completion_tokens": 52,
+      "total_tokens": 4928,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I keep forgetting about the dentist appointment I made for next Thursday. Put it on my agenda so I don't miss it.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"create_event\", \"confidence\": 0.9, \"approach\": \"I would use the create_event skill to add the dentist appointment to your calendar, specifying the title, start time, end time, and location if provided.\"}",
+      "parsed_tool": "create_event",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the create_event skill to add the dentist appointment to your calendar, specifying the title, start time, end time, and location if provided.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "create_event"
+      ],
+      "expected_skills": [
+        "create_event"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "28cab986b876a5ca",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_nocue_004",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1009,
+      "timestamp": "2026-06-26T09:12:15.187265",
+      "prompt_tokens": 4864,
+      "completion_tokens": 51,
+      "total_tokens": 4915,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: The marketing team needs every external URL referenced from our homepage.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"extract_links\", \"confidence\": 0.9, \"approach\": \"I would use the extract_links skill to extract all hyperlinks from the homepage URL, filtering for external links to gather the required information for the marketing team.\"}",
+      "parsed_tool": "extract_links",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the extract_links skill to extract all hyperlinks from the homepage URL, filtering for external links to gather the required information for the marketing team.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "extract_links"
+      ],
+      "expected_skills": [
+        "extract_links"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "4f483b0269fc0077",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_nocue_005",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1433,
+      "timestamp": "2026-06-26T09:12:33.101472",
+      "prompt_tokens": 4871,
+      "completion_tokens": 49,
+      "total_tokens": 4920,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I have 12 monthly revenue numbers in a spreadsheet and need the year-over-year growth percentage.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"calculate\", \"confidence\": 0.8, \"approach\": \"I would use the calculate skill to perform the necessary mathematical operations to determine the year-over-year growth percentage based on the provided monthly revenue numbers.\"}",
+      "parsed_tool": "calculate",
+      "parsed_confidence": 0.8,
+      "parsed_approach": "I would use the calculate skill to perform the necessary mathematical operations to determine the year-over-year growth percentage based on the provided monthly revenue numbers.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "calculate"
+      ],
+      "expected_skills": [
+        "calculate"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "1c48cac946afae2f",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_multi_001",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 2130,
+      "timestamp": "2026-06-26T09:12:35.941569",
+      "prompt_tokens": 4873,
+      "completion_tokens": 66,
+      "total_tokens": 4939,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: The office is closing tomorrow due to a storm \u2014 everyone needs to know before they commute in the morning.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"send_email\", \"confidence\": 0.9, \"approach\": \"I would use the send_email skill to notify all employees about the office closure due to the storm. I would draft an email with a clear subject line and message informing them of the closure and advising them not to commute.\"}",
+      "parsed_tool": "send_email",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the send_email skill to notify all employees about the office closure due to the storm. I would draft an email with a clear subject line and message informing them of the closure and advising them not to commute.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "send_email"
+      ],
+      "expected_skills": [
+        "send_email"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "6bdc2a316e77969e",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_multi_002",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1808,
+      "timestamp": "2026-06-26T09:12:37.751338",
+      "prompt_tokens": 4875,
+      "completion_tokens": 60,
+      "total_tokens": 4935,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I have 10 minutes before a meeting and need the main thesis and supporting arguments from this 50-page document.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"read_file\", \"confidence\": 0.8, \"approach\": \"I would use the read_file skill to extract the content of the 50-page document. After obtaining the text, I would summarize the main thesis and supporting arguments to provide a concise overview.\"}",
+      "parsed_tool": "read_file",
+      "parsed_confidence": 0.8,
+      "parsed_approach": "I would use the read_file skill to extract the content of the 50-page document. After obtaining the text, I would summarize the main thesis and supporting arguments to provide a concise overview.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "read_file"
+      ],
+      "expected_skills": [
+        "summarize_page"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "38b703ded370fc2f",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_multi_003",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1055,
+      "timestamp": "2026-06-26T09:12:38.808443",
+      "prompt_tokens": 4871,
+      "completion_tokens": 58,
+      "total_tokens": 4929,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I need every product name and dollar amount from the competitor's pricing table, formatted as CSV.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"scrape_page\", \"confidence\": 0.9, \"approach\": \"I would use the scrape_page skill to extract the product names and dollar amounts from the competitor's pricing table using appropriate CSS selectors. The extracted data would then be formatted as CSV.\"}",
+      "parsed_tool": "scrape_page",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the scrape_page skill to extract the product names and dollar amounts from the competitor's pricing table using appropriate CSS selectors. The extracted data would then be formatted as CSV.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "scrape_page"
+      ],
+      "expected_skills": [
+        "scrape_page"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "aaf2f0bab400d0dc",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_multi_004",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1263,
+      "timestamp": "2026-06-26T09:12:43.058402",
+      "prompt_tokens": 4870,
+      "completion_tokens": 50,
+      "total_tokens": 4920,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I need to know if I'm free on Thursday afternoon \u2014 show me everything scheduled that day.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"list_events\", \"confidence\": 0.9, \"approach\": \"I would use the 'list_events' skill to retrieve all calendar events scheduled for Thursday afternoon by specifying the appropriate date range for that day.\"}",
+      "parsed_tool": "list_events",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'list_events' skill to retrieve all calendar events scheduled for Thursday afternoon by specifying the appropriate date range for that day.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "list_events"
+      ],
+      "expected_skills": [
+        "list_events"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "543be40e27d8e8e5",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_multi_005",
+      "condition": "all_memory",
+      "temperature": 0.3,
+      "latency_ms": 1817,
+      "timestamp": "2026-06-26T09:12:46.132609",
+      "prompt_tokens": 4868,
+      "completion_tokens": 72,
+      "total_tokens": 4940,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Track the SEC's cybersecurity disclosure section and notify me whenever they update their guidance.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"monitor_page\", \"confidence\": 0.9, \"approach\": \"I would use the 'monitor_page' skill to track the SEC's cybersecurity disclosure section by providing the URL of the relevant page and specifying a selector that targets the guidance updates. This way, I can receive notifications whenever there are changes to the content.\"}",
+      "parsed_tool": "monitor_page",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'monitor_page' skill to track the SEC's cybersecurity disclosure section by providing the URL of the relevant page and specifying a selector that targets the guidance updates. This way, I can receive notifications whenever there are changes to the content.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "monitor_page"
+      ],
+      "expected_skills": [
+        "monitor_page"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "ab3bfe5156e29737",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_info_001",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1680,
+      "timestamp": "2026-06-26T09:12:47.999754",
+      "prompt_tokens": 1780,
+      "completion_tokens": 62,
+      "total_tokens": 1842,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I'm planning a camping trip this weekend and need to know if I should pack rain gear or sunscreen. Give me temperature, precipitation chance, and wind for the area.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"get_weather\", \"confidence\": 0.9, \"approach\": \"I would use the get_weather skill to obtain the current weather conditions for the camping location, including temperature, precipitation chance, and wind information. This will help determine whether to pack rain gear or sunscreen.\"}",
+      "parsed_tool": "get_weather",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the get_weather skill to obtain the current weather conditions for the camping location, including temperature, precipitation chance, and wind information. This will help determine whether to pack rain gear or sunscreen.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "get_weather"
+      ],
+      "expected_skills": [
+        "get_weather"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "a295e95c66c67808",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_info_002",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1653,
+      "timestamp": "2026-06-26T09:12:49.654766",
+      "prompt_tokens": 1780,
+      "completion_tokens": 73,
+      "total_tokens": 1853,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Our corporate site has been slow to respond this morning. I need to know if it's actually unreachable from the outside or just my local connection, with a latency measurement.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"check_website_status\", \"confidence\": 0.9, \"approach\": \"I would use the 'check_website_status' skill to determine if the corporate site is up and reachable from the outside. This skill will provide the status code, which indicates whether the site is down or not, along with the latency measurement.\"}",
+      "parsed_tool": "check_website_status",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'check_website_status' skill to determine if the corporate site is up and reachable from the outside. This skill will provide the status code, which indicates whether the site is down or not, along with the latency measurement.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "check_website_status"
+      ],
+      "expected_skills": [
+        "check_website_status"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "47e209aabf229f8a",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_info_003",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 2052,
+      "timestamp": "2026-06-26T09:12:52.139373",
+      "prompt_tokens": 1773,
+      "completion_tokens": 64,
+      "total_tokens": 1837,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I need to pull specific data points from a competitor's pricing section \u2014 just the product names and their dollar amounts, nothing else.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"scrape_page\", \"confidence\": 0.9, \"approach\": \"I would use the scrape_page skill to extract structured data from the competitor's pricing section. I would provide the URL of the page and specify the appropriate CSS selectors to target the product names and dollar amounts.\"}",
+      "parsed_tool": "scrape_page",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the scrape_page skill to extract structured data from the competitor's pricing section. I would provide the URL of the page and specify the appropriate CSS selectors to target the product names and dollar amounts.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "scrape_page"
+      ],
+      "expected_skills": [
+        "scrape_page"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "8c2cf463f7f42edc",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_info_004",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1539,
+      "timestamp": "2026-06-26T09:12:53.681092",
+      "prompt_tokens": 1777,
+      "completion_tokens": 74,
+      "total_tokens": 1851,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I want to stay informed about regulatory changes in my industry. Set up something that will alert me when new policy documents are published on the FDA portal.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"monitor_page\", \"confidence\": 0.9, \"approach\": \"I would use the 'monitor_page' skill to track the FDA portal for any changes in policy documents. This skill can be set to check specific elements on the page that indicate new policy documents are published, and it will notify me of any changes or new additions.\"}",
+      "parsed_tool": "monitor_page",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'monitor_page' skill to track the FDA portal for any changes in policy documents. This skill can be set to check specific elements on the page that indicate new policy documents are published, and it will notify me of any changes or new additions.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "monitor_page"
+      ],
+      "expected_skills": [
+        "monitor_page"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "9bb8f9f38fa4eda6",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_info_005",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1804,
+      "timestamp": "2026-06-26T09:12:55.560524",
+      "prompt_tokens": 1776,
+      "completion_tokens": 53,
+      "total_tokens": 1829,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I'm researching a topic and found a long article. I don't need to read the whole thing \u2014 just get me the key points in bullet form.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"summarize_page\", \"confidence\": 0.9, \"approach\": \"I would use the summarize_page skill to extract the key points from the long article by providing its URL and specifying a maximum length for the summary.\"}",
+      "parsed_tool": "summarize_page",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the summarize_page skill to extract the key points from the long article by providing its URL and specifying a maximum length for the summary.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "summarize_page"
+      ],
+      "expected_skills": [
+        "summarize_page"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "c5015fb7b0317ff4",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_comm_001",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1573,
+      "timestamp": "2026-06-26T09:12:57.135459",
+      "prompt_tokens": 1774,
+      "completion_tokens": 63,
+      "total_tokens": 1837,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I've drafted a message to my team about the quarterly results and need it delivered to everyone on the engineering mailing list before end of day.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"send_email\", \"confidence\": 0.9, \"approach\": \"I would use the send_email skill to deliver the drafted message to the engineering mailing list by specifying the recipients, subject, and body of the email to ensure it reaches everyone before the end of the day.\"}",
+      "parsed_tool": "send_email",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the send_email skill to deliver the drafted message to the engineering mailing list by specifying the recipients, subject, and body of the email to ensure it reaches everyone before the end of the day.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "send_email"
+      ],
+      "expected_skills": [
+        "send_email"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "9a83e2574dbe4e3b",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_comm_002",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1228,
+      "timestamp": "2026-06-26T09:12:58.364853",
+      "prompt_tokens": 1781,
+      "completion_tokens": 62,
+      "total_tokens": 1843,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I want to draft a follow-up note to last week's client call summarizing what was discussed and what action items were assigned, but I'm not ready to send it yet.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"write_file\", \"confidence\": 0.9, \"approach\": \"I would use the 'write_file' skill to draft the follow-up note and save it as a file. This way, I can keep it for future reference and make edits before I send it out.\"}",
+      "parsed_tool": "write_file",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'write_file' skill to draft the follow-up note and save it as a file. This way, I can keep it for future reference and make edits before I send it out.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "write_file"
+      ],
+      "expected_skills": [
+        "compose_email"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "507f6810198a41ca",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_comm_003",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1231,
+      "timestamp": "2026-06-26T09:12:59.951393",
+      "prompt_tokens": 1778,
+      "completion_tokens": 47,
+      "total_tokens": 1825,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I need to find Sarah's phone number and email address from our company directory \u2014 she just joined the product team and I need to coordinate a kickoff meeting.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"lookup_contact\", \"confidence\": 0.9, \"approach\": \"I would use the 'lookup_contact' skill to search for Sarah's contact information by her name or email in the company directory.\"}",
+      "parsed_tool": "lookup_contact",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'lookup_contact' skill to search for Sarah's contact information by her name or email in the company directory.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "lookup_contact"
+      ],
+      "expected_skills": [
+        "lookup_contact"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "6e5f2d471d83190a",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_comm_004",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1118,
+      "timestamp": "2026-06-26T09:13:01.880522",
+      "prompt_tokens": 1779,
+      "completion_tokens": 65,
+      "total_tokens": 1844,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I want to keep up with industry news without visiting multiple outlets. Give me a consolidated feed of headlines from tech blogs and news sources that I can scan quickly.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"search_news\", \"confidence\": 0.9, \"approach\": \"I would use the 'search_news' skill to query for the latest headlines from tech blogs and news sources. This would allow me to gather a consolidated feed of relevant news articles, which can be scanned quickly for updates.\"}",
+      "parsed_tool": "search_news",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'search_news' skill to query for the latest headlines from tech blogs and news sources. This would allow me to gather a consolidated feed of relevant news articles, which can be scanned quickly for updates.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "search_news"
+      ],
+      "expected_skills": [
+        "read_rss"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "21127f5f1b29bf51",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_fin_001",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1645,
+      "timestamp": "2026-06-26T09:13:03.859208",
+      "prompt_tokens": 1772,
+      "completion_tokens": 53,
+      "total_tokens": 1825,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I need the current AAPL quote to decide whether to sell my position. Just the real-time number, no analysis needed.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\n  \"tool\": \"get_stock_price\",\n  \"confidence\": 0.9,\n  \"approach\": \"I would use the get_stock_price skill to obtain the current stock price for AAPL (Apple Inc.) from the specified exchange.\"\n}",
+      "parsed_tool": "get_stock_price",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the get_stock_price skill to obtain the current stock price for AAPL (Apple Inc.) from the specified exchange.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "get_stock_price"
+      ],
+      "expected_skills": [
+        "get_stock_price"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "4abc5ee65ccd804f",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_fin_002",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1659,
+      "timestamp": "2026-06-26T09:13:05.519990",
+      "prompt_tokens": 1776,
+      "completion_tokens": 85,
+      "total_tokens": 1861,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Pull all transactions from our accounting system where the vendor name contains 'cloud' and the amount exceeds $1000, for Q4 budget review.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\n  \"tool\": \"query_database\",\n  \"confidence\": 0.8,\n  \"approach\": \"I would use the 'query_database' skill to execute a SQL query that selects all transactions from the accounting system where the vendor name contains 'cloud' and the amount exceeds $1000 for Q4. The query would be structured to filter by these criteria and return the relevant transaction details for review.\"\n}",
+      "parsed_tool": "query_database",
+      "parsed_confidence": 0.8,
+      "parsed_approach": "I would use the 'query_database' skill to execute a SQL query that selects all transactions from the accounting system where the vendor name contains 'cloud' and the amount exceeds $1000 for Q4. The query would be structured to filter by these criteria and return the relevant transaction details for review.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "query_database"
+      ],
+      "expected_skills": [
+        "query_database"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "43fef018068f6b6c",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_fin_003",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 2082,
+      "timestamp": "2026-06-26T09:13:10.106939",
+      "prompt_tokens": 1783,
+      "completion_tokens": 106,
+      "total_tokens": 1889,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I need to work out the compound annual growth rate from a series of monthly revenue figures I have, going from $1M to $2.5M over 36 months.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"calculate\", \"confidence\": 0.9, \"approach\": \"I would use the 'calculate' skill to perform the formula for the compound annual growth rate (CAGR), which is calculated as ((Ending Value / Beginning Value) ^ (1 / Number of Years)) - 1. In this case, the beginning value is $1M, the ending value is $2.5M, and the number of years is 3 (since 36 months is 3 years).\"}",
+      "parsed_tool": "calculate",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'calculate' skill to perform the formula for the compound annual growth rate (CAGR), which is calculated as ((Ending Value / Beginning Value) ^ (1 / Number of Years)) - 1. In this case, the beginning value is $1M, the ending value is $2.5M, and the number of years is 3 (since 36 months is 3 years).",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "calculate"
+      ],
+      "expected_skills": [
+        "calculate"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "da6c3be00051c8de",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_sched_001",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 2053,
+      "timestamp": "2026-06-26T09:13:14.257802",
+      "prompt_tokens": 1778,
+      "completion_tokens": 66,
+      "total_tokens": 1844,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I need to block off next Tuesday from 2-4pm on my calendar for a design review with the mobile team. Include a video call link.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"create_event\", \"confidence\": 0.9, \"approach\": \"I would use the create_event skill to schedule a calendar event for next Tuesday from 2-4pm, including the title 'Design Review with Mobile Team' and the video call link in the location or description field.\"}",
+      "parsed_tool": "create_event",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the create_event skill to schedule a calendar event for next Tuesday from 2-4pm, including the title 'Design Review with Mobile Team' and the video call link in the location or description field.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "create_event"
+      ],
+      "expected_skills": [
+        "create_event"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "5c82f6b7517388b3",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_sched_002",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1573,
+      "timestamp": "2026-06-26T09:13:15.835571",
+      "prompt_tokens": 1771,
+      "completion_tokens": 58,
+      "total_tokens": 1829,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Show me all the meetings I have this Friday so I can see if I have time for a 30-minute sync.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"list_events\", \"confidence\": 0.9, \"approach\": \"I would use the list_events skill to retrieve calendar events for this Friday, allowing me to see all scheduled meetings and determine if there is available time for a 30-minute sync.\"}",
+      "parsed_tool": "list_events",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the list_events skill to retrieve calendar events for this Friday, allowing me to see all scheduled meetings and determine if there is available time for a 30-minute sync.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "list_events"
+      ],
+      "expected_skills": [
+        "list_events"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "95bac0805e5b2be0",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_sched_003",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1071,
+      "timestamp": "2026-06-26T09:13:32.839664",
+      "prompt_tokens": 1776,
+      "completion_tokens": 57,
+      "total_tokens": 1833,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Add a reminder to follow up with the legal team about the contract renewal \u2014 doesn't need a specific time, just something on my to-do list.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"create_task\", \"confidence\": 0.9, \"approach\": \"I would use the create_task skill to add a new task in the task manager with the title 'Follow up with the legal team about the contract renewal' and set a priority.\"}",
+      "parsed_tool": "create_task",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the create_task skill to add a new task in the task manager with the title 'Follow up with the legal team about the contract renewal' and set a priority.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "create_task"
+      ],
+      "expected_skills": [
+        "create_task"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "6683bd9d0bd1be8e",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_sched_004",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1448,
+      "timestamp": "2026-06-26T09:13:35.359524",
+      "prompt_tokens": 1771,
+      "completion_tokens": 82,
+      "total_tokens": 1853,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I want to see everything on my plate for this week \u2014 appointments, deadlines, and action items all in one view.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"list_events\", \"confidence\": 0.9, \"approach\": \"I would use the 'list_events' skill to gather all calendar events for this week, including appointments and deadlines. Additionally, I would use the 'list_tasks' skill to retrieve all action items from the task manager for the same time frame. Finally, I would compile the information into a single view.\"}",
+      "parsed_tool": "list_events",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'list_events' skill to gather all calendar events for this week, including appointments and deadlines. Additionally, I would use the 'list_tasks' skill to retrieve all action items from the task manager for the same time frame. Finally, I would compile the information into a single view.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "list_events",
+        "list_tasks"
+      ],
+      "expected_skills": [
+        "list_tasks"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "3f6eb80e4c086045",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_web_001",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 2451,
+      "timestamp": "2026-06-26T09:13:38.500790",
+      "prompt_tokens": 1767,
+      "completion_tokens": 67,
+      "total_tokens": 1834,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Go to the Stripe dashboard and grab the CSV of all payouts from last month for my tax records.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"navigate_url\", \"confidence\": 0.7, \"approach\": \"I would use the navigate_url skill to go to the Stripe dashboard and extract the main content. I would then look for the section related to payouts and see if there is an option to download the CSV file for last month's payouts.\"}",
+      "parsed_tool": "navigate_url",
+      "parsed_confidence": 0.7,
+      "parsed_approach": "I would use the navigate_url skill to go to the Stripe dashboard and extract the main content. I would then look for the section related to payouts and see if there is an option to download the CSV file for last month's payouts.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "navigate_url"
+      ],
+      "expected_skills": [
+        "download_file"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "3e1f1335db920b9f",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_web_002",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1246,
+      "timestamp": "2026-06-26T09:13:39.749980",
+      "prompt_tokens": 1769,
+      "completion_tokens": 63,
+      "total_tokens": 1832,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I need to systematically check every URL on our blog's homepage to identify which ones are returning 404 errors.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"extract_links\", \"confidence\": 0.9, \"approach\": \"I would first use the 'extract_links' skill to gather all the hyperlinks from the blog's homepage. Then, I would check the status of each extracted URL to identify which ones are returning 404 errors.\"}",
+      "parsed_tool": "extract_links",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would first use the 'extract_links' skill to gather all the hyperlinks from the blog's homepage. Then, I would check the status of each extracted URL to identify which ones are returning 404 errors.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "extract_links"
+      ],
+      "expected_skills": [
+        "extract_links"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "2a5449998848abd0",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_web_003",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1769,
+      "timestamp": "2026-06-26T09:13:43.667323",
+      "prompt_tokens": 1774,
+      "completion_tokens": 78,
+      "total_tokens": 1852,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Recursively visit every document under docs.example.com and build a sitemap of all the documentation, following references up to 3 levels deep.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"crawl_site\", \"confidence\": 0.9, \"approach\": \"I would use the 'crawl_site' skill to start from the base URL 'docs.example.com', extracting structured content from multiple pages. I would set the maximum pages to a suitable limit to ensure it captures everything up to 3 levels deep, allowing for comprehensive coverage of the documentation.\"}",
+      "parsed_tool": "crawl_site",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'crawl_site' skill to start from the base URL 'docs.example.com', extracting structured content from multiple pages. I would set the maximum pages to a suitable limit to ensure it captures everything up to 3 levels deep, allowing for comprehensive coverage of the documentation.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "crawl_site"
+      ],
+      "expected_skills": [
+        "crawl_site"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "2fcda15a1094ddee",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_web_004",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1240,
+      "timestamp": "2026-06-26T09:13:45.654399",
+      "prompt_tokens": 1774,
+      "completion_tokens": 49,
+      "total_tokens": 1823,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Open the Jira board for our sprint and find the ticket assigned to me with the highest priority so I know what to work on first.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"search_web\", \"confidence\": 0.7, \"approach\": \"I would use the search_web tool to look for the Jira board URL and then find the relevant ticket assigned to you with the highest priority.\"}",
+      "parsed_tool": "search_web",
+      "parsed_confidence": 0.7,
+      "parsed_approach": "I would use the search_web tool to look for the Jira board URL and then find the relevant ticket assigned to you with the highest priority.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "search_web"
+      ],
+      "expected_skills": [
+        "navigate_url"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "e1164672af28cd09",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_web_005",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1512,
+      "timestamp": "2026-06-26T09:13:47.932615",
+      "prompt_tokens": 1770,
+      "completion_tokens": 61,
+      "total_tokens": 1831,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Read through the Wikipedia article about the Ming dynasty and extract all the names of emperors along with their reign periods.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"scrape_page\", \"confidence\": 0.9, \"approach\": \"I would use the scrape_page skill to extract structured data from the Wikipedia article about the Ming dynasty by targeting the relevant sections that list the emperors and their reign periods using appropriate CSS selectors.\"}",
+      "parsed_tool": "scrape_page",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the scrape_page skill to extract structured data from the Wikipedia article about the Ming dynasty by targeting the relevant sections that list the emperors and their reign periods using appropriate CSS selectors.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "scrape_page"
+      ],
+      "expected_skills": [
+        "get_data_from_page"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "1b4f09768c7c8156",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_ambig_001",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1105,
+      "timestamp": "2026-06-26T09:13:49.207563",
+      "prompt_tokens": 1766,
+      "completion_tokens": 50,
+      "total_tokens": 1816,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: The Q4 revenue report needs to go out to the finance team distribution list before market close.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"send_email\", \"confidence\": 0.9, \"approach\": \"I would use the send_email skill to send the Q4 revenue report to the finance team distribution list, ensuring it's done before the market close.\"}",
+      "parsed_tool": "send_email",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the send_email skill to send the Q4 revenue report to the finance team distribution list, ensuring it's done before the market close.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "send_email"
+      ],
+      "expected_skills": [
+        "send_email"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "9c2711e2a72074cb",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_ambig_002",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1442,
+      "timestamp": "2026-06-26T09:13:51.629425",
+      "prompt_tokens": 1770,
+      "completion_tokens": 62,
+      "total_tokens": 1832,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Write up a brief note about the server incident and save it as a draft \u2014 I'll review and release it later.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"write_file\", \"confidence\": 0.9, \"approach\": \"I would use the 'write_file' skill to create a draft note about the server incident, saving it to a specified path with the content provided. This will allow you to review and release it later.\"}",
+      "parsed_tool": "write_file",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'write_file' skill to create a draft note about the server incident, saving it to a specified path with the content provided. This will allow you to review and release it later.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "write_file"
+      ],
+      "expected_skills": [
+        "compose_email"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "bc44eddb73f14382",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_ambig_003",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1742,
+      "timestamp": "2026-06-26T09:13:53.984499",
+      "prompt_tokens": 1764,
+      "completion_tokens": 70,
+      "total_tokens": 1834,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I need recent academic publications about developments in quantum computing, specifically from peer-reviewed journals.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"search_web\", \"confidence\": 0.9, \"approach\": \"I would use the search_web skill to look for recent academic publications about developments in quantum computing, focusing on results from peer-reviewed journals. I would formulate a query that specifies these requirements and set a limit on the number of results to retrieve.\"}",
+      "parsed_tool": "search_web",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the search_web skill to look for recent academic publications about developments in quantum computing, focusing on results from peer-reviewed journals. I would formulate a query that specifies these requirements and set a limit on the number of results to retrieve.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "search_web"
+      ],
+      "expected_skills": [
+        "find_information"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "ad5592b41d84ee41",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_ambig_004",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 2585,
+      "timestamp": "2026-06-26T09:13:56.637259",
+      "prompt_tokens": 1766,
+      "completion_tokens": 64,
+      "total_tokens": 1830,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I'm looking for the latest research on transformer architectures published this year, from any AI conference proceedings.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"search_news\", \"confidence\": 0.9, \"approach\": \"I would use the 'search_news' skill to look for articles related to the latest research on transformer architectures published in AI conference proceedings this year. I would specify a relevant query to find the most recent publications.\"}",
+      "parsed_tool": "search_news",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'search_news' skill to look for articles related to the latest research on transformer architectures published in AI conference proceedings this year. I would specify a relevant query to find the most recent publications.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "search_news"
+      ],
+      "expected_skills": [
+        "search_web"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "43aa018206467e9d",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_ambig_005",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1631,
+      "timestamp": "2026-06-26T09:13:58.270295",
+      "prompt_tokens": 1766,
+      "completion_tokens": 60,
+      "total_tokens": 1826,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Give me a short bullet-point overview of what this product does, based on its landing copy.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"summarize_page\", \"confidence\": 0.9, \"approach\": \"I would use the 'summarize_page' skill to extract and summarize the main content from the product's landing page, providing a concise bullet-point overview of its features and benefits.\"}",
+      "parsed_tool": "summarize_page",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'summarize_page' skill to extract and summarize the main content from the product's landing page, providing a concise bullet-point overview of its features and benefits.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "summarize_page"
+      ],
+      "expected_skills": [
+        "summarize_page"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "4a865e88d0997d7a",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_trap_001",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1545,
+      "timestamp": "2026-06-26T09:13:59.817151",
+      "prompt_tokens": 1770,
+      "completion_tokens": 71,
+      "total_tokens": 1841,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I need to message the hiring manager about the interview schedule \u2014 a professional note confirming tomorrow's 3pm slot.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"send_email\", \"confidence\": 0.9, \"approach\": \"I would use the send_email skill to compose a professional message to the hiring manager, confirming the interview schedule for tomorrow at 3pm. The email would include a clear subject line, a polite greeting, and a concise confirmation of the appointment.\"}",
+      "parsed_tool": "send_email",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the send_email skill to compose a professional message to the hiring manager, confirming the interview schedule for tomorrow at 3pm. The email would include a clear subject line, a polite greeting, and a concise confirmation of the appointment.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "send_email"
+      ],
+      "expected_skills": [
+        "compose_email"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "816fe133f7fbfc23",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_trap_002",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1606,
+      "timestamp": "2026-06-26T09:14:01.426675",
+      "prompt_tokens": 1765,
+      "completion_tokens": 62,
+      "total_tokens": 1827,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I'm calibrating my HVAC system and need the current outdoor temperature and humidity reading for Austin.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"get_weather\", \"confidence\": 0.9, \"approach\": \"I would use the 'get_weather' skill to retrieve the current temperature and humidity for Austin. This skill allows me to fetch real-time weather data, which is essential for calibrating the HVAC system.\"}",
+      "parsed_tool": "get_weather",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'get_weather' skill to retrieve the current temperature and humidity for Austin. This skill allows me to fetch real-time weather data, which is essential for calibrating the HVAC system.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "get_weather"
+      ],
+      "expected_skills": [
+        "get_weather"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "7eef7de79aaa387d",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_trap_003",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1299,
+      "timestamp": "2026-06-26T09:14:02.727794",
+      "prompt_tokens": 1769,
+      "completion_tokens": 62,
+      "total_tokens": 1831,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: Go through the SEC filing and extract just the revenue numbers from the financial table for the last 4 quarters.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"extract_table\", \"confidence\": 0.9, \"approach\": \"I would use the 'extract_table' skill to extract the financial table from the SEC filing page. Then, I would filter the extracted data to specifically retrieve the revenue numbers for the last 4 quarters.\"}",
+      "parsed_tool": "extract_table",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'extract_table' skill to extract the financial table from the SEC filing page. Then, I would filter the extracted data to specifically retrieve the revenue numbers for the last 4 quarters.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "extract_table"
+      ],
+      "expected_skills": [
+        "scrape_page"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "3d6f945abad4dc98",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_trap_004",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1612,
+      "timestamp": "2026-06-26T09:14:04.410491",
+      "prompt_tokens": 1771,
+      "completion_tokens": 61,
+      "total_tokens": 1832,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I'm running the Boston marathon next week and need to know wind direction and precipitation probability for each day of the race period.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\n  \"tool\": \"get_forecast\",\n  \"confidence\": 0.9,\n  \"approach\": \"I would use the get_forecast skill to retrieve the 7-day weather forecast for Boston, focusing on wind direction and precipitation probability for each day of the marathon period.\"\n}",
+      "parsed_tool": "get_forecast",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the get_forecast skill to retrieve the 7-day weather forecast for Boston, focusing on wind direction and precipitation probability for each day of the marathon period.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "get_forecast"
+      ],
+      "expected_skills": [
+        "get_forecast"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "5565fde41a7e4eea",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_trap_005",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1753,
+      "timestamp": "2026-06-26T09:14:06.165864",
+      "prompt_tokens": 1774,
+      "completion_tokens": 66,
+      "total_tokens": 1840,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I'm writing a paper on long-term atmospheric trends. Get me 50 years of average temperature and CO2 data for the Northern Hemisphere.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"search_web\", \"confidence\": 0.9, \"approach\": \"I would search the web for datasets or sources that provide historical average temperature and CO2 data for the Northern Hemisphere over the past 50 years. This could include scientific databases, climate research organizations, or governmental environmental agencies.\"}",
+      "parsed_tool": "search_web",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would search the web for datasets or sources that provide historical average temperature and CO2 data for the Northern Hemisphere over the past 50 years. This could include scientific databases, climate research organizations, or governmental environmental agencies.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "search_web"
+      ],
+      "expected_skills": [
+        "report_climate"
+      ],
+      "skill_correct": false,
+      "error": ""
+    },
+    {
+      "run_id": "4e96c6e1a008eb8c",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_nocue_001",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1606,
+      "timestamp": "2026-06-26T09:14:09.727138",
+      "prompt_tokens": 1770,
+      "completion_tokens": 65,
+      "total_tokens": 1835,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I'm planning a picnic this Saturday and want to know if I should bring an umbrella or sunblock for the park.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"get_weather\", \"confidence\": 0.9, \"approach\": \"I would use the get_weather skill to check the current weather conditions for the park location this Saturday. Based on the forecast, I can determine whether to recommend bringing an umbrella for rain or sunblock for sun protection.\"}",
+      "parsed_tool": "get_weather",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the get_weather skill to check the current weather conditions for the park location this Saturday. Based on the forecast, I can determine whether to recommend bringing an umbrella for rain or sunblock for sun protection.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "get_weather"
+      ],
+      "expected_skills": [
+        "get_weather"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "ea1cb5cb5561c6bc",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_nocue_002",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1714,
+      "timestamp": "2026-06-26T09:14:14.020014",
+      "prompt_tokens": 1763,
+      "completion_tokens": 60,
+      "total_tokens": 1823,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: My boss asked me to circulate the updated vacation policy to everyone in the department.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"send_email\", \"confidence\": 0.9, \"approach\": \"I would use the send_email skill to draft an email that includes the updated vacation policy as an attachment or in the body of the email, and then send it to everyone in the department.\"}",
+      "parsed_tool": "send_email",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the send_email skill to draft an email that includes the updated vacation policy as an attachment or in the body of the email, and then send it to everyone in the department.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "send_email"
+      ],
+      "expected_skills": [
+        "send_email"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "ca30078c36dc794e",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_nocue_003",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1056,
+      "timestamp": "2026-06-26T09:14:15.415916",
+      "prompt_tokens": 1771,
+      "completion_tokens": 51,
+      "total_tokens": 1822,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I keep forgetting about the dentist appointment I made for next Thursday. Put it on my agenda so I don't miss it.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"create_event\", \"confidence\": 0.9, \"approach\": \"I would use the create_event skill to add the dentist appointment to your calendar, specifying the title, start time, end time, and location details.\"}",
+      "parsed_tool": "create_event",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the create_event skill to add the dentist appointment to your calendar, specifying the title, start time, end time, and location details.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "create_event"
+      ],
+      "expected_skills": [
+        "create_event"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "3bb6ca8d3ea2fe75",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_nocue_004",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1318,
+      "timestamp": "2026-06-26T09:14:33.187713",
+      "prompt_tokens": 1759,
+      "completion_tokens": 54,
+      "total_tokens": 1813,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: The marketing team needs every external URL referenced from our homepage.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"extract_links\", \"confidence\": 0.9, \"approach\": \"I would use the 'extract_links' skill to extract all hyperlinks from the homepage, filtering for external URLs. This will provide the marketing team with the necessary information.\"}",
+      "parsed_tool": "extract_links",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'extract_links' skill to extract all hyperlinks from the homepage, filtering for external URLs. This will provide the marketing team with the necessary information.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "extract_links"
+      ],
+      "expected_skills": [
+        "extract_links"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "fed55ddf6c6e3892",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_nocue_005",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 2088,
+      "timestamp": "2026-06-26T09:14:36.101892",
+      "prompt_tokens": 1766,
+      "completion_tokens": 79,
+      "total_tokens": 1845,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I have 12 monthly revenue numbers in a spreadsheet and need the year-over-year growth percentage.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"calculate\", \"confidence\": 0.8, \"approach\": \"I would use the calculate skill to perform the year-over-year growth percentage calculation on the provided monthly revenue numbers. Specifically, I would compute the difference between the current year's revenue and the previous year's revenue, divide it by the previous year's revenue, and multiply by 100 to get the percentage.\"}",
+      "parsed_tool": "calculate",
+      "parsed_confidence": 0.8,
+      "parsed_approach": "I would use the calculate skill to perform the year-over-year growth percentage calculation on the provided monthly revenue numbers. Specifically, I would compute the difference between the current year's revenue and the previous year's revenue, divide it by the previous year's revenue, and multiply by 100 to get the percentage.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "calculate"
+      ],
+      "expected_skills": [
+        "calculate"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "1d9571c5ab7853b9",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_multi_001",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1445,
+      "timestamp": "2026-06-26T09:14:37.549336",
+      "prompt_tokens": 1768,
+      "completion_tokens": 64,
+      "total_tokens": 1832,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: The office is closing tomorrow due to a storm \u2014 everyone needs to know before they commute in the morning.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"send_email\", \"confidence\": 1, \"approach\": \"I would use the send_email skill to notify all employees about the office closure due to the storm. I would compose an email with an appropriate subject and message, informing them of the closure and advising them to stay safe.\"}",
+      "parsed_tool": "send_email",
+      "parsed_confidence": 1.0,
+      "parsed_approach": "I would use the send_email skill to notify all employees about the office closure due to the storm. I would compose an email with an appropriate subject and message, informing them of the closure and advising them to stay safe.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "send_email"
+      ],
+      "expected_skills": [
+        "send_email"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "b4a39f638ddebc31",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_multi_002",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1679,
+      "timestamp": "2026-06-26T09:14:40.282521",
+      "prompt_tokens": 1770,
+      "completion_tokens": 71,
+      "total_tokens": 1841,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I have 10 minutes before a meeting and need the main thesis and supporting arguments from this 50-page document.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"summarize_page\", \"confidence\": 0.9, \"approach\": \"I would use the summarize_page skill to condense the content of the 50-page document into a brief summary, focusing on extracting the main thesis and supporting arguments. This will provide a quick overview that can be reviewed before the meeting.\"}",
+      "parsed_tool": "summarize_page",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the summarize_page skill to condense the content of the 50-page document into a brief summary, focusing on extracting the main thesis and supporting arguments. This will provide a quick overview that can be reviewed before the meeting.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "summarize_page"
+      ],
+      "expected_skills": [
+        "summarize_page"
+      ],
+      "skill_correct": true,
+      "error": ""
+    },
+    {
+      "run_id": "4c20fb67810d92b0",
+      "model": "gpt-4o-mini",
+      "model_id": "openai/gpt-4o-mini",
+      "task_id": "hard_multi_003",
+      "condition": "clean_memory",
+      "temperature": 0.7,
+      "latency_ms": 1347,
+      "timestamp": "2026-06-26T09:14:43.351755",
+      "prompt_tokens": 1766,
+      "completion_tokens": 65,
+      "total_tokens": 1831,
+      "prompt_text": "You are an AI assistant with access to a skill library. Given a task, you must select\nthe most appropriate skill from the library and describe how you would use it.\n\n## Skill Library\n\n- **search_web**...\nTask: I need every product name and dollar amount from the competitor's pricing table, formatted as CSV.\n\nExpected outcome: \n\nWhich skill from the library would you use for this task, and how would you approach it?",
+      "raw_response": "{\"tool\": \"scrape_page\", \"confidence\": 0.9, \"approach\": \"I would use the 'scrape_page' skill to extract the product names and dollar amounts from the competitor's pricing table by specifying the URL of the pricing page and using appropriate CSS selectors to target the relevant data.\"}",
+      "parsed_tool": "scrape_page",
+      "parsed_confidence": 0.9,
+      "parsed_approach": "I would use the 'scrape_page' skill to extract the product names and dollar amounts from the competitor's pricing table by specifying the URL of the pricing page and using appropriate CSS selectors to target the relevant data.",
+      "parse_method": "json",
+      "all_matched_skills": [
+        "scrape_page"
+      ],
+      "expected_skills": [
+        "scrape_page"
       ],
       "skill_correct": true,
       "error": ""
