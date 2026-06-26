@@ -40,15 +40,15 @@ Intuitively, interference should hurt: more candidate tools mean more opportunit
 
 We present MemInterfere, a controlled experiment measuring the impact of skill library interference on LLM tool selection. We test 5 conditions (oracle, no-memory, clean-memory, clean-interference, all-memory) across 80 tasks, 3 temperature settings, and 4 LLM models. Our primary hypothesis is that interference---near-duplicate, stale, and conflicting skill descriptions---significantly degrades selection accuracy.
 
-Our main finding is a rigorously established \textbf{null result}: interference does not significantly degrade selection accuracy. The observed difference is 1.3 percentage points (96.0\% clean vs.\ 94.7\% interference, excluding ambiguous tasks), with a 95\% confidence interval of $[-0.9, +3.5]$pp. Two one-sided tests (TOST) confirm equivalence at the $\pm$5pp margin ($p = 0.001$). A Bayes Factor of 0.038 provides strong evidence for the null.
+Our main finding is a rigorously established \textbf{null result}: interference does not significantly degrade selection accuracy. The observed difference is 1.2 percentage points (95.8\% clean vs.\ 94.6\% interference, excluding ambiguous tasks), with a 95\% confidence interval of $[-0.9, +3.5]$pp. Two one-sided tests (TOST) confirm equivalence at the $\pm$3pp margin ($p = 0.035$). A Bayes Factor of 26.3 provides strong evidence for the null.
 
 However, interference is not harmless. We identify two significant secondary effects:
 \begin{enumerate}
-    \item \textbf{Confidence calibration penalty}: Interference causes a small but statistically significant drop in model confidence (0.5--1.8pp, $p < 0.01$ for 2/3 models).
-    \item \textbf{Token cost amplification}: Interference conditions use 2.1--2.7$\times$ more tokens than clean conditions, with direct economic implications for deployed systems.
+    \item \textbf{Confidence calibration penalty}: Interference causes a small but statistically significant drop in model confidence (0.6--1.8pp, $p < 0.01$ for 2/3 models).
+    \item \textbf{Token cost amplification}: Interference conditions use 2.1--2.4$\times$ more tokens than clean conditions, with direct economic implications for deployed systems.
 \end{enumerate}
 
-Our contributions are: (1) the first systematic null result on skill library interference, with rigorous equivalence testing; (2) identification of confidence and cost as the actual failure modes; (3) a formal near-duplicate taxonomy; and (4) a reproducible benchmark of 4,800 evaluation runs.
+Our contributions are: (1) a systematic null result on skill library interference, with rigorous equivalence testing; (2) identification of confidence and cost as the actual failure modes; (3) a formal near-duplicate taxonomy; and (4) a reproducible benchmark of 4,800 evaluation runs.
 
 
 \section{Related Work}
@@ -66,7 +66,7 @@ LLM performance degrades with increasing context length \citep{liu2024lost}. \ci
 Our experimental design follows best practices from clinical equivalence testing \citep{schuirmann1987comparison,lakens2017equivalence}. While common in medicine and psychology, TOST procedures remain rare in NLP despite being recommended for null results \citep{dienes2016bayesian}. We apply both frequentist (TOST) and Bayesian (BF) approaches to establish the null.
 
 \paragraph{Agent memory and skill libraries.}
-Recent work on LLM agents has explored persistent memory \citep{wang2024voyager, shinn2023reflexion} and skill libraries \citep{wang2024voyager}. Voyager's skill library stores reusable code snippets; Reflexion stores verbal feedback. Neither addresses the selection problem when libraries grow large and contain near-duplicates. Our work is, to our knowledge, the first systematic study of skill library interference in tool-using agents.
+Recent work on LLM agents has explored persistent memory \citep{wang2024voyager, shinn2023reflexion} and skill libraries \citep{wang2024voyager}. Voyager's skill library stores reusable code snippets; Reflexion stores verbal feedback. Neither addresses the selection problem when libraries grow large and contain near-duplicates. Our work provides a systematic study of skill library interference in tool-using agents.
 
 
 \section{Methodology}
@@ -182,7 +182,7 @@ Llama-3.1-8B & 0.903 & 0.886 & +0.018 & 0.008** \\
 
 \subsection{Token Cost Amplification}
 
-Interference conditions require substantially more tokens (Table~\ref{tab:tokens}). This is a direct economic cost: at \$0.15--5.00 per million tokens, the 2.1--2.7$\times$ cost increase is practically significant even if accuracy is not.
+Interference conditions require substantially more tokens (Table~\ref{tab:tokens}). This is a direct economic cost: at \$0.15--5.00 per million tokens, the 2.1--2.4$\times$ cost increase is practically significant even if accuracy is not.
 
 \begin{table}[t]
 \centering
@@ -212,7 +212,7 @@ Llama-3.1-8B & 1,855 & 4,504 & 2.43$\times$ \\
 
 Only 13 out of 77 tasks (17\%) show any difference between clean and interference conditions. Of these, 9 show interference hurting accuracy and 4 paradoxically show interference helping. Among these 13 discriminating tasks, the average effect is +8.3pp, but this is not statistically significant ($t(12) = 1.14$, $p = 0.28$) due to the small sample.
 
-The single largest outlier is \texttt{interfere\_trap\_001} (+88.9pp), an adversarially designed task where the interference skill is specifically crafted to match the task description. Excluding this task reduces the overall effect from 1.3pp to 0.15pp---essentially zero.
+The single largest outlier is \texttt{interfere\_trap\_001} (+88.9pp), an adversarially designed task where the interference skill is specifically crafted to match the task description. Excluding this task reduces the overall effect from 1.2pp to 0.15pp---essentially zero.
 
 \subsection{Failure Mode Analysis}
 
