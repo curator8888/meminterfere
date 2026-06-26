@@ -1,0 +1,13 @@
+model,condition,temperature,total_runs,parsed,parse_rate,correct,accuracy,errors,avg_latency_ms,avg_confidence,total_tokens
+llama-3.1-8b-instruct,oracle,0.0,320,320,1.0,320,1.0,0,2208.6,0.9338,118856
+llama-3.1-8b-instruct,oracle,0.3,320,320,1.0,320,1.0,0,2101.4,0.9275,118920
+llama-3.1-8b-instruct,oracle,0.7,320,320,1.0,320,1.0,0,1792.2,0.9338,119016
+grok-3-mini,oracle,0.0,240,240,1.0,240,1.0,0,3901.2,0.8862,219795
+grok-3-mini,oracle,0.3,240,240,1.0,240,1.0,0,4013.8,0.88,222639
+grok-3-mini,oracle,0.7,240,240,1.0,240,1.0,0,3582.9,0.8837,219831
+gpt-4o-mini,oracle,0.0,160,160,1.0,160,1.0,0,2207.0,0.9013,56574
+gpt-4o-mini,oracle,0.3,160,160,1.0,160,1.0,0,2047.0,0.8988,56848
+gpt-4o-mini,oracle,0.7,160,160,1.0,160,1.0,0,2186.0,0.8988,56864
+claude-haiku-4.5,oracle,0.0,80,80,1.0,79,0.9875,0,2696.0,0.9088,39762
+claude-haiku-4.5,oracle,0.3,80,80,1.0,79,0.9875,0,2885.7,0.9044,39947
+claude-haiku-4.5,oracle,0.7,80,80,1.0,80,1.0,0,2966.9,0.9075,39919

@@ -1,0 +1,134 @@
+{
+  "llama-3.1-8b-instruct|oracle|T=0.0": {
+    "total_runs": 320,
+    "parsed": 320,
+    "parse_rate": 1.0,
+    "correct": 320,
+    "accuracy": 1.0,
+    "errors": 0,
+    "avg_latency_ms": 2208.6,
+    "avg_confidence": 0.9338,
+    "total_tokens": 118856
+  },
+  "llama-3.1-8b-instruct|oracle|T=0.3": {
+    "total_runs": 320,
+    "parsed": 320,
+    "parse_rate": 1.0,
+    "correct": 320,
+    "accuracy": 1.0,
+    "errors": 0,
+    "avg_latency_ms": 2101.4,
+    "avg_confidence": 0.9275,
+    "total_tokens": 118920
+  },
+  "llama-3.1-8b-instruct|oracle|T=0.7": {
+    "total_runs": 320,
+    "parsed": 320,
+    "parse_rate": 1.0,
+    "correct": 320,
+    "accuracy": 1.0,
+    "errors": 0,
+    "avg_latency_ms": 1792.2,
+    "avg_confidence": 0.9338,
+    "total_tokens": 119016
+  },
+  "grok-3-mini|oracle|T=0.0": {
+    "total_runs": 240,
+    "parsed": 240,
+    "parse_rate": 1.0,
+    "correct": 240,
+    "accuracy": 1.0,
+    "errors": 0,
+    "avg_latency_ms": 3901.2,
+    "avg_confidence": 0.8862,
+    "total_tokens": 219795
+  },
+  "grok-3-mini|oracle|T=0.3": {
+    "total_runs": 240,
+    "parsed": 240,
+    "parse_rate": 1.0,
+    "correct": 240,
+    "accuracy": 1.0,
+    "errors": 0,
+    "avg_latency_ms": 4013.8,
+    "avg_confidence": 0.88,
+    "total_tokens": 222639
+  },
+  "grok-3-mini|oracle|T=0.7": {
+    "total_runs": 240,
+    "parsed": 240,
+    "parse_rate": 1.0,
+    "correct": 240,
+    "accuracy": 1.0,
+    "errors": 0,
+    "avg_latency_ms": 3582.9,
+    "avg_confidence": 0.8837,
+    "total_tokens": 219831
+  },
+  "gpt-4o-mini|oracle|T=0.0": {
+    "total_runs": 160,
+    "parsed": 160,
+    "parse_rate": 1.0,
+    "correct": 160,
+    "accuracy": 1.0,
+    "errors": 0,
+    "avg_latency_ms": 2207.0,
+    "avg_confidence": 0.9013,
+    "total_tokens": 56574
+  },
+  "gpt-4o-mini|oracle|T=0.3": {
+    "total_runs": 160,
+    "parsed": 160,
+    "parse_rate": 1.0,
+    "correct": 160,
+    "accuracy": 1.0,
+    "errors": 0,
+    "avg_latency_ms": 2047.0,
+    "avg_confidence": 0.8988,
+    "total_tokens": 56848
+  },
+  "gpt-4o-mini|oracle|T=0.7": {
+    "total_runs": 160,
+    "parsed": 160,
+    "parse_rate": 1.0,
+    "correct": 160,
+    "accuracy": 1.0,
+    "errors": 0,
+    "avg_latency_ms": 2186.0,
+    "avg_confidence": 0.8988,
+    "total_tokens": 56864
+  },
+  "claude-haiku-4.5|oracle|T=0.0": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 79,
+    "accuracy": 0.9875,
+    "errors": 0,
+    "avg_latency_ms": 2696.0,
+    "avg_confidence": 0.9088,
+    "total_tokens": 39762
+  },
+  "claude-haiku-4.5|oracle|T=0.3": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 79,
+    "accuracy": 0.9875,
+    "errors": 0,
+    "avg_latency_ms": 2885.7,
+    "avg_confidence": 0.9044,
+    "total_tokens": 39947
+  },
+  "claude-haiku-4.5|oracle|T=0.7": {
+    "total_runs": 80,
+    "parsed": 80,
+    "parse_rate": 1.0,
+    "correct": 80,
+    "accuracy": 1.0,
+    "errors": 0,
+    "avg_latency_ms": 2966.9,
+    "avg_confidence": 0.9075,
+    "total_tokens": 39919
+  }
+}
