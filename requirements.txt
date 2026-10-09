@@ -7,6 +7,12 @@ httpx>=0.25.0
 # Data processing
 numpy>=1.24.0
 
+# Statistical analysis (analyze_results.py, final_analysis.py, mixed_effects_analysis.py,
+# publication_analysis.py, improvement_analysis.py, phase6_analysis.py)
+pandas>=2.0.0
+scipy>=1.11.0
+statsmodels>=0.14.0
+
 # Sentence transformers for RAG retrieval (Phase 5.3)
 sentence-transformers>=2.2.0
 
