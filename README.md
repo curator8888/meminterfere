@@ -96,18 +96,32 @@ meminterfere/
 ```bash
 pip install -r requirements.txt
 
-# Run primary experiment (4 models × 80 tasks × 5 conditions × 3 temps)
-python src/multi_model_runner.py --phase 5
+# Analyze the committed Phase 5.5 dataset (4 models × 77 tasks × 5 conditions)
+# and reproduce all publication statistics. No API keys required.
+python3 src/final_analysis.py
 
-# Run Phase 6 follow-up experiments
-python src/multi_model_runner.py --phase 6 --experiment harder
-python src/multi_model_runner.py --phase 6 --experiment gradient
-python src/multi_model_runner.py --phase 6 --experiment oracle
-python src/multi_model_runner.py --phase 6 --experiment track_a
+# The primary experiment was run with the following command
+# (4 models × 80 tasks × 5 conditions × 3 temperatures = 4,800 runs):
+python3 src/run_experiment.py --model all \
+  --condition oracle,no_memory,clean_memory,clean_interference,all_memory \
+  --temperature 0.0,0.3,0.7 --output data/results/phase5_full
 
-# Generate publication tables and figures
-python src/phase6_comprehensive_analysis.py
+# Phase 6 follow-up experiments:
+python3 src/run_experiment.py --track gold --output data/results/phase6_track_a      # gold retrieval
+python3 src/run_experiment.py --track rag_k5 --output data/results/phase6_track_b_k5 # RAG top-5
+python3 src/run_experiment.py --harder-tasks --output data/results/phase6_harder      # harder task suite
+python3 src/run_experiment.py --gradient --output data/results/phase6_gradient       # similarity gradient
+python3 src/run_experiment.py --condition oracle --output data/results/phase6_oracle  # per-task gold oracle
+
+# Generate the cross-experiment comparison tables and paper figures
+python3 src/phase6_comprehensive_analysis.py
 ```
+
+**Verified reproducible (2026-10-09):** `python3 src/final_analysis.py` on the committed
+`data/results/phase5_full_4model/multi_model_results_latest.json` (4,800 runs) reproduces
+all headline statistics exactly: 95.8% clean vs 94.6% interference (+1.19pp, t=1.14,
+p=0.2567), TOST ±3pp p=0.0347, confidence drop p=0.0029, token cost 2.14–2.44×,
+13/77 discriminating tasks, I²=0%. Requires numpy, pandas, scipy (statsmodels for mixed models).
 
 ## Interference Taxonomy
 
